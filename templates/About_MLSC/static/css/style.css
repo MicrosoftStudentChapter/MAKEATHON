@@ -41,4 +41,48 @@ h1{
   margin-left: 7%;
 }
 
+#content{
+  grid-column-start: 1;
+  grid-column-end: 13;
+
+  grid-row-start: 4;
+  grid-row-end: 13;
+}
+
+
+#left-content{
+  grid-column-start: 1;
+  grid-column-end: 6;
+
+  grid-row-start: 4;
+  grid-row-end: 13;
+
+
+}
+
+.list-item{
+  display: block;
+}
+
+.list-item p{
+  font-size: 1.5rem;
+  color: white;
+  display: inline-block;
+  line-height: 46px;
+  font-family: Anurati;
+  display: inline-block;
+}
+
+.list-item img{
+  margin: 2%;
+  vertical-align: middle;
+}
+
+#right-content{
+  grid-column-start: 6;
+  grid-column-end: 13;
+
+  grid-row-start: 4;
+  grid-row-end: 13;
+}
 
