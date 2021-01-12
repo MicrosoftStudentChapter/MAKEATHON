@@ -57,6 +57,8 @@ h1{
   grid-row-start: 4;
   grid-row-end: 13;
 
+  margin-left: 10%;
+  margin-top: 10%;
 
 }
 
@@ -65,17 +67,24 @@ h1{
 }
 
 .list-item p{
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: white;
   display: inline-block;
-  line-height: 46px;
+  line-height: 40px;
   font-family: Anurati;
   display: inline-block;
 }
 
 .list-item img{
-  margin: 2%;
+  /* margin: 2%; */
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 3%;
   vertical-align: middle;
+  width: 3.5%;
+  height: 3.5%;
+  /* width: 0.0486%;
+  height: 0.085411%; */
 }
 
 #right-content{
