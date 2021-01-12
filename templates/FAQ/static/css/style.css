@@ -1,4 +1,88 @@
 body {
-  margin: 0;
+  margin: auto;
+  width: 90%;
+  background-image: url('/static/images/bg.png');
 }
 
+.bg-image{
+    object-fit: cover;
+}
+
+h1{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 80px;
+  font-weight: 600px;
+  margin: 40px 0px;
+}
+.content{
+  display: grid;
+  grid-template-columns: 0.6fr 2fr;
+  grid-gap: 20px;
+}
+.categories a{
+  text-decoration: none;
+  color: white;
+}
+.categories ul{
+  list-style-type: none;
+}
+.categories li{
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  margin: 10px;
+  border-radius: 20px;
+}
+.categories li:hover{
+  background-color: rgba(255, 255, 255, 0.267);
+}
+.categories li:active{
+  background-color: rgba(37, 22, 93, 0.267);
+
+}
+.categories li:visited{
+  background-color: rgba(213, 97, 97, 0.267);
+}
+.categories li:last-child{
+  margin-top: 60px;
+  background-color: rgb(204, 29, 181);
+  color: white;
+}
+.categories li:last-child:hover{
+  background-color: rgb(247, 10, 215);
+  color: white;
+}
+
+.questions{
+ background-color: rgba(255, 255, 255, 0.397);
+}
+.categories li:hover{
+  background-color: rgba(255, 255, 255, 0.267);
+}
+.categories li:last-child{
+  background-color: rgb(204, 29, 181);
+  color: white;
+}
+.categories li:last-child:hover{
+  background-color: rgb(247, 10, 215);
+  color: white;
+}
+
+.questions{
+ background-color: rgba(255, 255, 255, 0.397);
+}
+
+.accordion-button{
+  text-align: left;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+div.menu{
+  
+  margin: 5% 10%;
+  background: transparent;
+}
