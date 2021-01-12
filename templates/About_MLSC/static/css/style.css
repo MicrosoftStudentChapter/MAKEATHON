@@ -1,4 +1,39 @@
 body {
+  padding: 0;
   margin: 0;
+  background: url('../images/background-image.png') no-repeat fixed;
+  background-size: 100% 100%;
 }
 
+.container{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+header{
+  grid-column-start: 1;
+  grid-column-end: 12;
+
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+h1{
+
+  font-family: Anurati;
+  font-style: normal;
+  font-weight: normal;
+  
+  /* Gotta make this responsive */
+  font-size: 112px;
+  line-height: 134px;
+
+  background: linear-gradient(#EAAB48, #ED885B, #F24282);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  mix-blend-mode: difference;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
