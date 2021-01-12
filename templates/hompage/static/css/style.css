@@ -1,0 +1,81 @@
+/* Background styling */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    /* font-family: Arial, sans-serif; */
+  }
+.bg {
+    /* The image used */
+    background-image: url("../images/image5.png");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+/* Sidenav */
+.mysidenav{
+  float: left;  
+  position: absolute;
+  bottom: 0px; 
+}
+.simage{
+  height: 60px;
+  width: 60px;
+  margin: 10px 10px;  
+  border-radius: 50%;
+}
+.simage:hover{
+  opacity: 50%;
+}
+
+#options{
+  padding-left: 20px;
+}
+
+ul.ba {
+  list-style-type: none;
+}
+
+/* title */
+
+.title{  
+  padding-top: 10%;
+  text-align: center;
+}
+
+#heading{  
+  margin: auto;
+  display: inline-flex;
+  width: 1200px;
+  height: 250px;
+}
+
+.demo{
+    font-weight: 800;    
+    color: #ffffff;
+}
+
+.devfolio{  
+  
+  margin: auto;
+  padding-top: 10px;  
+  border: none;
+  background-color: grey;
+  width: 250px;
+  height: 60px;
+  border-radius: 30px;    
+  
+  }
+
+  .devimg{
+    padding: auto 0;
+    height: 40px;
+    width: 200px;
+  }
