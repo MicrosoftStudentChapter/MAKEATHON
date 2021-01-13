@@ -22,9 +22,12 @@ h1 {
   grid-template-columns: 0.6fr 2fr;
   grid-gap: 20px;
 }
-.categories a {
+.categories a{
   text-decoration: none;
   color: white;
+}
+.is-active{
+  background-color: rgba(255, 255, 255, 0.267);
 }
 .categories ul {
   list-style-type: none;
@@ -40,13 +43,6 @@ h1 {
 .categories li:hover {
   background-color: rgba(255, 255, 255, 0.267);
 }
-.categories li:active {
-  background-color: rgba(37, 22, 93, 0.267);
-}
-.categories li:visited {
-  background-color: rgba(213, 97, 97, 0.267);
-}
-
 .questions {
   background-color: rgba(255, 255, 255, 0.397);
 }
@@ -65,10 +61,97 @@ h1 {
 }
 
 #contact {
-  background-color: rgb(204, 29, 181);
+  background-color: #F24385;
   color: white;
 }
-#contact {
-  background-color: rgb(247, 10, 215);
+#btnOpenForm{
+
+  text-decoration: none;
+  background-color: #F24385;
+  border: none;
   color: white;
+}
+
+
+/* form */
+
+h2{
+  color: #F24385;
+}
+
+.form-popup-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.form-popup-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(94, 110, 141, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  overflow-y: auto;
+  z-index: 10000;
+}
+.form-popup-bg.is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+.form-container {
+  background-color: #110E2B;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 40px;
+  color: #fff;
+}
+.close-button {
+  background: none;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: solid 1px #fff;
+}
+.form-popup-bg:before {
+  content: '';
+  background-color: #fff;
+  opacity: 0.25;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#submit{
+  font-size: 22px;
+  background-color: #F24385;
+  color: white;
+  padding: 8px 20px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  border: none;
 }
