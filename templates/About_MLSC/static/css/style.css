@@ -345,14 +345,17 @@ h1{
 @media screen and (max-width: 500px){
   h1{
     font-size: 3rem;
+    margin-left: 0%;
+    padding-left: 0%;
   }
 
   header{
-    grid-column-start: 1;
+    grid-column-start: 3;
     grid-column-end: 13;
   
     grid-row-start: 1;
     grid-row-end: 3;
+
   }
 
   #left-content{
@@ -365,6 +368,7 @@ h1{
     line-height: 2rem;
     margin-bottom: 1%;
     margin-left: 0%;
+    
   }
   
   .list-item img{
@@ -385,21 +389,21 @@ h1{
     height: 40vh;
     padding: 10px;
 
-    margin:auto
+    
   }
   .content{
     width: 70vw;
     height: 40vh;
     font-size: 0.9rem;
-    padding: 10px;
-    margin: auto;
+    padding: 14px;
+    
   }
   .box{
     width: 70vw;
     height: 40vh;
     padding-right: 10vw;
     padding-bottom: 10vw;
-    margin:auto;
+    
 
   }
 
@@ -409,15 +413,17 @@ h1{
   #left-content{
 
     margin-top: 1rem;
-    
-    grid-column-start: 1;
+
+    grid-column-start: 3;
     grid-column-end: 13;
 
     grid-row-start: 3;
     grid-row-end: 5;
 
-    padding-left: 5%;
+    padding-left: 0%;
     padding-top: 5%;
+
+    margin-left: -7%;
 
     display: inline-block;
   }
@@ -428,6 +434,12 @@ h1{
 
     grid-row-start: 6;
     grid-row-end: 13;
+
+    padding-right: 8%;
+  }
+
+  #left-content, .blurred-box, .box, header{
+    margin-left: -7%;
   }
 }
 
