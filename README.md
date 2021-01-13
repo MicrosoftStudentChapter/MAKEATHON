@@ -1,6 +1,6 @@
 # MAKEATHON
 
-![Makeathon logo](./assets/makeathon3077.png "makeathon3077")
+![Makeathon logo](./assets/makeathon3077.png "MAKEATHON 3077")
 
 ## About MAKEATHON
 
@@ -9,3 +9,8 @@
 ## About MLSC
 
 **Microsoft Learn Student Chapter** is a technical society that is dedicated to elevate the coding culture of Thapar Institute of Engineering and Technology by mentoring and motivating its students to refine their critical thinking, logical reasoning, and coding skills. MLSC was formed with the objective of providing students a dynamic platform that feeds their curiosity and develops their technical skills. MLSC aims to create a community of versatile enthusiasts with a progressive mindset, promoting development holistically which includes injecting soft skills as well. MLSC effectuates it by organizing numerous technology-driven events including **Tech Meetups**,  **Hackathons** and promoting team building.
+
+<center>
+<img src="./assets/mlsc_logo.png" width=300;>
+</center>
+
