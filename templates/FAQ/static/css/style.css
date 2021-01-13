@@ -200,7 +200,7 @@ h2 {
   background-color: #f24385;
 }
 
-@media (max-width:1000px){
+@media (max-width:1100px){
   .menu{
       display: none;
   }
