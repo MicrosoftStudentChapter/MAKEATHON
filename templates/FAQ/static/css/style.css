@@ -1,14 +1,15 @@
 body {
   margin: auto;
   width: 90%;
-  background-image: url('/static/images/bg.png');
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
 }
 
-.bg-image{
-    object-fit: cover;
+.bg-image {
+  object-fit: cover;
 }
 
-h1{
+h1 {
   color: rgb(255, 255, 255);
   text-align: center;
   font-family: sans-serif;
@@ -16,19 +17,19 @@ h1{
   font-weight: 600px;
   margin: 40px 0px;
 }
-.content{
+.content {
   display: grid;
   grid-template-columns: 0.6fr 2fr;
   grid-gap: 20px;
 }
-.categories a{
+.categories a {
   text-decoration: none;
   color: white;
 }
-.categories ul{
+.categories ul {
   list-style-type: none;
 }
-.categories li{
+.categories li {
   font-size: 22px;
   color: white;
   text-align: center;
@@ -36,53 +37,38 @@ h1{
   margin: 10px;
   border-radius: 20px;
 }
-.categories li:hover{
+.categories li:hover {
   background-color: rgba(255, 255, 255, 0.267);
 }
-.categories li:active{
+.categories li:active {
   background-color: rgba(37, 22, 93, 0.267);
-
 }
-.categories li:visited{
+.categories li:visited {
   background-color: rgba(213, 97, 97, 0.267);
 }
-.categories li:last-child{
-  margin-top: 60px;
-  background-color: rgb(204, 29, 181);
-  color: white;
-}
-.categories li:last-child:hover{
-  background-color: rgb(247, 10, 215);
-  color: white;
-}
 
-.questions{
- background-color: rgba(255, 255, 255, 0.397);
+.questions {
+  background-color: rgba(255, 255, 255, 0.397);
 }
-.categories li:hover{
+.categories li:hover {
   background-color: rgba(255, 255, 255, 0.267);
 }
-.categories li:last-child{
-  background-color: rgb(204, 29, 181);
-  color: white;
-}
-.categories li:last-child:hover{
-  background-color: rgb(247, 10, 215);
-  color: white;
+
+.questions {
+  background-color: rgba(255, 255, 255, 0.397);
 }
 
-.questions{
- background-color: rgba(255, 255, 255, 0.397);
-}
-
-.accordion-button{
+.accordion-button {
   text-align: left;
   font-size: 22px;
   font-weight: 500;
 }
 
-div.menu{
-  
-  margin: 5% 10%;
-  background: transparent;
+#contact {
+  background-color: rgb(204, 29, 181);
+  color: white;
+}
+#contact {
+  background-color: rgb(247, 10, 215);
+  color: white;
 }
