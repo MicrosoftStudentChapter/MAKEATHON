@@ -24,7 +24,7 @@
 
 
 ## LICENSE
-This project is licensed under GNU General Public License- see [LICENSE.md](https://github.com/kumaraadarsh17/MAKEATHON/blob/main/LICENSE) for details.
+This project is licensed under GNU General Public License- see [LICENSE](./LICENSE) for details.
 
 ## Authors
 
