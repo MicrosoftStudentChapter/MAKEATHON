@@ -205,3 +205,9 @@ h1{
 .box:before,.box:after{
   background: linear-gradient(235deg,#EAAB48,#ED885B,#F24282,transparent,transparent,transparent,transparent,transparent,transparent,transparent,#F24282,#ED885B,#EAAB48);
 }
+
+@media screen and (max-width: 1350px){
+  .user-login-box{
+    font-size: 1.4rem;
+  }
+}
