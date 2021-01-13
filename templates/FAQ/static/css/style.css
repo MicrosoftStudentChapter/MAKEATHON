@@ -10,7 +10,7 @@ body {
 
 }
 .allcontent{
-  width: 80%;
+  width: 85%;
   margin: auto;
 }
 h1 {
@@ -24,7 +24,7 @@ h1 {
 .content {
   display: grid;
   grid-template-columns: 0.6fr 2fr;
-  grid-gap: 1.5rem;
+  grid-gap: 2rem;
 }
 .categories a {
   text-decoration: none;
@@ -131,7 +131,7 @@ h2 {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(94, 110, 141, 0);
+  background-color: rgba(94, 110, 141, 0.103);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
@@ -190,4 +190,24 @@ h2 {
   margin: 0.75rem 0rem;
   border-radius: 0.75rem;
   border: none;
+}
+.dropdown{
+  display: none;
+  text-align: left;
+  margin: 30px 0px;
+}
+.btn {
+  background-color: #f24385;
+}
+
+@media (max-width:1000px){
+  .menu{
+      display: none;
+  }
+  .content{
+    display: block;
+  }
+  .dropdown{
+    display: block;
+  }
 }
