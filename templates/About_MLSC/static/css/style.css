@@ -27,8 +27,10 @@ h1{
   font-weight: normal;
 
   /* Gotta make this responsive */
+
   font-size: 112px;
   line-height: 134px;
+
 
   background: linear-gradient(#EAAB48, #ED885B, #F24282);
   -webkit-text-fill-color: transparent;
