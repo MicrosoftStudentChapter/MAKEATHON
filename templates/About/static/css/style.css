@@ -16,8 +16,10 @@ header{
   grid-column-start: 6;
   grid-column-end: 13;
 
-  grid-row-start: 1;
+  grid-row-start: 2;
   grid-row-end: 4;
+
+  margin-top: -3vh;
 }
 
 h1{
@@ -53,8 +55,8 @@ h1{
 
 
 #left-content{
-  grid-column-start: 1;
-  grid-column-end: 6;
+  grid-column-start: 8;
+  grid-column-end: 13;
 
   grid-row-start: 4;
   grid-row-end: 13;
@@ -104,9 +106,13 @@ h1{
 
 
 
+.blurred-box, .box {
+  margin-left: 10vw;
+}
+
 .blurred-box{  
-  grid-column-start: 6;
-  grid-column-end: 13;
+  grid-column-start: 1;
+  grid-column-end: 8;
 
   grid-row-start: 4;
   grid-row-end: 13;
@@ -126,8 +132,8 @@ h1{
 }
 
  .box{
-  grid-column-start: 6;
-  grid-column-end: 13;
+  grid-column-start: 1;
+  grid-column-end: 8;
 
   grid-row-start: 4;
   grid-row-end: 13;
