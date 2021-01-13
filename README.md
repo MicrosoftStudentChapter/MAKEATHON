@@ -3,6 +3,14 @@
 ![Makeathon logo](./assets/makeathon3077.png "MAKEATHON 3077")
 
 ## Index
+1. [About MAKEATHON](#about-makeathon)
+2. [About MLSC](#about-mlsc)
+3. [Features](#features)
+4. [Tech](#tech)
+5. [LICENSE](#license)
+6. [Authors](#authors)
+7. [Contributors](#contributors)
+
 
 ## About MAKEATHON
 
@@ -30,4 +38,3 @@ This project is licensed under GNU General Public License- see [LICENSE](./LICEN
 
 
 ## Contributors
-
