@@ -13,13 +13,11 @@ body{
 }
 
 header{
-  grid-column-start: 6;
+  grid-column-start: 1;
   grid-column-end: 13;
 
-  grid-row-start: 2;
+  grid-row-start: 1;
   grid-row-end: 4;
-
-  margin-top: -3vh;
 }
 
 h1{
@@ -55,8 +53,8 @@ h1{
 
 
 #left-content{
-  grid-column-start: 8;
-  grid-column-end: 13;
+  grid-column-start: 1;
+  grid-column-end: 6;
 
   grid-row-start: 4;
   grid-row-end: 13;
@@ -106,13 +104,9 @@ h1{
 
 
 
-.blurred-box, .box {
-  margin-left: 10vw;
-}
-
 .blurred-box{  
-  grid-column-start: 1;
-  grid-column-end: 8;
+  grid-column-start: 6;
+  grid-column-end: 13;
 
   grid-row-start: 4;
   grid-row-end: 13;
@@ -132,8 +126,8 @@ h1{
 }
 
  .box{
-  grid-column-start: 1;
-  grid-column-end: 8;
+  grid-column-start: 6;
+  grid-column-end: 13;
 
   grid-row-start: 4;
   grid-row-end: 13;
@@ -159,7 +153,7 @@ h1{
   position: absolute;
   left: 0%;
   top: 0%;
-  background: rgba( 255, 255, 255, 0.20 );
+  background: rgba( 255, 255, 255, 0.15 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 20.0px );
   -webkit-backdrop-filter: blur( 20.0px );
@@ -349,7 +343,7 @@ h1{
 
 @media screen and (max-width: 500px){
   h1{
-    font-size: 3rem;
+    font-size: 2rem;
     margin-left: 0%;
     padding-left: 0%;
   }
@@ -411,9 +405,6 @@ h1{
     
 
   }
-
-
-
 
   #left-content{
 
