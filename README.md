@@ -3,6 +3,14 @@
 ![Makeathon logo](./assets/makeathon3077.png "MAKEATHON 3077")
 
 ## Index
+1. [About MAKEATHON](#about-makeathon)
+2. [About MLSC](#about-mlsc)
+3. [Features](#features)
+4. [Tech](#tech)
+5. [LICENSE](#license)
+6. [Authors](#authors)
+7. [Contributors](#contributors)
+
 
 ## About MAKEATHON
 
@@ -31,10 +39,9 @@
 - Travis CI
 
 ## LICENSE
-
+This project is licensed under GNU General Public License- see [LICENSE.md](https://github.com/kumaraadarsh17/MAKEATHON/blob/main/LICENSE) for details.
 
 ## Authors
 
 
 ## Contributors
-
