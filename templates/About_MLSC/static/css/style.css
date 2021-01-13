@@ -158,12 +158,13 @@ h1{
   backdrop-filter: blur( 20.0px );
   -webkit-backdrop-filter: blur( 20.0px );
   border-radius: 5%;
+  border: 2px solid transparent;
   
 }
  
  .content{
    position: relative;
-   padding: 6.93vh 6.93vh;
+   padding: 4vh;
    text-align: left;
    z-index: 5;
    display: inline-block;
@@ -171,7 +172,6 @@ h1{
    color: white;
    font-size: 3.22vh;
    border-radius: 5%;
-   padding-bottom: 2vh;
  }
 
 
@@ -221,8 +221,7 @@ h1{
     width: 50vw;
     height: 40vh;
     font-size: 1.4rem;
-    padding-right: 10vw;
-    padding-bottom: 10vw;
+    padding: 2.5vw;
   }
   .box{
     width: 50vw;
