@@ -2,6 +2,12 @@
 
 ![Makeathon logo](./assets/makeathon3077.png "MAKEATHON 3077")
 
+[![GitHub issues](https://img.shields.io/github/issues/MicrosoftStudentChapter/MAKEATHON?color=%2315AA3E%20%20&style=for-the-badge)](https://github.com/MicrosoftStudentChapter/MAKEATHON/issues)
+[![GitHub forks](https://img.shields.io/github/forks/MicrosoftStudentChapter/MAKEATHON?color=%237A17E4%20%20&style=for-the-badge)](https://github.com/MicrosoftStudentChapter/MAKEATHON/network)
+![GitHub last commit](https://img.shields.io/github/last-commit/MicrosoftStudentChapter/MAKEATHON?color=%23F5700E%20%20&style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/MicrosoftStudentChapter/MAKEATHON?color=%23F50E50%20%20&style=for-the-badge)
+[![GitHub stars](https://img.shields.io/github/stars/MicrosoftStudentChapter/MAKEATHON?color=%23FDB827&style=for-the-badge)](https://github.com/MicrosoftStudentChapter/MAKEATHON/stargazers)
+
 ## Index
 1. [About MAKEATHON](#about-makeathon)
 2. [About MLSC](#about-mlsc)
