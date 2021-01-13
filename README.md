@@ -22,6 +22,13 @@
 
 ## Tech
 
+- Html
+- CSS
+- JavaScript
+- jQuery
+- Bootstrap
+- Django
+- Travis CI
 
 ## LICENSE
 
