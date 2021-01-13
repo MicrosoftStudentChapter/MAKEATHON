@@ -14,42 +14,42 @@ body {
   margin: auto;
 }
 h1 {
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.35);
   text-align: center;
   font-family: sans-serif;
-  font-size: 80px;
-  font-weight: 600px;
-  margin: 40px 0px;
+  font-size: 6rem;
+  font-weight: 50rem;
+  margin: 3rem 0rem;
 }
 .content {
   display: grid;
   grid-template-columns: 0.6fr 2fr;
-  grid-gap: 20px;
+  grid-gap: 1.5rem;
 }
-.categories a{
+.categories a {
   text-decoration: none;
   color: white;
 }
-.is-active{
+.is-active {
   background-color: rgba(223, 11, 11, 0.753);
 }
 .categories ul {
   list-style-type: none;
 }
 .categories li {
-  font-size: 22px;
+  font-size: 1.5rem;
   color: white;
   text-align: center;
-  padding: 15px 10px;
-  margin: 10px;
-  border-radius: 20px;
+  padding: 1rem 0.75rem;
+  margin: 0.75rem;
+  border-radius: 1.25rem;
 }
 .categories li:hover {
   background-color: rgba(255, 255, 255, 0.267);
 }
 .questions {
   background-color: rgba(255, 255, 255, 0);
-  border:none;
+  border: none;
   box-shadow: none;
 }
 .categories li:hover {
@@ -60,62 +60,58 @@ h1 {
   background-color: rgba(255, 255, 255, 0);
 }
 
-
-.accordion-item{
+.accordion-item {
   box-shadow: none;
-  border:none;
-
+  border: none;
 }
 
 .accordion-button {
   text-align: left;
-  font-size: 22px;
-  font-weight: 500;
-  background-color:rgba(255, 255, 255, 0) ;
-  color:white;
-  border:none;
+  font-size: 1.5rem;
+  font-weight: 30rem;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  border: none;
   box-shadow: none;
 }
 
-.accordion-button:active{
-  background-color:rgba(255, 255, 255, 0) ;
+.accordion-button:active {
+  background-color: rgba(255, 255, 255, 0);
 }
-.accordion-collapse{
-  border:none;
+.accordion-collapse {
+  border: none;
   box-shadow: none;
 }
 
-.accordion-body{
-  text-align:left;
-  font-size:16px;
-  color:white;
+.accordion-body {
+  text-align: left;
+  font-size: 1rem;
+  color: white;
 }
 
 #contact {
-  background-color: #F24385;
+  background-color: #f24385;
   color: white;
 }
-#btnOpenForm{
-
+#btnOpenForm {
   text-decoration: none;
-  background-color: #F24385;
+  background-color: #f24385;
   border: none;
   color: white;
 }
 
-
-.accordion{
-background: rgba(255, 255, 255, 0.123);
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
+.accordion {
+  background: rgba(255, 255, 255, 0.123);
+  box-shadow: 0 0.5rem 2rem 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.25rem);
+  -webkit-backdrop-filter: blur(0.25rem);
+  border-radius: 0.75rem;
 }
 
 /* form */
 
-h2{
-  color: #F24385;
+h2 {
+  color: #f24385;
 }
 
 .form-popup-bg {
@@ -152,31 +148,32 @@ h2{
   transition: opacity 0.3s 0s, visibility 0s 0s;
 }
 .form-container {
-  background-color: #110E2B;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: #110e2b;
+  border-radius: 1rem;
+  box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 700px;
+  max-width: 43.75rem;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  padding: 40px;
+  padding: 2.5rem;
   color: #fff;
 }
 .close-button {
   background: none;
   color: #fff;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   position: absolute;
   top: 0;
   right: 0;
-  border: solid 1px #fff;
+  border: solid 0.0625rem #fff;
 }
 .form-popup-bg:before {
-  content: '';
+  content: "";
   background-color: #fff;
   opacity: 0.25;
   position: absolute;
@@ -185,12 +182,12 @@ h2{
   right: 0;
   bottom: 0;
 }
-#submit{
-  font-size: 22px;
-  background-color: #F24385;
+#submit {
+  font-size: 1.375rem;
+  background-color: #f24385;
   color: white;
-  padding: 8px 20px;
-  margin: 10px 0px;
-  border-radius: 10px;
+  padding: 0.5rem 1.25rem;
+  margin: 0.75rem 0rem;
+  border-radius: 0.75rem;
   border: none;
 }
