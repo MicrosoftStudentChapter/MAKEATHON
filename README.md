@@ -44,4 +44,5 @@ This project is licensed under GNU General Public License- see [LICENSE](./LICEN
 ## Authors
 
 
-## Contributors
+## Contributor
+![Contributors](https://contrib.rocks/image?repo=MicrosoftStudentChapter/MAKEATHON "Our Contributors")
