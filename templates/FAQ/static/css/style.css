@@ -1,7 +1,11 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-image: linear-gradient(rgba(7, 7, 12, 0.37), rgba(17, 17, 10, 0.349)), url("../images/bg.png");
+  background-image: linear-gradient(
+      rgba(7, 7, 12, 0.37),
+      rgba(17, 17, 10, 0.349)
+    ),
+    url("../images/bg.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -9,11 +13,10 @@ body {
   height: 100vh;
   width: 100vw;
 }
-.couple{
+.couple {
   background-color: #ffffff14;
-
 }
-.allcontent{
+.allcontent {
   width: 85%;
   margin: auto;
 }
@@ -35,10 +38,11 @@ h1 {
   background-color: transparent;
   border: none;
   border-radius: 25px;
-  outline:none;
+  outline: none;
   padding: 0px 50px;
 }
-.categories button:hover,:visited {
+.categories button:hover,
+:visited {
   background-color: rgba(255, 255, 255, 0.24);
 }
 .categories ul {
@@ -190,18 +194,19 @@ h2 {
   border-radius: 0.75rem;
   border: none;
 }
-.dropdown{
+.dropdown {
   display: none;
   text-align: left;
   margin: 30px 0px;
 }
-.btn,:visited {
+.btn,
+:visited {
   background-color: #f24385;
   width: 200px;
   font-size: 1.2rem;
 }
 
-.dropdown-menu{
+.dropdown-menu {
   background-color: rgb(2, 1, 1);
 }
 
@@ -212,18 +217,17 @@ h2 {
   padding: 10px 0px;
 }
 
-.dropdown-menu li{
+.dropdown-menu li {
   margin: 20px 0px;
   width: 200px;
   text-align: center;
 }
 
-.contactmob{
+.contactmob {
   display: grid;
   margin-left: 5%;
-  
 }
-.contactmob button{
+.contactmob button {
   max-width: 10rem;
   margin: 20px 0px;
   padding: 10px 22px;
@@ -234,37 +238,34 @@ h2 {
   border: none;
 }
 
-@media (max-width:1100px){
-  .contactmob{
+@media (max-width: 1100px) {
+  .contactmob {
     display: block;
     margin: 0px 0px;
   }
-  .menu{
-      display: none;
+  .menu {
+    display: none;
   }
-  .content{
+  .content {
     display: block;
   }
-  .dropdown{
+  .dropdown {
     display: block;
   }
-
 }
 
-@media (max-width:760px){
-
-  .accordion-button{
+@media (max-width: 760px) {
+  .accordion-button {
     font-size: 1.2rem;
   }
-  
-  .accordion-body{
+
+  .accordion-body {
     font-size: 1rem;
   }
 }
 
-@media (max-width:530px){
-
-  .accordion-button{
+@media (max-width: 530px) {
+  .accordion-button {
     font-size: 1.1rem;
   }
 }
