@@ -25,13 +25,22 @@ Then you need git, if you don't have that yet, you can go to: [git](https://git-
 
 
 ## How to Submit Changes
-
+1. #### The First Step
+  - First things first, fork the MAKEATHON [repository](https://github.com/MicrosoftStudentChapter/MAKEATHON) into your own Github account, and create a local clone of it. This will be used to implement new features and fix bugs.
+  - Open this local repository on your personal computer and start implementing.
+  - UNDER ANY CIRCUMSTANCE DON'T WORK DIRECTLY ON THE MASTER BRANCH, but create a separate branch for each issue you are working on. That way you can easily switch between different work, and you can update each one for latest changes on upstream master individually
+2. #### The Second Step
+  - Go to the original remote repository and checkout the [issues tab](https://github.com/MicrosoftStudentChapter/MAKEATHON/issues) and comment on the issue want to work on.
+  - The issues will be assigned on first request basis by a maintainer.
+  
 
 ## How to Request Enhancements
 
 
 ## Style Guide
-
+All JavaScript has been linted with [Prettier](https://prettier.io).</br>
+Documentation styleguide invloves [Markdown](https://daringfireball.net/projects/markdown/).</br>
+Python is styled using [PEP8](https://www.python.org/dev/peps/pep-0008/).</br>
 
 ## Recognition Model
 
