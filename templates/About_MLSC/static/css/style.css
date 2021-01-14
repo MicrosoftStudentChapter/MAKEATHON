@@ -574,6 +574,40 @@ h1{
     }
 }
 
+/* iPhone 5/SE landscape */
+@media screen and (max-height:320px) and (min-height:320px) 
+  and (max-width: 568px) and (min-width: 568px){
+    .content{
+      font-size: 0.7rem;
+    }
+  
+    .list-item img{
+      margin-top: -6%;
+      margin-left: 2%;
+      margin-right: 4%;
+      margin-bottom: 6%;
+    }
+
+    h1{
+      margin-top: 0%;
+      font-size: 2.5rem;
+    }
+
+    .list-item p{
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+
+    #left-content{
+      margin-top: 10%;
+    }
+
+    .box, .blurred-box{
+      width: 50vw;
+      height: 47vh;
+      margin-top: -3%;
+    }
+}
 
 
 
