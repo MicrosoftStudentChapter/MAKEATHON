@@ -5,9 +5,6 @@ We here at MLSC heartly welcome to all the contributors.✨🎉
 The following is a set of guidelines for contributing to Mekeathon 3077 and its packages. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.🤝
 
 
-
-
-## Table of Contents
 ## Table of Contents
 1. [Dev Environment Details](#dev-environment-details)
 2. [How to Submit Changes](#how-to-submit-changes)
@@ -26,8 +23,6 @@ First, you'll need [Python ](https://www.python.org/downloads/release/python-391
 Secondly, you'll need [Django](https://pypi.org/project/Django/ "Django").
 
 Then you need git, if you don't have that yet, you can go to: [git](https://git-scm.com/ "git").
-
-
 
 
 ## How to Submit Changes
@@ -56,10 +51,8 @@ All JavaScript has been linted with [Prettier](https://prettier.io).</br>
 Documentation styleguide invloves [Markdown](https://daringfireball.net/projects/markdown/).</br>
 Python is styled using [PEP8](https://www.python.org/dev/peps/pep-0008/).</br>
 
-## Recognition Model
-
 
 ## Where Can I Ask for Help?
-We have a Discord Community where you can stay updated with our latest developments and active members willing to help if you have questions.
+We have a Discord Community where you can stay updated with our latest developments and active members willing to help you out if you have any questions.
 
 * [MLSC Discord](https://discord.gg/CpAPtDC)
