@@ -1,8 +1,10 @@
 body{
+  /* CSS Resets */
   padding: 0;
   margin: 0;
   width: 100vw;
   height: 100vh;
+
   background: url('../images/background-image.png') no-repeat fixed;
   background-size: 100% 100%;
 
@@ -33,7 +35,9 @@ h1{
   margin-left: 7%;
 }
 
-.glow {
+/* Code for glow effect on the header */
+
+/* .glow {
   -webkit-animation: glow 100000s ease-in-out infinite alternate;
   -moz-animation: glow 100000s ease-in-out infinite alternate;
   animation: glow 100000s ease-in-out infinite alternate;
@@ -43,7 +47,7 @@ h1{
   from {
     text-shadow: 0 0 5px #fc6039b0, 0 0 5px #da61429c;
   }
-}
+} */
 
 #left-content{
   grid-column-start: 1;
@@ -123,7 +127,7 @@ h1{
    text-align: left;
    z-index: 5;
    display: inline-block;
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Roboto', 'sans-serif';
    color: white;
    font-size: 3.22vh;
    border-radius: 6%;
@@ -583,6 +587,15 @@ h1{
     }
 }
 
+/* iPad Pro landscape modification */
+@media screen and (max-height:1024px) and (min-height:1024px) 
+  and (max-width: 1366px) and (min-width: 1366px){
+    #left-content{
+      padding-top: 40%;
+    }
+
+}
+
 /* iPhone 5/SE landscape */
 @media screen and (max-height:320px) and (min-height:320px) 
   and (max-width: 568px) and (min-width: 568px){
@@ -605,10 +618,11 @@ h1{
     .list-item p{
       font-size: 1rem;
       line-height: 1rem;
+      margin: 5%;g
     }
 
     #left-content{
-      margin-top: 10%;
+      margin-top: 5%;
     }
 
     .box, .blurred-box{
@@ -617,6 +631,8 @@ h1{
       margin-top: -3%;
     }
 }
+
+
 
 
 
