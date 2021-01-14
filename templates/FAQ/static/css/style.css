@@ -4,11 +4,15 @@ body {
   background-image: linear-gradient(rgba(7, 7, 12, 0.37), rgba(17, 17, 10, 0.349)), url("../images/bg.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
   height: 100vh;
   width: 100vw;
 }
+.couple{
+  background-color: #ffffff14;
 
+}
 .allcontent{
   width: 85%;
   margin: auto;
@@ -32,18 +36,17 @@ h1 {
   border: none;
   border-radius: 25px;
   outline:none;
-  
+  padding: 0px 50px;
 }
 .categories button:hover,:visited {
   background-color: rgba(255, 255, 255, 0.24);
-
 }
 .categories ul {
   list-style-type: none;
 }
 .categories li {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
   padding: 0.5rem 0.8rem;
   margin: 1rem 0rem;
@@ -192,21 +195,47 @@ h2 {
   text-align: left;
   margin: 30px 0px;
 }
-.btn {
+.btn,:visited {
   background-color: #f24385;
+  width: 200px;
+}
+
+.dropdown-menu{
+  background-color: rgba(2, 1, 1, 0.438);
 }
 
 .dropdown-menu li a{
   text-decoration: none;
   color: #f24385;
+  font-size: 20px;
 }
 
 .dropdown-menu li{
+  width: 200px;
   text-align: center;
+}
 
+.contactmob{
+  display: grid;
+  margin-left: 5%;
+  
+}
+.contactmob button{
+  max-width: 10rem;
+  margin: 20px 0px;
+  padding: 10px 22px;
+  background-color: #f24385;
+  color: white;
+  outline: none;
+  border-radius: 20px;
+  border: none;
 }
 
 @media (max-width:1100px){
+  .contactmob{
+    display: block;
+    margin: 0px 0px;
+  }
   .menu{
       display: none;
   }
@@ -216,6 +245,7 @@ h2 {
   .dropdown{
     display: block;
   }
+
 }
 
 @media (max-width:760px){
