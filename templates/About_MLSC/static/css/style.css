@@ -490,3 +490,44 @@ h1{
       font-size: 1rem;
     }
   }
+
+  /* iPad portrait */
+  @media screen and (max-height:1024px) and (min-height:1024px) 
+    and (max-width: 768px) and (min-width: 768px){
+      .content{
+        width: 50vw;
+        height: 40vh;
+        font-size: 1.09rem;
+        margin-top: 3vh;
+        margin-left: 1.2vh;
+        padding: 2vw;
+      }
+    
+      .box{
+        width: 50vw;
+        height: 40vh;
+      }
+
+      .blurred-box, .box{
+        margin-top : -20%;
+      }
+    
+      .list-item p{
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin-bottom: 10%;
+        margin-left: 3%; 
+      }
+
+      #left-content{
+        margin-top: 12%;
+      }
+
+      h1{
+        margin-top: 10%;
+        font-size: 5rem;
+      }
+      
+     
+  
+  }
