@@ -30,6 +30,6 @@ The following is a set of guidelines for contributing to Mekeathon 3077 and its 
 
 ## Where Can I Ask for Help?
 
-We have a Discord Community where you can stay updated with our latest developments and active members willing to help if you have questions.
+We have a Discord Community where you can stay updated with our latest developments and active members willing to help you out if you have any questions.
 
 * [MLSC Discord](https://discord.gg/CpAPtDC)
