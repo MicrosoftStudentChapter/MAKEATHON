@@ -16,12 +16,9 @@
 4. [Tech](#tech)
 5. [LICENSE](#license)
 6. [Contributing](#contributing)
-7. [Authors](#authors)
-8. [Contributors](#contributors)
-
+7. [Contributors](#contributors)
 
 ## About MAKEATHON
-
 **Makeathon 3077**- the paradigmatic **Hackathon** of Thapar Institute of Engineering and Technology,is one of MLSC's superlative flagship events. A **36 hour** event for students to challenge their technical boundaries by learning the latest technologies, procuring solutions, and developing fun projects. The event intends to bring together astute and industrious students from various colleges for a ravishing technical journey consisting of pre-event workshops and a Bootcamp.
 
 ## About MLSC
@@ -49,8 +46,6 @@ This project is licensed under GNU General Public License- see [LICENSE](./LICEN
 ## Contributing
 Contributions are always welcome! Please see our [Contributing Guide](./CONTRIBUTING.md) for more details.
 
-## Authors
-
-
 ## Contributors
 ![Contributors](https://contrib.rocks/image?repo=MicrosoftStudentChapter/MAKEATHON "Our Contributors")
+
