@@ -259,7 +259,8 @@ h1{
     width: 50vw;
     height: 40vh;
     font-size: 1.09rem;
-    padding: 1.3vw;}
+    padding: 1.3vw;
+  }
 
   .box{
     width: 50vw;
@@ -442,92 +443,132 @@ h1{
   }    
 }
 
-  @media screen and (max-height:400px) and (max-width:780px){
-    .content{
-      font-size: 0.79rem;
-    }
-
-    .list-item img{
-      margin-top: -6%;
-      margin-left: 2%;
-      margin-right: 4%;
-      margin-bottom: 6%;
-    }
+@media screen and (max-height:400px) and (max-width:780px){
+  .content{
+    font-size: 0.79rem;
   }
 
-  @media screen and (max-height:300px) and (max-width:660px){
+  .list-item img{
+    margin-top: -6%;
+    margin-left: 2%;
+    margin-right: 4%;
+    margin-bottom: 6%;
+  }
+}
+
+@media screen and (max-height:300px) and (max-width:660px){
+  .content{
+    font-size: 0.69rem;
+  }
+
+  h1{
+    margin-top: -2%;
+    font-size: 3.6rem;
+  }
+
+  .list-item img{
+    margin-top: -6%;
+    margin-left: 2%;
+    margin-right: 4%;
+    margin-bottom: 6%;
+  }
+
+  .blurred-box{  
+    top: 30%;
+    left: 1%;
+  }
+  
+    .box{
+    top: 30%;
+    left: 1%;
+    }
+
+  #left-content{
+    margin-top: 2rem;
+    padding-left: 0%;
+    padding-top: 5%;
+    margin-left: 8%;
+    font-size: 1rem;
+  }
+}
+
+/* iPad portrait */
+@media screen and (max-height:1024px) and (min-height:1024px) 
+  and (max-width: 768px) and (min-width: 768px){
     .content{
-      font-size: 0.69rem;
+      width: 50vw;
+      height: 40vh;
+      font-size: 1.09rem;
+      margin-top: 3vh;
+      margin-left: 1.2vh;
+      padding: 2vw;
+    }
+  
+    .box{
+      width: 50vw;
+      height: 40vh;
+    }
+
+    .blurred-box, .box{
+      margin-top : -20%;
+    }
+  
+    .list-item p{
+      font-size: 1.8rem;
+      line-height: 2rem;
+      margin-bottom: 10%;
+      margin-left: 3%; 
+    }
+
+    #left-content{
+      margin-top: 12%;
     }
 
     h1{
-      margin-top: -2%;
-      font-size: 3.6rem;
+      margin-top: 10%;
+      font-size: 5rem;
+    }
+}
+
+/* iPad Pro portrait */
+@media screen and (max-height:1366px) and (min-height:1366px) 
+  and (max-width: 1024px) and (min-width: 1024px){
+    .content{
+      width: 50vw;
+      height: 40vh;
+      font-size: 1.5rem;
+      margin-top: 3vh;
+      margin-left: 1.2vh;
+      padding: 2vw;
+    }
+  
+    .box, .blurred-box{
+      width: 50vw;
+      height: 50vh;
     }
 
-    .list-item img{
-      margin-top: -6%;
-      margin-left: 2%;
-      margin-right: 4%;
-      margin-bottom: 6%;
+    .blurred-box, .box{
+      margin-top : -20%;
+      margin-left: 5%;
     }
-
-    .blurred-box{  
-      top: 30%;
-      left: 1%;
+  
+    .list-item p{
+      font-size: 2.8rem;
+      line-height: 2.2rem;
+      margin-bottom: 10%;
+      margin-left: 3%; 
     }
-    
-     .box{
-      top: 30%;
-      left: 1%;
-     }
 
     #left-content{
-      margin-top: 2rem;
-      padding-left: 0%;
-      padding-top: 5%;
-      margin-left: 8%;
-      font-size: 1rem;
+      margin-top: 30%;
     }
-  }
 
-  /* iPad portrait */
-  @media screen and (max-height:1024px) and (min-height:1024px) 
-    and (max-width: 768px) and (min-width: 768px){
-      .content{
-        width: 50vw;
-        height: 40vh;
-        font-size: 1.09rem;
-        margin-top: 3vh;
-        margin-left: 1.2vh;
-        padding: 2vw;
-      }
-    
-      .box{
-        width: 50vw;
-        height: 40vh;
-      }
+    h1{
+      margin-top: 10%;
+      font-size: rem;
+    }
+}
 
-      .blurred-box, .box{
-        margin-top : -20%;
-      }
-    
-      .list-item p{
-        font-size: 1.8rem;
-        line-height: 2rem;
-        margin-bottom: 10%;
-        margin-left: 3%; 
-      }
 
-      #left-content{
-        margin-top: 12%;
-      }
 
-      h1{
-        margin-top: 10%;
-        font-size: 5rem;
-      }
-      
-     
-  
-  }
+
