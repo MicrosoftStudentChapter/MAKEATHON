@@ -255,6 +255,11 @@ h1{
 }
 
 @media screen and (max-width: 780px){
+  body{
+    background-size: cover;
+    background-position: center;
+  }
+
   .content{
     width: 50vw;
     height: 40vh;
@@ -568,6 +573,8 @@ h1{
       font-size: rem;
     }
 }
+
+
 
 
 
