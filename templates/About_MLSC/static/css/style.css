@@ -33,7 +33,7 @@ h1{
   margin-left: 7%;
 }
 
-/* .glow {
+.glow {
   -webkit-animation: glow 100000s ease-in-out infinite alternate;
   -moz-animation: glow 100000s ease-in-out infinite alternate;
   animation: glow 100000s ease-in-out infinite alternate;
@@ -43,7 +43,7 @@ h1{
   from {
     text-shadow: 0 0 5px #fc6039b0, 0 0 5px #da61429c;
   }
-} */
+}
 
 #left-content{
   grid-column-start: 1;
