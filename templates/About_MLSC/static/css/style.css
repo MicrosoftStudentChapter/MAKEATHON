@@ -459,6 +459,15 @@ h1{
     margin-right: 4%;
     margin-bottom: 6%;
   }
+
+  h1{
+    font-size: 3.4rem;
+    margin-top: 0%;
+  }
+
+  #left-content p{
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-height:300px) and (max-width:660px){
