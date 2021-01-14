@@ -29,7 +29,9 @@ The following is a set of guidelines for contributing to Mekeathon 3077 and its 
 
 
 ## Style Guide
-
+All JavaScript has been linted with [Prettier](https://prettier.io).</br>
+Documentation styleguide invloves [Markdown](https://daringfireball.net/projects/markdown/).</br>
+Python is styled using [PEP8](https://www.python.org/dev/peps/pep-0008/).</br>
 
 ## Where Can I Ask for Help?
 
