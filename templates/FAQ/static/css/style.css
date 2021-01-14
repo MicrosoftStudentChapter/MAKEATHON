@@ -210,7 +210,7 @@ h2 {
   background-color: rgb(2, 1, 1);
 }
 
-.dropdown-menu li {
+.dropdown-menu li a{
   text-decoration: none;
   color: #f24385;
   font-size: 20px;
@@ -218,6 +218,10 @@ h2 {
 }
 
 .dropdown-menu li {
+  text-decoration: none;
+  color: #f24385;
+  font-size: 20px;
+  padding: 10px 0px;
   margin: 20px 0px;
   width: 200px;
   text-align: center;
