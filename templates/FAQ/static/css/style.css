@@ -198,19 +198,22 @@ h2 {
 .btn,:visited {
   background-color: #f24385;
   width: 200px;
+  font-size: 1.2rem;
 }
 
 .dropdown-menu{
-  background-color: rgba(2, 1, 1, 0.438);
+  background-color: rgb(2, 1, 1);
 }
 
-.dropdown-menu li a{
+.dropdown-menu li {
   text-decoration: none;
   color: #f24385;
   font-size: 20px;
+  padding: 10px 0px;
 }
 
 .dropdown-menu li{
+  margin: 20px 0px;
   width: 200px;
   text-align: center;
 }
