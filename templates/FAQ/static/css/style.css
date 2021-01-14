@@ -1,14 +1,14 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-image: linear-gradient(rgba(7, 7, 12, 0.5), rgba(17, 17, 10, 0.5)), url("../images/bg.png");
+  background-image: linear-gradient(rgba(7, 7, 12, 0.37), rgba(17, 17, 10, 0.349)), url("../images/bg.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
   height: 100vh;
   width: 100vw;
-
 }
+
 .allcontent{
   width: 85%;
   margin: auto;
@@ -26,38 +26,33 @@ h1 {
   grid-template-columns: 0.6fr 2fr;
   grid-gap: 2rem;
 }
-.categories a {
+.categories button {
   text-decoration: none;
-  color: white;
+  background-color: transparent;
+  border: none;
+  border-radius: 25px;
+  outline:none;
+  
 }
-.is-active {
-  background-color: rgba(223, 11, 11, 0.753);
+.categories button:hover,:visited {
+  background-color: rgba(255, 255, 255, 0.24);
+
 }
 .categories ul {
   list-style-type: none;
 }
 .categories li {
-  font-size: 1.5rem;
   color: white;
+  font-size: 1.5rem;
   text-align: center;
-  padding: 1rem 0.75rem;
-  margin: 0.75rem;
-  border-radius: 1.25rem;
-}
-.categories li:hover {
-  background-color: rgba(255, 255, 255, 0.267);
-}
-.questions {
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
-  box-shadow: none;
-}
-.categories li:hover {
-  background-color: rgba(255, 255, 255, 0.267);
+  padding: 0.5rem 0.8rem;
+  margin: 1rem 0rem;
 }
 
 .questions {
   background-color: rgba(255, 255, 255, 0);
+  border: none;
+  box-shadow: none;
 }
 
 .accordion-item {
@@ -85,13 +80,14 @@ h1 {
 
 .accordion-body {
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: white;
 }
 
 #contact {
   background-color: #f24385;
   color: white;
+  border-radius: 20px;
 }
 #btnOpenForm {
   text-decoration: none;
@@ -200,6 +196,16 @@ h2 {
   background-color: #f24385;
 }
 
+.dropdown-menu li a{
+  text-decoration: none;
+  color: #f24385;
+}
+
+.dropdown-menu li{
+  text-align: center;
+
+}
+
 @media (max-width:1100px){
   .menu{
       display: none;
@@ -209,5 +215,23 @@ h2 {
   }
   .dropdown{
     display: block;
+  }
+}
+
+@media (max-width:760px){
+
+  .accordion-button{
+    font-size: 1.2rem;
+  }
+  
+  .accordion-body{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:530px){
+
+  .accordion-button{
+    font-size: 1.1rem;
   }
 }

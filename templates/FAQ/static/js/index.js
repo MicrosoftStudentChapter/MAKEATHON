@@ -2,26 +2,18 @@ $(document).ready(function () {
   $(".targetDiv").hide();
   $("#div1").show();
   $(".Single1").click(function () {
-    $(".categories a").css("background-color", "red");
-    $(".Single1").css("color", "blue");
     $(".targetDiv").hide();
     $("#div1").show();
   });
   $(".Single2").click(function () {
-    $(".categories a").css("background-color", "red");
-    $(".Single2").css("background-color", "blue");
     $(".targetDiv").hide();
     $("#div2").show();
   });
   $(".Single3").click(function () {
-    $(".categories a").css("background-color", "red");
-    $(".Single3").css("background-color", "blue");
     $(".targetDiv").hide();
     $("#div3").show();
   });
   $(".Single4").click(function () {
-    $(".categories a").css("background-color", "red");
-    $(".Single4").css("background-color", "blue");
     $(".targetDiv").hide();
     $("#div4").show();
   });
