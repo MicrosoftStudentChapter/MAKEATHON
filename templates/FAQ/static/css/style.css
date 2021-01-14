@@ -26,6 +26,50 @@ h1 {
   grid-template-columns: 0.6fr 2fr;
   grid-gap: 2rem;
 }
+
+.dropdown{
+  appearance: none;
+  display: inline-block;
+  position: relative;
+  
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  font-size: 16px;
+  font-weight: solid;
+  text-align: center;
+  background-color:rgba(0, 0, 0, 0.904);
+  width: 200px;  
+  border-radius:2.5%;
+  
+}
+
+.dropdown-menu li{
+  list-style:none;
+  display:block;
+  margin:5px 5px;
+  padding: 5px 5px;  
+  text-align: center;
+
+}
+
+.dropdown-menu li:hover{
+  background-color: rgba(61, 61, 61, 0.904);
+  border-radius: 1.5em;
+}
+
+.dropdown-menu li a{
+  text-decoration:none;
+  color:white;
+}
+
+.dropdown-menu li:hover a{
+    color:#f24385;
+}
+
+
 .categories a {
   text-decoration: none;
   color: white;
