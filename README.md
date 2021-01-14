@@ -47,7 +47,7 @@
 This project is licensed under GNU General Public License- see [LICENSE](./LICENSE) for details.
 
 ## Contributing
-Contributions are always welcome! Please see our [Contributing Guide](./CONTRIBUTIONS.md) for more details.
+Contributions are always welcome! Please see our [Contributing Guide](./CONTRIBUTING.md) for more details.
 
 ## Authors
 
