@@ -8,6 +8,12 @@ The following is a set of guidelines for contributing to Mekeathon 3077 and its 
 
 
 ## Table of Contents
+## Table of Contents
+1. [Dev Environment Details](#dev-environment-details)
+2. [How to Submit Changes](#how-to-submit-changes)
+3. [How to Request Enhancements](#how-to-request-enhancements)
+4. [Style Guide](#style-guide)
+5. [Where Can I Ask for Help?](#where-can-i-ask-for-help)
 
 
 ## Dev Environment Details
@@ -54,3 +60,6 @@ Python is styled using [PEP8](https://www.python.org/dev/peps/pep-0008/).</br>
 
 
 ## Where Can I Ask for Help?
+We have a Discord Community where you can stay updated with our latest developments and active members willing to help if you have questions.
+
+* [MLSC Discord](https://discord.gg/CpAPtDC)
