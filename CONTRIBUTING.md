@@ -8,9 +8,8 @@ The following is a set of guidelines for contributing to Mekeathon 3077 and its 
 ## Table of Contents
 1. [Dev Environment Details](#dev-environment-details)
 2. [How to Submit Changes](#how-to-submit-changes)
-3. [How to Request Enhancements](#how-to-request-enhancements)
-4. [Style Guide](#style-guide)
-5. [Where Can I Ask for Help?](#where-can-i-ask-for-help)
+3. [Style Guide](#style-guide)
+4. [Where Can I Ask for Help?](#where-can-i-ask-for-help)
 
 
 ## Dev Environment Details
