@@ -1,5 +1,19 @@
-body{
+html{
     background-image: url(https://i.postimg.cc/vHTjxk7G/tracksbg.jpg);
     background-size: cover;
-    height: 100%;
+    background-repeat: no-repeat;
+ 
+}
+.b1{
+    margin:10% 50% 10% 0%;
+    width: 80%; 
+    height: 30px; 
+    background-color: rgb(216, 34, 240); 
+    float:left;
+
+}  width: 30%; 
+    height: 30px;
+    background-color: rgb(216, 34, 240); 
+    transform:rotate(-130deg);
+    margin:10% 2% 0%
 }
