@@ -1,19 +1,101 @@
 html{
     background-image: url(https://i.postimg.cc/vHTjxk7G/tracksbg.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    height:100vh;
+    width:100vw;
  
 }
-.b1{
-    margin:10% 50% 10% 0%;
-    width: 80%; 
-    height: 30px; 
-    background-color: rgb(216, 34, 240); 
-    float:left;
+.body{
+    height:100vh;
+    width:100vw;
 
-}  width: 30%; 
-    height: 30px;
-    background-color: rgb(216, 34, 240); 
-    transform:rotate(-130deg);
-    margin:10% 2% 0%
+}
+.b1{
+    background-color: rgb(235, 20, 199);
+    width:85vw;
+    height:3vh;
+    margin:8% 0% 0% 0%;
+}
+b2{
+    background-color: rgb(235, 20, 199);
+    width:10vw;
+    height:3vh;
+    transform: rotate(-130deg);
+    float:right;
+    margin:1.8% 6.9% 0% 0%;
+
+}
+.arrow {
+    margin:0vh 10vw 0 0;
+    float:right;
+    border: solid rgb(235, 20, 199);
+    border-width: 0 3vh 3vh 0;
+    padding: 7vh;
+    transform: rotate(-45deg);
+}
+
+.b4{
+    position:absolute;
+    background-color: rgb(235, 20, 199);
+    width:70%;
+    height:3vh;
+    margin:16vh 0% 0% 10vw;
+}
+.boxes{
+    height:100vh;
+    width:100vw;
+}
+
+.box1{
+    margin:100px;
+    width:12vw;
+    height:10vh;
+    border-radius:2vh;
+    border:5vw;
+    padding:1vw;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(10px);
+    
+}
+
+.box2{
+    margin:100px;
+    width:10vw;
+    height:2.5vh;
+    position: relative;
+    border-radius:2vh;
+    border:5vw white;
+    padding:5vw;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(10px);
+    
+}
+
+.box3{
+    margin:100px;
+    width:10vw;
+    height:2.5vh;
+    position: relative;
+    border-radius:2vh;
+    border:5vw white;
+    padding:5vw;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(10px);
+    
+}
+
+.box4{
+    margin:100px;
+    width:10vw;
+    height:2.5vh;
+    position: relative;
+    border-radius:2vh;
+    border:5vw white;
+    padding:5vw;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(10px);
+    
 }
