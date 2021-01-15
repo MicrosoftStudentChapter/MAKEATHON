@@ -19,16 +19,58 @@ html{
     height:3vh;
     margin:8% 0% 0% 0%;
 }
-b2{
-    background-color: rgb(235, 20, 199);
-    width:10vw;
-    height:3vh;
-    transform: rotate(-130deg);
-    float:right;
-    margin:1.8% 6.9% 0% 0%;
+.b1.loader{
+        max-width: 85vw;
+        margin: 0 auto;
+      }
+      
+      .loader {
+        height: 3vh;
+        background-color: rgb(235, 20, 199);
+        position: relative;
+      }
+      .loader span {
+          
+        position: absolute;
+        display: block;
+        width:25vw;
+        height:3vh;
+        box-shadow: rgb(235, 20, 199) 0 0 15px;
+        animation: animate 2s infinite ease-in-out;
+        opacity: 0;
+      }
+      .loader span:nth-child(1) {
+        animation-delay: 0s;
+      }
+      
+      
+      @keyframes animate {
+        0% {
+          left: 0;
+          opacity: 0;
+        }
+        10% {
+          opacity: 0;
+          left: 0;
+        }
+        20% {
+          opacity: 1;
+        }
+        80% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 0;
+          left: calc(100% - 25vw);
+        }
+        100% {
+          opacity: 0;
+          left: calc(100% - 25vw);
+        }
+      }
 
-}
-.arrow {
+
+.arrow1{
     margin:0vh 10vw 0 0;
     float:right;
     border: solid rgb(235, 20, 199);
@@ -37,18 +79,63 @@ b2{
     transform: rotate(-45deg);
 }
 
-.b4{
+.b2{
     position:absolute;
     background-color: rgb(235, 20, 199);
     width:70%;
     height:3vh;
     margin:16vh 0% 0% 10vw;
 }
-.boxes{
-    height:100vh;
-    width:100vw;
-}
 
+.b2.loader{
+    max-width: 85vw;
+    margin: 0 auto;
+  }
+  
+  .loader {
+    height: 3vh;
+    background-color: rgb(235, 20, 199);
+    position: relative;
+  }
+  .loader span {
+      
+    position: absolute;
+    display: block;
+    width:25vw;
+    height:3vh;
+    box-shadow: rgb(235, 20, 199) 0 0 15px;
+    animation: animate 2s infinite ease-in-out;
+    opacity: 0;
+  }
+  .loader span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  
+  @keyframes animate {
+    0% {
+      left: 0;
+      opacity: 0;
+    }
+    10% {
+      opacity: 0;
+      left: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 0;
+      left: calc(100% - 25vw);
+    }
+    100% {
+      opacity: 0;
+      left: calc(100% - 25vw);
+    }
+  }
 .box1{
     margin:100px;
     width:12vw;
@@ -62,39 +149,36 @@ b2{
 }
 
 .box2{
-    margin:100px;
-    width:10vw;
-    height:2.5vh;
-    position: relative;
+    margin:200px;
+    width:12vw;
+    height:10vh;
     border-radius:2vh;
-    border:5vw white;
-    padding:5vw;
+    border:5vw;
+    padding:1vw;
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(10px);
     
 }
 
 .box3{
-    margin:100px;
-    width:10vw;
-    height:2.5vh;
-    position: relative;
+    margin:300px;
+    width:12vw;
+    height:10vh;
     border-radius:2vh;
-    border:5vw white;
-    padding:5vw;
+    border:5vw;
+    padding:1vw;
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(10px);
     
 }
 
 .box4{
-    margin:100px;
-    width:10vw;
-    height:2.5vh;
-    position: relative;
+    margin:400px;
+    width:12vw;
+    height:10vh;
     border-radius:2vh;
-    border:5vw white;
-    padding:5vw;
+    border:5vw;
+    padding:1vw;
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(10px);
     
