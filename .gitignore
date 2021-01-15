@@ -133,3 +133,7 @@ templates/template.html
 templates/template.css
 templates/makeTemplate.sh
 
+# IDE Specific settings
+.idea/
+.vscode/
+
