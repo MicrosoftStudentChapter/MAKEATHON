@@ -18,10 +18,23 @@ Start small. The PRs most likely to be merged are the ones that make small, easi
 
 It's a good idea to gauge interest in your intended work by finding the current issue for it or creating a new one yourself. Once you've spent a little bit of time planning your solution, it's a good idea to go back to the issue and talk about your approach.
 ### Developer Setup
-First, you'll need [Python ](https://www.python.org/downloads/release/python-391/ "Python version 3.9.1") which matches our current version i.e. 3.9.1.
-Secondly, you'll need [Django](https://pypi.org/project/Django/ "Django").
-
-Then you need git, if you don't have that yet, you can go to: [git](https://git-scm.com/ "git").
+- Fork and clone the repository.
+- Navigate into the directory and add upstream URL
+- Install [Pipenv](https://pypi.org/project/pipenv/)
+- Create a `.env` file in the root directory and paste the contents of `.env.example` with the necessary changes.
+- Open a terminal window and run the following commands:
+```
+pipenv install
+pre-commit install
+```
+- This will setup the project requirements. You can run the following commands and start the server
+```
+python manage.py runserver
+```
+- You can optionally migrate the database by using the following command:
+```
+python manage.py migrate
+```
 
 
 ## How to Submit Changes
