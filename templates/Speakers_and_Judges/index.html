@@ -1,30 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Meta -->
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <!-- Meta -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- Titile -->
-		<title>Speakers and Judges | Makeathon 3077</title>
+        <!-- Titile -->
+        <title>Speakers and Judges | Makeathon 3077</title>
 
-		<!-- Style -->
+        <!-- Style -->
 
-		<!-- Bootstrap 5 -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-			crossorigin="anonymous"
-		/>
+        <!-- Bootstrap 5 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+            crossorigin="anonymous"
+        />
 
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="../static/css/style.css" type="text/css" />
-	</head>
-	<body>
-		<!-- Start Your Code Here, Have Fun. -->
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./static/css/style.css" type="text/css" />
+    </head>
+    <body>
+        <!-- Start Your Code Here, Have Fun. -->
 
+        <div class="speaker">
+            <!-- <img src="./static/images/image12.png" class="back-img"> -->
 
+            <button class="button" onclick="showSpeakersAndHideJudges()">
+                Speakers
+            </button>
+
+            <button class="button2" onclick="showJudgesAndHideSpeakers()">
+                Judges
+            </button>
+
+            <!--***************SPEAKERS********************8-->
+
+            <div class="wrapper" id="speakers">
+                <h1 class="header">Speakers</h1>
+                <div class="person">
+                    <a href="javascript:showInfoAndHideCards()">
+                        <img src="./static/images/img1.png" class="imgperson" />
+                    </a>
+
+                    <div class="cards">
+                        <div class="icon">
+                            <a
+                                href="https://www.instagram.com/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/insta.png"
+                                    class="insta"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/link.png"
+                                    class="link"
+                                />
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img src="./static/images/git.png" class="git"
+                            /></a>
+                        </div>
+                    </div>
+                    <h5 class="title">AMMAN DHATTARWAL</h5>
+                </div>
+
+                <div class="person">
+                    <a href="javascript:showInfoAndHideCards()">
+                        <img src="./static/images/img2.png" class="imgperson"
+                    /></a>
+
+                    <div class="cards">
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/insta.png"
+                                    class="insta"
+                                />
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/link.png"
+                                    class="link"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img src="./static/images/git.png" class="git"
+                            /></a>
+                        </div>
+                    </div>
+                    <h5 class="title">AMMAN DHATTARWAL</h5>
+                </div>
+
+                <div class="person">
+                    <a href="javascript:showInfoAndHideCards()">
+                        <img src="./static/images/img1.png" class="imgperson" />
+                    </a>
+
+                    <div class="cards">
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/insta.png"
+                                    class="insta"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/link.png"
+                                    class="link"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img src="./static/images/git.png" class="git"
+                            /></a>
+                        </div>
+                    </div>
+                    <h5 class="title">AMMAN DHATTARWAL</h5>
+                </div>
+
+                <div class="person">
+                    <a href="javascript:showInfoAndHideCards()"
+                        ><img src="./static/images/img3.png" class="imgperson"
+                    /></a>
+
+                    <div class="cards">
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/insta.png"
+                                    class="insta"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/link.png"
+                                    class="link"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img src="./static/images/git.png" class="git"
+                            /></a>
+                        </div>
+                    </div>
+                    <h5 class="title">AMMAN DHATTARWAL</h5>
+                </div>
+
+                <div class="person">
+                    <a href="javascript:showInfoAndHideCards()"
+                        ><img src="./static/images/img2.png" class="imgperson"
+                    /></a>
+
+                    <div class="cards">
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/insta.png"
+                                    class="insta"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/link.png"
+                                    class="link"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img src="./static/images/git.png" class="git"
+                            /></a>
+                        </div>
+                    </div>
+                    <h5 class="title">AMMAN DHATTARWAL</h5>
+                </div>
+
+                <div class="person">
+                    <a href="javascript:showInfoAndHideCards()">
+                        <img src="./static/images/img3.png" class="imgperson"
+                    /></a>
+
+                    <div class="cards">
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/insta.png"
+                                    class="insta"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/link.png"
+                                    class="link"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img src="./static/images/git.png" class="git"
+                            /></a>
+                        </div>
+                    </div>
+                    <h5 class="title">AMMAN DHATTARWAL</h5>
+                </div>
+            </div>
+
+            <!------------JUDGES------------>
+
+            <div class="wrapper" id="judges" style="display: none">
+                <h1 class="header">Judges</h1>
+
+                <div class="person">
+                    <a href="javascript:showJudgeAndHideInfo()"
+                        ><img src="./static/images/img3.png" class="imgperson"
+                    /></a>
+
+                    <div class="cards">
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/insta.png"
+                                    class="insta"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/link.png"
+                                    class="link"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img src="./static/images/git.png" class="git"
+                            /></a>
+                        </div>
+                    </div>
+                    <h5 class="title">ELON MUSK</h5>
+                </div>
+
+                <div class="person">
+                    <a href="javascript:showJudgeAndHideInfo()"
+                        ><img src="./static/images/img3.png" class="imgperson"
+                    /></a>
+
+                    <div class="cards">
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/insta.png"
+                                    class="insta"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/link.png"
+                                    class="link"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img src="./static/images/git.png" class="git"
+                            /></a>
+                        </div>
+                    </div>
+                    <h5 class="title">ELON MUSK</h5>
+                </div>
+
+                <div class="person">
+                    <a href="javascript:showJudgeAndHideInfo()">
+                        <img src="./static/images/img3.png" class="imgperson"
+                    /></a>
+
+                    <div class="cards">
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/insta.png"
+                                    class="insta"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/link.png"
+                                    class="link"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img src="./static/images/git.png" class="git"
+                            /></a>
+                        </div>
+                    </div>
+                    <h5 class="title">ELON MUSK</h5>
+                </div>
+
+                <div class="person">
+                    <a href="javascript:showJudgeAndHideInfo()">
+                        <img src="./static/images/img2.png" class="imgperson"
+                    /></a>
+
+                    <div class="cards">
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/insta.png"
+                                    class="insta"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/link.png"
+                                    class="link"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img src="./static/images/git.png" class="git"
+                            /></a>
+                        </div>
+                    </div>
+                    <h5 class="title">ELON MUSK</h5>
+                </div>
+
+                <div class="person">
+                    <a href="javascript:showJudgeAndHideInfo()"
+                        ><img src="./static/images/img3.png" class="imgperson"
+                    /></a>
+
+                    <div class="cards">
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/insta.png"
+                                    class="insta"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/link.png"
+                                    class="link"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img src="./static/images/git.png" class="git"
+                            /></a>
+                        </div>
+                    </div>
+                    <h5 class="title">ELON MUSK</h5>
+                </div>
+
+                <div class="person">
+                    <a href="javascript:showJudgeAndHideInfo()"
+                        ><img src="./static/images/img3.png" class="imgperson"
+                    /></a>
+
+                    <div class="cards">
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/insta.png"
+                                    class="insta"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./static/images/link.png"
+                                    class="link"
+                            /></a>
+                        </div>
+                        <div class="icon">
+                            <a
+                                href="https://www.linkedin.com/in/dhattarwalaman/"
+                                target="_blank"
+                            >
+                                <img src="./static/images/git.png" class="git"
+                            /></a>
+                        </div>
+                    </div>
+                    <h5 class="title">ELON MUSK</h5>
+                </div>
+            </div>
+
+            <!--INFO BOX CARD-->
+
+            <div class="info" id="info" style="display: none">
+                <div class="arrow">
+                    <img class="arrowleft" src="static/images/arrow-left.png" />
+                    <img
+                        class="arrowright"
+                        src="static/images/arrow-right.png"
+                    />
+                </div>
+
+                <div class="box">
+                    <div class="text1">
+                        <p class="texth1">Heading1</p>
+
+                        <h3 class="texth3">HEading2</h3>
+                        <br />
+
+                        <div class="text2">
+                            <h5 class="texth5">
+                                FEBRUARY XX, 2021 <br />
+                                YOUTUBE LIVE 6:00PM
+                            </h5>
+                        </div>
+                        <div class="textinf">
+                            <br />
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="abcd">
+                        <img class="image" src="./static/images/pichai.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
 
 		<!-- Bootstrap 5 Js -->
 		<script
