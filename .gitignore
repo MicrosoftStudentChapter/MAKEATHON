@@ -137,3 +137,6 @@ templates/makeTemplate.sh
 .idea/
 .vscode/
 
+# Mac OS Specific
+.DS_Store
+
