@@ -1,11 +1,11 @@
-body{
+body {
   /* CSS Resets */
   padding: 0;
   margin: 0;
   width: 100vw;
   height: 100vh;
 
-  background: url('../images/background-image.png') no-repeat fixed;
+  background: url("../images/background-image.png") no-repeat fixed;
   background-size: 100% 100%;
 
   display: grid;
@@ -14,20 +14,20 @@ body{
   position: relative;
 }
 
-header{
+header {
   grid-column-start: 1;
   grid-column-end: 13;
   grid-row-start: 1;
   grid-row-end: 4;
 }
 
-h1{
+h1 {
   font-family: Anurati;
   font-style: normal;
   font-weight: normal;
   font-size: 7rem;
   line-height: 8.4rem;
-  background: linear-gradient(#EAAB48, #ED885B, #F24282);
+  background: linear-gradient(#eaab48, #ed885b, #f24282);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 
@@ -49,7 +49,7 @@ h1{
   }
 } */
 
-#left-content{
+#left-content {
   grid-column-start: 1;
   grid-column-end: 6;
   grid-row-start: 4;
@@ -59,11 +59,11 @@ h1{
   padding-top: 22%;
 }
 
-.list-item{
+.list-item {
   display: block;
 }
 
-.list-item p{
+.list-item p {
   font-size: 2.2rem;
   color: white;
   display: inline-block;
@@ -74,7 +74,7 @@ h1{
   margin-left: 5%;
 }
 
-.list-item img{
+.list-item img {
   margin-top: -9%;
   margin-left: 2%;
   margin-right: 2%;
@@ -84,7 +84,7 @@ h1{
   height: 14%;
 }
 
-.blurred-box{  
+.blurred-box {
   grid-column-start: 6;
   grid-column-end: 13;
   grid-row-start: 5;
@@ -103,7 +103,7 @@ h1{
   z-index: 2;
 }
 
- .box{
+.box {
   grid-column-start: 6;
   grid-column-end: 13;
   grid-row-start: 5;
@@ -120,37 +120,37 @@ h1{
   border-radius: 6%;
   z-index: 1;
 }
- 
- .content{
-   position: relative;
-   padding: 4vh;
-   text-align: left;
-   z-index: 5;
-   display: inline-block;
-   font-family: 'Roboto', 'sans-serif';
-   color: white;
-   font-size: 3.22vh;
-   border-radius: 6%;
- }
 
- .blurred-box:after{
-  content: '';
+.content {
+  position: relative;
+  padding: 4vh;
+  text-align: left;
+  z-index: 5;
+  display: inline-block;
+  font-family: "Roboto", "sans-serif";
+  color: white;
+  font-size: 3.22vh;
+  border-radius: 6%;
+}
+
+.blurred-box:after {
+  content: "";
   width: 100%;
   height: 100%;
   background: inherit;
   position: absolute;
   left: 0%;
   top: 0%;
-  background: rgba( 255, 255, 255, 0.15 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 20.0px );
-  -webkit-backdrop-filter: blur( 20.0px );
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-radius: 6%;
-  border: 2px solid transparent; 
+  border: 2px solid transparent;
 }
 
-.box:before{
-  content: '';
+.box:before {
+  content: "";
   position: absolute;
   top: -0.34vh;
   left: -0.34vh;
@@ -161,8 +161,8 @@ h1{
   z-index: -1;
 }
 
-.box:after{
-  content: '';
+.box:after {
+  content: "";
   position: absolute;
   top: -0.34vh;
   left: -0.34vh;
@@ -174,183 +174,197 @@ h1{
   filter: blur(3vh);
 }
 
-.box:before,.box:after{
-  background: linear-gradient(235deg,#EAAB48,#ED885B,#F24282,transparent,transparent,transparent,transparent,transparent,transparent,transparent,#F24282,#ED885B,#EAAB48);
+.box:before,
+.box:after {
+  background: linear-gradient(
+    235deg,
+    #eaab48,
+    #ed885b,
+    #f24282,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    #f24282,
+    #ed885b,
+    #eaab48
+  );
 }
 
-
-@media screen and (max-width: 1700px){ 
-  .content{
+@media screen and (max-width: 1700px) {
+  .content {
     width: 50vw;
     height: 40vh;
     font-size: 1.8rem;
     padding: 2.5vw;
   }
 
-  .list-item p{
+  .list-item p {
     font-size: 230%;
     line-height: 2.5rem;
   }
 }
 
-@media screen and (max-width: 1350px){
-  h1{
+@media screen and (max-width: 1350px) {
+  h1 {
     font-size: 6.5rem;
   }
 
-  .content{
+  .content {
     font-size: 1.5rem;
     padding: 2.3vw;
   }
 }
 
-@media screen and (max-width: 1160px){
-  #left-content{
+@media screen and (max-width: 1160px) {
+  #left-content {
     padding-left: 15%;
     padding-top: 35%;
   }
 
-  .list-item p{
+  .list-item p {
     font-size: 2rem;
     line-height: 2rem;
   }
 
-  .content{
+  .content {
     font-size: 1.3rem;
     padding: 2.5vw;
   }
 }
 
-@media screen and (max-width: 900px){
-  h1{
+@media screen and (max-width: 900px) {
+  h1 {
     font-size: 5rem;
     margin-left: 6%;
   }
 
-  #left-content{
+  #left-content {
     padding-left: 13%;
     padding-top: 32%;
   }
 
-  .list-item p{
+  .list-item p {
     font-size: 2rem;
     line-height: 50px;
   }
-  
-  .list-item img{
+
+  .list-item img {
     width: 14%;
     height: 14%;
   }
 
-  .blurred-box{
+  .blurred-box {
     width: 50vw;
     height: 40vh;
   }
 
-  .content{
+  .content {
     font-size: 1.1rem;
     padding: 3vw;
   }
 
-  .box{
+  .box {
     width: 50vw;
     height: 40vh;
   }
 }
 
-@media screen and (max-width: 780px){
-  body{
+@media screen and (max-width: 780px) {
+  body {
     background-size: cover;
     background-position: center;
   }
 
-  .content{
+  .content {
     width: 50vw;
     height: 40vh;
     font-size: 1.09rem;
     padding: 1.3vw;
   }
 
-  .box{
+  .box {
     width: 50vw;
     height: 40vh;
   }
 
-  .list-item p{
+  .list-item p {
     font-size: 1.4rem;
     line-height: 2rem;
     margin-bottom: 2%;
-    margin-left: 0%; 
+    margin-left: 0%;
   }
 }
 
-@media screen and (max-width: 650px){
-  h1{
+@media screen and (max-width: 650px) {
+  h1 {
     font-size: 3.7rem;
   }
 
-  .content{
+  .content {
     font-size: 1rem;
-    padding: 14px;  
+    padding: 14px;
   }
 }
 
-@media screen and (max-width: 500px){
-  h1{
+@media screen and (max-width: 500px) {
+  h1 {
     font-size: 2.4rem;
     margin-left: 0%;
     padding-left: 0%;
   }
 
-  body{
+  body {
     object-fit: cover;
   }
 
-  header{
+  header {
     grid-column-start: 3;
     grid-column-end: 13;
     grid-row-start: 1;
     grid-row-end: 3;
   }
 
-  #left-content{
+  #left-content {
     padding-left: 2%;
     padding-top: 2%;
   }
 
-  .list-item p{
+  .list-item p {
     font-size: 1rem;
     line-height: 2rem;
     margin-bottom: 1%;
     margin-left: 0%;
   }
-  
-  .list-item img{
+
+  .list-item img {
     margin-right: 2%;
     margin-bottom: 10%;
     vertical-align: middle;
     width: 14%;
     height: 14%;
- }
+  }
 
-  .blurred-box{
+  .blurred-box {
     width: 70vw;
     height: 40vh;
   }
 
-  .content{
+  .content {
     width: 70vw;
     height: 40vh;
     font-size: 0.9rem;
     padding: 14px;
-    
   }
-  .box{
+  .box {
     width: 70vw;
     height: 40vh;
   }
 
-  #left-content{
+  #left-content {
     margin-top: 1rem;
     grid-column-start: 3;
     grid-column-end: 13;
@@ -361,7 +375,8 @@ h1{
     margin-left: -7%;
   }
 
-  .blurred-box, .box{
+  .blurred-box,
+  .box {
     grid-column-start: 3;
     grid-column-end: 13;
     grid-row-start: 6;
@@ -369,139 +384,142 @@ h1{
     padding-right: 8%;
   }
 
-  #left-content, .blurred-box, .box, header{
+  #left-content,
+  .blurred-box,
+  .box,
+  header {
     margin-left: -7%;
   }
 }
 
-@media screen and (max-width: 330px){
-  h1{
-    font-size:2rem ;
+@media screen and (max-width: 330px) {
+  h1 {
+    font-size: 2rem;
   }
 
-  .content{
+  .content {
     font-size: 0.67rem;
   }
 }
 
-@media screen and (max-width: 900px) and (max-height:420px){
-  h1{
+@media screen and (max-width: 900px) and (max-height: 420px) {
+  h1 {
     font-size: 4rem;
     margin-left: 6%;
   }
 
-  #left-content{
+  #left-content {
     padding-left: 13%;
     padding-top: 24%;
   }
 
-  .list-item p{
+  .list-item p {
     font-size: 1.6rem;
     line-height: 30px;
     margin-bottom: 5%;
     margin-left: 5%;
   }
-    
-  .list-item img{
+
+  .list-item img {
     margin-top: -9%;
     margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 4%;
   }
 
-  .content{
+  .content {
     font-size: 0.85rem;
   }
 
-  .blurred-box{
+  .blurred-box {
     top: 20%;
     left: 1%;
   }
-  
-   .box{
-    top: 20%;
-    left: 1%;
-  }    
-}  
 
-@media screen and (max-height:530px) and (max-width:780px){
-  h1{
-    font-size:3.5rem ;
-  }
-  
-  .content{
-    font-size: 0.86rem;
-  }
-  
-  .blurred-box{  
-    grid-column-start: 6;
-    grid-column-end: 13;
-    grid-row-start: 5;
-    grid-row-end: 10;
+  .box {
     top: 20%;
     left: 1%;
   }
-    
-  .box{
-    grid-column-start: 6;
-    grid-column-end: 13;
-    grid-row-start: 5;
-    grid-row-end: 10;
-    top: 20%;
-    left: 1%;
-  }    
 }
 
-@media screen and (max-height:400px) and (max-width:780px){
-  .content{
+@media screen and (max-height: 530px) and (max-width: 780px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .content {
+    font-size: 0.86rem;
+  }
+
+  .blurred-box {
+    grid-column-start: 6;
+    grid-column-end: 13;
+    grid-row-start: 5;
+    grid-row-end: 10;
+    top: 20%;
+    left: 1%;
+  }
+
+  .box {
+    grid-column-start: 6;
+    grid-column-end: 13;
+    grid-row-start: 5;
+    grid-row-end: 10;
+    top: 20%;
+    left: 1%;
+  }
+}
+
+@media screen and (max-height: 400px) and (max-width: 780px) {
+  .content {
     font-size: 0.79rem;
   }
 
-  .list-item img{
+  .list-item img {
     margin-top: -6%;
     margin-left: 2%;
     margin-right: 4%;
     margin-bottom: 6%;
   }
 
-  h1{
+  h1 {
     font-size: 3.4rem;
     margin-top: 0%;
   }
 
-  #left-content p{
+  #left-content p {
     font-size: 1.2rem;
   }
 }
 
-@media screen and (max-height:300px) and (max-width:660px){
-  .content{
+@media screen and (max-height: 300px) and (max-width: 660px) {
+  .content {
     font-size: 0.69rem;
   }
 
-  h1{
+  h1 {
     margin-top: -2%;
     font-size: 3.6rem;
   }
 
-  .list-item img{
+  .list-item img {
     margin-top: -6%;
     margin-left: 2%;
     margin-right: 4%;
     margin-bottom: 6%;
   }
 
-  .blurred-box{  
+  .blurred-box {
     top: 30%;
     left: 1%;
   }
-  
-    .box{
+
+  .box {
     top: 30%;
     left: 1%;
-    }
+  }
 
-  #left-content{
+  #left-content {
     margin-top: 2rem;
     padding-left: 0%;
     padding-top: 5%;
@@ -511,130 +529,122 @@ h1{
 }
 
 /* iPad portrait */
-@media screen and (max-height:1024px) and (min-height:1024px) 
-  and (max-width: 768px) and (min-width: 768px){
-    .content{
-      width: 50vw;
-      height: 40vh;
-      font-size: 1.09rem;
-      margin-top: 3vh;
-      margin-left: 1.2vh;
-      padding: 2vw;
-    }
-  
-    .box{
-      width: 50vw;
-      height: 40vh;
-    }
+@media screen and (max-height: 1024px) and (min-height: 1024px) and (max-width: 768px) and (min-width: 768px) {
+  .content {
+    width: 50vw;
+    height: 40vh;
+    font-size: 1.09rem;
+    margin-top: 3vh;
+    margin-left: 1.2vh;
+    padding: 2vw;
+  }
 
-    .blurred-box, .box{
-      margin-top : -20%;
-    }
-  
-    .list-item p{
-      font-size: 1.8rem;
-      line-height: 2rem;
-      margin-bottom: 10%;
-      margin-left: 3%; 
-    }
+  .box {
+    width: 50vw;
+    height: 40vh;
+  }
 
-    #left-content{
-      margin-top: 12%;
-    }
+  .blurred-box,
+  .box {
+    margin-top: -20%;
+  }
 
-    h1{
-      margin-top: 10%;
-      font-size: 5rem;
-    }
+  .list-item p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-bottom: 10%;
+    margin-left: 3%;
+  }
+
+  #left-content {
+    margin-top: 12%;
+  }
+
+  h1 {
+    margin-top: 10%;
+    font-size: 5rem;
+  }
 }
 
 /* iPad Pro portrait */
-@media screen and (max-height:1366px) and (min-height:1366px) 
-  and (max-width: 1024px) and (min-width: 1024px){
-    .content{
-      width: 50vw;
-      height: 40vh;
-      font-size: 1.5rem;
-      margin-top: 3vh;
-      margin-left: 1.2vh;
-      padding: 2vw;
-    }
-  
-    .box, .blurred-box{
-      width: 50vw;
-      height: 50vh;
-    }
+@media screen and (max-height: 1366px) and (min-height: 1366px) and (max-width: 1024px) and (min-width: 1024px) {
+  .content {
+    width: 50vw;
+    height: 40vh;
+    font-size: 1.5rem;
+    margin-top: 3vh;
+    margin-left: 1.2vh;
+    padding: 2vw;
+  }
 
-    .blurred-box, .box{
-      margin-top : -20%;
-      margin-left: 5%;
-    }
-  
-    .list-item p{
-      font-size: 2.8rem;
-      line-height: 2.2rem;
-      margin-bottom: 10%;
-      margin-left: 3%; 
-    }
+  .box,
+  .blurred-box {
+    width: 50vw;
+    height: 50vh;
+  }
 
-    #left-content{
-      margin-top: 30%;
-    }
+  .blurred-box,
+  .box {
+    margin-top: -20%;
+    margin-left: 5%;
+  }
 
-    h1{
-      margin-top: 10%;
-      font-size: rem;
-    }
+  .list-item p {
+    font-size: 2.8rem;
+    line-height: 2.2rem;
+    margin-bottom: 10%;
+    margin-left: 3%;
+  }
+
+  #left-content {
+    margin-top: 30%;
+  }
+
+  h1 {
+    margin-top: 10%;
+    font-size: rem;
+  }
 }
 
 /* iPad Pro landscape modification */
-@media screen and (max-height:1024px) and (min-height:1024px) 
-  and (max-width: 1366px) and (min-width: 1366px){
-    #left-content{
-      padding-top: 40%;
-    }
-
+@media screen and (max-height: 1024px) and (min-height: 1024px) and (max-width: 1366px) and (min-width: 1366px) {
+  #left-content {
+    padding-top: 40%;
+  }
 }
 
 /* iPhone 5/SE landscape */
-@media screen and (max-height:320px) and (min-height:320px) 
-  and (max-width: 568px) and (min-width: 568px){
-    .content{
-      font-size: 0.7rem;
-    }
-  
-    .list-item img{
-      margin-top: -6%;
-      margin-left: 2%;
-      margin-right: 4%;
-      margin-bottom: 6%;
-    }
+@media screen and (max-height: 320px) and (min-height: 320px) and (max-width: 568px) and (min-width: 568px) {
+  .content {
+    font-size: 0.7rem;
+  }
 
-    h1{
-      margin-top: 0%;
-      font-size: 2.5rem;
-    }
+  .list-item img {
+    margin-top: -6%;
+    margin-left: 2%;
+    margin-right: 4%;
+    margin-bottom: 6%;
+  }
 
-    .list-item p{
-      font-size: 1rem;
-      line-height: 1rem;
-      margin: 5%;g
-    }
+  h1 {
+    margin-top: 0%;
+    font-size: 2.5rem;
+  }
 
-    #left-content{
-      margin-top: 5%;
-    }
+  .list-item p {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin: 5%;
+  }
 
-    .box, .blurred-box{
-      width: 50vw;
-      height: 47vh;
-      margin-top: -3%;
-    }
+  #left-content {
+    margin-top: 5%;
+  }
+
+  .box,
+  .blurred-box {
+    width: 50vw;
+    height: 47vh;
+    margin-top: -3%;
+  }
 }
-
-
-
-
-
-
-
