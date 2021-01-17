@@ -1,5 +1,5 @@
 // Speakers module pattern
-let speakers = (function(){
+export let speakers = (function(){
   // Total number of speakers
   let speakerTotalNumber;
 

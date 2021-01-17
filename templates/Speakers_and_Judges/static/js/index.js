@@ -1,3 +1,5 @@
+import { speakers } from './speakers.js'
+
 function showSpeakersAndHideJudges() {
   document.querySelector("#judges").style.display = "none";
   document.querySelector("#speakers").style.display = "grid";
@@ -18,3 +20,4 @@ function showJudgeAndHideInfo() {
   document.querySelector("#info").style.display = "block";
 }
 
+console.log(speakers.getSpeakerTotalNumber);
