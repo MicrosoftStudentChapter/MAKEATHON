@@ -33,8 +33,8 @@ export let speakers = (function(){
   // Array that stores all the speaker objects
   let speakerObjects = [];
 
-  _init();
-  function _init(){
+  //init();
+  function init(){
     addSpeakersToSpeakerObjects();
   }
 
@@ -86,6 +86,7 @@ export let speakers = (function(){
   }
 
   return{
+    init,
     getSpeakerObjects,
     getSpeakerTotalNumber
   }

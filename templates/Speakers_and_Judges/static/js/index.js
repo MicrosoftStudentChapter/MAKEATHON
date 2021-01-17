@@ -1,6 +1,6 @@
 //import { speakers } from './speakers.js'
 
-import { speakers } from "./speakers";
+import { speakers } from "./speakers.js";
 
 function showSpeakersAndHideJudges() {
   document.querySelector("#judges").style.display = "none";
@@ -25,6 +25,8 @@ function showJudgeAndHideInfo() {
 // let imgperson1 = document.getElementById('imgperson1');
 // imgperson1.addEventListener("click", showInfoAndHideCards);
 
+speakers.init();
+
 function createSpeakerCardsInDOM(){
   let speakerWrapper = document.getElementById("speakers");
 
@@ -40,7 +42,8 @@ function createSpeakerCardsInDOM(){
   //   let personImage
   // }
 
-  for(person in speakers.getSpeakerObjects()){
+  for(let person of speakers.getSpeakerObjects()){
+    console.log('hi');
     let personContainer = document.createElement("div");
     personContainer.classList.add = "person";
     
@@ -52,7 +55,11 @@ function createSpeakerCardsInDOM(){
     let personNameHeader = document.createElement("h5");
     personNameHeader.textContent = `${person.name}`;
     personContainer.append(personNameHeader);
+
+    speakerWrapper.append(personContainer);
   }
 }
+
+createSpeakerCardsInDOM();
 
 //console.log(speakers.getSpeakerTotalNumber());
