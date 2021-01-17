@@ -2,42 +2,42 @@ $(document).ready(function () {
   $(".targetDiv").hide();
   $("#div1").show();
   $(".Single1").click(function () {
-    document.querySelectorAll(".couple").forEach(i => {
-      i.style.backgroundColor = "transparent"
-    })
-    document.querySelectorAll(".Single1").forEach(i => {
-      i.style.backgroundColor = "rgba(255, 255, 255, 0.24)"
-    })
+    document.querySelectorAll(".couple").forEach((i) => {
+      i.style.backgroundColor = "transparent";
+    });
+    document.querySelectorAll(".Single1").forEach((i) => {
+      i.style.backgroundColor = "rgba(255, 255, 255, 0.24)";
+    });
     $(".targetDiv").hide();
     $("#div1").show();
   });
   $(".Single2").click(function () {
-    document.querySelectorAll(".couple").forEach(i => {
-      i.style.backgroundColor = "transparent"
-    })
-    document.querySelectorAll(".Single2").forEach(i => {
-      i.style.backgroundColor = "rgba(255, 255, 255, 0.24)"
-    })
+    document.querySelectorAll(".couple").forEach((i) => {
+      i.style.backgroundColor = "transparent";
+    });
+    document.querySelectorAll(".Single2").forEach((i) => {
+      i.style.backgroundColor = "rgba(255, 255, 255, 0.24)";
+    });
     $(".targetDiv").hide();
     $("#div2").show();
   });
   $(".Single3").click(function () {
-    document.querySelectorAll(".couple").forEach(i => {
-      i.style.backgroundColor = "transparent"
-    })
-    document.querySelectorAll(".Single3").forEach(i => {
-      i.style.backgroundColor = "rgba(255, 255, 255, 0.24)"
-    })
+    document.querySelectorAll(".couple").forEach((i) => {
+      i.style.backgroundColor = "transparent";
+    });
+    document.querySelectorAll(".Single3").forEach((i) => {
+      i.style.backgroundColor = "rgba(255, 255, 255, 0.24)";
+    });
     $(".targetDiv").hide();
     $("#div3").show();
   });
   $(".Single4").click(function () {
-    document.querySelectorAll(".couple").forEach(i => {
-      i.style.backgroundColor = "transparent"
-    })
-    document.querySelectorAll(".Single4").forEach(i => {
-      i.style.backgroundColor = "rgba(255, 255, 255, 0.24)"
-    })
+    document.querySelectorAll(".couple").forEach((i) => {
+      i.style.backgroundColor = "transparent";
+    });
+    document.querySelectorAll(".Single4").forEach((i) => {
+      i.style.backgroundColor = "rgba(255, 255, 255, 0.24)";
+    });
     $(".targetDiv").hide();
     $("#div4").show();
   });
