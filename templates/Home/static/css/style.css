@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  overflow-y: scroll;
 }
 
 .video-container {
@@ -20,8 +21,8 @@
 
 .video-container video {
   /* Make video to at least 100% wide and tall */
-  min-width: 100%; 
-  min-height: 100%; 
+  min-width: 100%;
+  min-height: 100%;
 
   /* Setting width & height to auto prevents the browser from stretching or squishing the video */
   width: auto;
@@ -31,7 +32,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 /* ---------------Sidenavbar--------------- */
@@ -289,14 +290,6 @@ ul.ba {
   padding-top: 0.5%;
 }
 
-/* optional */
-/* @media screen and (max-width: 260px){   
-    .devimg{    
-      width: 60%;
-      height: 45%;
-    }
-  } */
-
 .devimg {
   width: 20%;
   height: 20%;
@@ -364,19 +357,11 @@ ul.ba {
   right: 28%;
   bottom: 6.5vh;
 }
-/* .timeleft{
-    z-index: 5;
-    padding: 2%;
-    text-align: center;
-    justify-content: center;
-    margin-right: 50%;
-  } */
 
 /* responsive time-left */
 
 @media (max-width: 1160px) {
   #tleft {
-    right: 3%;
     bottom: 4.5vh;
   }
 }
@@ -388,36 +373,22 @@ ul.ba {
   }
 }
 
-@media (max-width: 767px) {
-  #tleft {
-    left: 20.5%;
-    bottom: 7.5vh;
-  }
-}
-
 @media (max-width: 582px) {
   #tleft {
     left: 1%;
     bottom: 8vh;
+    padding-right: 10%;
   }
 }
 @media (max-width: 582px) {
   #tleft {
-    left: 12%;
+    left: 1%;
     bottom: 6vh;
   }
-}
-
-/* 
-  @media screen and (max-width: 767px){   
-    #heading{
-    font-size: 5rem;    
-    padding: 0.5rem 1rem;
-    margin: 1rem;
-    }
+  .timer {
+    font-size: 48.56%;
   }
-*/
-
+}
 /* ---------------Timer Styling--------------- */
 
 /* timer styling */
@@ -445,7 +416,8 @@ span.number {
   span.number {
     font-size: 1.8rem;
   }
-  .timerspan{
+
+  .timerspan {
     padding: 1%;
   }
 }
@@ -490,7 +462,6 @@ span.M2 {
   top: 2px;
   left: 0px;
   position: absolute;
-  /* bottom: 80%; */
   color: #ff5abd;
   mix-blend-mode: color-dodge;
   z-index: 5;
@@ -512,4 +483,9 @@ span.Y2 {
   mix-blend-mode: color-dodge;
   filter: drop-shadow(2px 0px 8px rgba(255, 255, 46, 0.6));
   z-index: 7;
+}
+@media (min-height: 824px) {
+  #tleft {
+    padding: 2%;
+  }
 }
