@@ -278,4 +278,7 @@ h2 {
   .accordion-button {
     font-size: 1.1rem;
   }
+  h1{
+      font-size: 3rem;
+  }
 }
