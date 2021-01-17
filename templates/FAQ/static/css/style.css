@@ -248,6 +248,10 @@ h2 {
   border: none;
 }
 
+.accordion-button:focus-within {
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
 @media (max-width: 1100px) {
   .contactmob {
     display: block;
@@ -289,14 +293,23 @@ h2 {
   
   }
 
-  @media (max-width: 1024px) and (min-width: 1024px){
-
+@media (max-width: 1024px) and (min-width: 1024px){
     h1{
         margin-top: 17%;
         margin-bottom: 20%;
     }
     body{
+        overflow: hidden;
+    }
+  }
+
+  @media (max-width: 1366px) and (min-width: 1366px){
+
+    h1{
+        margin-top: 7%;
+        margin-bottom: 15%;
+    }
+    body{
         overflow-y: hidden;
     }
-  
   }
