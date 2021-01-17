@@ -12,6 +12,7 @@ body {
   background-position: center;
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 }
 .couple {
   background-color: #ffffff14;
