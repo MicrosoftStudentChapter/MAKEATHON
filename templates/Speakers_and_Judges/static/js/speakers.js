@@ -1,10 +1,24 @@
 // Speakers module pattern
 export let speakers = (function(){
   // Total number of speakers
-  let speakerTotalNumber;
+  let speakerTotalNumber = 6;
 
-  let speakerNames = [];
-  let speakerImageSrc = [];
+  let speakerNames = [
+    'Richard Stallman',
+    'Linus Torvalds',
+    'Edward Snowden',
+    'Richard Stallman',
+    'Linus Torvalds',
+    'Edward Snowden',
+  ];
+  let speakerImageSrc = [
+    './static/images/img2.png',
+    './static/images/img3.png',
+    './static/images/pichai.png',
+    './static/images/img2.png',
+    './static/images/img3.png',
+    './static/images/pichai.png',
+  ];
 
   let speakerInsta = [];
   let speakerLinkedIn = [];
@@ -23,6 +37,11 @@ export let speakers = (function(){
   function _init(){
     addSpeakersToSpeakerObjects();
   }
+
+  // const imgFilePath = "./static/images";
+
+  // TODO : Add function that maps img file names to file path by appending
+  // file path in front of every image name
 
   // Factory function which returns a speaker object
   let createSpeakerObject = function(name, imgSrc, insta, linkedin, github, 

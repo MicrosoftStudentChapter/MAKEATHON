@@ -1,4 +1,4 @@
-import { speakers } from './speakers.js'
+//import { speakers } from './speakers.js'
 
 function showSpeakersAndHideJudges() {
   document.querySelector("#judges").style.display = "none";
@@ -20,4 +20,7 @@ function showJudgeAndHideInfo() {
   document.querySelector("#info").style.display = "block";
 }
 
-console.log(speakers.getSpeakerTotalNumber);
+let imgperson1 = document.getElementById('imgperson1');
+imgperson1.addEventListener("click", showInfoAndHideCards);
+
+//console.log(speakers.getSpeakerTotalNumber());
