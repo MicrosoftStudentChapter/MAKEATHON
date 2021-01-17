@@ -17,3 +17,4 @@ function showJudgeAndHideInfo() {
   document.querySelector("#judges").style.display = "none";
   document.querySelector("#info").style.display = "block";
 }
+
