@@ -35,26 +35,24 @@ function createSpeakerCardsInDOM(){
   pageHeader.textContent = "Speakers";
   speakerWrapper.append(pageHeader);
 
-  // for(let i = 0; i < speakers.getSpeakerTotalNumber; i++){
-  //   let personContainer = document.createElement("div");
-  //   personContainer.classList.add = "person";
-
-  //   let personImage
-  // }
-
   for(let person of speakers.getSpeakerObjects()){
     console.log('hi');
     let personContainer = document.createElement("div");
     personContainer.classList.add = "person";
     
     let personImg = document.createElement("img");
+    personImg.classList.add("imgperson");
     personImg.src = `${person.imgSrc}`;
     personImg.addEventListener("click", showInfoAndHideCards);
     personContainer.append(personImg);
 
     let personNameHeader = document.createElement("h5");
+    personNameHeader.classList.add("title");
     personNameHeader.textContent = `${person.name}`;
     personContainer.append(personNameHeader);
+
+    //let cardsContainer = document.createElement("div");
+
 
     speakerWrapper.append(personContainer);
   }
@@ -62,4 +60,3 @@ function createSpeakerCardsInDOM(){
 
 createSpeakerCardsInDOM();
 
-//console.log(speakers.getSpeakerTotalNumber());
