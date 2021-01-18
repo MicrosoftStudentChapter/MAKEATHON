@@ -8,7 +8,6 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  overflow-y: scroll;
 }
 
 .video-container {
@@ -416,7 +415,7 @@ span.number {
   span.number {
     font-size: 1.8rem;
   }
-  
+
   .timerspan {
     padding: 1%;
   }
