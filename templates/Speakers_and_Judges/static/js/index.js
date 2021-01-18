@@ -21,8 +21,17 @@ function showJudgeAndHideInfo() {
   document.querySelector("#info").style.display = "block";
 }
 
+let currentSpeakerOnInfoPage;
 
-speakers.init();
+init();
+function init(){
+  speakers.init();
+  createSpeakerCardsInDOM();
+  showSpeakersAndHideJudges();
+  addEventListenersToInfoArrows();
+}
+
+
 
 function createSpeakerCardsInDOM(){
   let speakerWrapper = document.getElementById("speakers");
@@ -47,7 +56,7 @@ function createSpeakerCardsInDOM(){
 
     let socialMedias = [ 
       [ person.insta, "./static/images/insta.png", "insta" ], 
-      [person.linkedin, "./static/images/link.png", "link" ], 
+      [ person.linkedin, "./static/images/link.png", "link" ], 
       [ person.github, "./static/images/git.png", "git" ]
     ]
 
@@ -80,10 +89,8 @@ function createSpeakerCardsInDOM(){
   }
 }
 
-let currentSpeakerOnInfoPage = speakers.getSpeakerObjects()[0];
-createSpeakerCardsInDOM();
-showSpeakersAndHideJudges();
-addEventListenersToInfoArrows();
+
+
 
 function getCurrentSpeakerOnInfoPage(){
   return currentSpeakerOnInfoPage;
