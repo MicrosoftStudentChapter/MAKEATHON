@@ -15,6 +15,7 @@ function showJudgesAndHideSpeakers() {
 }
 
 function showInfoAndHideCards() {
+  //console.log("Showing info hiding cards");
   document.querySelector("#speakers").style.display = "none";
   document.querySelector("#info").style.display = "block";
 }
@@ -45,7 +46,7 @@ function createSpeakerCardsInDOM(){
     let personImg = document.createElement("img");
     personImg.classList.add("imgperson");
     personImg.src = `${person.imgSrc}`;
-    //personImg.addEventListener("click", personOnClick(person));
+    personImg.addEventListener("click", personOnClick.bind(person));
     personContainer.append(personImg);
 
     let cardsContainer = document.createElement("div");
@@ -101,6 +102,7 @@ showSpeakersAndHideJudges();
 
 function personOnClick(person){
 
+  console.log("I was clicked");
   // Update the info-box-card with information unique to each person
 
   let infoHeading1 = document.getElementById("info-heading-1");
@@ -124,7 +126,7 @@ function personOnClick(person){
   // After updating info-box-card with the information of the person clicked, 
   // hide the cards view and enable the info view
 
-  //showInfoAndHideCards();
+  showInfoAndHideCards();
 }
 
 
