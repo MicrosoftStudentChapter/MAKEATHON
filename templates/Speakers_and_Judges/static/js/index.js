@@ -123,10 +123,30 @@ function personOnClick(){
   let infoImg = document.getElementById("info-img");
   infoImg.src = this.imgSrc;
 
+  showInfoAndHideCards();
+
+  // this.id stores the index of the selected person in the speakerObjects/judgeObjects array
+  // on clicking the left arrow, the info of the person prior to it in the array should be shown
+  // if it is not the first element. If it is the first element, the info of the last person in the array
+  // should be shown
+
+  // TODO : Make id a randomised but unique string, and here search for the index at which an object with that is present
+
+  let leftArrow = document.getElementById("info-left-arrow");
+  let previousPerson = (this.id !== 0)? speakers.getSpeakerObjects()[this.id-1] 
+                                      : speakers.getSpeakerObjects()[speakers.getSpeakerTotalNumber -1];  
+  leftArrow.addEventListener("click", personOnClick.bind(previousPerson));
+
+  let rightArrow = document.getElementById("info-right-arrow");
+  let nextPerson = (this.id !== speakers.getSpeakerTotalNumber -1)? speakers.getSpeakerObjects()[this.id+1]
+                                                                 : speakers.getSpeakerObjects()[0];
+  rightArrow.addEventListener("click", personOnClick.bind(nextPerson));
+
+
   // After updating info-box-card with the information of the person clicked, 
   // hide the cards view and enable the info view
 
-  showInfoAndHideCards();
+  
 }
 
 
