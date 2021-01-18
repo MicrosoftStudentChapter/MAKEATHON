@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  overflow-y: auto;
 }
 
 .video-container {
@@ -134,7 +135,20 @@ ul.ba {
   padding: 0;
   float: left;
 }
-
+/* Hiding Toggle bar for particular widths */
+@media (min-width: 1300px) {
+  .toggle {
+    visibility: hidden;
+  }
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+  }
+}
 /* responsive sidebar */
 
 @media (max-width: 1000px) {
@@ -377,12 +391,6 @@ ul.ba {
     left: 1%;
     bottom: 8vh;
     padding-right: 10%;
-  }
-}
-@media (max-width: 582px) {
-  #tleft {
-    left: 1%;
-    bottom: 6vh;
   }
   .timer {
     font-size: 48.56%;
