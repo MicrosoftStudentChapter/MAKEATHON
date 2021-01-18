@@ -26,6 +26,11 @@ let currentSpeakerOnInfoPage;
 init();
 function init(){
   speakers.init();
+
+  // Add event listeners to speakers button and judges button
+  document.getElementById("speakers-button").addEventListener("click", showSpeakersAndHideJudges);
+  document.getElementById("judges-button").addEventListener("click", showJudgesAndHideSpeakers);
+
   createSpeakerCardsInDOM();
   showSpeakersAndHideJudges();
   addEventListenersToInfoArrows();
