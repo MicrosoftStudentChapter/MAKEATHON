@@ -1,5 +1,3 @@
-//import { speakers } from './speakers.js'
-
 import { speakers } from "./speakers.js";
 
 function showSpeakersAndHideJudges() {
@@ -15,7 +13,6 @@ function showJudgesAndHideSpeakers() {
 }
 
 function showInfoAndHideCards() {
-  //console.log("Showing info hiding cards");
   document.querySelector("#speakers").style.display = "none";
   document.querySelector("#info").style.display = "block";
 }
@@ -24,13 +21,10 @@ function showJudgeAndHideInfo() {
   document.querySelector("#info").style.display = "block";
 }
 
-// let imgperson1 = document.getElementById('imgperson1');
-// imgperson1.addEventListener("click", showInfoAndHideCards);
 
 speakers.init();
 
 function createSpeakerCardsInDOM(){
-  console.log("Hi");
   let speakerWrapper = document.getElementById("speakers");
 
   let pageHeader = document.createElement("h1");
@@ -39,7 +33,6 @@ function createSpeakerCardsInDOM(){
   speakerWrapper.append(pageHeader);
 
   for(let person of speakers.getSpeakerObjects()){
-    console.log('hi');
     let personContainer = document.createElement("div");
     personContainer.classList.add = "person";
     
@@ -53,9 +46,9 @@ function createSpeakerCardsInDOM(){
     cardsContainer.classList.add("cards");
 
     let socialMedias = [ 
-      [person.insta, "./static/images/insta.png", "insta"], 
-      [person.linkedin, "./static/images/link.png", "link"], 
-      [person.github, "./static/images/git.png", "git"]
+      [ person.insta, "./static/images/insta.png", "insta" ], 
+      [person.linkedin, "./static/images/link.png", "link" ], 
+      [ person.github, "./static/images/git.png", "git" ]
     ]
 
     let socialMediaLink, socialMediaImgSrc, socialMediaImgClass;
@@ -83,15 +76,6 @@ function createSpeakerCardsInDOM(){
     personNameHeader.textContent = `${person.name}`;
     personContainer.append(personNameHeader);
 
-    
-
-    // cardsContainer.classList.add("icon");
-
-    // let instaContainer = document.createElement("icon").classList.add("icon");
-    
-    // let instaLink = 
-
-
     speakerWrapper.append(personContainer);
   }
 }
@@ -113,8 +97,6 @@ function setCurrentSpeakerOnInfoPage(speaker){
 function personOnClick(){
   setCurrentSpeakerOnInfoPage(this);
 
-  console.log(currentSpeakerOnInfoPage);
-  console.log("I was clicked");
   // Update the info-box-card with information unique to each person
 
   let infoHeading1 = document.getElementById("info-heading-1");
@@ -135,34 +117,9 @@ function personOnClick(){
   let infoImg = document.getElementById("info-img");
   infoImg.src = this.imgSrc;
 
-
   // After updating info-box-card with the information of the person clicked, 
   // hide the cards view and enable the info view
   showInfoAndHideCards();
-
-  // this.id stores the index of the selected person in the speakerObjects/judgeObjects array
-  // on clicking the left arrow, the info of the person prior to it in the array should be shown
-  // if it is not the first element. If it is the first element, the info of the last person in the array
-  // should be shown
-
-  // TODO : Make id a randomised but unique string, and here search for the index at which an object with that is present
-
-  // let leftArrow = document.getElementById("info-left-arrow");
-  // console.log(this.id);
-  // if(this.id === 0){
-  //   leftArrow.display = "none";
-  // }
-  // let previousPerson = (this.id !== 0)? speakers.getSpeakerObjects()[this.id-1] 
-  //                                     : speakers.getSpeakerObjects()[speakers.getSpeakerTotalNumber() -1]; 
-  // leftArrow.addEventListener("click", personOnClick.bind(previousPerson));
-
-  // let rightArrow = document.getElementById("info-right-arrow");
-  // let nextPerson = (this.id !== speakers.getSpeakerTotalNumber() -1)? speakers.getSpeakerObjects()[this.id+1]
-  //                                                                : speakers.getSpeakerObjects()[0];
-  // rightArrow.addEventListener("click", personOnClick.bind(nextPerson));
-
-
-  
 }
 
 // A conscious decision was taken to add event listeners to the arrows outside the personOnClick()
@@ -204,41 +161,6 @@ function addEventListenersToInfoArrows(){
     personOnClick.call(nextPerson);
   })
 }
-
-
-
-
-// Adds the general template for the info page to the DOM, but without any
-// unique information, which is then updated as and when a speaker/judge is clicked on
-
-// function initialiseInfoPageInDOM(){
-//   let infoContainerDiv = document.createElement("div");
-//   infoContainerDiv.classList.add("info");
-//   infoContainerDiv.id = "info";
-//   infoContainerDiv.style = "display: none";
-
-//   let arrowDiv = document.createElement("div");
-
-//   let arrowLeft = document.createElement("img");
-//   arrowLeft.classList.add("arrowleft")
-//   arrowLeft.src = "static/images/arrow-left.png";
-//   arrowDiv.append(arrowLeft);
-
-//   let arrowLeft = document.createElement("img");
-//   arrowRight.classList.add("arrowright")
-//   arrowRight.src = "static/images/arrow-right.png";
-//   arrowDiv.append(arrowRight);
-
-//   infoContainerDiv.append(arrowDiv);
-
-//   let boxContainerDiv = document.createElement("div");
-//   boxContainerDiv.classList.add("box");
-
-//   let textContainerDiv = document.createElement("div");
-//   textContainerDiv.classList.add("text1");
-
-
-// }
 
 
 
