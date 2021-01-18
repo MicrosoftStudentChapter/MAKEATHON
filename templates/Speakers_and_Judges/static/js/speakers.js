@@ -4,12 +4,12 @@ export let speakers = (function(){
   let speakerTotalNumber = 6;
 
   let speakerNames = [
-    'Richard Stallman',
-    'Linus Torvalds',
-    'Edward Snowden',
-    'Richard Stallman',
-    'Linus Torvalds',
-    'Edward Snowden',
+    'RICHARD STALLMAN',
+    'LINUS TORVALDS',
+    'EDWARD SNOWDEN',
+    'RICHARD STALLMAN',
+    'LINUS TORVALDS',
+    'EDWARD SNOWDEN',
   ];
   let speakerImageSrc = [
     './static/images/img2.png',
