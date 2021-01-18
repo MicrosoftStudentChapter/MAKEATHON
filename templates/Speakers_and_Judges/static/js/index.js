@@ -43,7 +43,7 @@ function createSpeakerCardsInDOM(){
     let personImg = document.createElement("img");
     personImg.classList.add("imgperson");
     personImg.src = `${person.imgSrc}`;
-    personImg.addEventListener("click", showInfoAndHideCards);
+    personImg.addEventListener("click", personOnClick(person));
     personContainer.append(personImg);
 
     let cardsContainer = document.createElement("div");
@@ -91,6 +91,68 @@ function createSpeakerCardsInDOM(){
 
     speakerWrapper.append(personContainer);
   }
+
+  function personOnClick(person){
+
+    // Update the info-box-card with information unique to each person
+
+    let infoHeading1 = document.getElementById("info-heading-1");
+    infoHeading1.textContent = person.name;
+
+    let infoHeading2 = document.getElementById("info-heading-2");
+    infoHeading2.textContent = person.infoHeading2;
+
+    let infoDate = document.getElementById("info-date");
+    infoDate.textContent = person.infoDate;
+
+    let infoPlatformAndTime = document.getElementById("info-platform-and-time");
+    infoPlatformAndTime.textContent = person.infoPlatformAndTime;
+
+    let infoSummary = document.getElementById("info-summary");
+    infoSummary.textContent = person.infoSummary;
+
+    let infoImg = document.getElementById("info-img");
+    infoImg.src = person.imgSrc;
+
+    // After updating info-box-card with the information of the person clicked, 
+    // hide the cards view and enable the info view
+
+    showInfoAndHideCards();
+  }
+
+
+
+  // Adds the general template for the info page to the DOM, but without any
+  // unique information, which is then updated as and when a speaker/judge is clicked on
+
+  // function initialiseInfoPageInDOM(){
+  //   let infoContainerDiv = document.createElement("div");
+  //   infoContainerDiv.classList.add("info");
+  //   infoContainerDiv.id = "info";
+  //   infoContainerDiv.style = "display: none";
+
+  //   let arrowDiv = document.createElement("div");
+
+  //   let arrowLeft = document.createElement("img");
+  //   arrowLeft.classList.add("arrowleft")
+  //   arrowLeft.src = "static/images/arrow-left.png";
+  //   arrowDiv.append(arrowLeft);
+
+  //   let arrowLeft = document.createElement("img");
+  //   arrowRight.classList.add("arrowright")
+  //   arrowRight.src = "static/images/arrow-right.png";
+  //   arrowDiv.append(arrowRight);
+
+  //   infoContainerDiv.append(arrowDiv);
+
+  //   let boxContainerDiv = document.createElement("div");
+  //   boxContainerDiv.classList.add("box");
+
+  //   let textContainerDiv = document.createElement("div");
+  //   textContainerDiv.classList.add("text1");
+
+
+  // }
 }
 
 createSpeakerCardsInDOM();
