@@ -100,28 +100,28 @@ function createSpeakerCardsInDOM(){
 createSpeakerCardsInDOM();
 showSpeakersAndHideJudges();
 
-function personOnClick(person){
+function personOnClick(){
 
   console.log("I was clicked");
   // Update the info-box-card with information unique to each person
 
   let infoHeading1 = document.getElementById("info-heading-1");
-  infoHeading1.textContent = person.name;
+  infoHeading1.textContent = this.name;
 
   let infoHeading2 = document.getElementById("info-heading-2");
-  infoHeading2.textContent = person.infoHeading2;
+  infoHeading2.textContent = this.infoHeading2;
 
   let infoDate = document.getElementById("info-date");
-  infoDate.textContent = person.infoDate;
+  infoDate.textContent = this.infoDate;
 
   let infoPlatformAndTime = document.getElementById("info-platform-and-time");
-  infoPlatformAndTime.textContent = person.infoPlatformAndTime;
+  infoPlatformAndTime.textContent = this.infoPlatformAndTime;
 
   let infoSummary = document.getElementById("info-summary");
-  infoSummary.textContent = person.infoSummary;
+  infoSummary.textContent = this.infoSummary;
 
   let infoImg = document.getElementById("info-img");
-  infoImg.src = person.imgSrc;
+  infoImg.src = this.imgSrc;
 
   // After updating info-box-card with the information of the person clicked, 
   // hide the cards view and enable the info view
