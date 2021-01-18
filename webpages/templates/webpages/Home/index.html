@@ -1,0 +1,160 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Home | Makeathon 3077</title>
+
+    <!-- Style --div -->
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css "
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'webpages/Home/static/css/style.css' %}" type="text/css" />
+
+  </head>
+
+  <body>
+    <!-- Start Your Code Here, Have Fun. -->
+
+    <!-- background div -->
+
+    <div class="section">
+      <div class="video-container">
+        <video autoplay loop muted>
+          <source src="{% static 'webpages/Home/static/images/bg.mp4' %}" type="video/mp4" />
+        </video>
+      </div>
+      <div class="container-fluid">
+        <!-- title and timer -->
+
+        <div class="row">
+          <div class="titles">
+            <div class="col-sm">
+              <img id="heading" src="{% static 'webpages/Home/static/images/title.png' %}" alt="" />
+            </div>
+
+            <!-- timer -->
+
+            <div class="timer">
+              <div id="demo"></div>
+            </div>
+            <div class="devfolio">
+              <a href=""
+                ><img class="devimg" src="{% static 'webpages/Home/static/images/df.png' %}" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- sidenav -->
+
+      <div class="mysidenav" style="text-align: center">
+        <ul id="options" class="ba">
+          <li>
+            <a href=""><i class="icon fas fa-info-circle"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="icon far fa-calendar"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="icon fas fa-microphone"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="icon far fa-list-alt"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="icon fas fa-award"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="icon far fa-user"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="icon far fa-comment-dots"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Responsive Sidenav -->
+
+      <div class="navigation" id="kyun">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icons"><i class="fas fa-info-circle"></i></span>
+              <span class="title">About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icons"><i class="far fa-calendar"></i></span>
+              <span class="title">Schedule</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icons"><i class="fas fa-microphone"></i></span>
+              <span class="title">Sponsors</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icons"><i class="far fa-list-alt"></i></span>
+              <span class="title">FAQ</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icons"><i class="fas fa-award"></i></span>
+              <span class="title">Awards</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icons"><i class="far fa-user"></i></span>
+              <span class="title">Our Team</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icons"><i class="far fa-comment-dots"></i></span>
+              <span class="title">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="toggle" onclick="myFunction()">
+        <i id="maaze" class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Bootstrap 5 Js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom Js -->
+    <script src="{% static 'webpages/Home/static/js/index.js' %}"></script>
+  </body>
+</html>
