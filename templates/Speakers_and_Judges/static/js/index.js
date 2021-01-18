@@ -135,6 +135,9 @@ function personOnClick(){
   let infoImg = document.getElementById("info-img");
   infoImg.src = this.imgSrc;
 
+
+  // After updating info-box-card with the information of the person clicked, 
+  // hide the cards view and enable the info view
   showInfoAndHideCards();
 
   // this.id stores the index of the selected person in the speakerObjects/judgeObjects array
@@ -159,26 +162,46 @@ function personOnClick(){
   // rightArrow.addEventListener("click", personOnClick.bind(nextPerson));
 
 
-  // After updating info-box-card with the information of the person clicked, 
-  // hide the cards view and enable the info view
+  
 }
 
+// A conscious decision was taken to add event listeners to the arrows outside the personOnClick()
+// The alternative would involve reduntant arrow event listeners every time, despite the fact that their functionality remains the same
+// More importantly, it would also involve recursive calls to personOnClick(), with the end result being 2^n personClick() executions 
+// for the nth arrow click, which is highly inefficient 
 function addEventListenersToInfoArrows(){
   let leftArrow = document.getElementById("info-left-arrow");
-  
-
   leftArrow.addEventListener("click", () => {
-    let previousPerson = (getCurrentSpeakerOnInfoPage().id !== 0)? speakers.getSpeakerObjects()[getCurrentSpeakerOnInfoPage().id-1] 
+    let currentSpeaker = getCurrentSpeakerOnInfoPage();
+
+    // currentSpeaker.id stores the index of the currentSpeakerin the speakerObjects array.
+    // Now, on clicking the left arrow, the info of the person prior to it in the array should be shown
+    // if it is not the first element. If it is the first element, the info of the last person in the array
+    // should be shown
+    let previousPerson = (currentSpeaker.id !== 0)? speakers.getSpeakerObjects()[currentSpeaker.id-1] 
                                       : speakers.getSpeakerObjects()[speakers.getSpeakerTotalNumber() -1]; 
+
+    // .call() calls a function but by binding this of the function to the first argument of the call function
+    // Here, we call the personOnClick function with its this bounded to previousPerson, and hence the details of
+    // the previousPerson are displayed                                    
     personOnClick.call(previousPerson);
   });
 
   let rightArrow = document.getElementById("info-right-arrow");
- 
   rightArrow.addEventListener("click", () => {
-    let nextPerson = (getCurrentSpeakerOnInfoPage().id !== speakers.getSpeakerTotalNumber() -1)? speakers.getSpeakerObjects()[getCurrentSpeakerOnInfoPage().id+1]
-    : speakers.getSpeakerObjects()[0];
-    (personOnClick.bind(nextPerson))();
+    let currentSpeaker = getCurrentSpeakerOnInfoPage();
+
+    // currentSpeaker.id stores the index of the currentSpeakerin the speakerObjects array.
+    // Now, on clicking the right arrow, the info of the person next to it in the array should be shown
+    // if it is not the last element. If it is the last element, the info of the first person in the array
+    // should be shown
+    let nextPerson = (currentSpeaker.id !== speakers.getSpeakerTotalNumber() -1)? 
+      speakers.getSpeakerObjects()[currentSpeaker.id+1] : speakers.getSpeakerObjects()[0];
+
+    // .call() calls a function but by binding this of the function to the first argument of the call function
+    // Here, we call the personOnClick function with its this bounded to nextPerson, and hence the details of
+    // the nextPerson are displayed   
+    personOnClick.call(nextPerson);
   })
 }
 
