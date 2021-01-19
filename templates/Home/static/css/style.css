@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .video-container {
@@ -151,7 +151,7 @@ ul.ba {
 }
 /* responsive sidebar */
 
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
   .mysidenav {
     display: none;
   }
@@ -270,7 +270,8 @@ ul.ba {
 /* title */
 
 .titles {
-  padding-top: 5%;
+  /* margin-top: 0%; */
+  /* padding-top: 5%; */
   text-align: center;
   z-index: 1;
 }
@@ -283,6 +284,7 @@ ul.ba {
   margin: auto;
   width: 70%;
   height: 59%;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 767px) {
@@ -385,15 +387,39 @@ ul.ba {
     bottom: 4.5vh;
   }
 }
+@media (max-width: 375){
+  .timer {
+    font-size: 46%;
+  }
+  #heading {
+    margin-top: 45%;
+    width: 120vh;
+    height: 120vh;
+    object-fit: cover;
+  }
+}
 
 @media (max-width: 582px) {
   #tleft {
-    left: 1%;
+    left: 6%;
     bottom: 8vh;
     padding-right: 10%;
+    padding-top: 3%;
+    
+    
   }
   .timer {
     font-size: 48.56%;
+  }
+  #heading {
+    margin-top: 45%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .devimg {
+    width: 40%;
+    height: 40%;
   }
 }
 /* ---------------Timer Styling--------------- */
