@@ -18,10 +18,7 @@ function showInfoAndHideCards() {
   document.querySelector("#judges").style.display = "none";
   document.querySelector("#info").style.display = "block";
 }
-function showJudgeAndHideInfo() {
-  document.querySelector("#judges").style.display = "none";
-  document.querySelector("#info").style.display = "block";
-}
+
 
 // Stores the current speaker/judge object displayed on the info page 
 let currentSpeakerOnInfoPage;
@@ -142,7 +139,6 @@ function personOnClick(){
   // The currentSpeakerOnInfoPage is updated so that the arrows can work, as the arrows on clicked
   // call the previous person or the next person depending on who the currentSpeakerOnInfo page is
   setCurrentSpeakerOnInfoPage(this);
-  console.log('hi');
 
   // Update the info-box-card with information unique to each person
 
