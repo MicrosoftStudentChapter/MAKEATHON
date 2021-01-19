@@ -87,11 +87,6 @@ export let speakers = (function(){
     addSpeakersToSpeakerObjects();
   }
 
-  // const imgFilePath = "./static/images";
-
-  // TODO : Add function that maps img file names to file path by appending
-  // file path in front of every image name
-
   // Factory function which returns a speaker object
   let createSpeakerObject = function(id, name, imgSrc, insta, linkedin, github, 
     infoHeading2, infoDate, infoPlatformAndTime, infoSummary){

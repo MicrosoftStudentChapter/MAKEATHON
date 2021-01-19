@@ -23,9 +23,13 @@ function showJudgeAndHideInfo() {
   document.querySelector("#info").style.display = "block";
 }
 
+// Stores the current speaker/judge object displayed on the info page 
 let currentSpeakerOnInfoPage;
 
 init();
+
+// Function that calls all the requisite functions required for initialisation
+
 function init(){
   speakers.init();
   judges.init();
@@ -41,7 +45,7 @@ function init(){
 }
 
 
-
+// Creates and adds all the speaker cards to the DOM
 function createSpeakerCardsInDOM(){
   let speakerWrapper = document.getElementById("speakers");
 
@@ -53,7 +57,21 @@ function createSpeakerCardsInDOM(){
   iterateAndCreatePersonCardInDOM(speakers.getSpeakerObjects(), speakerWrapper);
 }
 
+// Similar to createSpeakerCardsInDOM(), but for judges
+// Creates and adds all judges cards to the DOM
+function createJudgeCardsInDOM(){
+  let judgeWrapper = document.getElementById("judges");
 
+  let pageHeader = document.createElement("h1");
+  pageHeader.classList.add("header");
+  pageHeader.textContent = "Judges";
+  judgeWrapper.append(pageHeader);
+  
+  iterateAndCreatePersonCardInDOM(judges.getJudgeObjects(), judgeWrapper);
+
+}
+
+// Common code to interate through speakers/judges and add their cards to the DOM 
 function iterateAndCreatePersonCardInDOM(persons, containerDiv){
   for(let person of persons){
     let personContainer = document.createElement("div");
@@ -62,18 +80,27 @@ function iterateAndCreatePersonCardInDOM(persons, containerDiv){
     let personImg = document.createElement("img");
     personImg.classList.add("imgperson");
     personImg.src = `${person.imgSrc}`;
+
+    // func.bind(obj) binds the this of the func to the obj passed to it
+    // Since personOnClick is a callback function, instead of a convulated way to pass the person object to it
+    // a much better way is to simply bind the person object to its this, such that anytime this is referred to in 
+    // personOnClick it refers to the person object
     personImg.addEventListener("click", personOnClick.bind(person));
     personContainer.append(personImg);
 
     let cardsContainer = document.createElement("div");
     cardsContainer.classList.add("cards");
 
+    // Array containing arrays in the form of :
+    // [link of social media for the person, img src of social media icon, type of social media]
     let socialMedias = [ 
       [ person.insta, "./static/images/insta.png", "insta" ], 
       [ person.linkedin, "./static/images/link.png", "link" ], 
       [ person.github, "./static/images/git.png", "git" ]
     ]
 
+    // Instead of repeating three times very similar code to create and the three social media links and icons
+    // to the DOM, the socialMedias array is iterated through 
     let socialMediaLink, socialMediaImgSrc, socialMediaImgClass;
     for([socialMediaLink, socialMediaImgSrc, socialMediaImgClass] of socialMedias){
       let socialMediaContainer = document.createElement("div");
@@ -103,31 +130,17 @@ function iterateAndCreatePersonCardInDOM(persons, containerDiv){
   }
 }
 
-function createJudgeCardsInDOM(){
-  let judgeWrapper = document.getElementById("judges");
-
-  let pageHeader = document.createElement("h1");
-  pageHeader.classList.add("header");
-  pageHeader.textContent = "Judges";
-  judgeWrapper.append(pageHeader);
-  
-  iterateAndCreatePersonCardInDOM(judges.getJudgeObjects(), judgeWrapper);
-
-}
-
-
-
-
-function getCurrentSpeakerOnInfoPage(){
-  return currentSpeakerOnInfoPage;
-}
-
-function setCurrentSpeakerOnInfoPage(speaker){
-  currentSpeakerOnInfoPage = speaker;
-}
-
+// Event handler for when a speaker/judge card is clicked and also when arrows are clicked in the info view
+// Changes the text content and other parameters unique to a speaker/judge in the info page to that of whichever
+// speaker/judge is clicked or who's info page needs to be seen on clicking an arrow. 
+//
+// It does not re-create the entire HTML code for the info page, just changes the textContent and image src
+// of the requisite HTML tags already present in the index.html file for the info page
 
 function personOnClick(){
+
+  // The currentSpeakerOnInfoPage is updated so that the arrows can work, as the arrows on clicked
+  // call the previous person or the next person depending on who the currentSpeakerOnInfo page is
   setCurrentSpeakerOnInfoPage(this);
   console.log('hi');
 
@@ -155,6 +168,15 @@ function personOnClick(){
   // hide the cards view and enable the info view
   showInfoAndHideCards();
 }
+
+function getCurrentSpeakerOnInfoPage(){
+  return currentSpeakerOnInfoPage;
+}
+
+function setCurrentSpeakerOnInfoPage(speaker){
+  currentSpeakerOnInfoPage = speaker;
+}
+
 
 // A conscious decision was taken to add event listeners to the arrows outside the personOnClick()
 // The alternative would involve reduntantly redefining arrow event listeners every time, despite the fact that their functionality remains the same
