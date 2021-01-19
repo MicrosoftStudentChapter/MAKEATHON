@@ -5,8 +5,10 @@ name = "pypi"
 
 [packages]
 django = "*"
+django-environ = "*"
+pre-commit = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.8"
+python_version = "3"
