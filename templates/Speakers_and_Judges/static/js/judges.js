@@ -114,7 +114,7 @@ export let judges = (function(){
   }
 
   // Factory function which returns a judge object
-  let createJudgeObject = function(id, name, imgSrc, insta, linkedin, github, 
+  let createJudgeObject = function(id, type, name, imgSrc, insta, linkedin, github, 
     infoHeading2, infoDate, infoPlatformAndTime, infoSummary){
       return{
         id,

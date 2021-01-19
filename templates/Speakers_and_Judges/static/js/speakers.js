@@ -115,7 +115,7 @@ export let speakers = (function(){
   }
 
   // Factory function which returns a speaker object
-  let createSpeakerObject = function(id, name, imgSrc, insta, linkedin, github, 
+  let createSpeakerObject = function(id, type, name, imgSrc, insta, linkedin, github, 
     infoHeading2, infoDate, infoPlatformAndTime, infoSummary){
       return{
         id,

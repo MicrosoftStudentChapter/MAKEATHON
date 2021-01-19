@@ -183,13 +183,14 @@ function addEventListenersToInfoArrows(){
   leftArrow.addEventListener("click", () => {
     let currentSpeaker = getCurrentSpeakerOnInfoPage();
     let personsArray = (this.type === "speaker")? speakers.getSpeakerObjects() : judges.getJudgeObjects();
+    let totalPersons = (this.type === "speaker")? speakers.getSpeakerTotalNumber() : judges.getJudgeTotalNumber();
 
     // currentSpeaker.id stores the index of the currentSpeakerin the speakerObjects array.
     // Now, on clicking the left arrow, the info of the person prior to it in the array should be shown
     // if it is not the first element. If it is the first element, the info of the last person in the array
     // should be shown
     let previousPerson = (currentSpeaker.id !== 0)? personsArray[currentSpeaker.id-1] 
-                                      : personsArray[speakers.getSpeakerTotalNumber() -1]; 
+                                      : personsArray[totalPersons -1]; 
 
     // .call() calls a function but by binding this of the function to the first argument of the call function
     // Here, we call the personOnClick function with its this bounded to previousPerson, and hence the details of
@@ -200,13 +201,14 @@ function addEventListenersToInfoArrows(){
   let rightArrow = document.getElementById("info-right-arrow");
   rightArrow.addEventListener("click", () => {
     let currentSpeaker = getCurrentSpeakerOnInfoPage();
-
+    let personsArray = (currentSpeaker.type === "speaker")? speakers.getSpeakerObjects() : judges.getJudgeObjects();
+    let totalPersons = (currentSpeaker.type === "speaker")? speakers.getSpeakerTotalNumber() : judges.getJudgeTotalNumber();
     // currentSpeaker.id stores the index of the currentSpeakerin the speakerObjects array.
     // Now, on clicking the right arrow, the info of the person next to it in the array should be shown
     // if it is not the last element. If it is the last element, the info of the first person in the array
     // should be shown
-    let nextPerson = (currentSpeaker.id !== speakers.getSpeakerTotalNumber() -1)? 
-      speakers.getSpeakerObjects()[currentSpeaker.id+1] : speakers.getSpeakerObjects()[0];
+    let nextPerson = (currentSpeaker.id !== totalPersons -1)? 
+      personsArray[currentSpeaker.id+1] : personsArray[0];
 
     // .call() calls a function but by binding this of the function to the first argument of the call function
     // Here, we call the personOnClick function with its this bounded to nextPerson, and hence the details of
