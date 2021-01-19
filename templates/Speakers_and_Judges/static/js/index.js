@@ -1,4 +1,5 @@
 import { speakers } from "./speakers.js";
+import { judges } from './judges.js'
 
 function showSpeakersAndHideJudges() {
   document.querySelector("#judges").style.display = "none";
@@ -26,12 +27,14 @@ let currentSpeakerOnInfoPage;
 init();
 function init(){
   speakers.init();
+  judges.init();
 
   // Add event listeners to speakers button and judges button
   document.getElementById("speakers-button").addEventListener("click", showSpeakersAndHideJudges);
   document.getElementById("judges-button").addEventListener("click", showJudgesAndHideSpeakers);
 
   createSpeakerCardsInDOM();
+  createJudgeCardsInDOM();
   showSpeakersAndHideJudges();
   addEventListenersToInfoArrows();
 }
@@ -46,7 +49,59 @@ function createSpeakerCardsInDOM(){
   pageHeader.textContent = "Speakers";
   speakerWrapper.append(pageHeader);
 
-  for(let person of speakers.getSpeakerObjects()){
+  iterateAndCreatePersonCardInDOM(speakers.getSpeakerObjects(), speakerWrapper);
+
+  // for(let person of speakers.getSpeakerObjects()){
+  //   let personContainer = document.createElement("div");
+  //   personContainer.classList.add = "person";
+    
+  //   let personImg = document.createElement("img");
+  //   personImg.classList.add("imgperson");
+  //   personImg.src = `${person.imgSrc}`;
+  //   personImg.addEventListener("click", personOnClick.bind(person));
+  //   personContainer.append(personImg);
+
+  //   let cardsContainer = document.createElement("div");
+  //   cardsContainer.classList.add("cards");
+
+  //   let socialMedias = [ 
+  //     [ person.insta, "./static/images/insta.png", "insta" ], 
+  //     [ person.linkedin, "./static/images/link.png", "link" ], 
+  //     [ person.github, "./static/images/git.png", "git" ]
+  //   ]
+
+  //   let socialMediaLink, socialMediaImgSrc, socialMediaImgClass;
+  //   for([socialMediaLink, socialMediaImgSrc, socialMediaImgClass] of socialMedias){
+  //     let socialMediaContainer = document.createElement("div");
+  //     socialMediaContainer.classList.add("icon");
+
+  //     let link = document.createElement("a");
+  //     link.href = socialMediaLink;
+  //     link.target = "_blank";
+
+  //     let img = document.createElement("img");
+  //     img.classList.add(socialMediaImgClass);
+  //     img.src = socialMediaImgSrc;
+  //     link.append(img);
+
+  //     socialMediaContainer.append(link);
+  //     cardsContainer.append(socialMediaContainer);
+  //   }
+
+  //   personContainer.append(cardsContainer);
+
+  //   let personNameHeader = document.createElement("h5");
+  //   personNameHeader.classList.add("title");
+  //   personNameHeader.textContent = `${person.name}`;
+  //   personContainer.append(personNameHeader);
+
+  //   speakerWrapper.append(personContainer);
+  // }
+}
+
+
+function iterateAndCreatePersonCardInDOM(persons, containerDiv){
+  for(let person of persons){
     let personContainer = document.createElement("div");
     personContainer.classList.add = "person";
     
@@ -90,8 +145,20 @@ function createSpeakerCardsInDOM(){
     personNameHeader.textContent = `${person.name}`;
     personContainer.append(personNameHeader);
 
-    speakerWrapper.append(personContainer);
+    containerDiv.append(personContainer);
   }
+}
+
+function createJudgeCardsInDOM(){
+  let judgeWrapper = document.getElementById("judges");
+
+  let pageHeader = document.createElement("h1");
+  pageHeader.classList.add("header");
+  pageHeader.textContent = "Judges";
+  judgeWrapper.append(pageHeader);
+  
+  iterateAndCreatePersonCardInDOM(judges.getJudgeObjects(), judgeWrapper);
+
 }
 
 

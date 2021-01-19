@@ -1,4 +1,4 @@
-// Speakers module pattern
+//Judges module pattern
 export let judges = (function(){
   // Total number of judges
   let judgeTotalNumber = 6;
@@ -110,19 +110,19 @@ export let judges = (function(){
   }
 
   function addJudgesToJudgeObjects(){
-    for(let i = 0; i < speakerTotalNumber; i++){
-      speakerObjects.push(
+    for(let i = 0; i < judgeTotalNumber; i++){
+      judgeObjects.push(
         createJudgeObject(
           i,
-          speakerNames[i],
-          speakerImageSrc[i],
-          speakerInsta[i],
-          speakerLinkedIn[i],
-          speakerGitHub[i],
-          speakerInfoHeading2[i],
-          speakerInfoDate[i],
-          speakerInfoPlatformAndTime[i],
-          speakerInfoSummary[i]
+          judgeNames[i],
+          judgeImageSrc[i],
+          judgeInsta[i],
+          judgeLinkedIn[i],
+          judgeGitHub[i],
+          judgeInfoHeading2[i],
+          judgeInfoDate[i],
+          judgeInfoPlatformAndTime[i],
+          judgeInfoSummary[i]
         )
       ) 
     }
