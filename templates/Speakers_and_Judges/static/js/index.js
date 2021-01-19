@@ -15,6 +15,7 @@ function showJudgesAndHideSpeakers() {
 
 function showInfoAndHideCards() {
   document.querySelector("#speakers").style.display = "none";
+  document.querySelector("#judges").style.display = "none";
   document.querySelector("#info").style.display = "block";
 }
 function showJudgeAndHideInfo() {
@@ -175,6 +176,7 @@ function setCurrentSpeakerOnInfoPage(speaker){
 
 function personOnClick(){
   setCurrentSpeakerOnInfoPage(this);
+  console.log('hi');
 
   // Update the info-box-card with information unique to each person
 
