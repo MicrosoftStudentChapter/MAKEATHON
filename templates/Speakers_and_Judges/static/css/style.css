@@ -591,6 +591,19 @@ p {
     top:55%;
   }
 }
+@media screen and (min-width: 700px) and (max-width:900px){
+  .safari-specific{
+    top:19.15%;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width:415px){
+  .safari-specific{
+    top:19.15%;
+  }
+}
+
+
 @-moz-document url-prefix() {
   .abcd {
     position: absolute;
