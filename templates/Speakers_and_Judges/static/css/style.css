@@ -623,7 +623,12 @@ p {
       left: 40%;
     }
   }
-
+  @media ALL and (max-width: 800px) {
+    .abcd {
+      top: 19%;
+      left: 40%;
+    }
+  }
   @media ALL and (max-width: 700px) {
     .abcd {
       top: 68%;
