@@ -352,6 +352,9 @@ body {
   -webkit-backdrop-filter: blur(25px);
   border-radius: 15px;
   border: 1px solid rgb(255 255 255 / 15%);
+  animation-duration: 2s;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
 }
 .image {
   position: absolute;
