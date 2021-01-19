@@ -532,3 +532,55 @@ p {
     left: 0.5%;
   }
 }
+
+@-moz-document url-prefix() {
+  .abcd {
+    position: absolute;
+    top: 195px;
+  }
+
+  @media ALL and (max-width: 1300px) {
+    .abcd {
+      position: absolute;
+      left: 72%;
+    }
+  }
+
+  @media ALL and (max-width: 960px) {
+    .abcd {
+      position: absolute;
+      left: 40%;
+    }
+  }
+
+  @media ALL and (max-width: 700px) {
+    .abcd {
+      top: 68%;
+      left: 15%;
+    }
+  }
+  @media ALL and (max-width: 635px) {
+    .abcd {
+      top: 60%;
+      left: 15%;
+    }
+  }
+  @media ALL and (max-width: 500px) {
+    .abcd {
+      top: 55%;
+      left: 15%;
+    }
+  }
+  @media ALL and (max-width: 415px) {
+    .abcd {
+      top: 45%;
+      left: 15%;
+    }
+  }
+  @media ALL and (max-width: 350px) {
+    .abcd {
+      top: 40%;
+      align: center;
+    }
+  }
+}
