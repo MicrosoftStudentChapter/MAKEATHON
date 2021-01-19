@@ -367,7 +367,7 @@ body {
   height: 242px;
   left: 72%;
   top: 58px;
-  border: 2px solid #b45804;
+  /*border: 2px solid #b45804;*/
 
   border-radius: 10px;
 }
@@ -428,12 +428,20 @@ p {
 
 @media ALL and (max-width: 1300px) {
   .box {
+
     margin-left: 30%;
   }
 
   .abcd {
     left: 60%;
   }
+  .safari-specific img{
+    position: absolute;
+    top:70%;
+    right:20%;
+
+  }
+
 }
 @media ALL and (max-width: 1100px) {
   .abcd {
@@ -452,10 +460,20 @@ p {
   .text1 {
     margin-top: 39%;
   }
+  .safari-specific img{
+    position: absolute;
+    top:-12%;
+    right:;
+    bottom:;
+    left:70%;
+
+  }
+}
 }
 @media ALL and (max-width: 960px) {
   .abcd {
     left: 10%;
+
   }
   .box {
     height: 85%;
@@ -466,6 +484,10 @@ p {
   }
   .text1 {
     margin-top: 250px;
+
+  }
+  .safari-specific img{
+    left:10%;
   }
 }
 @media ALL and (max-width: 700px) {
@@ -477,6 +499,7 @@ p {
     margin-top: 40%;
     margin-left: 20%;
     max-width: 75%;
+    padding-top:30%;
   }
   .text1 {
     font-size: 85%;
@@ -489,11 +512,17 @@ p {
     text-align: center;
     margin-right: 0%;
   }
+  .safari-specific img{
+    position:absolute;
+
+    left:0.000003%;
+  }
 }
 @media ALL and (max-width: 615px) {
   .text1 {
     margin-top: 275px;
   }
+
 }
 
 @media ALL and (max-width: 415px) {
@@ -525,14 +554,43 @@ p {
     height: 34px;
     width: 48px;
   }
+  .safari-specific img{
+    left:0%;
+    top:30%;
+  }
 }
 
 @media All and (max-width: 290px) {
   .abcd {
     left: 0.5%;
   }
+.safari-specific img{
+  left:0.5%;
+}
 }
 
+
+.safari-specific{
+  top:195px;
+
+}
+@media ALL and (max-width:400px )
+{
+  .safari-specific {
+    top:26% !important;
+  }
+  .abcd{
+    border:none;
+
+  }
+}
+
+@media ALL and (max-width:700px )
+{
+  .safari-specific{
+    top:55%;
+  }
+}
 @-moz-document url-prefix() {
   .abcd {
     position: absolute;

@@ -489,7 +489,13 @@
         </div>
       </div>
     </div>
+<script>
 
+    var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    if (isSafari){
+      document.querySelector(".abcd").classList.add("safari-specific") ;
+    }
+</script>
     <!-- Bootstrap 5 Js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
