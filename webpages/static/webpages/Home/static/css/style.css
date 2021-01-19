@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-.section {
+#home .section {
   font-family: "Poppins", sans-serif;
   position: relative;
   width: 100vw;
@@ -10,7 +10,7 @@
   overflow: hidden;
 }
 
-.video-container {
+#home .video-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -18,7 +18,7 @@
   height: 100vh;
 }
 
-.video-container video {
+#home .video-container video {
   /* Make video to at least 100% wide and tall */
   min-width: 100%;
   min-height: 100%;
@@ -38,7 +38,7 @@
 
 /* Sidenav */
 
-.mysidenav {
+#home .mysidenav {
   z-index: 3;
   float: left;
   position: absolute;
@@ -47,7 +47,7 @@
   height: 100%;
 }
 
-.icon {
+#home .icon {
   padding: 50% 50%;
   font-size: 150%;
   width: 200%;
@@ -58,7 +58,7 @@
   border-radius: 1.5rem;
 }
 
-.mysidenav ul li::after {
+#home .mysidenav ul li::after {
   position: absolute;
   background: #f24385;
   color: rgb(255, 255, 255);
@@ -76,46 +76,48 @@
   transition: all 0.4s ease-out;
 }
 
-.mysidenav ul li:nth-child(1)::after {
+#home .mysidenav ul li:nth-child(1)::after {
   content: "About";
   line-height: 2.9rem;
 }
-.mysidenav ul li:nth-child(2)::after {
+#home .mysidenav ul li:nth-child(2)::after {
   content: "Schedule";
   line-height: 2.9rem;
   margin: 262% 0;
 }
-.mysidenav ul li:nth-child(3)::after {
+
+#home .mysidenav ul li:nth-child(3)::after {
   content: "Sponsors";
   line-height: 2.9rem;
   margin: 521% 0;
 }
-.mysidenav ul li:nth-child(4)::after {
+#home .mysidenav ul li:nth-child(4)::after {
   content: "FAQs";
   line-height: 2.9rem;
   margin: 779% 0;
 }
-.mysidenav ul li:nth-child(5)::after {
+#home .mysidenav ul li:nth-child(5)::after {
   content: "Awards";
   line-height: 2.9rem;
   margin: 1039% 0;
 }
-.mysidenav ul li:nth-child(6)::after {
+#home .mysidenav ul li:nth-child(6)::after {
   content: "Our Team";
   line-height: 2.9rem;
   margin: 1301% 0;
 }
-.mysidenav ul li:nth-child(7)::after {
+
+#home .mysidenav ul li:nth-child(7)::after {
   content: "Contact";
   line-height: 2.9rem;
   margin: 1561% 0;
 }
 
-.mysidenav ul li:hover:after {
+#home .mysidenav ul li:hover:after {
   transform: perspective(10rem);
 }
 
-.icon:hover {
+#home .icon:hover {
   background: #f24385;
   color: white;
   border-radius: 0;
@@ -123,11 +125,11 @@
   border-bottom-left-radius: 3rem;
 }
 
-ul.ba {
+#home ul.ba {
   list-style-type: none;
 }
 
-#options {
+#home #options {
   position: absolute;
   margin-left: 5%;
   bottom: 0;
@@ -138,11 +140,11 @@ ul.ba {
 /* responsive sidebar */
 
 @media (max-width: 1000px) {
-  .mysidenav {
+  #home .mysidenav {
     display: none;
   }
 
-  .navigation {
+  #home .navigation {
     display: none;
     margin: auto;
     position: absolute;
@@ -158,18 +160,20 @@ ul.ba {
     z-index: 5;
   }
 
-  .navigation ul {
+  #home .navigation ul {
     position: absolute;
     top: 2rem;
     width: 100%;
   }
 
-  .navigation ul li {
+  
+#home .navigation ul li {
     list-style: none;
     padding: 3% 2%;
   }
 
-  .navigation ul li a:hover {
+  
+#home .navigation ul li a:hover {
     background: #ea1d63;
     margin: 1% 2%;
     padding-top: 3%;
@@ -179,7 +183,7 @@ ul.ba {
     z-index: 6;
   }
 
-  .navigation ul li a {
+  #home .navigation ul li a {
     position: relative;
     display: flex;
     padding: auto;
@@ -188,21 +192,21 @@ ul.ba {
     color: rgb(255, 255, 255);
   }
 
-  .navigation ul li a .icons {
+  #home .navigation ul li a .icons {
     min-width: 0.2rem;
     height: 3.75rem;
     line-height: 1.9rem;
     padding-left: 4%;
   }
 
-  .navigation ul li a .title {
+  #home .navigation ul li a .title {
     padding: 0 0.5rem;
     line-height: 2rem;
     z-index: 2;
   }
 
   /* cross */
-  .toggle .fa-window-close {
+  #home .toggle .fa-window-close {
     position: absolute;
     cursor: pointer;
     color: white;
@@ -215,7 +219,7 @@ ul.ba {
   }
 
   /* lines*/
-  .toggle .fa-bars {
+  #home .toggle .fa-bars {
     position: absolute;
     cursor: pointer;
     color: white;
@@ -227,13 +231,13 @@ ul.ba {
     font-size: 200%;
   }
 
-  .toggle:before {
+  #home .toggle:before {
     z-index: 6;
   }
 }
 
 @media (max-width: 608px) {
-  .navigation {
+  #home .navigation {
     display: none;
     position: absolute;
     width: 60%;
@@ -247,7 +251,7 @@ ul.ba {
     overflow: hidden;
     z-index: 5;
   }
-  .navigation.active {
+  #home .navigation.active {
     left: 0rem;
     width: 100%;
   }
@@ -255,7 +259,7 @@ ul.ba {
 
 /* title */
 
-.titles {
+#home .titles {
   padding-top: 5%;
   text-align: center;
   z-index: 1;
@@ -265,14 +269,14 @@ ul.ba {
 
 /* heading */
 
-#heading {
+#home #heading {
   margin: auto;
   width: 70%;
   height: 59%;
 }
 
 @media screen and (max-width: 767px) {
-  #heading {
+  #home #heading {
     margin: auto;
     width: 90%;
     height: 75%;
@@ -283,7 +287,7 @@ ul.ba {
 
 /* Devfolio */
 
-.devfolio {
+#home .devfolio {
   z-index: 3;
   text-align: center;
   padding-top: 0.5%;
@@ -297,7 +301,7 @@ ul.ba {
     }
   } */
 
-.devimg {
+  #home .devimg {
   width: 20%;
   height: 20%;
 }
@@ -305,13 +309,13 @@ ul.ba {
 /* responsive devfolio */
 
 @media (max-width: 700px) {
-  .devfolio {
+  #home .devfolio {
     z-index: 3;
     text-align: center;
     padding-top: 2%;
   }
 
-  .devimg {
+  #home .devimg {
     width: 30%;
     height: 20%;
   }
@@ -321,7 +325,8 @@ ul.ba {
 
 /* timer */
 
-.timerspan {
+
+#home .timerspan {
   background: rgba(255, 255, 255, 0.25);
   box-shadow: rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
@@ -334,7 +339,7 @@ ul.ba {
   font-style: italic;
 }
 
-#demo {
+#home #demo {
   font-weight: 800;
   color: #ffffff;
 }
@@ -342,7 +347,7 @@ ul.ba {
 /* responsive timer */
 
 @media (max-width: 582px) {
-  .timerspan {
+  #home .timerspan {
     background: rgba(255, 255, 255, 0.25);
     box-shadow: rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
@@ -358,7 +363,7 @@ ul.ba {
 /* ---------------Time-left Image--------------- */
 
 /* time-left */
-#tleft {
+#home #tleft {
   z-index: 5;
   position: relative;
   right: 28%;
@@ -375,34 +380,34 @@ ul.ba {
 /* responsive time-left */
 
 @media (max-width: 1160px) {
-  #tleft {
+  #home #tleft {
     right: 3%;
     bottom: 4.5vh;
   }
 }
 
 @media (max-width: 992px) {
-  #tleft {
+  #home #tleft {
     right: 3%;
     bottom: 4.5vh;
   }
 }
 
 @media (max-width: 767px) {
-  #tleft {
+  #home #tleft {
     left: 20.5%;
     bottom: 7.5vh;
   }
 }
 
 @media (max-width: 582px) {
-  #tleft {
+  #home #tleft {
     left: 1%;
     bottom: 8vh;
   }
 }
 @media (max-width: 582px) {
-  #tleft {
+  #home #tleft {
     left: 12%;
     bottom: 6vh;
   }
@@ -422,12 +427,12 @@ ul.ba {
 
 /* timer styling */
 
-.wrapper-class {
+#home .wrapper-class {
   position: relative;
   display: inline-block;
 }
 
-span.number {
+#home span.number {
   font-family: "Lucida Sans";
   font-style: medium;
   font-weight: 600;
@@ -436,27 +441,27 @@ span.number {
 }
 
 @media (max-width: 600px) {
-  span.number {
+  #home span.number {
     font-size: 2rem;
   }
 }
 
 @media (max-width: 320px) {
-  span.number {
+  #home span.number {
     font-size: 1.8rem;
   }
-  .timerspan {
+  #home .timerspan {
     padding: 1%;
   }
 }
 
-span.M {
+#home span.M {
   color: #ff5abd;
   mix-blend-mode: color-dodge;
   z-index: 1;
 }
 
-span.B {
+#home span.B {
   top: 0.5px;
   left: 0px;
   position: absolute;
@@ -466,7 +471,7 @@ span.B {
   z-index: 2;
 }
 
-span.Y {
+#home span.Y {
   top: 1px;
   left: 0px;
   position: absolute;
@@ -476,7 +481,7 @@ span.Y {
   z-index: 3;
 }
 
-span.C {
+#home span.C {
   top: 1.5px;
   left: 0px;
   position: absolute;
@@ -486,7 +491,7 @@ span.C {
   z-index: 4;
 }
 
-span.M2 {
+#home span.M2 {
   top: 2px;
   left: 0px;
   position: absolute;
@@ -496,7 +501,7 @@ span.M2 {
   z-index: 5;
 }
 
-span.B2 {
+#home span.B2 {
   top: 2.5px;
   left: 0px;
   position: absolute;
@@ -504,7 +509,8 @@ span.B2 {
   z-index: 6;
 }
 
-span.Y2 {
+
+#home span.Y2 {
   top: 3px;
   left: 0px;
   position: absolute;
