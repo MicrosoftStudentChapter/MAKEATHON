@@ -135,7 +135,7 @@ function personOnClick(){
 }
 
 // A conscious decision was taken to add event listeners to the arrows outside the personOnClick()
-// The alternative would involve reduntant arrow event listeners every time, despite the fact that their functionality remains the same
+// The alternative would involve reduntantly redefining arrow event listeners every time, despite the fact that their functionality remains the same
 // More importantly, it would also involve recursive calls to personOnClick(), with the end result being 2^n personClick() executions 
 // for the nth arrow click, which is highly inefficient 
 function addEventListenersToInfoArrows(){

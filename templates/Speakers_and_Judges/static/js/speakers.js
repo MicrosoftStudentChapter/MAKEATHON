@@ -20,15 +20,64 @@ export let speakers = (function(){
     './static/images/pichai.png',
   ];
 
-  let speakerInsta = [];
-  let speakerLinkedIn = [];
-  let speakerGitHub = [];
+  let speakerInsta = [
+    'https://www.instagram.com/mlsc_tiet/?hl=en',
+    'https://www.instagram.com/microsoft/?hl=en',
+    'https://www.instagram.com/mlsc_tiet/?hl=en',
+    'https://www.instagram.com/microsoft/?hl=en',
+    'https://www.instagram.com/mlsc_tiet/?hl=en',
+    'https://www.instagram.com/microsoft/?hl=en',
+  ];
+  let speakerLinkedIn = [
+    'https://www.linkedin.com/company/microsoft',
+    'https://in.linkedin.com/company/microsoft-learn-student-chapter',
+    'https://www.linkedin.com/company/microsoft',
+    'https://in.linkedin.com/company/microsoft-learn-student-chapter',
+    'https://www.linkedin.com/company/microsoft',
+    'https://in.linkedin.com/company/microsoft-learn-student-chapter',
+  ];
+  let speakerGitHub = [
+    'https://github.com/microsoft',
+    'https://github.com/MicrosoftStudentChapter',
+    'https://github.com/microsoft',
+    'https://github.com/MicrosoftStudentChapter',
+    'https://github.com/microsoft',
+    'https://github.com/MicrosoftStudentChapter',
+  ];
 
   // Speaker attributes for their info page
-  let speakerInfoHeading2 = [];
-  let speakerInfoDate = [];
-  let speakerInfoPlatformAndTime = [];
-  let speakerInfoSummary = [];
+  let speakerInfoHeading2 = [
+    'DAY 1',
+    'DAY 2',
+    'DAY 1',
+    'DAY 2',
+    'DAY 1',
+    'DAY 2',
+  ];
+  let speakerInfoDate = [
+    'DECEMBER 69, 2069',
+    'APRIL 20, 2042',
+    'DECEMBER 69, 2069',
+    'APRIL 20, 2042',
+    'DECEMBER 69, 2069',
+    'APRIL 20, 2042',
+  ];
+  let speakerInfoPlatformAndTime = [
+    'JITSI MEET, 4:20 PM',
+    'YOUTUBE LIVE, 6:30 PM',
+    'MASTODON 4:20 PM',
+    'JITSI MEET, 4:20 PM',
+    'YOUTUBE LIVE, 6:30 PM',
+    'MASTODON 4:20 PM'
+  ];
+  let speakerInfoSummary = [
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.',
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.',
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.',
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.',
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.',
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.',
+  ];
 
   // Array that stores all the speaker objects
   let speakerObjects = [];
