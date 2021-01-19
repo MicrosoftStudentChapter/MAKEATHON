@@ -118,6 +118,7 @@ export let judges = (function(){
     infoHeading2, infoDate, infoPlatformAndTime, infoSummary){
       return{
         id,
+        type,
         name,
         imgSrc,
         insta,
@@ -138,6 +139,7 @@ export let judges = (function(){
       judgeObjects.push(
         createJudgeObject(
           i,
+          "judge",
           judgeNames[i],
           judgeImageSrc[i],
           judgeInsta[i],

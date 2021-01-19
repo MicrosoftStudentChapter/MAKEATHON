@@ -119,6 +119,7 @@ export let speakers = (function(){
     infoHeading2, infoDate, infoPlatformAndTime, infoSummary){
       return{
         id,
+        type,
         name,
         imgSrc,
         insta,
@@ -139,6 +140,7 @@ export let speakers = (function(){
       speakerObjects.push(
         createSpeakerObject(
           i,
+          "speaker",
           speakerNames[i],
           speakerImageSrc[i],
           speakerInsta[i],

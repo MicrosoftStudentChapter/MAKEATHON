@@ -182,13 +182,14 @@ function addEventListenersToInfoArrows(){
   let leftArrow = document.getElementById("info-left-arrow");
   leftArrow.addEventListener("click", () => {
     let currentSpeaker = getCurrentSpeakerOnInfoPage();
+    let personsArray = (this.type === "speaker")? speakers.getSpeakerObjects() : judges.getJudgeObjects();
 
     // currentSpeaker.id stores the index of the currentSpeakerin the speakerObjects array.
     // Now, on clicking the left arrow, the info of the person prior to it in the array should be shown
     // if it is not the first element. If it is the first element, the info of the last person in the array
     // should be shown
-    let previousPerson = (currentSpeaker.id !== 0)? speakers.getSpeakerObjects()[currentSpeaker.id-1] 
-                                      : speakers.getSpeakerObjects()[speakers.getSpeakerTotalNumber() -1]; 
+    let previousPerson = (currentSpeaker.id !== 0)? personsArray[currentSpeaker.id-1] 
+                                      : personsArray[speakers.getSpeakerTotalNumber() -1]; 
 
     // .call() calls a function but by binding this of the function to the first argument of the call function
     // Here, we call the personOnClick function with its this bounded to previousPerson, and hence the details of
