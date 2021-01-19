@@ -13,22 +13,22 @@ export let judges = (function(){
   // First element of the array corresponds to the 
   // name of the first judge and so on
   let judgeNames = [
-    'RICHARD STALLMAN',
-    'LINUS TORVALDS',
     'EDWARD SNOWDEN',
     'RICHARD STALLMAN',
     'LINUS TORVALDS',
     'EDWARD SNOWDEN',
+    'RICHARD STALLMAN',
+    'LINUS TORVALDS',
   ];
 
   // Array having the path of the image of each judge
   let judgeImageSrc = [
-    './static/images/img2.png',
     './static/images/img3.png',
     './static/images/pichai.png',
     './static/images/img2.png',
     './static/images/img3.png',
     './static/images/pichai.png',
+    './static/images/img2.png',
   ];
     
   // Array having the instagram id of each judge
