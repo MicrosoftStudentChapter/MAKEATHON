@@ -50,8 +50,7 @@
   }
 } */
 
-
-#about-mlsc  #left-content {
+#about-mlsc #left-content {
   grid-column-start: 1;
   grid-column-end: 6;
   grid-row-start: 4;
@@ -276,7 +275,7 @@
 }
 
 @media screen and (max-width: 780px) {
-  #about-mlsc  {
+  #about-mlsc {
     background-size: cover;
     background-position: center;
   }
@@ -319,7 +318,7 @@
     padding-left: 0%;
   }
 
-  #about-mlsc  {
+  #about-mlsc {
     object-fit: cover;
   }
 

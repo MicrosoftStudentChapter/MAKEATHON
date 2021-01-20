@@ -36,210 +36,208 @@
 
   <body>
     <!-- Start Your Code Here, Have Fun. -->
-    <section style="position: relative;" id="home">
+    <section style="position: relative" id="home">
+      <!-- background div -->
 
-    <!-- background div -->
+      <div class="section">
+        <div class="video-container">
+          <video autoplay loop muted>
+            <source
+              src="{% static 'webpages/Home/static/images/bg.mp4' %}"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="container-fluid">
+          <!-- title and timer -->
 
-    <div class="section">
-      <div class="video-container">
-        <video autoplay loop muted>
-          <source
-            src="{% static 'webpages/Home/static/images/bg.mp4' %}"
-            type="video/mp4"
-          />
-        </video>
-      </div>
-      <div class="container-fluid">
-        <!-- title and timer -->
-
-        <div class="row">
-          <div class="titles">
-            <div class="col-sm">
-              <img
-                id="heading"
-                src="{% static 'webpages/Home/static/images/title.png' %}"
-                alt=""
-              />
-            </div>
-
-            <!-- timer -->
-
-            <div class="timer">
-              <div id="demo"></div>
-            </div>
-            <div class="devfolio">
-              <a href=""
-                ><img
-                  class="devimg"
-                  src="{% static 'webpages/Home/static/images/df.png' %}"
+          <div class="row">
+            <div class="titles">
+              <div class="col-sm">
+                <img
+                  id="heading"
+                  src="{% static 'webpages/Home/static/images/title.png' %}"
                   alt=""
-              /></a>
+                />
+              </div>
+
+              <!-- timer -->
+
+              <div class="timer">
+                <div id="demo"></div>
+              </div>
+              <div class="devfolio">
+                <a href=""
+                  ><img
+                    class="devimg"
+                    src="{% static 'webpages/Home/static/images/df.png' %}"
+                    alt=""
+                /></a>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- sidenav -->
+
+        <div class="mysidenav" style="text-align: center">
+          <ul id="options" class="ba">
+            <li>
+              <a href=""><i class="icon fas fa-info-circle"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="icon far fa-calendar"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="icon fas fa-microphone"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="icon far fa-list-alt"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="icon fas fa-award"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="icon far fa-user"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="icon far fa-comment-dots"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Responsive Sidenav -->
+
+        <div class="navigation" id="kyun">
+          <ul>
+            <li>
+              <a href="#">
+                <span class="icons"><i class="fas fa-info-circle"></i></span>
+                <span class="title">About</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icons"><i class="far fa-calendar"></i></span>
+                <span class="title">Schedule</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icons"><i class="fas fa-microphone"></i></span>
+                <span class="title">Sponsors</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icons"><i class="far fa-list-alt"></i></span>
+                <span class="title">FAQ</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icons"><i class="fas fa-award"></i></span>
+                <span class="title">Awards</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icons"><i class="far fa-user"></i></span>
+                <span class="title">Our Team</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icons"><i class="far fa-comment-dots"></i></span>
+                <span class="title">Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="toggle" onclick="myFunction()">
+          <i id="maaze" class="fas fa-bars"></i>
+        </button>
       </div>
 
-      <!-- sidenav -->
+      <!-- Bootstrap 5 Js -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"
+      ></script>
 
-      <div class="mysidenav" style="text-align: center">
-        <ul id="options" class="ba">
-          <li>
-            <a href=""><i class="icon fas fa-info-circle"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="icon far fa-calendar"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="icon fas fa-microphone"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="icon far fa-list-alt"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="icon fas fa-award"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="icon far fa-user"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="icon far fa-comment-dots"></i></a>
-          </li>
-        </ul>
-      </div>
+      <!-- Custom Js -->
 
-      <!-- Responsive Sidenav -->
+      <script type="text/javascript">
+        var DJANGO_STATIC_URL = "{{ STATIC_URL }}";
+      </script>
 
-      <div class="navigation" id="kyun">
-        <ul>
-          <li>
-            <a href="#">
-              <span class="icons"><i class="fas fa-info-circle"></i></span>
-              <span class="title">About</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icons"><i class="far fa-calendar"></i></span>
-              <span class="title">Schedule</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icons"><i class="fas fa-microphone"></i></span>
-              <span class="title">Sponsors</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icons"><i class="far fa-list-alt"></i></span>
-              <span class="title">FAQ</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icons"><i class="fas fa-award"></i></span>
-              <span class="title">Awards</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icons"><i class="far fa-user"></i></span>
-              <span class="title">Our Team</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icons"><i class="far fa-comment-dots"></i></span>
-              <span class="title">Contact</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <script type="text/javascript">
+        // Set the date we're counting down to
+        var countDownDate = new Date("Feb 23, 2021 15:37:25").getTime();
+        var DJANGO_STATIC_URL = "{{ STATIC_URL }}";
 
-      <button class="toggle" onclick="myFunction()">
-        <i id="maaze" class="fas fa-bars"></i>
-      </button>
-    </div>
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+          // Get today's date and time
+          var now = new Date().getTime();
 
-    <!-- Bootstrap 5 Js -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-      crossorigin="anonymous"
-    ></script>
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
 
-    <!-- Custom Js -->
+          // Time calculations for days, hours, minutes and seconds
+          var seconds = Math.floor(distance / 1000);
 
-    <script type="text/javascript">
-      var DJANGO_STATIC_URL = "{{ STATIC_URL }}";
-    </script>
+          // Output the result in an element with id="demo"
+          var str = "";
+          var time = String(seconds);
 
-    <script type="text/javascript">
-      // Set the date we're counting down to
-      var countDownDate = new Date("Feb 23, 2021 15:37:25").getTime();
-      var DJANGO_STATIC_URL = "{{ STATIC_URL }}";
+          for (var i = 0; i < time.length; i++) {
+            str += generateTimer(time[i]);
+          }
+          str += `<div class="time-left" style="text-align: right"><img id="tleft" src="${DJANGO_STATIC_URL}/static/webpages/Home/static/images/tleft.png" alt=""></div>`;
+          document.getElementById("demo").innerHTML = str;
 
-      // Update the count down every 1 second
-      var x = setInterval(function () {
-        // Get today's date and time
-        var now = new Date().getTime();
+          str = "";
 
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
+          // If the count down is over, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
 
-        // Time calculations for days, hours, minutes and seconds
-        var seconds = Math.floor(distance / 1000);
+        // Sidenavbar Toggle
 
-        // Output the result in an element with id="demo"
-        var str = "";
-        var time = String(seconds);
+        function myFunction() {
+          var x = document.getElementById("kyun");
+          var y = document.getElementById("maaze");
 
-        for (var i = 0; i < time.length; i++) {
-          str += generateTimer(time[i]);
+          if (x.style.display === "none") {
+            x.style.display = "initial";
+            y.classList.remove("fa-bars");
+            y.classList.add("fa-window-close");
+          } else {
+            x.style.display = "none";
+            y.classList.remove("fa-window-close");
+            y.classList.add("fa-bars");
+          }
         }
-        str += `<div class="time-left" style="text-align: right"><img id="tleft" src="${DJANGO_STATIC_URL}/static/webpages/Home/static/images/tleft.png" alt=""></div>`;
-        document.getElementById("demo").innerHTML = str;
 
-        str = "";
-
-        // If the count down is over, write some text
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
+        function generateTimer(x) {
+          return (
+            `<div class="timerspan">` +
+            `<div class="wrapper-class"><span class="number M"> ${x} </span>` +
+            `<span class="number B"> ${x} </span>` +
+            `<span class="number Y"> ${x} </span>` +
+            `<span class="number C"> ${x} </span>` +
+            `<span class="number M2"> ${x} </span>` +
+            `<span class="number B2"> ${x} </span>` +
+            `<span class="number Y2"> ${x} </span> </div> </div>`
+          );
         }
-      }, 1000);
-
-      // Sidenavbar Toggle
-
-      function myFunction() {
-        var x = document.getElementById("kyun");
-        var y = document.getElementById("maaze");
-
-        if (x.style.display === "none") {
-          x.style.display = "initial";
-          y.classList.remove("fa-bars");
-          y.classList.add("fa-window-close");
-        } else {
-          x.style.display = "none";
-          y.classList.remove("fa-window-close");
-          y.classList.add("fa-bars");
-        }
-      }
-
-      function generateTimer(x) {
-        return (
-          `<div class="timerspan">` +
-          `<div class="wrapper-class"><span class="number M"> ${x} </span>` +
-          `<span class="number B"> ${x} </span>` +
-          `<span class="number Y"> ${x} </span>` +
-          `<span class="number C"> ${x} </span>` +
-          `<span class="number M2"> ${x} </span>` +
-          `<span class="number B2"> ${x} </span>` +
-          `<span class="number Y2"> ${x} </span> </div> </div>`
-        );
-      }
-    </script>
+      </script>
     </section>
   </body>
-
 </html>

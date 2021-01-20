@@ -1,4 +1,4 @@
-#About_Makeathon  {
+#About_Makeathon {
   /* CSS Resets */
   padding: 0;
   margin: 0;
@@ -546,7 +546,7 @@
     font-size: 0.69rem;
   }
 
-  #About_Makeathon  h1 {
+  #About_Makeathon h1 {
     margin-top: -2%;
     font-size: 3.3rem;
   }
@@ -694,7 +694,7 @@
     margin-bottom: 6%;
   }
 
-  #About_Makeathon  h1 {
+  #About_Makeathon h1 {
     margin-top: 0%;
     font-size: 2.5rem;
   }

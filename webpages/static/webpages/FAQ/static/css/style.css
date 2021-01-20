@@ -1,4 +1,4 @@
-#FAQ_Makeathon  {
+#FAQ_Makeathon {
   margin: 0px;
   padding: 0px;
   background-image: url("../images/bg.png");
@@ -286,7 +286,7 @@
     margin-top: 17%;
     margin-bottom: 20%;
   }
-  #FAQ_Makeathon  {
+  #FAQ_Makeathon {
     overflow: hidden;
   }
 }

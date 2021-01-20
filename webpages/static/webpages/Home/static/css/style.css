@@ -166,14 +166,12 @@
     width: 100%;
   }
 
-  
-#home .navigation ul li {
+  #home .navigation ul li {
     list-style: none;
     padding: 3% 2%;
   }
 
-  
-#home .navigation ul li a:hover {
+  #home .navigation ul li a:hover {
     background: #ea1d63;
     margin: 1% 2%;
     padding-top: 3%;
@@ -301,7 +299,7 @@
     }
   } */
 
-  #home .devimg {
+#home .devimg {
   width: 20%;
   height: 20%;
 }
@@ -324,7 +322,6 @@
 /* ---------------Timer--------------- */
 
 /* timer */
-
 
 #home .timerspan {
   background: rgba(255, 255, 255, 0.25);
@@ -508,7 +505,6 @@
   color: #3965ff;
   z-index: 6;
 }
-
 
 #home span.Y2 {
   top: 3px;

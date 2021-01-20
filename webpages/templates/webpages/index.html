@@ -1,4 +1,4 @@
- {% load static %} 
+{% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,9 +10,21 @@
       href="{% static 'webpages/Home/static/css/style.css' %}"
       type="text/css"
     />
-    <link rel="stylesheet" href="{% static 'webpages/About_MLSC/static/css/style.css' %}" type="text/css" />
-    <link rel="stylesheet" href="{% static 'webpages/FAQ/static/css/style.css' %}" type="text/css" />
-    <link rel="stylesheet" href="{% static 'webpages/Tracks/static/css/style.css' %}" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="{% static 'webpages/About_MLSC/static/css/style.css' %}"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'webpages/FAQ/static/css/style.css' %}"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'webpages/Tracks/static/css/style.css' %}"
+      type="text/css"
+    />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -27,14 +39,9 @@
     <title>Document</title>
   </head>
   <body>
-    {% include "webpages/Home/index.html" %}
-    {% include "webpages/About_MLSC/index.html" %}
-    {% include "webpages/About/index.html" %}
-    {% include "webpages/Tracks/index.html" %}
-    {% include "webpages/FAQ/index.html" %}
-
-
-
-
+    {% include "webpages/Home/index.html" %} {% include
+    "webpages/About_MLSC/index.html" %} {% include "webpages/About/index.html"
+    %} {% include "webpages/Tracks/index.html" %} {% include
+    "webpages/FAQ/index.html" %}
   </body>
 </html>
