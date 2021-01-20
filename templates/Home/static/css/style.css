@@ -520,3 +520,14 @@ span.Y2 {
     padding: 2%;
   }
 }
+@media (height: 320px) and (width: 568px){
+  #heading{
+  margin: auto;
+  width: 70%;
+  height: 59%;
+  object-fit: cover;
+  }
+  #tleft {
+    right: 3%;
+    bottom: 15vh;
+}
