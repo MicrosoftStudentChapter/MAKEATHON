@@ -5,9 +5,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{% static 'webpages/Home/static/css/style.css' %}"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'webpages/About_MLSC/static/css/style.css' %}"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'webpages/FAQ/static/css/style.css' %}"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'webpages/Tracks/static/css/style.css' %}"
+      type="text/css"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/a21764905c623777a48ec557b4229c22?family=Anurati"
+      rel="stylesheet"
+      type="text/css"
+    />
     <title>Document</title>
   </head>
   <body>
-    {% include "webpages/Home/index.html" %}
+    {% include "webpages/Home/index.html" %} {% include
+    "webpages/About_MLSC/index.html" %} {% include "webpages/About/index.html"
+    %} {% include "webpages/Tracks/index.html" %} {% include
+    "webpages/FAQ/index.html" %}
   </body>
 </html>

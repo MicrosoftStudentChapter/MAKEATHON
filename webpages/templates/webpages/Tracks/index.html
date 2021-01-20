@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Titile -->
+    <title>Tracks | Makeathon 3077</title>
+
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="{% static 'webpages/Tracks/static/css/style.css' %}"
+      type="text/css"
+    />
+  </head>
+  <body onresize="refresh()">
+    <section style="position: relative" id="Tracks_Makeathon">
+      <!-- Start Your Code Here, Have Fun. -->
+
+      <section id="tracks">
+        <canvas id="track"></canvas>
+
+        <div class="text" id="txt1">AI / ML</div>
+        <div class="text" id="txt2">AR / VR</div>
+        <div class="text" id="txt3">IOT</div>
+        <div class="text" id="txt4">Dev</div>
+
+        <!-- Custom Js -->
+        <script src="{% static 'webpages/Tracks/static/js/index.js' %}"></script>
+      </section>
+    </section>
+  </body>
+</html>
