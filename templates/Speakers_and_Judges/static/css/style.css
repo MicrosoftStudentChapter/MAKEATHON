@@ -607,6 +607,14 @@ p {
 }
 
 
+@media screen and (min-width: 1100px) and (max-width:1300px){
+  .safari-specific{
+    top:10%;
+    left:73%;
+  }
+}
+
+
 @-moz-document url-prefix() {
   .abcd {
     position: absolute;
