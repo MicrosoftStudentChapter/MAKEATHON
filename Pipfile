@@ -7,6 +7,10 @@ name = "pypi"
 django = "*"
 django-environ = "*"
 pre-commit = "*"
+gunicorn = "*"
+dj-database-url = "*"
+psycopg2-binary = "*"
+whitenoise = "*"
 
 [dev-packages]
 
