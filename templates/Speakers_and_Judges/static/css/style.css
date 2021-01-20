@@ -657,13 +657,7 @@ p {
     left:103%;
   }
 }
-@media screen and (min-width: 1180px) and (max-width:1250px){
-  .safari-specific{
-    top:55%;
-    right:-65%;
 
-  }
-}
 
 @-moz-document url-prefix() {
   .info-page-img {
