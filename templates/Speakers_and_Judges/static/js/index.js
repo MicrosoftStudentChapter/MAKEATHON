@@ -77,6 +77,9 @@ function iterateAndCreatePersonCardInDOM(persons, containerDiv) {
 
     let personImg = document.createElement("img");
     personImg.classList.add("imgperson");
+
+
+
     personImg.src = `${person.imgSrc}`;
 
     // func.bind(obj) binds the this of the func to the obj passed to it
@@ -114,6 +117,10 @@ function iterateAndCreatePersonCardInDOM(persons, containerDiv) {
 
       let img = document.createElement("img");
       img.classList.add(socialMediaImgClass);
+
+
+
+
       img.src = socialMediaImgSrc;
       link.append(img);
 
@@ -163,6 +170,11 @@ function personOnClick() {
 
   let infoImg = document.getElementById("info-img");
   infoImg.src = this.imgSrc;
+
+  let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  if (isSafari){
+    infoImg.classList.add("safari-specific") ;
+  }
 
   // After updating info-box-card with the information of the person clicked,
   // hide the cards view and enable the info view

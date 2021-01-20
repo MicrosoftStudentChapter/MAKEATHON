@@ -568,21 +568,23 @@ p {
     left: 0.5%;
   }
 .safari-specific img{
-  left:0.5%;
+  left:0.4%;
 }
 }
 
 
 .safari-specific{
-  top:195px;
-
+  top: 195px;
+  right: -20%;
 }
-@media ALL and (max-width:400px )
+@media ALL and (max-width:315px )
 {
   .safari-specific {
-    top:26% !important;
+    top:85% !important;
+    right:0.2%;
+    left:3%;
   }
-  .abcd{
+  .info-page-img{
     border:none;
 
   }
@@ -591,81 +593,129 @@ p {
 @media ALL and (max-width:700px )
 {
   .safari-specific{
-    top:55%;
+    top:138%;
+    right:20.5%;
+
   }
 }
-@media screen and (min-width: 700px) and (max-width:900px){
+@media screen and (min-width: 700px) and (max-width:740px){
   .safari-specific{
     top:19.15%;
+  }
+}
+
+@media screen and (min-width: 315px) and (max-width:400px){
+  .safari-specific{
+    top:110%;
+    right:-13%;
   }
 }
 
 @media screen and (min-width: 401px) and (max-width:415px){
   .safari-specific{
-    top:19.15%;
+    top:124%;
+    left:21%;
+
   }
 }
 
-
-@media screen and (min-width: 1100px) and (max-width:1300px){
+@media screen and (min-width: 578px) and (max-width:700px){
   .safari-specific{
-    top:10%;
-    left:73%;
+    top:180%;
+
   }
 }
 
+@media screen and (min-width: 850px) and (max-width:900px){
+  .safari-specific{
+    top:35%;
+    left:74%;
+
+  }
+}
+
+
+@media screen and (min-width: 740px) and (max-width:850px){
+  .safari-specific{
+    top:23%;
+    left:52%;
+
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width:1000px){
+  .safari-specific{
+    top:35%;
+    left:74%;
+
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width:1180px){
+  .safari-specific{
+    top:50%;
+    left:103%;
+  }
+}
+@media screen and (min-width: 1180px) and (max-width:1250px){
+  .safari-specific{
+    top:55%;
+    right:-65%;
+
+  }
+}
 
 @-moz-document url-prefix() {
-  .abcd {
+  .info-page-img {
     position: absolute;
     top: 195px;
   }
 
   @media ALL and (max-width: 1300px) {
-    .abcd {
+    .info-page-img {
       position: absolute;
       left: 72%;
     }
   }
 
   @media ALL and (max-width: 960px) {
-    .abcd {
+    .info-page-img {
       position: absolute;
       left: 40%;
     }
   }
   @media ALL and (max-width: 800px) {
-    .abcd {
+    .info-page-img {
       top: 19%;
       left: 40%;
     }
   }
   @media ALL and (max-width: 700px) {
-    .abcd {
+    .info-page-img {
       top: 68%;
       left: 15%;
     }
   }
   @media ALL and (max-width: 635px) {
-    .abcd {
+    .info-page-img {
       top: 60%;
       left: 15%;
     }
   }
   @media ALL and (max-width: 500px) {
-    .abcd {
+    .info-page-img {
       top: 55%;
       left: 15%;
     }
   }
   @media ALL and (max-width: 415px) {
-    .abcd {
+    .info-page-img {
       top: 45%;
       left: 15%;
     }
   }
   @media ALL and (max-width: 350px) {
-    .abcd {
+    .info-page-img {
       top: 40%;
       align: center;
     }
