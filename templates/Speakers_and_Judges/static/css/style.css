@@ -673,9 +673,15 @@ p {
   }
 
   @media ALL and (max-width: 960px) {
+<<<<<<< HEAD
     .info-page-img {
       position: absolute;
+=======
+    .abcd {
+>>>>>>> b3c6761c44e60aa49c0ee3c5a95df88d23e99833
       left: 40%;
+      top: 20%;
+
     }
   }
   @media ALL and (max-width: 800px) {
