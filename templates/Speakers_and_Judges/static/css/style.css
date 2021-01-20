@@ -622,8 +622,9 @@ p {
 
   @media ALL and (max-width: 960px) {
     .abcd {
-      position: absolute;
       left: 40%;
+      top: 20%;
+
     }
   }
   @media ALL and (max-width: 800px) {
