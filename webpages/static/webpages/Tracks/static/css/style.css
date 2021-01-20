@@ -1,0 +1,41 @@
+#Tracks_Makeathon {
+  margin: 0;
+  padding: 0;
+}
+
+#Tracks_Makeathon #tracks {
+  background-image: url("../images/tracksbg.jpg");
+  background-size: 100% 100%;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* TEXT BOXES */
+
+#Tracks_Makeathon .text {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  position: absolute;
+  width: 120px;
+  height: 60px;
+
+  color: white;
+  font-size: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 300px) {
+  #Tracks_Makeathon .text {
+    padding: 10px;
+  }
+}
