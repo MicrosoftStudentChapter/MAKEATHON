@@ -23,6 +23,7 @@ function forScale(coverflowPos) {
   for (scaleI = 0; scaleI < a.length; scaleI++) {
     a[scaleI].style.cursor = "default";
     a[scaleI].addEventListener("click", prevDef);
+
   }
   for (scaleI = 0; scaleI < cfImg.length; scaleI++) {
     if (cfImg[scaleI].getAttribute("data-coverflow-index") == coverflowPos) {
@@ -69,14 +70,17 @@ function setupCoverflow(coverflowContainer) {
 
     //add event handlers
     function setPrevImage() {
-      coverflow.position = Math.max(1, coverflow.position - 1);
+    //   coverflow.position = Math.max(1, coverflow.position - 1);
+      coverflow.position -- ;
+      coverflow.position= (coverflow.position === 0) ? coverflow.images.length : coverflow.position;
       coverflow.container.dataset.coverflowPosition = coverflow.position;
       //call the functin forScale added
       forScale(coverflow.position);
     }
 
     function setNextImage() {
-      coverflow.position = Math.min(coverflow.images.length, coverflow.position + 1);
+    //   coverflow.position = Math.min(coverflow.images.length, coverflow.position + 1);
+     coverflow.position = (coverflow.position  % coverflow.images.length ) +1;  
       coverflow.container.dataset.coverflowPosition = coverflow.position;
       //call the function Chase added
       forScale(coverflow.position);
