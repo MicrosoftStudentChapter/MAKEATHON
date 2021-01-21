@@ -17,6 +17,9 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"/>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./static/css/style.css" type="text/css" />
@@ -24,59 +27,62 @@
   <body>
     <!-- Start Your Code Here, Have Fun. -->
 
-    <h1>Sponsors</h1>
-    <section class="row">
-        <div class="nine columns">
-          <div class="coverflow top10 bot10">
-            <a class="prev-arrow"></a>
-            <a href=""><img src="/templates/Sponsors/static/images/givemycertificate.png" class="coverflow__image" /></a>
-            <a href=""><img src="static/images/devfolio.png" class="coverflow__image" /></a>
-            <a href="https://www.airmeet.com/"><img src="/templates/Sponsors/static/images/airmeet.jpg" class="coverflow__image" /></a>
-            <a href=""><img src="/templates/Sponsors/static/images/matic.png" class="coverflow__image" /></a>
-            <a href=""><img src="" class="coverflow__image" /></a>
-            <a href=""><img src="" class="coverflow__image" /></a>
-            <a href=""><img src="" class="coverflow__image" /></a>
-            <a href=""><img src="" class="coverflow__image" /></a>
-            <a href=""><img src="/templates/Sponsors/static/images/matic.png" class="coverflow__image" /></a>
-            <a class="next-arrow"></a>
-          </div>
-        </div>
-      </section>
 
-      <!--BOOTSTRAP CAROUSEL FOR MOBILE VIEWS-->
+    
+    <div class="sponsback" style="display: none;">
+            <div class="drop-shadow-1"></div>
+            <header class="nm mt-15" >
+                <h1 class="heading">Sponsors</h1>
+            </header>
 
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/templates/Sponsors/static/images/matic.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/templates/Sponsors/static/images/airmeet.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/templates/Sponsors/static/images/givemycertificate.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="static/images/devfolio.png" class="d-block w-100" alt="...">
-          </div>
+            <div class="sponsor-start">
+            <button class="sponsor-start-buttons sponsor-start-buttons-1">Associate</button>
+            <button class="sponsor-start-buttons sponsor-start-buttons-2">Title</button>
+            <button class="sponsor-start-buttons sponsor-start-buttons-3">Power</button>
+            </div>
+
+            <div class="drop-shadow-2"></div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </a>
-      </div>
+            
+
+
+    <!-- <div class="sponsback"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+        <header class="nm mt-15" >
+            <h1 class="heading">Sponsors</h1>
+        </header>
+        
+        
+        <div class="items" >
+            <div class="item active">
+                <a href="https://www.airmeet.com/" target="_blank"><img src="/templates/Sponsors/static/images/airmeet.jpg"></a>
+            </div>
+            <div class=" item next">
+                <a href="https://devfolio.co/" target="_blank"><img src="./devfolio.png"></a>
+            </div>
+            <div class="item">
+                <a href="https://givemycertificate.com/" target="_blank"><img src="./givemycertificate.png"></a>
+            </div>
+            <div class="item">
+                <a href="https://www.airmeet.com/" target="_blank"><img src="./download (1).png"></a>
+            </div>
+            <div class="item">
+                <a href="https://www.framer.com/" target="_blank"><img src="./devfolio.png"></a>
+            </div>
+            <div class="item">
+                <a href="https://balsamiq.com/" target="_blank"><img src="./givemycertificate.png"></a>
+            </div>
+            <div class="item prev">
+                <a href="https://www.grabon.in/" target="_blank"><img src="./devfolio.png"></a>
+            </div>
+            <div class="button-container">
+                <div class="button" style="padding-right: 13px; padding-left: 10px;"><i class="fas fa-angle-left"></i></div>
+                <div class="button" style="padding-left: 13px; padding-right: 10px;"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+        
+        
+        </div>  -->
+  
     <!-- Bootstrap 5 Js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
