@@ -7,7 +7,7 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .video-container {
@@ -34,6 +34,20 @@
   transform: translate(-50%, -50%);
 }
 
+/* title */
+
+.titles {
+  text-align: center;
+  z-index: 1;
+}
+
+#heading {
+  padding-top: 90px;
+  margin: auto;
+  width: 70%;
+  height: 59%;
+  object-fit: cover;
+}
 /* ---------------Sidenavbar--------------- */
 
 /* Sidenav */
@@ -135,9 +149,91 @@ ul.ba {
   float: left;
 }
 
+span.M {
+  color: #ff5abd;
+  mix-blend-mode: color-dodge;
+  z-index: 1;
+}
+
+span.B {
+  top: 0.5px;
+  left: 0px;
+  position: absolute;
+  color: #3965ff;
+  mix-blend-mode: color-dodge;
+  filter: drop-shadow(-4px 0px 10px #022bff);
+  z-index: 2;
+}
+
+span.Y {
+  top: 1px;
+  left: 0px;
+  position: absolute;
+  color: #edff1f;
+  mix-blend-mode: color-dodge;
+  filter: drop-shadow(2px 0px 8px rgba(255, 255, 46, 0.6));
+  z-index: 3;
+}
+
+span.C {
+  top: 1.5px;
+  left: 0px;
+  position: absolute;
+  color: #5affba;
+  mix-blend-mode: color-dodge;
+  filter: drop-shadow(0px 2px 4px rgba(90, 255, 245, 0.25));
+  z-index: 4;
+}
+
+span.M2 {
+  top: 2px;
+  left: 0px;
+  position: absolute;
+  color: #ff5abd;
+  mix-blend-mode: color-dodge;
+  z-index: 5;
+}
+
+span.B2 {
+  top: 2.5px;
+  left: 0px;
+  position: absolute;
+  color: #3965ff;
+  z-index: 6;
+}
+
+span.Y2 {
+  top: 3px;
+  left: 0px;
+  position: absolute;
+  color: #edff1f;
+  mix-blend-mode: color-dodge;
+  filter: drop-shadow(2px 0px 8px rgba(255, 255, 46, 0.6));
+  z-index: 7;
+}
+
+/* timer */
+
+.timerspan {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 15%;
+  margin: 0px 5px;
+  padding: 0px 10px;
+  position: relative;
+  display: inline-block;
+  font-style: italic;
+}
+
+#demo {
+  font-weight: 800;
+  color: #ffffff;
+}
 /* responsive sidebar */
 
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
   .mysidenav {
     display: none;
   }
@@ -219,19 +315,82 @@ ul.ba {
     position: absolute;
     cursor: pointer;
     color: white;
-    padding: 1.2% 0.5%;
+    padding: 15px 10px;
     top: 0;
     right: 0;
     width: 3.75rem;
     z-index: 6;
-    font-size: 200%;
+    font-size: 150%;
   }
 
   .toggle:before {
     z-index: 6;
   }
 }
+/* ---------------Timer Styling--------------- */
 
+/* timer styling */
+
+.wrapper-class {
+  position: relative;
+  display: inline-block;
+}
+
+span.number {
+  font-family: "Lucida Sans";
+  font-style: medium;
+  font-weight: 600;
+  font-size: 4rem;
+  letter-spacing: 0.1em;
+}
+
+/* Media queries */
+/* Hiding Toggle bar for particular widths */
+@media (min-width: 1300px) {
+  .toggle {
+    visibility: hidden;
+  }
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #heading {
+    margin: auto;
+    width: 90%;
+    height: 75%;
+  }
+}
+
+.devfolio {
+  z-index: 3;
+  text-align: center;
+  padding-top: 0.5%;
+}
+
+.devimg {
+  width: 25%;
+  height: 25%;
+}
+
+@media (max-width: 700px) {
+  .devfolio {
+    z-index: 3;
+    text-align: center;
+    padding-top: 2%;
+  }
+
+  .devimg {
+    width: 40%;
+    height: 40%;
+  }
+}
 @media (max-width: 608px) {
   .navigation {
     display: none;
@@ -253,92 +412,6 @@ ul.ba {
   }
 }
 
-/* title */
-
-.titles {
-  padding-top: 5%;
-  text-align: center;
-  z-index: 1;
-}
-
-/* ---------------Heading--------------- */
-
-/* heading */
-
-#heading {
-  margin: auto;
-  width: 70%;
-  height: 59%;
-}
-
-@media screen and (max-width: 767px) {
-  #heading {
-    margin: auto;
-    width: 90%;
-    height: 75%;
-  }
-}
-
-/* ---------------Devfolio--------------- */
-
-/* Devfolio */
-
-.devfolio {
-  z-index: 3;
-  text-align: center;
-  padding-top: 0.5%;
-}
-
-/* optional */
-/* @media screen and (max-width: 260px){   
-    .devimg{    
-      width: 60%;
-      height: 45%;
-    }
-  } */
-
-.devimg {
-  width: 20%;
-  height: 20%;
-}
-
-/* responsive devfolio */
-
-@media (max-width: 700px) {
-  .devfolio {
-    z-index: 3;
-    text-align: center;
-    padding-top: 2%;
-  }
-
-  .devimg {
-    width: 30%;
-    height: 20%;
-  }
-}
-
-/* ---------------Timer--------------- */
-
-/* timer */
-
-.timerspan {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 15%;
-  margin: 0px 5px;
-  padding: 0px 10px;
-  position: relative;
-  display: inline-block;
-  font-style: italic;
-}
-
-#demo {
-  font-weight: 800;
-  color: #ffffff;
-}
-
 /* responsive timer */
 
 @media (max-width: 582px) {
@@ -349,90 +422,90 @@ ul.ba {
     -webkit-backdrop-filter: blur(4px);
     border-radius: 15%;
     font-size: 200%;
-    padding: 2%;
+    padding: 0.1%;
     margin: 1%;
     display: inline;
   }
 }
+.timer {
+  padding: 10px;
+  margin-bottom: 70px;
+}
 
-/* ---------------Time-left Image--------------- */
-
-/* time-left */
 #tleft {
   z-index: 5;
   position: relative;
-  right: 28%;
-  bottom: 6.5vh;
 }
-/* .timeleft{
-    z-index: 5;
-    padding: 2%;
-    text-align: center;
-    justify-content: center;
-    margin-right: 50%;
-  } */
 
 /* responsive time-left */
-
-@media (max-width: 1160px) {
-  #tleft {
-    right: 3%;
-    bottom: 4.5vh;
+@media (max-width: 375) {
+  #heading {
+    margin-top: 45%;
+    width: 120vh;
+    height: 120vh;
+    object-fit: cover;
   }
 }
-
-@media (max-width: 992px) {
-  #tleft {
-    right: 3%;
-    bottom: 4.5vh;
+@media (max-height: 880px) {
+  .section {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 }
-
-@media (max-width: 767px) {
-  #tleft {
-    left: 20.5%;
-    bottom: 7.5vh;
+@media (min-width: 745px) {
+  .devimg {
+    width: 20%;
+    height: 30%;
   }
 }
-
+@media (max-width: 744px) {
+  .devimg {
+    width: 40%;
+    height: 40%;
+  }
+}
+@media (max-width: 430px) {
+  .timer {
+    padding: 0;
+  }
+}
+@media (min-width: 1030px) {
+  .timer {
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: auto;
+    width: max-content;
+    text-align: right;
+  }
+}
+@media (max-height: 550px) {
+  .section {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
 @media (max-width: 582px) {
-  #tleft {
-    left: 1%;
-    bottom: 8vh;
+  #heading {
+    margin-top: 33%;
+    width: 95vw;
+    object-fit: cover;
   }
-}
-@media (max-width: 582px) {
-  #tleft {
-    left: 12%;
-    bottom: 6vh;
+  .devimg {
+    width: 40%;
+    height: 40%;
   }
-}
-
-/* 
-  @media screen and (max-width: 767px){   
-    #heading{
-    font-size: 5rem;    
-    padding: 0.5rem 1rem;
-    margin: 1rem;
-    }
-  }
-*/
-
-/* ---------------Timer Styling--------------- */
-
-/* timer styling */
-
-.wrapper-class {
-  position: relative;
-  display: inline-block;
-}
-
-span.number {
-  font-family: "Lucida Sans";
-  font-style: medium;
-  font-weight: 600;
-  font-size: 4rem;
-  letter-spacing: 0.1em;
 }
 
 @media (max-width: 600px) {
@@ -445,71 +518,21 @@ span.number {
   span.number {
     font-size: 1.8rem;
   }
-  .timerspan {
-    padding: 1%;
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
   }
 }
-
-span.M {
-  color: #ff5abd;
-  mix-blend-mode: color-dodge;
-  z-index: 1;
-}
-
-span.B {
-  top: 0.5px;
-  left: 0px;
-  position: absolute;
-  color: #3965ff;
-  mix-blend-mode: color-dodge;
-  filter: drop-shadow(-4px 0px 10px #022bff);
-  z-index: 2;
-}
-
-span.Y {
-  top: 1px;
-  left: 0px;
-  position: absolute;
-  color: #edff1f;
-  mix-blend-mode: color-dodge;
-  filter: drop-shadow(2px 0px 8px rgba(255, 255, 46, 0.6));
-  z-index: 3;
-}
-
-span.C {
-  top: 1.5px;
-  left: 0px;
-  position: absolute;
-  color: #5affba;
-  mix-blend-mode: color-dodge;
-  filter: drop-shadow(0px 2px 4px rgba(90, 255, 245, 0.25));
-  z-index: 4;
-}
-
-span.M2 {
-  top: 2px;
-  left: 0px;
-  position: absolute;
-  /* bottom: 80%; */
-  color: #ff5abd;
-  mix-blend-mode: color-dodge;
-  z-index: 5;
-}
-
-span.B2 {
-  top: 2.5px;
-  left: 0px;
-  position: absolute;
-  color: #3965ff;
-  z-index: 6;
-}
-
-span.Y2 {
-  top: 3px;
-  left: 0px;
-  position: absolute;
-  color: #edff1f;
-  mix-blend-mode: color-dodge;
-  filter: drop-shadow(2px 0px 8px rgba(255, 255, 46, 0.6));
-  z-index: 7;
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #heading {
+    width: 80%;
+    height: 60%;
+  }
 }
