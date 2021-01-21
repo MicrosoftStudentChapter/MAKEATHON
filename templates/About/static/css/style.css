@@ -21,8 +21,7 @@ header {
     grid-row-start: 1;
     grid-row-end: 4;
     position: relative;
-    animation: bounce 1.1s ease-in-out both ;
-
+    animation: bounce 1.1s ease-in-out both;
 }
 
 h1 {
@@ -82,7 +81,7 @@ h1 {
     grid-row-end: 13;
 
     position: absolute;
-    animation: fade-in 1s ease-in-out forwards ;
+    animation: fade-in 1s ease-in-out forwards;
 
     width: 50vw;
     height: 50vh;
@@ -126,7 +125,7 @@ h1 {
     color: white;
     font-size: 3.22vh;
     border-radius: 6%;
-    animation: fade-in 1s 0.5s ease-in-out both ;
+    animation: fade-in 1s 0.5s ease-in-out both;
 }
 
 .blurred-box:after {
@@ -192,22 +191,42 @@ h1 {
 
 /* <---------------------------------------------Animations-----------------------------------------> */
 @keyframes bounce {
-  0% {top: -100%;opacity: 0;}
-  40% {top: 10%;}
-  80% {top: -10%;}
-  100% {top:0%; opacity:1;}
+    0% {
+        top: -100%;
+        opacity: 0;
+    }
+    40% {
+        top: 10%;
+    }
+    80% {
+        top: -10%;
+    }
+    100% {
+        top: 0%;
+        opacity: 1;
+    }
 }
 
 @keyframes fade-in {
-  0% {opacity: 0}
-  100% {opacity:1}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes right-in {
-    0% {right:-100%;opacity: 0;}
-    100% {right:0%;opacity: 1;}
-  }
-  
+    0% {
+        right: -100%;
+        opacity: 0;
+    }
+    100% {
+        right: 0%;
+        opacity: 1;
+    }
+}
+
 /* <---------------------------------------------Media-Queries-----------------------------------------> */
 
 @media screen and (max-width: 1850px) {
