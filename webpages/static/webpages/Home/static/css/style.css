@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-#home .section {
+#Home_Makeathon .section {
   font-family: "Poppins", sans-serif;
   position: relative;
   width: 100vw;
   height: 100vh;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
-#home .video-container {
+#Home_Makeathon .video-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -18,7 +18,7 @@
   height: 100vh;
 }
 
-#home .video-container video {
+#Home_Makeathon .video-container video {
   /* Make video to at least 100% wide and tall */
   min-width: 100%;
   min-height: 100%;
@@ -34,11 +34,25 @@
   transform: translate(-50%, -50%);
 }
 
+/* title */
+
+#Home_Makeathon .titles {
+  text-align: center;
+  z-index: 1;
+}
+
+#Home_Makeathon #heading {
+  padding-top: 90px;
+  margin: auto;
+  width: 70%;
+  height: 59%;
+  object-fit: cover;
+}
 /* ---------------Sidenavbar--------------- */
 
 /* Sidenav */
 
-#home .mysidenav {
+#Home_Makeathon .mysidenav {
   z-index: 3;
   float: left;
   position: absolute;
@@ -47,7 +61,7 @@
   height: 100%;
 }
 
-#home .icon {
+#Home_Makeathon .icon {
   padding: 50% 50%;
   font-size: 150%;
   width: 200%;
@@ -58,7 +72,7 @@
   border-radius: 1.5rem;
 }
 
-#home .mysidenav ul li::after {
+#Home_Makeathon .mysidenav ul li::after {
   position: absolute;
   background: #f24385;
   color: rgb(255, 255, 255);
@@ -76,48 +90,46 @@
   transition: all 0.4s ease-out;
 }
 
-#home .mysidenav ul li:nth-child(1)::after {
+#Home_Makeathon .mysidenav ul li:nth-child(1)::after {
   content: "About";
   line-height: 2.9rem;
 }
-#home .mysidenav ul li:nth-child(2)::after {
+#Home_Makeathon .mysidenav ul li:nth-child(2)::after {
   content: "Schedule";
   line-height: 2.9rem;
   margin: 262% 0;
 }
-
-#home .mysidenav ul li:nth-child(3)::after {
+#Home_Makeathon .mysidenav ul li:nth-child(3)::after {
   content: "Sponsors";
   line-height: 2.9rem;
   margin: 521% 0;
 }
-#home .mysidenav ul li:nth-child(4)::after {
+#Home_Makeathon .mysidenav ul li:nth-child(4)::after {
   content: "FAQs";
   line-height: 2.9rem;
   margin: 779% 0;
 }
-#home .mysidenav ul li:nth-child(5)::after {
+#Home_Makeathon .mysidenav ul li:nth-child(5)::after {
   content: "Awards";
   line-height: 2.9rem;
   margin: 1039% 0;
 }
-#home .mysidenav ul li:nth-child(6)::after {
+#Home_Makeathon .mysidenav ul li:nth-child(6)::after {
   content: "Our Team";
   line-height: 2.9rem;
   margin: 1301% 0;
 }
-
-#home .mysidenav ul li:nth-child(7)::after {
+#Home_Makeathon .mysidenav ul li:nth-child(7)::after {
   content: "Contact";
   line-height: 2.9rem;
   margin: 1561% 0;
 }
 
-#home .mysidenav ul li:hover:after {
+#Home_Makeathon .mysidenav ul li:hover:after {
   transform: perspective(10rem);
 }
 
-#home .icon:hover {
+#Home_Makeathon .icon:hover {
   background: #f24385;
   color: white;
   border-radius: 0;
@@ -125,11 +137,11 @@
   border-bottom-left-radius: 3rem;
 }
 
-#home ul.ba {
+#Home_Makeathon ul.ba {
   list-style-type: none;
 }
 
-#home #options {
+#Home_Makeathon #options {
   position: absolute;
   margin-left: 5%;
   bottom: 0;
@@ -137,14 +149,96 @@
   float: left;
 }
 
+#Home_Makeathon span.M {
+  color: #ff5abd;
+  mix-blend-mode: color-dodge;
+  z-index: 1;
+}
+
+#Home_Makeathon span.B {
+  top: 0.5px;
+  left: 0px;
+  position: absolute;
+  color: #3965ff;
+  mix-blend-mode: color-dodge;
+  filter: drop-shadow(-4px 0px 10px #022bff);
+  z-index: 2;
+}
+
+#Home_Makeathon span.Y {
+  top: 1px;
+  left: 0px;
+  position: absolute;
+  color: #edff1f;
+  mix-blend-mode: color-dodge;
+  filter: drop-shadow(2px 0px 8px rgba(255, 255, 46, 0.6));
+  z-index: 3;
+}
+
+#Home_Makeathon span.C {
+  top: 1.5px;
+  left: 0px;
+  position: absolute;
+  color: #5affba;
+  mix-blend-mode: color-dodge;
+  filter: drop-shadow(0px 2px 4px rgba(90, 255, 245, 0.25));
+  z-index: 4;
+}
+
+#Home_Makeathon span.M2 {
+  top: 2px;
+  left: 0px;
+  position: absolute;
+  color: #ff5abd;
+  mix-blend-mode: color-dodge;
+  z-index: 5;
+}
+
+#Home_Makeathon span.B2 {
+  top: 2.5px;
+  left: 0px;
+  position: absolute;
+  color: #3965ff;
+  z-index: 6;
+}
+
+#Home_Makeathon span.Y2 {
+  top: 3px;
+  left: 0px;
+  position: absolute;
+  color: #edff1f;
+  mix-blend-mode: color-dodge;
+  filter: drop-shadow(2px 0px 8px rgba(255, 255, 46, 0.6));
+  z-index: 7;
+}
+
+/* timer */
+
+#Home_Makeathon .timerspan {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 15%;
+  margin: 0px 5px;
+  padding: 0px 10px;
+  position: relative;
+  display: inline-block;
+  font-style: italic;
+}
+
+#Home_Makeathon #demo {
+  font-weight: 800;
+  color: #ffffff;
+}
 /* responsive sidebar */
 
-@media (max-width: 1000px) {
-  #home .mysidenav {
+@media (max-width: 1025px) {
+  #Home_Makeathon .mysidenav {
     display: none;
   }
 
-  #home .navigation {
+  #Home_Makeathon .navigation {
     display: none;
     margin: auto;
     position: absolute;
@@ -160,18 +254,18 @@
     z-index: 5;
   }
 
-  #home .navigation ul {
+  #Home_Makeathon .navigation ul {
     position: absolute;
     top: 2rem;
     width: 100%;
   }
 
-  #home .navigation ul li {
+  #Home_Makeathon .navigation ul li {
     list-style: none;
     padding: 3% 2%;
   }
 
-  #home .navigation ul li a:hover {
+  #Home_Makeathon .navigation ul li a:hover {
     background: #ea1d63;
     margin: 1% 2%;
     padding-top: 3%;
@@ -181,7 +275,7 @@
     z-index: 6;
   }
 
-  #home .navigation ul li a {
+  #Home_Makeathon .navigation ul li a {
     position: relative;
     display: flex;
     padding: auto;
@@ -190,21 +284,21 @@
     color: rgb(255, 255, 255);
   }
 
-  #home .navigation ul li a .icons {
+  #Home_Makeathon .navigation ul li a .icons {
     min-width: 0.2rem;
     height: 3.75rem;
     line-height: 1.9rem;
     padding-left: 4%;
   }
 
-  #home .navigation ul li a .title {
+  #Home_Makeathon .navigation ul li a .title {
     padding: 0 0.5rem;
     line-height: 2rem;
     z-index: 2;
   }
 
   /* cross */
-  #home .toggle .fa-window-close {
+  #Home_Makeathon .toggle .fa-window-close {
     position: absolute;
     cursor: pointer;
     color: white;
@@ -217,25 +311,88 @@
   }
 
   /* lines*/
-  #home .toggle .fa-bars {
+  #Home_Makeathon .toggle .fa-bars {
     position: absolute;
     cursor: pointer;
     color: white;
-    padding: 1.2% 0.5%;
+    padding: 15px 10px;
     top: 0;
     right: 0;
     width: 3.75rem;
     z-index: 6;
-    font-size: 200%;
+    font-size: 150%;
   }
 
-  #home .toggle:before {
+  #Home_Makeathon .toggle:before {
     z-index: 6;
   }
 }
+/* ---------------Timer Styling--------------- */
 
+/* timer styling */
+
+#Home_Makeathon .wrapper-class {
+  position: relative;
+  display: inline-block;
+}
+
+#Home_Makeathon span.number {
+  font-family: "Lucida Sans";
+  font-style: medium;
+  font-weight: 600;
+  font-size: 4rem;
+  letter-spacing: 0.1em;
+}
+
+/* Media queries */
+/* Hiding Toggle bar for particular widths */
+@media (min-width: 1300px) {
+  #Home_Makeathon .toggle {
+    visibility: hidden;
+  }
+  #Home_Makeathon .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 90%;
+    height: 75%;
+  }
+}
+
+#Home_Makeathon .devfolio {
+  z-index: 3;
+  text-align: center;
+  padding-top: 0.5%;
+}
+
+#Home_Makeathon .devimg {
+  width: 25%;
+  height: 25%;
+}
+
+@media (max-width: 700px) {
+  #Home_Makeathon .devfolio {
+    z-index: 3;
+    text-align: center;
+    padding-top: 2%;
+  }
+
+  #Home_Makeathon .devimg {
+    width: 40%;
+    height: 40%;
+  }
+}
 @media (max-width: 608px) {
-  #home .navigation {
+  #Home_Makeathon .navigation {
     display: none;
     position: absolute;
     width: 60%;
@@ -249,269 +406,1624 @@
     overflow: hidden;
     z-index: 5;
   }
-  #home .navigation.active {
+  #Home_Makeathon .navigation.active {
     left: 0rem;
     width: 100%;
   }
 }
 
-/* title */
-
-#home .titles {
-  padding-top: 5%;
-  text-align: center;
-  z-index: 1;
-}
-
-/* ---------------Heading--------------- */
-
-/* heading */
-
-#home #heading {
-  margin: auto;
-  width: 70%;
-  height: 59%;
-}
-
-@media screen and (max-width: 767px) {
-  #home #heading {
-    margin: auto;
-    width: 90%;
-    height: 75%;
-  }
-}
-
-/* ---------------Devfolio--------------- */
-
-/* Devfolio */
-
-#home .devfolio {
-  z-index: 3;
-  text-align: center;
-  padding-top: 0.5%;
-}
-
-/* optional */
-/* @media screen and (max-width: 260px){   
-    .devimg{    
-      width: 60%;
-      height: 45%;
-    }
-  } */
-
-#home .devimg {
-  width: 20%;
-  height: 20%;
-}
-
-/* responsive devfolio */
-
-@media (max-width: 700px) {
-  #home .devfolio {
-    z-index: 3;
-    text-align: center;
-    padding-top: 2%;
-  }
-
-  #home .devimg {
-    width: 30%;
-    height: 20%;
-  }
-}
-
-/* ---------------Timer--------------- */
-
-/* timer */
-
-#home .timerspan {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 15%;
-  margin: 0px 5px;
-  padding: 0px 10px;
-  position: relative;
-  display: inline-block;
-  font-style: italic;
-}
-
-#home #demo {
-  font-weight: 800;
-  color: #ffffff;
-}
-
 /* responsive timer */
 
 @media (max-width: 582px) {
-  #home .timerspan {
+  #Home_Makeathon .timerspan {
     background: rgba(255, 255, 255, 0.25);
     box-shadow: rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 15%;
     font-size: 200%;
-    padding: 2%;
+    padding: 0.1%;
     margin: 1%;
     display: inline;
   }
 }
+#Home_Makeathon .timer {
+  padding: 10px;
+  margin-bottom: 70px;
+}
 
-/* ---------------Time-left Image--------------- */
-
-/* time-left */
-#home #tleft {
+#Home_Makeathon #tleft {
   z-index: 5;
   position: relative;
-  right: 28%;
-  bottom: 6.5vh;
 }
-/* .timeleft{
-    z-index: 5;
-    padding: 2%;
-    text-align: center;
-    justify-content: center;
-    margin-right: 50%;
-  } */
 
 /* responsive time-left */
-
-@media (max-width: 1160px) {
-  #home #tleft {
-    right: 3%;
-    bottom: 4.5vh;
+@media (max-width: 375) {
+  #Home_Makeathon #heading {
+    margin-top: 45%;
+    width: 120vh;
+    height: 120vh;
+    object-fit: cover;
   }
 }
-
-@media (max-width: 992px) {
-  #home #tleft {
-    right: 3%;
-    bottom: 4.5vh;
+@media (max-height: 880px) {
+  #Home_Makeathon .section {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 }
-
-@media (max-width: 767px) {
-  #home #tleft {
-    left: 20.5%;
-    bottom: 7.5vh;
+@media (min-width: 745px) {
+  #Home_Makeathon .devimg {
+    width: 20%;
+    height: 30%;
   }
 }
-
+@media (max-width: 744px) {
+  #Home_Makeathon .devimg {
+    width: 40%;
+    height: 40%;
+  }
+}
+@media (max-width: 430px) {
+  #Home_Makeathon .timer {
+    padding: 0;
+  }
+}
+@media (min-width: 1030px) {
+  #Home_Makeathon .timer {
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: auto;
+    width: max-content;
+    text-align: right;
+  }
+}
+@media (max-height: 550px) {
+  #Home_Makeathon .section {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
 @media (max-width: 582px) {
-  #home #tleft {
-    left: 1%;
-    bottom: 8vh;
+  #Home_Makeathon #heading {
+    margin-top: 33%;
+    width: 95vw;
+    object-fit: cover;
   }
-}
-@media (max-width: 582px) {
-  #home #tleft {
-    left: 12%;
-    bottom: 6vh;
+  #Home_Makeathon .devimg {
+    width: 40%;
+    height: 40%;
   }
-}
-
-/* 
-  @media screen and (max-width: 767px){   
-    #heading{
-    font-size: 5rem;    
-    padding: 0.5rem 1rem;
-    margin: 1rem;
-    }
-  }
-*/
-
-/* ---------------Timer Styling--------------- */
-
-/* timer styling */
-
-#home .wrapper-class {
-  position: relative;
-  display: inline-block;
-}
-
-#home span.number {
-  font-family: "Lucida Sans";
-  font-style: medium;
-  font-weight: 600;
-  font-size: 4rem;
-  letter-spacing: 0.1em;
 }
 
 @media (max-width: 600px) {
-  #home span.number {
+  #Home_Makeathon span.number {
     font-size: 2rem;
   }
 }
 
 @media (max-width: 320px) {
-  #home span.number {
+  #Home_Makeathon span.number {
     font-size: 1.8rem;
   }
-  #home .timerspan {
-    padding: 1%;
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
   }
 }
 
-#home span.M {
-  color: #ff5abd;
-  mix-blend-mode: color-dodge;
-  z-index: 1;
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
 }
 
-#home span.B {
-  top: 0.5px;
-  left: 0px;
-  position: absolute;
-  color: #3965ff;
-  mix-blend-mode: color-dodge;
-  filter: drop-shadow(-4px 0px 10px #022bff);
-  z-index: 2;
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
 }
 
-#home span.Y {
-  top: 1px;
-  left: 0px;
-  position: absolute;
-  color: #edff1f;
-  mix-blend-mode: color-dodge;
-  filter: drop-shadow(2px 0px 8px rgba(255, 255, 46, 0.6));
-  z-index: 3;
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
 }
 
-#home span.C {
-  top: 1.5px;
-  left: 0px;
-  position: absolute;
-  color: #5affba;
-  mix-blend-mode: color-dodge;
-  filter: drop-shadow(0px 2px 4px rgba(90, 255, 245, 0.25));
-  z-index: 4;
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
 }
 
-#home span.M2 {
-  top: 2px;
-  left: 0px;
-  position: absolute;
-  /* bottom: 80%; */
-  color: #ff5abd;
-  mix-blend-mode: color-dodge;
-  z-index: 5;
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
 }
 
-#home span.B2 {
-  top: 2.5px;
-  left: 0px;
-  position: absolute;
-  color: #3965ff;
-  z-index: 6;
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
 }
 
-#home span.Y2 {
-  top: 3px;
-  left: 0px;
-  position: absolute;
-  color: #edff1f;
-  mix-blend-mode: color-dodge;
-  filter: drop-shadow(2px 0px 8px rgba(255, 255, 46, 0.6));
-  z-index: 7;
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon#heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon  #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon  #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon  #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon  #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon  span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon  #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon  #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #heading {
+    width: 80%;
+    height: 60%;
+  }
+@media (max-width: 320px) {
+  span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #heading {
+    width: 80%;
+    height: 60%;
+  }
 }
