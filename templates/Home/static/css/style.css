@@ -149,7 +149,6 @@ ul.ba {
   float: left;
 }
 
-
 span.M {
   color: #ff5abd;
   mix-blend-mode: color-dodge;
@@ -345,7 +344,6 @@ span.number {
   letter-spacing: 0.1em;
 }
 
-
 /* Media queries */
 /* Hiding Toggle bar for particular widths */
 @media (min-width: 1300px) {
@@ -414,8 +412,6 @@ span.number {
   }
 }
 
-
-
 /* responsive timer */
 
 @media (max-width: 582px) {
@@ -431,7 +427,7 @@ span.number {
     display: inline;
   }
 }
-.timer{
+.timer {
   padding: 10px;
   margin-bottom: 70px;
 }
@@ -474,19 +470,19 @@ span.number {
     height: 40%;
   }
 }
-@media (max-width: 430px){
-   .timer {
+@media (max-width: 430px) {
+  .timer {
     padding: 0;
   }
 }
-@media (min-width:1030px){
- .timer{
-   flex-flow: column nowrap;
-   align-items: center;
-   margin: auto;
-   width: max-content;
-   text-align: right;
- }
+@media (min-width: 1030px) {
+  .timer {
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: auto;
+    width: max-content;
+    text-align: right;
+  }
 }
 @media (max-height: 550px) {
   .section {
@@ -534,21 +530,9 @@ span.number {
   }
 }
 /* iPad  Makeathon*/
-@media (width: 768px) and (height: 1024px){
-  #heading{
+@media (width: 768px) and (height: 1024px) {
+  #heading {
     width: 80%;
     height: 60%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
