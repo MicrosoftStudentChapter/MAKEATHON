@@ -535,6 +535,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -556,6 +557,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -577,6 +579,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -598,6 +601,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -619,6 +623,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -640,6 +645,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -661,6 +667,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -682,6 +689,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -703,6 +711,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -724,6 +733,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -745,6 +755,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -766,6 +777,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -787,6 +799,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -808,6 +821,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -829,6 +843,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -850,27 +865,7 @@
     width: 80%;
     height: 60%;
   }
-@media (max-width: 320px) {
-  #Home_Makeathon span.number {
-    font-size: 1.8rem;
-  }
 }
-
-/* iPhone 5/SE */
-@media (height: 320px) and (width: 568px) {
-  #Home_Makeathon  #heading {
-    margin: auto;
-    width: 70%;
-    height: 59%;
-    object-fit: cover;
-  }
-}
-/* iPad  Makeathon*/
-@media (width: 768px) and (height: 1024px) {
-  #Home_Makeathon #heading {
-    width: 80%;
-    height: 60%;
-  }
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -892,6 +887,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -913,6 +909,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -934,6 +931,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -955,6 +953,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -976,6 +975,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -997,6 +997,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1018,27 +1019,7 @@
     width: 80%;
     height: 60%;
   }
-@media (max-width: 320px) {
-  #Home_Makeathon span.number {
-    font-size: 1.8rem;
-  }
 }
-
-/* iPhone 5/SE */
-@media (height: 320px) and (width: 568px) {
-  #Home_Makeathon #heading {
-    margin: auto;
-    width: 70%;
-    height: 59%;
-    object-fit: cover;
-  }
-}
-/* iPad  Makeathon*/
-@media (width: 768px) and (height: 1024px) {
-  #Home_Makeathon  #heading {
-    width: 80%;
-    height: 60%;
-  }
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1060,27 +1041,7 @@
     width: 80%;
     height: 60%;
   }
-@media (max-width: 320px) {
-  #Home_Makeathon span.number {
-    font-size: 1.8rem;
-  }
 }
-
-/* iPhone 5/SE */
-@media (height: 320px) and (width: 568px) {
-  #Home_Makeathon #heading {
-    margin: auto;
-    width: 70%;
-    height: 59%;
-    object-fit: cover;
-  }
-}
-/* iPad  Makeathon*/
-@media (width: 768px) and (height: 1024px) {
-  #Home_Makeathon  #heading {
-    width: 80%;
-    height: 60%;
-  }
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1102,6 +1063,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1123,6 +1085,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1144,6 +1107,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1165,6 +1129,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1186,6 +1151,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1207,6 +1173,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1228,27 +1195,7 @@
     width: 80%;
     height: 60%;
   }
-@media (max-width: 320px) {
-  #Home_Makeathon span.number {
-    font-size: 1.8rem;
-  }
 }
-
-/* iPhone 5/SE */
-@media (height: 320px) and (width: 568px) {
-  #Home_Makeathon  #heading {
-    margin: auto;
-    width: 70%;
-    height: 59%;
-    object-fit: cover;
-  }
-}
-/* iPad  Makeathon*/
-@media (width: 768px) and (height: 1024px) {
-  #Home_Makeathon #heading {
-    width: 80%;
-    height: 60%;
-  }
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1270,48 +1217,7 @@
     width: 80%;
     height: 60%;
   }
-@media (max-width: 320px) {
-  #Home_Makeathon  span.number {
-    font-size: 1.8rem;
-  }
 }
-
-/* iPhone 5/SE */
-@media (height: 320px) and (width: 568px) {
-  #Home_Makeathon #heading {
-    margin: auto;
-    width: 70%;
-    height: 59%;
-    object-fit: cover;
-  }
-}
-/* iPad  Makeathon*/
-@media (width: 768px) and (height: 1024px) {
-  #Home_Makeathon #heading {
-    width: 80%;
-    height: 60%;
-  }
-@media (max-width: 320px) {
-  #Home_Makeathon span.number {
-    font-size: 1.8rem;
-  }
-}
-
-/* iPhone 5/SE */
-@media (height: 320px) and (width: 568px) {
-  #Home_Makeathon  #heading {
-    margin: auto;
-    width: 70%;
-    height: 59%;
-    object-fit: cover;
-  }
-}
-/* iPad  Makeathon*/
-@media (width: 768px) and (height: 1024px) {
-  #Home_Makeathon #heading {
-    width: 80%;
-    height: 60%;
-  }
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1333,6 +1239,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1354,27 +1261,7 @@
     width: 80%;
     height: 60%;
   }
-@media (max-width: 320px) {
-  #Home_Makeathon span.number {
-    font-size: 1.8rem;
-  }
 }
-
-/* iPhone 5/SE */
-@media (height: 320px) and (width: 568px) {
-  #Home_Makeathon #heading {
-    margin: auto;
-    width: 70%;
-    height: 59%;
-    object-fit: cover;
-  }
-}
-/* iPad  Makeathon*/
-@media (width: 768px) and (height: 1024px) {
-  #Home_Makeathon  #heading {
-    width: 80%;
-    height: 60%;
-  }
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1396,6 +1283,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1417,6 +1305,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1438,6 +1327,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1459,6 +1349,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1480,6 +1371,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1501,6 +1393,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1522,6 +1415,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1543,6 +1437,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1564,6 +1459,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1585,6 +1481,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1606,6 +1503,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1627,6 +1525,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1648,6 +1547,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1669,6 +1569,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1690,6 +1591,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1711,6 +1613,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1732,6 +1635,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   #Home_Makeathon span.number {
     font-size: 1.8rem;
@@ -1753,6 +1657,161 @@
     width: 80%;
     height: 60%;
   }
+}
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+}
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+}
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+}
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+}
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+}
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+}
+@media (max-width: 320px) {
+  #Home_Makeathon span.number {
+    font-size: 1.8rem;
+  }
+}
+
+/* iPhone 5/SE */
+@media (height: 320px) and (width: 568px) {
+  #Home_Makeathon #heading {
+    margin: auto;
+    width: 70%;
+    height: 59%;
+    object-fit: cover;
+  }
+}
+/* iPad  Makeathon*/
+@media (width: 768px) and (height: 1024px) {
+  #Home_Makeathon #heading {
+    width: 80%;
+    height: 60%;
+  }
+}
 @media (max-width: 320px) {
   span.number {
     font-size: 1.8rem;
@@ -1774,6 +1833,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   span.number {
     font-size: 1.8rem;
@@ -1795,6 +1855,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   span.number {
     font-size: 1.8rem;
@@ -1816,6 +1877,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   span.number {
     font-size: 1.8rem;
@@ -1837,6 +1899,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   span.number {
     font-size: 1.8rem;
@@ -1858,6 +1921,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   span.number {
     font-size: 1.8rem;
@@ -1879,6 +1943,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   span.number {
     font-size: 1.8rem;
@@ -1900,6 +1965,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   span.number {
     font-size: 1.8rem;
@@ -1921,6 +1987,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   span.number {
     font-size: 1.8rem;
@@ -1942,6 +2009,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   span.number {
     font-size: 1.8rem;
@@ -1963,6 +2031,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   span.number {
     font-size: 1.8rem;
@@ -1984,6 +2053,8 @@
     width: 80%;
     height: 60%;
   }
+}
+
 @media (max-width: 320px) {
   span.number {
     font-size: 1.8rem;
@@ -2005,6 +2076,7 @@
     width: 80%;
     height: 60%;
   }
+}
 @media (max-width: 320px) {
   span.number {
     font-size: 1.8rem;
