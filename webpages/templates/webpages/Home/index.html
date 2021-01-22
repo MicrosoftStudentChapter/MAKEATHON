@@ -35,10 +35,8 @@
   </head>
 
   <body>
-    <!-- Start Your Code Here, Have Fun. -->
-    <section style="position: relative" id="home">
-      <!-- background div -->
-
+    <!-- background div -->
+    <section style="position: relative" id="Home_Makeathon">
       <div class="section">
         <div class="video-container">
           <video autoplay loop muted>
@@ -56,15 +54,20 @@
               <div class="col-sm">
                 <img
                   id="heading"
-                  src="{% static 'webpages/Home/static/images/title.png' %}"
+                  src="{% static 'webpages/Home/static/images/title-1.png' %}"
                   alt=""
                 />
               </div>
 
               <!-- timer -->
-
-              <div class="timer">
-                <div id="demo"></div>
+              <div style="text-align: center">
+                <div class="timer">
+                  <div id="demo"></div>
+                  <img
+                    src="{% static 'webpages/Home/static/images/tleft-2.png' %}"
+                    id="tleft"
+                  />
+                </div>
               </div>
               <div class="devfolio">
                 <a href=""
@@ -154,7 +157,6 @@
             </li>
           </ul>
         </div>
-
         <button class="toggle" onclick="myFunction()">
           <i id="maaze" class="fas fa-bars"></i>
         </button>
@@ -168,76 +170,7 @@
       ></script>
 
       <!-- Custom Js -->
-
-      <script type="text/javascript">
-        var DJANGO_STATIC_URL = "{{ STATIC_URL }}";
-      </script>
-
-      <script type="text/javascript">
-        // Set the date we're counting down to
-        var countDownDate = new Date("Feb 23, 2021 15:37:25").getTime();
-        var DJANGO_STATIC_URL = "{{ STATIC_URL }}";
-
-        // Update the count down every 1 second
-        var x = setInterval(function () {
-          // Get today's date and time
-          var now = new Date().getTime();
-
-          // Find the distance between now and the count down date
-          var distance = countDownDate - now;
-
-          // Time calculations for days, hours, minutes and seconds
-          var seconds = Math.floor(distance / 1000);
-
-          // Output the result in an element with id="demo"
-          var str = "";
-          var time = String(seconds);
-
-          for (var i = 0; i < time.length; i++) {
-            str += generateTimer(time[i]);
-          }
-          str += `<div class="time-left" style="text-align: right"><img id="tleft" src="${DJANGO_STATIC_URL}/static/webpages/Home/static/images/tleft.png" alt=""></div>`;
-          document.getElementById("demo").innerHTML = str;
-
-          str = "";
-
-          // If the count down is over, write some text
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-          }
-        }, 1000);
-
-        // Sidenavbar Toggle
-
-        function myFunction() {
-          var x = document.getElementById("kyun");
-          var y = document.getElementById("maaze");
-
-          if (x.style.display === "none") {
-            x.style.display = "initial";
-            y.classList.remove("fa-bars");
-            y.classList.add("fa-window-close");
-          } else {
-            x.style.display = "none";
-            y.classList.remove("fa-window-close");
-            y.classList.add("fa-bars");
-          }
-        }
-
-        function generateTimer(x) {
-          return (
-            `<div class="timerspan">` +
-            `<div class="wrapper-class"><span class="number M"> ${x} </span>` +
-            `<span class="number B"> ${x} </span>` +
-            `<span class="number Y"> ${x} </span>` +
-            `<span class="number C"> ${x} </span>` +
-            `<span class="number M2"> ${x} </span>` +
-            `<span class="number B2"> ${x} </span>` +
-            `<span class="number Y2"> ${x} </span> </div> </div>`
-          );
-        }
-      </script>
+      <script src="{% static 'webpages/Home/static/js/index.js' %}"></script>
     </section>
   </body>
 </html>
