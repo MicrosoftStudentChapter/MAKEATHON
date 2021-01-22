@@ -38,7 +38,7 @@ var x = setInterval(function () {
     // console.log(str);
     str += generateTimer(time[i]);
   }
-  str += `<div class="time-left" style="text-align: right"><img id="tleft" src="./static/images/tleft.png" alt=""></div>`;
+  // str += `<div class="time-left" style="text-align: right"><img id="tleft" src="./static/images/tleft-1.png" alt=""></div>`;
   document.getElementById("demo").innerHTML = str;
   // document.getElementById("demo").innerHTML = hours + "h ";
   // document.getElementById("demo").innerHTML = minutes + "m ";
