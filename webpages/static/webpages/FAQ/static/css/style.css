@@ -5,7 +5,7 @@
       rgba(7, 7, 12, 0.37),
       rgba(17, 17, 10, 0.349)
     ),
-    url("../images/bg.png");
+    url("../images/image 8.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -107,6 +107,7 @@
   background-color: #f24385;
   border: none;
   color: white;
+  
 }
 
 #FAQ_Makeathon .accordion {
@@ -290,13 +291,14 @@
     margin-top: 17%;
     margin-bottom: 20%;
   }
-  #FAQ_Makeathon {
+}
+#FAQ_Makeathon body {
     overflow: hidden;
   }
-}
-@media (max-width: 1366px) and (min-width: 1366px) {
+ @media (max-width: 1366px) and (min-width: 1366px) {
   #FAQ_Makeathon h1 {
     margin-top: 7%;
     margin-bottom: 15%;
   }
 }
+
