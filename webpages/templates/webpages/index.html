@@ -37,11 +37,19 @@
       type="text/css"
     />
     <title>Document</title>
+    <style>
+      body {
+        width: 100%;
+        overflow-x: hidden;
+      }
+    </style>
   </head>
-  <body>
-    {% include "webpages/Home/index.html" %} {% include
-    "webpages/About_MLSC/index.html" %} {% include "webpages/About/index.html"
-    %} {% include "webpages/Tracks/index.html" %} {% include
-    "webpages/FAQ/index.html" %}
+  <body onresize="location.reload()">
+    <!-- prettier-ignore -->
+    {% include "webpages/Home/index.html" %}
+    {% include "webpages/About_MLSC/index.html" %}
+    {% include "webpages/About/index.html"%}
+    {% include "webpages/Tracks/index.html" %}
+    {% include "webpages/FAQ/index.html" %}
   </body>
 </html>
