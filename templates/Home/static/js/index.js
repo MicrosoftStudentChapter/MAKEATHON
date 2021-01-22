@@ -1,86 +1,77 @@
-// Set the date we're counting down to
-var countDownDate = new Date("Feb 23, 2021 15:37:25").getTime();
+/******************************************************************
+* Timer
+*******************************************************************/
 
-// Update the count down every 1 second
-var x = setInterval(function () {
-  // Get today's date and time
-  var now = new Date().getTime();
+const countDownDate = new Date('Feb 25, 2021 17:00:00').getTime();
 
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+updateTimer();
 
-  // Time calculations for days, hours, minutes and seconds
-  // var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  // var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  // var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor(distance / 1000);
+function updateTimer() {
+    let timerTag = document.querySelector('#home #timer');
+    timerTag.innerHTML = createInnerHTML(String(getTimeLeftInSeconds()));
 
-  // console.log(days,hours,minutes);
-  console.log(seconds);
+    let timerUpdator = setInterval(() => {
+        let timeLeft = getTimeLeftInSeconds();
+        timeLeft = (timeLeft > 0) ? String(timeLeft) : "STARTED!";
 
-  // Output the result in an element with id="demo"
-  // document.getElementById("demo").innerHTML += days + "d " + hours + "h "
-  // + minutes + "m " + seconds + "s ";
-  // var str = `<h1>${days} d </h1>` + hours + "h " + minutes + "m " +seconds + "s ";
-  var str = "";
-  var time = String(seconds);
+        timerTag.innerHTML = createInnerHTML(timeLeft);
 
-  for (var i = 0; i < time.length; i++) {
-    // `<span class="timerspan col-md-3">${time[i]}</span >`
-    // str += <span class="wrapper-class timerspan"> ${time[i]} </span>;
-    // `<span class="number B"> ${time[i]} </span>` +
-    // `<span class="number Y"> ${time[i]} </span>` +
-    // `<span class="number C"> ${time[i]} </span>` +
-    // `<span class="number M2"> ${time[i]} </span>` +
-    // `<span class="number B2"> ${time[i]} </span>` +
-    // `<span class="number Y2"> ${time[i]} </span>` +
-    // `<span class="number C2"> ${time[i]} </span>`;
-    // console.log(str);
-    str += generateTimer(time[i]);
-  }
-  // str += `<div class="time-left" style="text-align: right"><img id="tleft" src="./static/images/tleft-1.png" alt=""></div>`;
-  document.getElementById("demo").innerHTML = str;
-  // document.getElementById("demo").innerHTML = hours + "h ";
-  // document.getElementById("demo").innerHTML = minutes + "m ";
-  // document.getElementById("demo").innerHTML = seconds + "s ";
-
-  str = "";
-  // styling the text
-  // document.getElementById("demo").style.color = "#ffffff";
-
-  // If the count down is over, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-
-// Sidenavbar Toggle
-
-function myFunction() {
-  var x = document.getElementById("kyun");
-  var y = document.getElementById("maaze");
-
-  if (x.style.display === "none") {
-    x.style.display = "initial";
-    y.classList.remove("fa-bars");
-    y.classList.add("fa-window-close");
-  } else {
-    x.style.display = "none";
-    y.classList.remove("fa-window-close");
-    y.classList.add("fa-bars");
-  }
+        if (timeLeft === 'STARTED!') {
+            clearInterval(timerUpdator);
+        }
+    }, 1000);
 }
 
-function generateTimer(x) {
-  return (
-    `<div class="timerspan">` +
-    `<div class="wrapper-class"><span class="number M"> ${x} </span>` +
-    `<span class="number B"> ${x} </span>` +
-    `<span class="number Y"> ${x} </span>` +
-    `<span class="number C"> ${x} </span>` +
-    `<span class="number M2"> ${x} </span>` +
-    `<span class="number B2"> ${x} </span>` +
-    `<span class="number Y2"> ${x} </span> </div> </div>`
-  );
+function getTimeLeftInSeconds() {
+    let presentTime = new Date().getTime();
+    let timeLeft = Math.floor((countDownDate - presentTime) / 1000);
+    return (timeLeft > 0) ? timeLeft : '0';
 }
+
+function createInnerHTML(x) {
+    let stringInTimer = "";
+
+    for (let i = 0; i < x.length; i++) {
+        stringInTimer += `<span class="timer-digit"><span timer-digit="${x[i]}">${x[i]}</span></span>`;
+    }
+
+    return stringInTimer;
+}
+
+/******************************************************************
+* Navbar
+*******************************************************************/
+
+const navbar = document.querySelector("#home header nav") 
+const navbarTogglerButton = document.querySelector('#home button#navbar-toggler');
+
+function toggleNavbar() {
+	if(navbar.classList.length == 0) {
+		navbar.classList.add('show-navbar');
+		navbarTogglerButton.classList.add('on');
+
+	} else if (navbar.classList.contains('hide-navbar')) {
+		navbar.classList.remove('hide-navbar');
+		navbar.classList.add('show-navbar');
+		navbarTogglerButton.classList.add('on');
+
+
+	} else if (navbar.classList.contains('show-navbar')) {
+		navbar.classList.remove('show-navbar');
+		navbar.classList.add('hide-navbar');
+		navbarTogglerButton.classList.remove('on');
+	}
+}
+
+/******************************************************************
+* Navbar Safari Specific
+*******************************************************************/
+
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+if (isSafari) {
+	document.querySelectorAll('#home nav #nav-items a span').forEach(element => {
+		element.classList.add('safari-only');
+	});
+}
+
