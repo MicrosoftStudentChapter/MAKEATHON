@@ -10,6 +10,12 @@ function ShowAssociateHideOthers(){
     document.querySelector(".sponsors").style.display ="none";
     document.querySelector(".associate_sponsors").style.display ="block";
 }
+function Return(){
+    document.querySelector(".associate_sponsors").style.display ="none";
+    document.querySelector(".power_sponsors").style.display ="none";
+    document.querySelector(".title_sponsors").style.display ="none";
+    document.querySelector(".sponsors").style.display ="block";
+}
 
 
 
