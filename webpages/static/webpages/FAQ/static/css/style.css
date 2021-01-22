@@ -107,7 +107,6 @@
   background-color: #f24385;
   border: none;
   color: white;
-  
 }
 
 #FAQ_Makeathon .accordion {
@@ -293,12 +292,11 @@
   }
 }
 #FAQ_Makeathon body {
-    overflow: hidden;
-  }
- @media (max-width: 1366px) and (min-width: 1366px) {
+  overflow: hidden;
+}
+@media (max-width: 1366px) and (min-width: 1366px) {
   #FAQ_Makeathon h1 {
     margin-top: 7%;
     margin-bottom: 15%;
   }
 }
-
