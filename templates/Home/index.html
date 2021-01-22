@@ -1,128 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Meta Tags -->
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- Style -->
-		<link rel="stylesheet" href="./static/css/style.css" />
+    <!-- Style -->
+    <link rel="stylesheet" href="./static/css/style.css" />
 
-		<!-- Box Icons -->
-		<link
-			href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-			rel="stylesheet"
-		/>
-	</head>
-	<body>
-		<section id="home">
-			<!-- Navbar -->
-			<header>
-				<button
-					id="navbar-toggler"
-					aria-label="Navbar Toggler"
-					onclick="toggleNavbar()"
-				>
-					<div class="one"></div>
-					<div class="two"></div>
-					<div class="three"></div>
-				</button>
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="home">
+      <!-- Navbar -->
+      <header>
+        <button
+          id="navbar-toggler"
+          aria-label="Navbar Toggler"
+          onclick="toggleNavbar()"
+        >
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </button>
 
-				<nav>
-					<div id="nav-items">
-						<ul style="list-style: none">
-							<li>
-								<a href=""
-									><i class="bx bx-info-circle"></i
-									><span>About</span></a
-								>
-							</li>
-							<li>
-								<a href=""
-									><i class="bx bx-calendar-check"></i
-									><span>Schedule</span></a
-								>
-							</li>
-							<li>
-								<a href=""
-									><i class="bx bx-microphone"></i
-									><span>Speakers</span></a
-								>
-							</li>
-							<li>
-								<a href=""
-									><i class="bx bx-money"></i
-									><span>Sponsors</span></a
-								>
-							</li>
-							<li>
-								<a href=""
-									><i class="bx bx-message"></i
-									><span>FAQs</span></a
-								>
-							</li>
-							<li>
-								<a href=""
-									><i class="bx bx-user"></i
-									><span>Our Team</span></a
-								>
-							</li>
-							<li>
-								<a href=""
-									><i class="bx bx-envelope"></i
-									><span>Contact</span></a
-								>
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</header>
+        <nav>
+          <div id="nav-items">
+            <ul style="list-style: none">
+              <li>
+                <a href=""
+                  ><i class="bx bx-info-circle"></i><span>About</span></a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="bx bx-calendar-check"></i><span>Schedule</span></a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="bx bx-microphone"></i><span>Speakers</span></a
+                >
+              </li>
+              <li>
+                <a href=""><i class="bx bx-money"></i><span>Sponsors</span></a>
+              </li>
+              <li>
+                <a href=""><i class="bx bx-message"></i><span>FAQs</span></a>
+              </li>
+              <li>
+                <a href=""><i class="bx bx-user"></i><span>Our Team</span></a>
+              </li>
+              <li>
+                <a href=""
+                  ><i class="bx bx-envelope"></i><span>Contact</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
 
-			<!-- Video Background -->
-			<video autoplay loop id="home-bg-video" preload="auto">
-				<source
-					src="./static/images/home-bg-video.mp4"
-					type="video/mp4"
-				/>
-			</video>
+      <!-- Video Background -->
+      <video autoplay loop id="home-bg-video" preload="auto">
+        <source src="./static/images/home-bg-video.mp4" type="video/mp4" />
+      </video>
 
-			<div class="center">
-				<!-- LOGO -->
-				<h1 title="Makeathon Logo">
-					<img
-						src="./static/images/makeathon_logo.png"
-						alt="Makeathon Logo"
-						class="logo"
-					/>
-				</h1>
+      <div class="center">
+        <!-- LOGO -->
+        <h1 title="Makeathon Logo">
+          <img
+            src="./static/images/makeathon_logo.png"
+            alt="Makeathon Logo"
+            class="logo"
+          />
+        </h1>
 
-				<!-- Timer -->
-				<div class="horizontal-center">
-					<div style="margin: auto; width: max-content; white-space: nowrap;">
-						<div id="timer"></div>
-						<div style="text-align: right">
-							<img
-								src="./static/images/time_left.png"
-								class="time-left"
-								alt="Time Left"
-							/>
-						</div>
-					</div>
-				</div>
+        <!-- Timer -->
+        <div class="horizontal-center">
+          <div style="margin: auto; width: max-content; white-space: nowrap">
+            <div id="timer"></div>
+            <div style="text-align: right">
+              <img
+                src="./static/images/time_left.png"
+                class="time-left"
+                alt="Time Left"
+              />
+            </div>
+          </div>
+        </div>
 
-				<!-- Register Devfolio Button -->
-				<div class="horizontal-center">
-					<a href="https://makeathon3077.devfolio.co/"
-						><img
-							src="./static/images/devfolio.png"
-							alt="Register With Devfolio"
-							class="devfolio-register"
-					/></a>
-				</div>
-			</div>
+        <!-- Register Devfolio Button -->
+        <div class="horizontal-center">
+          <a href="https://makeathon3077.devfolio.co/"
+            ><img
+              src="./static/images/devfolio.png"
+              alt="Register With Devfolio"
+              class="devfolio-register"
+          /></a>
+        </div>
+      </div>
 
-			<!-- Js -->
-			<script src="./static/js/index.js"></script>
-		</section>
-	</body>
+      <!-- Js -->
+      <script src="./static/js/index.js"></script>
+    </section>
+  </body>
 </html>
