@@ -1,3 +1,5 @@
+/*This provides functionality to the buttons in the main page.All the divs are attached to it  */
+
 function ShowTitleHideOthers() {
     document.querySelector(".sponsors").style.display = "none";
     document.querySelector(".title_sponsors").style.display = "block";
@@ -22,13 +24,19 @@ function createCarousal(sponsorName) {
     const slides = document.querySelectorAll(`.item_${sponsorName}`);
     const button = document.querySelectorAll(`.button_${sponsorName}`);
 
-    // let current = Math.floor(Math.random()*slides.length);
+    /***************CAROUSEL***************/
+
     let current = 1;
     let prev = current > 0 ? current - 1 : slides.length - 1;
     let next = current < slides.length - 1 ? current + 1 : 0;
     let lastPrev = current > 1 ? current - 2 : slides.length - 2 + current;
-    let nextToNext = current < slides.length - 2 ? current + 2 : (slides.length - current === 2 ? 0:1);
-     
+    let nextToNext =
+        current < slides.length - 2
+            ? current + 2
+            : slides.length - current === 2
+            ? 0
+            : 1;
+
     const update = () => {
         slides.forEach((it) => {
             it.classList.remove("active");
@@ -37,10 +45,7 @@ function createCarousal(sponsorName) {
             it.classList.remove("next");
             it.classList.remove("next-to-next");
         });
-        console.log(lastPrev, nextToNext)
-
-
-
+        console.log(lastPrev, nextToNext);
         slides[current].classList.add("active");
         slides[prev].classList.add("prev");
         slides[next].classList.add("next");
@@ -64,11 +69,18 @@ function createCarousal(sponsorName) {
         prev = current > 0 ? current - 1 : slides.length - 1;
         next = current < slides.length - 1 ? current + 1 : 0;
         lastPrev = current > 1 ? current - 2 : slides.length - 2 + current;
-        nextToNext = current < slides.length - 2 ? current + 2 : (slides.length - current === 2 ? 0:1);
+        nextToNext =
+            current < slides.length - 2
+                ? current + 2
+                : slides.length - current === 2
+                ? 0
+                : 1;
         update();
     };
 
     update();
+
+    //(*****If you want to set a rotating timer you can uncommnet this :****)
 
     // setInterval(() => {
     // document.querySelector(

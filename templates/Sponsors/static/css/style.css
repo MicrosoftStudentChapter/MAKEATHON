@@ -13,7 +13,7 @@ body {
     font-family: Anurati, sans-serif;
     font-style: normal;
     font-size: 500%;
-    background: linear-gradient(#ffcc66 20%, #cc6600 85%);
+    background: linear-gradient(#ffcc66 13%, #cc6600 90%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-background-clip: text;
@@ -35,6 +35,7 @@ body {
     background-clip: text;
     mix-blend-mode: normal;
     text-align: center;
+    margin-bottom: 200px;
 }
 
 .items {
@@ -86,7 +87,6 @@ body {
     transform: translate(25%, -100%);
 }
 
-
 .item.last-prev {
     z-index: 1;
     opacity: 0.5;
@@ -102,7 +102,7 @@ body {
 .items .button-container {
     position: absolute;
     left: 50%;
-    top: -20px;
+    top: -50px;
     transform: translate(-50%, -50%);
     width: 95%;
     z-index: -100;
@@ -144,7 +144,6 @@ body {
     float: right;
 }
 
-
 .sponsback {
     position: absolute;
     top: 50%;
@@ -156,11 +155,11 @@ body {
 
 .sponsback-1 {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    margin-bottom: 50px;
+    padding: 150px 0px;
 }
 
 .sponsor-start {
@@ -228,12 +227,12 @@ body {
     outline: none;
 }
 .return {
-    padding: 2.4%;
+    padding: 2.5%;
     padding-right: 3.3%;
     outline: none;
     position: absolute;
-    top: -49%;
-    left: 2.5%;
+    top: 10%;
+    left: 3%;
     border: none;
     background-color: transparent;
     background-size: cover;
@@ -249,18 +248,20 @@ body {
         font-size: 35px;
         width: 30%;
     }
+
     .heading-1 {
-        font-size: 800%;
+        font-size: 600%;
+        margin-bottom: 250px;
     }
 
     .items .item {
         width: 30%;
         height: 100px;
     }
-    .return{
-        top:-45%;
-        left:3%;
-        background-size: 75%;
+    .return {
+        top: 10%;
+        left: 3%;
+        background-size: 80%;
     }
 }
 
@@ -269,29 +270,30 @@ body {
         font-size: 30px;
         width: 30%;
     }
-    .return{
-        top:-45%;
-        left:3.2%;
+    .return {
+        left: 3.2%;
         background-size: 100%;
     }
 }
 
-@media all and (max-width: 830px) {
+@media all and (max-width: 840px) {
     .sponsor-start-buttons {
         font-size: 25px;
         width: 30%;
     }
     .heading-1 {
         font-size: 600%;
+        margin-bottom: 200px;
     }
     .items .item {
         width: 30%;
         height: 100px;
     }
-    .return{
-        top:-60%;
-        left:3.2%;
+    .return {
+        top: 7%;
+        left: 3.2%;
         background-size: 100%;
+        padding: 3.4%;
     }
 }
 
@@ -302,17 +304,17 @@ body {
     }
     .heading-1 {
         font-size: 500%;
+        margin-bottom: 100px;
     }
     .items .item {
         width: 20%;
         height: 80px;
     }
-    .return{
-        top:-70%;
-        left:3.2%;
+    .return {
+        top: 1%;
+        left: 3.2%;
         background-size: 100%;
-        padding: 4.5%;
-      
+        padding: 4%;
     }
 }
 
@@ -323,6 +325,12 @@ body {
     }
 
     .item.prev {
+        display: none;
+    }
+    .item.last-prev {
+        display: none;
+    }
+    .item.next-to-next {
         display: none;
     }
     .item.next {
@@ -339,25 +347,28 @@ body {
     .items .button-container {
         top: 0px;
     }
-    .return{
-        top:-94%;
-        left:3.5%;
+    .return {
+        top: -6%;
+        left: 3.5%;
         background-size: 100%;
         padding: 5%;
-      
     }
 }
-
+@media all and (max-width: 515px) {
+    .return {
+        top: 1%;
+        padding: 5.5%;
+        left: 7%;
+    }
+}
 @media all and (max-width: 450px) {
     .heading {
         font-size: 400%;
     }
-    .return{
-        top:-65%;
-        padding:6%;
-        left:8%;
-       
-     }
+    .return {
+        padding: 6%;
+        left: 8%;
+    }
 }
 
 @media all and (max-width: 400px) {
@@ -372,16 +383,31 @@ body {
     .heading-1 {
         font-size: 370%;
     }
-    .return{
-       top:-120%;
-       padding:6%;
-      
+    .return {
+        top: -10%;
+        padding: 6%;
     }
 }
-@media all and (max-width: 380px){
-    .return{
-        top:-70%;
-        padding:6.5%;
-       
-     }
+@media all and (max-width: 380px) {
+    .return {
+        top: 1.5%;
+        padding: 6.5%;
+    }
+}
+
+@media all and (max-width: 341px) {
+    .return {
+        top: 7%;
+        padding: 6.5%;
+    }
+}
+@media all and (max-width: 285px){
+    .sponsor-start-buttons-1{
+        text-align: center;
+        padding-right: 37%;
+        
+    }
+    .sponsor-start-buttons{
+        text-align: center;
+    }
 }
