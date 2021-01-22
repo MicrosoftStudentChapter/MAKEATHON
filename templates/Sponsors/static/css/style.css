@@ -2,7 +2,7 @@
 
 body {
     margin: 0px;
-    background: url("/templates/Sponsors/static/images/image\ 18.png") no-repeat fixed;
+    background: url("../images/image\ 18.png") no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -14,18 +14,30 @@ body {
     font-family: Anurati, sans-serif;
     font-style: normal;
     font-size: 500%;
-    background: linear-gradient(to bottom, #ffcc66 0%, #cc6600 78%);
+    background: linear-gradient(#ffcc66 20%, #cc6600 85%);     -webkit-text-fill-color: transparent;     -webkit-background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    mix-blend-mode: difference;
+    mix-blend-mode: normal;
     text-align: center;
+}
+
+.heading-1{
+  font-family: Anurati, sans-serif;
+  font-style: normal;
+  font-size: 500%;
+  background: linear-gradient(#ffcc66 20%, #cc6600 85%);     -webkit-text-fill-color: transparent;     -webkit-background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  mix-blend-mode: normal;
+  text-align: center;
 }
 
 
 .items {
     position: relative;
-    top: 40%;
+    margin-top: 150px;
     left: 50%;
     transform: translate(-50%, -50%);
     user-select: none;
@@ -36,19 +48,23 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 250px;
-    height: 200px;
-    border-radius: 50%;
+    width: 20%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 70px;
     overflow: hidden;
     transition: all 300ms ease-in-out;
     z-index: -1;
     opacity: 0;
+    text-align: center;
+    background: linear-gradient(180deg, #ED885B 0%, #F24385 100%);
   }
   
   .item img {
-    width: 100%;
+
+    width: 80%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
   
   .item.active {
@@ -59,20 +75,20 @@ body {
   
   .item.prev {
     z-index: 2;
-    opacity: 0.25;
-    transform: translate(-125%, -50%);
+    opacity: 0.6;
+    transform: translate(-125%, -100%);
   }
   
   .item.next {
     z-index: 2;
-    opacity: 0.25;
-    transform: translate(25%, -50%);
+    opacity: 0.6;
+    transform: translate(25%, -100%);
   }
   
   .items .button-container {
     position: absolute;
-    top: 50%;
     left: 50%;
+    top: -20px;
     transform: translate(-50%, -50%);
     width: 95%;
     z-index: -100;
@@ -118,11 +134,23 @@ body {
     color: black;
     text-shadow: 1px 1px 5px black;
   } */
-  
-  .sponsback{
-    position: relative;
-    margin-top: 12%;
 
+  .sponsback{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin: 20px 0px;
+  }
+
+  .sponsback-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin-bottom: 50px;
   }
   
   .sponsor-start{
@@ -154,7 +182,7 @@ body {
   .sponsor-start-buttons-1{
       position: relative;
       right: -30px;
-      z-index: -99;
+      /* z-index: -99; */
   }
   .sponsor-start-buttons-2{
       z-index: 99;
@@ -163,7 +191,7 @@ body {
   .sponsor-start-buttons-3{
     position: relative;
     left: -30px;
-    z-index: -99;
+    /* z-index: -99; */
 }
 
 .drop-shadow-1{
@@ -195,6 +223,15 @@ body {
         font-size: 35px;
         width: 30%;
     }
+    .heading-1{
+      font-size: 800%;
+    }
+
+    .items .item{
+      width: 30%;
+      height: 100px;
+    }
+
 }
 
 @media all and (max-width:950px)
@@ -211,13 +248,28 @@ body {
         font-size: 25px;
         width: 30%;
     }
+    .heading-1{
+      font-size: 600%;
+    }
+    .items .item{
+      width: 30%;
+      height: 100px;
+    }
 }
+
 
 @media all and (max-width:685px)
 {
     .sponsor-start-buttons{
         font-size: 20px;
         width: 30%;
+    }
+    .heading-1{
+      font-size: 500%;
+    }
+    .items .item{
+      width: 20%;
+      height: 80px;
     }
 }
 
@@ -227,12 +279,47 @@ body {
         font-size: 16px;
         width: 30%;
     }
+
+    .item.prev {
+      display: none;
+    }
+    .item.next {
+      display: none;
+    }
+
+    .items{
+      margin-top: 100px;
+    }
+
+    .items .item{
+      width: 50%;
+    }
+    .items .button-container{
+      top: 0px;
+    }
+
+}
+
+
+@media all and (max-width:450px)
+{
+    .heading{
+      font-size: 400%;
+    }
 }
 
 @media all and (max-width:400px)
 {
     .sponsor-start-buttons{
         font-size: 15px;
-        width: 45%;
+        flex: 0 0 40%;
     }
+
+    .heading{
+      font-size: 370%;
+    }
+    .heading-1{
+      font-size: 370%;
+    }
+    
 }

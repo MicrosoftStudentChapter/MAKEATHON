@@ -1,8 +1,24 @@
+function ShowTitleHideOthers(){
+    document.querySelector(".sponsors").style.display ="none";
+    document.querySelector(".title_sponsors").style.display ="block";
+}
+function ShowPowerHideOthers(){
+    document.querySelector(".sponsors").style.display ="none";
+    document.querySelector(".power_sponsors").style.display ="block";
+}
+function ShowAssociateHideOthers(){
+    document.querySelector(".sponsors").style.display ="none";
+    document.querySelector(".associate_sponsors").style.display ="block";
+}
+
+
+
 const slider = document.querySelector(".items");
 const slides = document.querySelectorAll(".item");
 const button = document.querySelectorAll(".button");
 
-let current = Math.floor(Math.random()*slides.length);
+// let current = Math.floor(Math.random()*slides.length);
+let current = 1;
 let prev = current > 0 ? current - 1 : slides.length - 1;
 let next = current < slides.length - 1 ? current + 1 : 0;
 
@@ -34,3 +50,7 @@ const gotoNum = number => {
 }
 
 update();
+
+setInterval(()=> {
+  document.querySelector(".sponsback-1 .items .button").click();
+}, 3000)
