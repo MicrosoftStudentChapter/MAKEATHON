@@ -1,62 +1,82 @@
-function ShowTitleHideOthers(){
-    document.querySelector(".sponsors").style.display ="none";
-    document.querySelector(".title_sponsors").style.display ="block";
+function ShowTitleHideOthers() {
+    document.querySelector(".sponsors").style.display = "none";
+    document.querySelector(".title_sponsors").style.display = "block";
 }
-function ShowPowerHideOthers(){
-    document.querySelector(".sponsors").style.display ="none";
-    document.querySelector(".power_sponsors").style.display ="block";
+function ShowPowerHideOthers() {
+    document.querySelector(".sponsors").style.display = "none";
+    document.querySelector(".power_sponsors").style.display = "block";
 }
-function ShowAssociateHideOthers(){
-    document.querySelector(".sponsors").style.display ="none";
-    document.querySelector(".associate_sponsors").style.display ="block";
+function ShowAssociateHideOthers() {
+    document.querySelector(".sponsors").style.display = "none";
+    document.querySelector(".associate_sponsors").style.display = "block";
 }
-function Return(){
-    document.querySelector(".associate_sponsors").style.display ="none";
-    document.querySelector(".power_sponsors").style.display ="none";
-    document.querySelector(".title_sponsors").style.display ="none";
-    document.querySelector(".sponsors").style.display ="block";
-}
-
-
-
-const slider = document.querySelector(".items");
-const slides = document.querySelectorAll(".item");
-const button = document.querySelectorAll(".button");
-
-// let current = Math.floor(Math.random()*slides.length);
-let current = 1;
-let prev = current > 0 ? current - 1 : slides.length - 1;
-let next = current < slides.length - 1 ? current + 1 : 0;
-
-const update = () => {
-  slides.forEach(it => {
-    it.classList.remove("active");
-    it.classList.remove("prev");
-    it.classList.remove("next");
-  });
-  
-  slides[current].classList.add("active");
-  slides[prev].classList.add("prev");
-  slides[next].classList.add("next");
+function Return() {
+    document.querySelector(".associate_sponsors").style.display = "none";
+    document.querySelector(".power_sponsors").style.display = "none";
+    document.querySelector(".title_sponsors").style.display = "none";
+    document.querySelector(".sponsors").style.display = "block";
 }
 
-for (let i = 0; i < button.length; i++) {
-		button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
+function createCarousal(sponsorName) {
+    const slider = document.querySelector(`.items_${sponsorName}`);
+    const slides = document.querySelectorAll(`.item_${sponsorName}`);
+    const button = document.querySelectorAll(`.button_${sponsorName}`);
+
+    // let current = Math.floor(Math.random()*slides.length);
+    let current = 1;
+    let prev = current > 0 ? current - 1 : slides.length - 1;
+    let next = current < slides.length - 1 ? current + 1 : 0;
+    let lastPrev = current > 1 ? current - 2 : slides.length - 2 + current;
+    let nextToNext = current < slides.length - 2 ? current + 2 : (slides.length - current === 2 ? 0:1);
+     
+    const update = () => {
+        slides.forEach((it) => {
+            it.classList.remove("active");
+            it.classList.remove("prev");
+            it.classList.remove("last-prev");
+            it.classList.remove("next");
+            it.classList.remove("next-to-next");
+        });
+        console.log(lastPrev, nextToNext)
+
+
+
+        slides[current].classList.add("active");
+        slides[prev].classList.add("prev");
+        slides[next].classList.add("next");
+        slides[nextToNext].classList.add("next-to-next");
+        slides[lastPrev].classList.add("last-prev");
+    };
+
+    for (let i = 0; i < button.length; i++) {
+        button[i].addEventListener("click", () =>
+            i == 0 ? gotoPrev() : gotoNext()
+        );
+    }
+
+    const gotoPrev = () =>
+        current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
+    const gotoNext = () =>
+        current < slides.length - 1 ? gotoNum(current + 1) : gotoNum(0);
+
+    const gotoNum = (number) => {
+        current = number;
+        prev = current > 0 ? current - 1 : slides.length - 1;
+        next = current < slides.length - 1 ? current + 1 : 0;
+        lastPrev = current > 1 ? current - 2 : slides.length - 2 + current;
+        nextToNext = current < slides.length - 2 ? current + 2 : (slides.length - current === 2 ? 0:1);
+        update();
+    };
+
+    update();
+
+    // setInterval(() => {
+    // document.querySelector(
+    // `.sponsback-1 .items_${sponsorName} .button .fa-angle-right`
+    // ).click();
+    // }, 30000);
 }
 
-const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
-const gotoNext = () => current < slides.length - 1 ? gotoNum(current + 1) : gotoNum(0);
-
-const gotoNum = number => {
-  current = number;
-	prev = current > 0 ? current - 1 : slides.length - 1;
-  next = current < slides.length - 1 ? current + 1 : 0;
-  
-  update();
-}
-
-update();
-
-setInterval(()=> {
-  document.querySelector(".sponsback-1 .items .button").click();
-}, 3000)
+createCarousal("title");
+createCarousal("power");
+createCarousal("associate");

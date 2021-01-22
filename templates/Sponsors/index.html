@@ -36,21 +36,23 @@
     </head>
     <body>
         <!-- Start Your Code Here, Have Fun. -->
-
+        <div class="drop-shadow-1"></div>
         <div class="sponsors">
-            <div class="sponsback" >
+            <div class="sponsback">
                 <header class="nm mt-15">
                     <h1 class="heading">Sponsors</h1>
                 </header>
-                
+
                 <div class="sponsor-start">
                     <button
-                        class="sponsor-start-buttons sponsor-start-buttons-1" onclick="ShowAssociateHideOthers()"
+                        class="sponsor-start-buttons sponsor-start-buttons-1"
+                        onclick="ShowAssociateHideOthers()"
                     >
                         Associate
                     </button>
                     <button
-                        class="sponsor-start-buttons sponsor-start-buttons-2" onclick="ShowTitleHideOthers()"
+                        class="sponsor-start-buttons sponsor-start-buttons-2"
+                        onclick="ShowTitleHideOthers()"
                     >
                         Title
                     </button>
@@ -64,67 +66,75 @@
             </div>
         </div>
 
-        <!--TITLE SPONSORS-->
+        <!--***********TITLE SPONSORS*************-->
 
-        <div class="title_sponsors" style="display: none;">
+        <!--You can add other sponsors by just copying the div with class "item" and adding it below the others inside the div (class= "items"). This will automatically add another image to the carousel  -->
+
+        <div class="title_sponsors" style="display: none">
             <div class="sponsback-1">
                 <header class="nm">
                     <h1 class="heading-1">Title Sponsors</h1>
                 </header>
 
-                <button class="return" onclick="Return()"></button>
+                <button
+                    class="return"
+                    onclick="Return()"
+                    style="
+                        background-image: url(/templates/Sponsors/static/images/Vector.png);
+                    "
+                ></button>
 
-                
-                <div class="items">
-                    <div class="item next">
+                <div class="items items_title">
+                    <div class="item item_title next">
                         <a href="#" target="_blank"
                             ><img src="./static/images/Coding_blocks.png"
                         /></a>
                     </div>
-                    <div class="item current">
+                    <div class="item item_title current">
                         <a href="https://devfolio.co/" target="_blank"
                             ><img src="./static/images/devfolio.png"
                         /></a>
                     </div>
-                    <div class="item">
+                    <div class="item item_title">
                         <a href="#" target="_blank"
                             ><img src="./static/images/airmeet.png"
                         /></a>
                     </div>
-                    <div class="item">
+                    <div class="item item_title">
                         <a href="#" target="_blank"
                             ><img src="./static/images/codingninja.png"
                         /></a>
                     </div>
-                    <div class="item">
+                    <div class="item item_title">
                         <a href="#" target="_blank"
                             ><img src="./static/images/matic.png"
                         /></a>
                     </div>
-                    <div class="item">
+                    <div class="item item_title">
                         <a href="#" target="_blank"
                             ><img src="./static/images/tezos.png"
                         /></a>
                     </div>
-                    <div class="item">
+                    <div class="item item_title">
                         <a href="#" target="_blank"
                             ><img src="./static/images/sashido.png"
                         /></a>
                     </div>
-                    <div class="item prev">
+                    <div class="item item_title prev">
                         <a href="#" target="_blank"
                             ><img src="./static/images/taskade.png"
                         /></a>
                     </div>
+                   
                     <div class="button-container">
                         <div
-                            class="button"
+                            class="button button_title"
                             style="padding-right: 13px; padding-left: 10px"
                         >
                             <i class="fas fa-angle-left"></i>
                         </div>
                         <div
-                            class="button"
+                            class="button button_title"
                             style="padding-left: 13px; padding-right: 10px"
                         >
                             <i class="fas fa-angle-right"></i>
@@ -134,68 +144,74 @@
             </div>
         </div>
 
+        <!--**********POWER SPONSORS*************-->
 
-            <!--POWER SPONSORS-->
+        <!--You can add other sponsors by just copying the div with class "item" and adding it below the others inside the div (class= "items"). This will automatically add another image to the carousel  -->
 
-
-        <div class="power_sponsors" style="display: none;">
+        <div class="power_sponsors" style="display: none">
             <div class="sponsback-1">
                 <header class="nm">
                     <h1 class="heading-1">Power Sponsors</h1>
                 </header>
 
-                <button class="return"  onclick="Return()"></button>
+                <button
+                    class="return"
+                    onclick="Return()"
+                    style="
+                        background-image: url(/templates/Sponsors/static/images/Vector.png);
+                    "
+                ></button>
 
-                <div class="items">
-                    <div class="item next">
+                <div class="items items_power">
+                    <div class="item item_power next">
                         <a href="#" target="_blank"
                             ><img src="./static/images/Coding_blocks.png"
                         /></a>
                     </div>
-                    <div class="item current">
+                    <div class="item item_power current">
                         <a href="https://devfolio.co/" target="_blank"
                             ><img src="./static/images/devfolio.png"
                         /></a>
                     </div>
-                    <div class="item">
+                    <div class="item item_power">
                         <a href="#" target="_blank"
                             ><img src="./static/images/airmeet.png"
                         /></a>
                     </div>
-                    <div class="item">
+                    <div class="item item_power">
                         <a href="#" target="_blank"
                             ><img src="./static/images/codingninja.png"
                         /></a>
                     </div>
-                    <div class="item">
+                    <div class="item item_power">
                         <a href="#" target="_blank"
                             ><img src="./static/images/matic.png"
                         /></a>
                     </div>
-                    <div class="item">
+                    <div class="item item_power">
                         <a href="#" target="_blank"
                             ><img src="./static/images/tezos.png"
                         /></a>
                     </div>
-                    <div class="item">
+                    <div class="item item_power">
                         <a href="#" target="_blank"
                             ><img src="./static/images/sashido.png"
                         /></a>
                     </div>
-                    <div class="item prev">
+                    <div class="item item_power prev">
                         <a href="#" target="_blank"
                             ><img src="./static/images/taskade.png"
                         /></a>
                     </div>
                     <div class="button-container">
                         <div
-                            class="button"
+                            class="button button_power"
                             style="padding-right: 13px; padding-left: 10px"
                         >
                             <i class="fas fa-angle-left"></i>
                         </div>
                         <div
-                            class="button"
+                            class=" button button_power"
                             style="padding-left: 13px; padding-right: 10px"
                         >
                             <i class="fas fa-angle-right"></i>
@@ -205,70 +221,74 @@
             </div>
         </div>
 
+        <!--*******ASSOCIATE SPONSORS********-->
 
+        <!--You can add other sponsors by just copying the div with class "item" and adding it below the others inside the div (class= "items"). This will automatically add another image to the carousel  -->
 
-
-        <!--ASSOCIATE SPONSORS-->
-
-
-        <div class="associate_sponsors" style="display: none;">
+        <div class="associate_sponsors" style="display: none">
             <div class="sponsback-1">
                 <header class="nm">
                     <h1 class="heading-1">Associate Sponsors</h1>
                 </header>
 
-                <button class="return" onclick="Return()"></button>
+                <button
+                    class="return"
+                    onclick="Return()"
+                    style="
+                        background-image: url(/templates/Sponsors/static/images/Vector.png);
+                    "
+                ></button>
 
-                <div class="items">
-                    <div class="item next">
+                <div class="items items_associate">
+                    <div class="item item_associate">
                         <a href="#" target="_blank"
                             ><img src="./static/images/Coding_blocks.png"
                         /></a>
                     </div>
-                    <div class="item current">
+                    <div class="item item_associate current">
                         <a href="https://devfolio.co/" target="_blank"
                             ><img src="./static/images/devfolio.png"
                         /></a>
                     </div>
-                    <div class="item">
+                    <div class="item item_associate">
                         <a href="#" target="_blank"
                             ><img src="./static/images/airmeet.png"
                         /></a>
                     </div>
-                    <div class="item">
+                    <div class="item item_associate">
                         <a href="#" target="_blank"
                             ><img src="./static/images/codingninja.png"
                         /></a>
                     </div>
-                    <div class="item">
+                    <div class="item item_associate">
                         <a href="#" target="_blank"
                             ><img src="./static/images/matic.png"
                         /></a>
                     </div>
-                    <div class="item">
+                    <div class="item item_associate">
                         <a href="#" target="_blank"
                             ><img src="./static/images/tezos.png"
                         /></a>
                     </div>
-                    <div class="item">
+                    <div class="item item_associate">
                         <a href="#" target="_blank"
                             ><img src="./static/images/sashido.png"
                         /></a>
                     </div>
-                    <div class="item prev">
+                    <div class="item item_associate">
                         <a href="#" target="_blank"
                             ><img src="./static/images/taskade.png"
                         /></a>
                     </div>
                     <div class="button-container">
                         <div
-                            class="button"
+                            class="button button_associate"
                             style="padding-right: 13px; padding-left: 10px"
                         >
                             <i class="fas fa-angle-left"></i>
                         </div>
                         <div
-                            class="button"
+                            class="button button_associate"
                             style="padding-left: 13px; padding-right: 10px"
                         >
                             <i class="fas fa-angle-right"></i>
@@ -277,6 +297,9 @@
                 </div>
             </div>
         </div>
+
+        
+        <div class="drop-shadow-2"></div>
 
         <!-- Bootstrap 5 Js -->
         <script
