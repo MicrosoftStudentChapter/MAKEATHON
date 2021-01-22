@@ -82,11 +82,11 @@ function createCarousal(sponsorName) {
 
     //(*****If you want to set a rotating timer you can uncommnet this :****)
 
-    // setInterval(() => {
-    // document.querySelector(
-    // `.sponsback-1 .items_${sponsorName} .button .fa-angle-right`
-    // ).click();
-    // }, 30000);
+    setInterval(() => {
+    document.querySelector(
+    `.sponsback-1 .items_${sponsorName} .button .fa-angle-right`
+    ).click();
+    }, 30000);
 }
 
 createCarousal("title");
