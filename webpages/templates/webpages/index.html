@@ -37,8 +37,14 @@
       type="text/css"
     />
     <title>Document</title>
+    <style>
+      body {
+        width: 100%;
+        overflow-x: hidden;
+      }
+    </style>
   </head>
-  <body>
+  <body onresize="location.reload()">
     <!-- prettier-ignore -->
     {% include "webpages/Home/index.html" %}
     {% include "webpages/About_MLSC/index.html" %}
