@@ -43,7 +43,6 @@
   <body>
     <!-- Start Your Code Here, Have Fun. -->
     <section style="position: relative" id="About_Makeathon">
-      <section id="about-makeathon">
         <header>
           <div class="glitch-wrapper">
             <div class="glitch" data-text="About Makeathon">About Makeathon</div>
@@ -51,7 +50,7 @@
         </header>
         <div id="left-content">
           <div class="list-item">
-            <img src="./static/images/registration-icon.svg" alt="" srcset="" />
+            <img src="{% static 'webpages/About/static/images/registration-icon.svg' %}" alt="" srcset="" />
             <p>
               1000 +
               <br />
@@ -59,7 +58,7 @@
             </p>
           </div>
           <div class="list-item">
-            <img src="./static/images/terminal-icon.svg" alt="" srcset="" />
+            <img src="{% static 'webpages/About_MLSC/static/images/terminal-icon.svg' %}" alt="" srcset="" />
             <p>
               Million lines of
               <br />
@@ -92,6 +91,5 @@
 
       <!-- Custom Js -->
       <script src="{% static 'webpages/About/static/js/index.js' %}"></script>
-    </section>
   </body>
 </html>
