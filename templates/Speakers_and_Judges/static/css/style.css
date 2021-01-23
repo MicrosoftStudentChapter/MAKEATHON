@@ -374,6 +374,7 @@ body {
 
   border-radius: 10px;
 }
+
 .texth1 {
   font-family: Anurati, sans-serif;
   font-size: 500%;
@@ -714,5 +715,25 @@ p {
       top: 40%;
       align: center;
     }
+  }
+}
+
+#info-heading-1 {
+  width: 60%;
+}
+
+@media ALL and (max-width: 1100px) {
+  #info-heading-1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text1 {
+    position: relative;
+    top: -100px;
+  }
+
+  .info-page-img {
+    position: relative;
   }
 }
