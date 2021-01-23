@@ -459,7 +459,8 @@ p {
 }
 @media ALL and (max-width: 1100px) {
   .info-page-img {
-    left: 35%;
+    left: 30%;
+    top: -1em;
   }
 
   .box {
@@ -495,6 +496,7 @@ p {
 
 @media ALL and (max-width: 960px) {
   .info-page-img {
+    top: -1em;
   }
   .box {
     height: 85%;
@@ -520,7 +522,7 @@ p {
   }
   .text1 {
     font-size: 85%;
-    top: -20em;
+    top: -9em;
   }
   .texth1 {
     font-size: 400%;
@@ -536,11 +538,10 @@ p {
     left:0.000003%;
   }
 }
-@media ALL and (max-width: 615px) {
-  .text1 {
-    margin-top: 275px;
+@media ALL and (max-width: 515px) {
+  .info-page-img {
+    top: -6em;
   }
-
 }
 
 @media ALL and (max-width: 415px) {
@@ -548,7 +549,7 @@ p {
     font-size: 400%;
   }
   .info-page-img {
-    left: 9%;
+    left: 20%;
   }
 
   .box {
