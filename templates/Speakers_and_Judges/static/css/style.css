@@ -54,6 +54,8 @@ body {
   color: #ffffff;
 
   transform: rotate(0.05deg);
+
+  border: 1px;
 }
 .button:hover {
   background-color: whitesmoke;
@@ -79,6 +81,8 @@ body {
   line-height: 28px;
 
   color: #ffffff;
+
+  border: 1px;
 }
 .button2:focus {
   outline: none;
