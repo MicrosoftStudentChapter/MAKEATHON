@@ -541,6 +541,7 @@ p {
 @media ALL and (max-width: 515px) {
   .info-page-img {
     top: -6em;
+    left: 20%;
   }
 }
 
@@ -549,7 +550,8 @@ p {
     font-size: 400%;
   }
   .info-page-img {
-    left: 20%;
+    left: 15%;
+    top: 0;
   }
 
   .box {
@@ -559,6 +561,7 @@ p {
   }
   .text1 {
     font-size: 70%;
+    top: 0;
   }
   .arrow {
     margin-top: -1%;
@@ -579,9 +582,19 @@ p {
   }
 }
 
-@media All and (max-width: 290px) {
+@media All and (max-width: 330px) {
   .info-page-img {
     left: 0.5%;
+    top: 1px;
+  }
+
+  .text1 {
+    top: 1px;
+    font-size: 60%;
+  }
+
+  .texth3 {
+    font-size: 30px;;
   }
 .safari-specific img{
   left:0.4%;
