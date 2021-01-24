@@ -68,6 +68,94 @@
   display: none;
 }
 
+.btn {
+  padding: 20px 20px;
+  display: inline-block;
+  background: #ef233c;
+  color: white;
+  text-decoration: none;
+  transition: 0.35s ease-in-out;
+  font-weight: 700;
+}
+
+.close_button_modal {
+  text-align: right;
+}
+
+.btn_2 {
+  padding: 10px 10px;
+  display: inline-block;
+  background: #ef233c;
+  color: white;
+  text-decoration: none;
+  transition: 0.35s ease-in-out;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background: #dc1029;
+}
+
+.overlay {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.35s ease-in-out;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+.overlay.open {
+  opacity: 1;
+  pointer-events: inherit;
+}
+.overlay .modal {
+  background: white;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.35);
+  opacity: 0;
+  border-radius: 30px 0 30px 0;
+  pointer-events: none;
+  transition: 0.35s ease-in-out;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+.overlay .modal.open {
+  opacity: 1;
+  pointer-events: inherit;
+}
+.overlay .modal.open .content {
+  opacity: 1;
+}
+.overlay .modal .content {
+  position: relative;
+  opacity: 0;
+  transition: 0.35s ease-in-out;
+  padding: 20px 80px;
+}
+.content {
+  top: -20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  animation: color-change-to-white 0.3s forwards;
+}
+
 @media (min-width: 600px) {
   #timeline #days {
     float: left;
