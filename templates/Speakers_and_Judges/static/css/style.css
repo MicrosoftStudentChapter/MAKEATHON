@@ -541,6 +541,7 @@ p {
 @media ALL and (max-width: 515px) {
   .info-page-img {
     top: -6em;
+    left: 20%;
   }
 }
 
@@ -549,7 +550,8 @@ p {
     font-size: 400%;
   }
   .info-page-img {
-    left: 20%;
+    left: 15%;
+    top: 0;
   }
 
   .box {
@@ -559,6 +561,7 @@ p {
   }
   .text1 {
     font-size: 70%;
+    top: 0;
   }
   .arrow {
     margin-top: -1%;
@@ -579,9 +582,19 @@ p {
   }
 }
 
-@media All and (max-width: 290px) {
+@media All and (max-width: 330px) {
   .info-page-img {
-    left: 0.5%;
+    left: 2%;
+    top: 1px;
+  }
+
+  .text1 {
+    top: 1px;
+    font-size: 60%;
+  }
+
+  .texth3 {
+    font-size: 30px;;
   }
 .safari-specific img{
   left:0.4%;
@@ -593,27 +606,20 @@ p {
   top: 195px;
   right: -20%;
 }
+
 @media ALL and (max-width:315px )
 {
   .safari-specific {
-    top:85% !important;
-    right:0.2%;
-    left:3%;
-  }
+      top:8.4% !important;
+      left:-1%;
+    }
+
   .info-page-img{
     border:none;
-
   }
 }
 
-@media ALL and (max-width:700px )
-{
-  .safari-specific{
-    top:138%;
-    right:20.5%;
 
-  }
-}
 @media screen and (min-width: 700px) and (max-width:740px){
   .safari-specific{
     top:19.15%;
@@ -622,23 +628,30 @@ p {
 
 @media screen and (min-width: 315px) and (max-width:400px){
   .safari-specific{
-    top:110%;
-    right:-13%;
+    top:10%;
+    right:11.5%;
   }
 }
 
 @media screen and (min-width: 401px) and (max-width:415px){
   .safari-specific{
-    top:124%;
-    left:21%;
+    top:4%;
+    left:-1%;
 
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width:575px){
+  .safari-specific{
+    top:4%;
+    left:-7%;
   }
 }
 
 @media screen and (min-width: 578px) and (max-width:700px){
   .safari-specific{
-    top:180%;
-
+    top:10%;
+    left:1%;
   }
 }
 
@@ -653,8 +666,8 @@ p {
 
 @media screen and (min-width: 740px) and (max-width:850px){
   .safari-specific{
-    top:23%;
-    left:52%;
+    top:19%;
+    left:-2%;
 
   }
 }
@@ -662,18 +675,37 @@ p {
 @media screen and (min-width: 900px) and (max-width:1000px){
   .safari-specific{
     top:35%;
-    left:74%;
+    left:9%;
 
   }
 }
 
 @media screen and (min-width: 1000px) and (max-width:1180px){
   .safari-specific{
-    top:50%;
-    left:103%;
+    top:59%;
+    left:72%;
+  }
+  .image{
+    top:14%;
+    left:19%;
   }
 }
-
+@media screen and (min-width: 1181px) and (max-width:1300px){
+  .safari-specific{
+    top:59%;
+    left:72%;
+  }
+  .image{
+    top:14%;
+    left:19%;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width:1100px){
+  .safari-specific{
+    top:20%;
+    left:29%;
+  }
+}
 
 @-moz-document url-prefix() {
   .info-page-img {
