@@ -20,10 +20,11 @@ body {
 }
 .header {
   position: absolute;
-  height: 15%;
+  /*height: 15%;
   left: 50%;
-  top: 7.78px;
-
+  top: 7.78px;*/
+  top: 0.05em;
+  text-align: center;
   font-family: Anurati, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -187,7 +188,7 @@ body {
     width: 14%;
   }
   .header {
-    left: 41%;
+    /*left: 41%;*/
   }
 }
 
@@ -204,7 +205,7 @@ body {
     padding-top: 1px;
   }
   .header {
-    left: 37%;
+    left: 25%;
   }
 }
 
