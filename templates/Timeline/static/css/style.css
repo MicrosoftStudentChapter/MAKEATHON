@@ -50,6 +50,8 @@
 
 #timeline #events {
   height: 100vh;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 #timeline #events p {
@@ -57,7 +59,8 @@
 }
 
 #timeline #events p button {
-  font-size: 2rem;
+  font-size: 2rem; /*-------------------------------  You can adjust size of events here ---------------------------*/
+  padding-top: 2%;
 }
 
 #timeline #events p button:hover {
@@ -168,11 +171,6 @@ a:hover {
     overflow: hidden;
   }
 }
-@media (max-width: 600px) {
-  #timeline #events {
-    display: none;
-  }
-}
 
 @keyframes color-change-to-black {
   to {
@@ -186,3 +184,22 @@ a:hover {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+@media all and (max-width: 599px) {
+  #timeline #events {
+    text-align: center;
+    margin-top: 3%;
+  }
+  #timeline #days {
+    flex-direction: row;
+    min-height: 55vh;
+  }
+}
+@media all and (max-width: 471px) {
+  #timeline #days h2 {
+    padding: 0px;
+  }
+  #timeline #days h2 button {
+    font-size: 200%;
+  }
+}
