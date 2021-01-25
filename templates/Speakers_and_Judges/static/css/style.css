@@ -709,18 +709,19 @@ p {
 }
 
 @-moz-document url-prefix() {
-  .info-page-img {
+  /*.info-page-img {
     position: absolute;
     top: 195px;
   }
-
-  @media ALL and (max-width: 1300px) {
+*/
+  @media ALL and (min-width: 1100px) {
     .info-page-img {
       position: absolute;
       left: 72%;
+      top: 20%;
     }
   }
-
+/*
   @media ALL and (max-width: 960px) {
     .info-page-img {
       position: absolute;
@@ -765,3 +766,4 @@ p {
     }
   }
 }
+*/
