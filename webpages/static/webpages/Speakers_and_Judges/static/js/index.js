@@ -95,9 +95,9 @@ function iterateAndCreatePersonCardInDOM(persons, containerDiv) {
     // Array containing arrays in the form of :
     // [link of social media for the person, img src of social media icon, type of social media]
     let socialMedias = [
-      [person.insta, "./static/images/insta.png", "insta"],
-      [person.linkedin, "./static/images/link.png", "link"],
-      [person.github, "./static/images/git.png", "git"],
+      [person.insta, "/static/webpages/Speakers_and_Judges/static/images/insta.png", "insta"],
+      [person.linkedin, "/static/webpages/Speakers_and_Judges/static/images/link.png", "link"],
+      [person.github, "/static/webpages/Speakers_and_Judges/static/images/git.png", "git"],
     ];
 
     // Instead of repeating three times very similar code to create and the three social media links and icons

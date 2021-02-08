@@ -23,12 +23,12 @@ export let speakers = (function () {
 
   // Array having the path of the image of each speaker
   let speakerImageSrc = [
-    "./static/images/img2.png",
-    "./static/images/img3.png",
-    "./static/images/pichai.png",
-    "./static/images/img2.png",
-    "./static/images/img3.png",
-    "./static/images/pichai.png",
+    "/static/webpages/Speakers_and_Judges/static/images/img2.png",
+    "/static/webpages/Speakers_and_Judges/static/images/img3.png",
+    "/static/webpages/Speakers_and_Judges/static/images/pichai.png",
+    "/static/webpages/Speakers_and_Judges/static/images/img2.png",
+    "/static/webpages/Speakers_and_Judges/static/images/img3.png",
+    "/static/webpages/Speakers_and_Judges/static/images/pichai.png",
   ];
 
   // Array having the instagram id of each speaker
