@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,12 +19,283 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../static/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="{% static 'webpages/Sponsors/static/css/style.css' %}" type="text/css"/>
   </head>
   <body>
     <!-- Start Your Code Here, Have Fun. -->
+	<section style="position: relative; min-height: 100vh;">
+    <div class="drop-shadow-1"></div>
+    <div class="sponsors">
+      <div class="sponsback">
+        <header class="nm mt-15">
+          <h1 class="heading">Sponsors</h1>
+        </header>
+
+        <div class="sponsor-start">
+          <button
+            class="sponsor-start-buttons sponsor-start-buttons-1"
+            onclick="ShowAssociateHideOthers()"
+          >
+            Associate
+          </button>
+          <button
+            class="sponsor-start-buttons sponsor-start-buttons-2"
+            onclick="ShowTitleHideOthers()"
+          >
+            Title
+          </button>
+          <button
+            class="sponsor-start-buttons sponsor-start-buttons-3"
+            onclick="ShowPowerHideOthers()"
+          >
+            Power
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--***********TITLE SPONSORS*************-->
+
+    <!--You can add other sponsors by just copying the div with class "item" and adding it below the others inside the div (class= "items"). This will automatically add another image to the carousel  -->
+
+    <div class="title_sponsors" style="display: none">
+      <div class="sponsback-1">
+        <header class="nm">
+          <h1 class="heading-1">Title Sponsors</h1>
+        </header>
+
+        <button
+          class="return"
+          onclick="Return()"
+          style="background-image: url(./static/images/Vector.png)"
+        ></button>
+
+        <div class="items items_title">
+          <div class="item item_title next">
+            <a href="#" target="_blank"
+              ><img src="./static/images/Coding_blocks.png"
+            /></a>
+          </div>
+          <div class="item item_title current">
+            <a href="https://devfolio.co/" target="_blank"
+              ><img src="./static/images/devfolio.png"
+            /></a>
+          </div>
+          <div class="item item_title">
+            <a href="#" target="_blank"
+              ><img src="./static/images/airmeet.png"
+            /></a>
+          </div>
+          <div class="item item_title">
+            <a href="#" target="_blank"
+              ><img src="./static/images/codingninja.png"
+            /></a>
+          </div>
+          <div class="item item_title">
+            <a href="#" target="_blank"
+              ><img src="./static/images/matic.png"
+            /></a>
+          </div>
+          <div class="item item_title">
+            <a href="#" target="_blank"
+              ><img src="./static/images/tezos.png"
+            /></a>
+          </div>
+          <div class="item item_title">
+            <a href="#" target="_blank"
+              ><img src="./static/images/sashido.png"
+            /></a>
+          </div>
+          <div class="item item_title prev">
+            <a href="#" target="_blank"
+              ><img src="./static/images/taskade.png"
+            /></a>
+          </div>
+
+          <div class="button-container">
+            <div
+              class="button button_title"
+              style="padding-right: 13px; padding-left: 10px"
+            >
+              <i class="fas fa-angle-left"></i>
+            </div>
+            <div
+              class="button button_title"
+              style="padding-left: 13px; padding-right: 10px"
+            >
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--**********POWER SPONSORS*************-->
+
+    <!--You can add other sponsors by just copying the div with class "item" and adding it below the others inside the div (class= "items"). This will automatically add another image to the carousel  -->
+
+    <div class="power_sponsors" style="display: none">
+      <div class="sponsback-1">
+        <header class="nm">
+          <h1 class="heading-1">Power Sponsors</h1>
+        </header>
+
+        <button
+          class="return"
+          onclick="Return()"
+		  style="background-image: url({% static './static/images/Vector.png' %})"
+        ></button>
+
+        <div class="items items_power">
+          <div class="item item_power next">
+            <a href="#" target="_blank"
+              ><img src="./static/images/Coding_blocks.png"
+            /></a>
+          </div>
+          <div class="item item_power current">
+            <a href="https://devfolio.co/" target="_blank"
+              ><img src="./static/images/devfolio.png"
+            /></a>
+          </div>
+          <div class="item item_power">
+            <a href="#" target="_blank"
+              ><img src="./static/images/airmeet.png"
+            /></a>
+          </div>
+          <div class="item item_power">
+            <a href="#" target="_blank"
+              ><img src="./static/images/codingninja.png"
+            /></a>
+          </div>
+          <div class="item item_power">
+            <a href="#" target="_blank"
+              ><img src="./static/images/matic.png"
+            /></a>
+          </div>
+          <div class="item item_power">
+            <a href="#" target="_blank"
+              ><img src="./static/images/tezos.png"
+            /></a>
+          </div>
+          <div class="item item_power">
+            <a href="#" target="_blank"
+              ><img src="./static/images/sashido.png"
+            /></a>
+          </div>
+          <div class="item item_power prev">
+            <a href="#" target="_blank"
+              ><img src="./static/images/taskade.png"
+            /></a>
+          </div>
+          <div class="button-container">
+            <div
+              class="button button_power"
+              style="padding-right: 13px; padding-left: 10px"
+            >
+              <i class="fas fa-angle-left"></i>
+            </div>
+            <div
+              class="button button_power"
+              style="padding-left: 13px; padding-right: 10px"
+            >
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--*******ASSOCIATE SPONSORS********-->
+
+    <!--You can add other sponsors by just copying the div with class "item" and adding it below the others inside the div (class= "items"). This will automatically add another image to the carousel  -->
+
+    <div class="associate_sponsors" style="display: none">
+      <div class="sponsback-1">
+        <header class="nm">
+          <h1 class="heading-1">Associate Sponsors</h1>
+        </header>
+
+        <button
+          class="return"
+          onclick="Return()"
+          style="background-image: url(./static/images/Vector.png)"
+        ></button>
+
+        <div class="items items_associate">
+          <div class="item item_associate">
+            <a href="#" target="_blank"
+              ><img src="./static/images/Coding_blocks.png"
+            /></a>
+          </div>
+          <div class="item item_associate current">
+            <a href="https://devfolio.co/" target="_blank"
+              ><img src="./static/images/devfolio.png"
+            /></a>
+          </div>
+          <div class="item item_associate">
+            <a href="#" target="_blank"
+              ><img src="./static/images/airmeet.png"
+            /></a>
+          </div>
+          <div class="item item_associate">
+            <a href="#" target="_blank"
+              ><img src="./static/images/codingninja.png"
+            /></a>
+          </div>
+          <div class="item item_associate">
+            <a href="#" target="_blank"
+              ><img src="./static/images/matic.png"
+            /></a>
+          </div>
+          <div class="item item_associate">
+            <a href="#" target="_blank"
+              ><img src="./static/images/tezos.png"
+            /></a>
+          </div>
+          <div class="item item_associate">
+            <a href="#" target="_blank"
+              ><img src="./static/images/sashido.png"
+            /></a>
+          </div>
+          <div class="item item_associate">
+            <a href="#" target="_blank"
+              ><img src="./static/images/taskade.png"
+            /></a>
+          </div>
+          <div class="button-container">
+            <div
+              class="button button_associate"
+              style="padding-right: 13px; padding-left: 10px"
+            >
+              <i class="fas fa-angle-left"></i>
+            </div>
+            <div
+              class="button button_associate"
+              style="padding-left: 13px; padding-right: 10px"
+            >
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="drop-shadow-2"></div>
 
     <!-- Bootstrap 5 Js -->
     <script
@@ -32,6 +305,6 @@
     ></script>
 
     <!-- Custom Js -->
-    <script src="static/js/index.js"></script>
+	<script src="{% static 'webpages/Sponsors/static/js/index.js' %}"></script>
   </body>
 </html>
