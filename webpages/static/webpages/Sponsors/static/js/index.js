@@ -88,7 +88,7 @@ function createCarousal(sponsorName) {
         `.sponsback-1 .items_${sponsorName} .button .fa-angle-right`
       )
       .click();
-  }, 30000);
+  }, 5000);
 }
 
 createCarousal("title");
