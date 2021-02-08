@@ -198,11 +198,11 @@ function addEventListenersToInfoArrows() {
   leftArrow.addEventListener("click", () => {
     let currentSpeaker = getCurrentSpeakerOnInfoPage();
     let personsArray =
-      this.type === "speaker"
+      currentSpeaker.type === "speaker"
         ? speakers.getSpeakerObjects()
         : judges.getJudgeObjects();
     let totalPersons =
-      this.type === "speaker"
+      currentSpeaker.type === "speaker"
         ? speakers.getSpeakerTotalNumber()
         : judges.getJudgeTotalNumber();
 
@@ -246,4 +246,4 @@ function addEventListenersToInfoArrows() {
     // the nextPerson are displayed
     personOnClick.call(nextPerson);
   });
-}
+ }
