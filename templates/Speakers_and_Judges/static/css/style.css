@@ -20,10 +20,11 @@ body {
 }
 .header {
   position: absolute;
-  height: 15%;
+  /*height: 15%;
   left: 50%;
-  top: 7.78px;
-
+  top: 7.78px;*/
+  top: 0.05em;
+  text-align: center;
   font-family: Anurati, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -54,6 +55,8 @@ body {
   color: #ffffff;
 
   transform: rotate(0.05deg);
+
+  border: 1px;
 }
 .button:hover {
   background-color: whitesmoke;
@@ -79,6 +82,8 @@ body {
   line-height: 28px;
 
   color: #ffffff;
+
+  border: 1px;
 }
 .button2:focus {
   outline: none;
@@ -183,7 +188,7 @@ body {
     width: 14%;
   }
   .header {
-    left: 41%;
+    /*left: 41%;*/
   }
 }
 
@@ -200,7 +205,7 @@ body {
     padding-top: 1px;
   }
   .header {
-    left: 37%;
+    left: 25%;
   }
 }
 
@@ -352,6 +357,9 @@ body {
   -webkit-backdrop-filter: blur(25px);
   border-radius: 15px;
   border: 1px solid rgb(255 255 255 / 15%);
+  animation-duration: 2s;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
 }
 .image {
   position: absolute;
@@ -367,10 +375,11 @@ body {
   height: 242px;
   left: 72%;
   top: 58px;
-  border: 2px solid #b45804;
+  /*border: 2px solid #b45804;*/
 
   border-radius: 10px;
 }
+
 .texth1 {
   font-family: Anurati, sans-serif;
   font-size: 500%;
@@ -426,22 +435,35 @@ p {
   margin-top: 0em;
 }
 
+
+#info-heading-1 {
+  width: 60%;
+}
+
+
 @media ALL and (max-width: 1300px) {
   .box {
+
     margin-left: 30%;
   }
 
   .info-page-img {
     left: 60%;
   }
+  .safari-specific img{
+    position: absolute;
+    top:70%;
+    right:20%;
+
+  }
+
 }
 @media ALL and (max-width: 1100px) {
   .info-page-img {
-    left: 35%;
+    left: 30%;
+    top: -1em;
   }
-  .text1 {
-    margin-top: -80px;
-  }
+
   .box {
     height: 85%;
     margin-left: 30%;
@@ -449,13 +471,33 @@ p {
   .textinf {
     margin-bottom: -50px;
   }
+
+  .safari-specific img{
+    position: absolute;
+    top:-12%;
+    right:;
+    bottom:;
+    left:70%;
+
+  }
+  #info-heading-1 {
+    width: 100%;
+    text-align: center;
+  }
+
   .text1 {
-    margin-top: 39%;
+    position: relative;
+    top: 50px;
+  }
+
+  .info-page-img {
+    position: relative;
   }
 }
+
 @media ALL and (max-width: 960px) {
   .info-page-img {
-    left: 10%;
+    top: -1em;
   }
   .box {
     height: 85%;
@@ -464,22 +506,24 @@ p {
   .textinf {
     margin-bottom: -50px;
   }
-  .text1 {
-    margin-top: 250px;
+  .safari-specific img{
+    left:10%;
   }
 }
 @media ALL and (max-width: 700px) {
   .info-page-img {
-    margin-left: 10%;
+    top: -8em;
   }
 
   .box {
     margin-top: 40%;
     margin-left: 20%;
     max-width: 75%;
+    padding-top:30%;
   }
   .text1 {
     font-size: 85%;
+    top: -9em;
   }
   .texth1 {
     font-size: 400%;
@@ -489,10 +533,16 @@ p {
     text-align: center;
     margin-right: 0%;
   }
+  .safari-specific img{
+    position:absolute;
+
+    left:0.000003%;
+  }
 }
-@media ALL and (max-width: 615px) {
-  .text1 {
-    margin-top: 275px;
+@media ALL and (max-width: 515px) {
+  .info-page-img {
+    top: -6em;
+    left: 20%;
   }
 }
 
@@ -501,7 +551,8 @@ p {
     font-size: 400%;
   }
   .info-page-img {
-    left: 9%;
+    left: 15%;
+    top: 0;
   }
 
   .box {
@@ -511,6 +562,7 @@ p {
   }
   .text1 {
     font-size: 70%;
+    top: 0;
   }
   .arrow {
     margin-top: -1%;
@@ -525,10 +577,193 @@ p {
     height: 34px;
     width: 48px;
   }
-}
-
-@media All and (max-width: 290px) {
-  .info-page-img {
-    left: 0.5%;
+  .safari-specific img{
+    left:0%;
+    top:30%;
   }
 }
+
+@media All and (max-width: 330px) {
+  .info-page-img {
+    left: 2%;
+    top: 1px;
+  }
+
+  .text1 {
+    top: 1px;
+    font-size: 60%;
+  }
+
+  .texth3 {
+    font-size: 30px;;
+  }
+.safari-specific img{
+  left:0.4%;
+}
+}
+
+
+.safari-specific{
+  top: 195px;
+  right: -20%;
+}
+
+@media ALL and (max-width:315px )
+{
+  .safari-specific {
+      top:8.4% !important;
+      left:-1%;
+    }
+
+  .info-page-img{
+    border:none;
+  }
+}
+
+
+@media screen and (min-width: 700px) and (max-width:740px){
+  .safari-specific{
+    top:19.15%;
+  }
+}
+
+@media screen and (min-width: 315px) and (max-width:400px){
+  .safari-specific{
+    top:10%;
+    right:11.5%;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width:415px){
+  .safari-specific{
+    top:4%;
+    left:-1%;
+
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width:575px){
+  .safari-specific{
+    top:4%;
+    left:-7%;
+  }
+}
+
+@media screen and (min-width: 578px) and (max-width:700px){
+  .safari-specific{
+    top:10%;
+    left:1%;
+  }
+}
+
+@media screen and (min-width: 850px) and (max-width:900px){
+  .safari-specific{
+    top:35%;
+    left:74%;
+
+  }
+}
+
+
+@media screen and (min-width: 740px) and (max-width:850px){
+  .safari-specific{
+    top:19%;
+    left:-2%;
+
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width:1000px){
+  .safari-specific{
+    top:35%;
+    left:9%;
+
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width:1180px){
+  .safari-specific{
+    top:59%;
+    left:72%;
+  }
+  .image{
+    top:14%;
+    left:19%;
+  }
+}
+@media screen and (min-width: 1181px) and (max-width:1300px){
+  .safari-specific{
+    top:59%;
+    left:72%;
+  }
+  .image{
+    top:14%;
+    left:19%;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width:1100px){
+  .safari-specific{
+    top:20%;
+    left:29%;
+  }
+}
+
+@-moz-document url-prefix() {
+  /*.info-page-img {
+    position: absolute;
+    top: 195px;
+  }
+*/
+  @media ALL and (min-width: 1100px) {
+    .info-page-img {
+      position: absolute;
+      left: 72%;
+      top: 20%;
+    }
+  }
+/*
+  @media ALL and (max-width: 960px) {
+    .info-page-img {
+      position: absolute;
+      left: 40%;
+      top: 20%;
+    }
+  }
+  @media ALL and (max-width: 800px) {
+    .info-page-img {
+      top: 19%;
+      left: 40%;
+    }
+  }
+  @media ALL and (max-width: 700px) {
+    .info-page-img {
+      top: 68%;
+      left: 15%;
+    }
+  }
+  @media ALL and (max-width: 635px) {
+    .info-page-img {
+      top: 60%;
+      left: 15%;
+    }
+  }
+  @media ALL and (max-width: 500px) {
+    .info-page-img {
+      top: 55%;
+      left: 15%;
+    }
+  }
+  @media ALL and (max-width: 415px) {
+    .info-page-img {
+      top: 45%;
+      left: 15%;
+    }
+  }
+  @media ALL and (max-width: 350px) {
+    .info-page-img {
+      top: 40%;
+      align: center;
+    }
+  }
+}
+*/
