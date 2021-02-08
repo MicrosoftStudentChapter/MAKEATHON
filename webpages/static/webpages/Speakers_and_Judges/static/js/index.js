@@ -78,8 +78,6 @@ function iterateAndCreatePersonCardInDOM(persons, containerDiv) {
     let personImg = document.createElement("img");
     personImg.classList.add("imgperson");
 
-
-
     personImg.src = `${person.imgSrc}`;
 
     // func.bind(obj) binds the this of the func to the obj passed to it
@@ -95,9 +93,21 @@ function iterateAndCreatePersonCardInDOM(persons, containerDiv) {
     // Array containing arrays in the form of :
     // [link of social media for the person, img src of social media icon, type of social media]
     let socialMedias = [
-      [person.insta, "/static/webpages/Speakers_and_Judges/static/images/insta.png", "insta"],
-      [person.linkedin, "/static/webpages/Speakers_and_Judges/static/images/link.png", "link"],
-      [person.github, "/static/webpages/Speakers_and_Judges/static/images/git.png", "git"],
+      [
+        person.insta,
+        "/static/webpages/Speakers_and_Judges/static/images/insta.png",
+        "insta",
+      ],
+      [
+        person.linkedin,
+        "/static/webpages/Speakers_and_Judges/static/images/link.png",
+        "link",
+      ],
+      [
+        person.github,
+        "/static/webpages/Speakers_and_Judges/static/images/git.png",
+        "git",
+      ],
     ];
 
     // Instead of repeating three times very similar code to create and the three social media links and icons
@@ -117,9 +127,6 @@ function iterateAndCreatePersonCardInDOM(persons, containerDiv) {
 
       let img = document.createElement("img");
       img.classList.add(socialMediaImgClass);
-
-
-
 
       img.src = socialMediaImgSrc;
       link.append(img);
@@ -172,8 +179,8 @@ function personOnClick() {
   infoImg.src = this.imgSrc;
 
   let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-  if (isSafari){
-    infoImg.classList.add("safari-specific") ;
+  if (isSafari) {
+    infoImg.classList.add("safari-specific");
   }
 
   // After updating info-box-card with the information of the person clicked,
@@ -246,4 +253,4 @@ function addEventListenersToInfoArrows() {
     // the nextPerson are displayed
     personOnClick.call(nextPerson);
   });
- }
+}
