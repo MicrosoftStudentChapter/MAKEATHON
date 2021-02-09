@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#timeline {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #d9afd9;
+  background-image: linear-gradient(135deg, #dfa5df, #97d9e1);
+}
+
+#timeline button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#timeline #days {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#timeline #days h2:first-child {
+  border-top: 3px solid white;
+}
+
+#timeline #days h2:last-child {
+  border-bottom: 3px solid white;
+}
+
+#timeline #days h2 {
+  padding: 40px;
+  margin: 10px;
+}
+
+#timeline #days h2 button {
+  font-size: 4rem;
+  color: white;
+  white-space: nowrap;
+}
+
+#timeline #days h2 button:hover {
+  animation: color-change-to-black 0.3s forwards;
+}
+
+#timeline #events {
+  height: 100vh;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#timeline #events p {
+  margin: 10px 30px;
+}
+
+#timeline #events p button {
+  font-size: 2rem; /*-------------------------------  You can adjust size of events here ---------------------------*/
+  padding-top: 2%;
+}
+
+#timeline #events p button:hover {
+  animation: color-change-to-white 0.3s forwards;
+}
+
+#timeline .hidden {
+  display: none;
+}
+
+#timeline .btn {
+  padding: 20px 20px;
+  display: inline-block;
+  background: #ef233c;
+  color: white;
+  text-decoration: none;
+  transition: 0.35s ease-in-out;
+  font-weight: 700;
+}
+
+#timeline .close_button_modal {
+  text-align: right;
+}
+
+#timeline .btn_2 {
+  padding: 10px 10px;
+  display: inline-block;
+  background: #ef233c;
+  color: white;
+  text-decoration: none;
+  transition: 0.35s ease-in-out;
+  font-weight: 700;
+}
+
+#timeline .btn:hover {
+  background: #dc1029;
+}
+
+#timeline .overlay {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.35s ease-in-out;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+#timeline .overlay.open {
+  opacity: 1;
+  pointer-events: inherit;
+}
+#timeline .overlay .modal {
+  background: white;
+  text-align: center;
+  width: 60%;
+  padding: 10px;
+  box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.35);
+  opacity: 0;
+  border-radius: 30px 0 30px 0;
+  pointer-events: none;
+  transition: 0.35s ease-in-out;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+#timeline .overlay .modal.open {
+  opacity: 1;
+  pointer-events: inherit;
+}
+#timeline .overlay .modal.open .content {
+  opacity: 1;
+}
+#timeline .overlay .modal .content {
+  position: relative;
+  opacity: 0;
+  transition: 0.35s ease-in-out;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 30px;
+}
+
+#timeline a {
+  text-decoration: none;
+  color: black;
+}
+
+#timeline a:hover {
+  animation: color-change-to-white 0.3s forwards;
+}
+
+@media (min-width: 600px) {
+  #timeline #days {
+    float: left;
+    width: 50%;
+  }
+  #timeline #events {
+    float: right;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+@keyframes color-change-to-black {
+  to {
+    color: black;
+  }
+}
+@keyframes color-change-to-white {
+  to {
+    color: white;
+  }
+}
+
+@media all and (max-width: 599px) {
+  #timeline #events {
+    text-align: center;
+    margin-top: 3%;
+  }
+  #timeline #days {
+    flex-direction: row;
+    min-height: 55vh;
+  }
+}
+@media all and (max-width: 471px) {
+  #timeline #days h2 {
+    padding: 0px;
+  }
+  #timeline #days h2 button {
+    font-size: 200%;
+  }
+}
+
