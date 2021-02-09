@@ -42,6 +42,7 @@
 #about .container {
     display: flex;
     min-height: calc(80vh - 40px);
+    max-width: calc(100% - 140px);
 
     margin: 0 70px;
     padding: 20px 0;
@@ -195,6 +196,7 @@
     }
 
     #about .container {
+		max-width: calc(100% - 40px);
         margin: 0 20px;
     }
 
