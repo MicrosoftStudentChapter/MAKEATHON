@@ -42,24 +42,24 @@ function scrollEvents() {
 }
 
 function show() {
-  let day1 = document.getElementById("day-1-events");
-  let day2 = document.getElementById("day-2-events");
+  let day1 = document.querySelector("#timeline #day-1-events");
+  let day2 = document.querySelector("#timeline #day-2-events");
   day1.classList.add("hidden");
   day2.classList.remove("hidden");
 }
 
 function showAgain() {
-  let day1 = document.getElementById("day-1-events");
-  let day2 = document.getElementById("day-2-events");
+  let day1 = document.querySelector("#timeline #day-1-events");
+  let day2 = document.querySelector("#timeline #day-2-events");
   day1.classList.remove("hidden");
   day2.classList.add("hidden");
 }
 
-$(".modal").each(function () {
+$("#timeline .modal").each(function () {
   $(this).wrap('<div class="overlay"></div>');
 });
 
-$(".open-modal").on("click", function (e) {
+$("#timeline .open-modal").on("click", function (e) {
   e.preventDefault();
   e.stopImmediatePropagation;
 
@@ -87,7 +87,7 @@ $(".open-modal").on("click", function (e) {
   });
 });
 
-$(".close-modal").on("click", function (e) {
+$("#timeline .close-modal").on("click", function (e) {
   e.preventDefault();
   e.stopImmediatePropagation;
 
@@ -101,53 +101,53 @@ $(".close-modal").on("click", function (e) {
 });
 
 function d1e1() {
-  document.getElementById("title").innerHTML = day1events[0];
-  document.getElementById("description").innerHTML = day1description[0];
+  document.querySelector("#timeline #title").innerHTML = day1events[0];
+  document.querySelector("#timeline #description").innerHTML = day1description[0];
 }
 
 function d1e2() {
-  document.getElementById("title").innerHTML = day1events[1];
-  document.getElementById("description").innerHTML = day1description[1];
+  document.querySelector("#timeline #title").innerHTML = day1events[1];
+  document.querySelector("#timeline #description").innerHTML = day1description[1];
 }
 
 function d1e3() {
-  document.getElementById("title").innerHTML = day1events[2];
-  document.getElementById("description").innerHTML = day1description[2];
+  document.querySelector("#timeline #title").innerHTML = day1events[2];
+  document.querySelector("#timeline #description").innerHTML = day1description[2];
 }
 
 function d1e4() {
-  document.getElementById("title").innerHTML = day1events[3];
-  document.getElementById("description").innerHTML = day1description[3];
+  document.querySelector("#timeline #title").innerHTML = day1events[3];
+  document.querySelector("#timeline #description").innerHTML = day1description[3];
 }
 
 function d1e5() {
-  document.getElementById("title").innerHTML = day1events[4];
-  document.getElementById("description").innerHTML = day1description[4];
+  document.querySelector("#timeline #title").innerHTML = day1events[4];
+  document.querySelector("#timeline #description").innerHTML = day1description[4];
 }
 
 function d1e6() {
-  document.getElementById("title").innerHTML = day1events[5];
-  document.getElementById("description").innerHTML = day1description[5];
+  document.querySelector("#timeline #title").innerHTML = day1events[5];
+  document.querySelector("#timeline #description").innerHTML = day1description[5];
 }
 
 function d1e7() {
-  document.getElementById("title").innerHTML = day1events[6];
-  document.getElementById("description").innerHTML = day1description[6];
+  document.querySelector("#timeline #title").innerHTML = day1events[6];
+  document.querySelector("#timeline #description").innerHTML = day1description[6];
 }
 
 function d1e8() {
-  document.getElementById("title").innerHTML = day1events[7];
-  document.getElementById("description").innerHTML = day1description[7];
+  document.querySelector("#timeline #title").innerHTML = day1events[7];
+  document.querySelector("#timeline #description").innerHTML = day1description[7];
 }
 
 function d1e9() {
-  document.getElementById("title").innerHTML = day1events[8];
-  document.getElementById("description").innerHTML = day1description[8];
+  document.querySelector("#timeline #title").innerHTML = day1events[8];
+  document.querySelector("#timeline #description").innerHTML = day1description[8];
 }
 
 function d1e10() {
-  document.getElementById("title").innerHTML = day1events[9];
-  document.getElementById("description").innerHTML = day1description[9];
+  document.querySelector("#timeline #title").innerHTML = day1events[9];
+  document.querySelector("#timeline #description").innerHTML = day1description[9];
 }
 
 // //    ------------------------- DAY 2 EVENTS --------------------
