@@ -1,106 +1,41 @@
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Meta -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+	<link rel="stylesheet" href="{% static 'webpages/about/css/style.css' %}" />
+</head>
 
-    <!-- Title -->
-    <title>About Makeathon | Makeathon 3077</title>
+<section id="about-makeathon">
+	<h2 data-aos="fade-up" class="heading makeathon-heading">
+		About Makeathon
+	</h2>
+	<div class="container makeathon-container">
+		<div class="about-info" data-aos="fade-left">
+			<div class="info">
+				<i class="bx bx-cube"></i>
+				<p>1000+ Registrations</p>
+			</div>
 
-    <!-- Style -->
-
-    <!-- Bootstrap 5 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-      crossorigin="anonymous"
-    />
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="//db.onlinewebfonts.com/c/a21764905c623777a48ec557b4229c22?family=Anurati"
-      rel="stylesheet"
-      type="text/css"
-    />
-
-    <!-- Custom CSS -->
-    <link
-      rel="stylesheet"
-      href="{% static 'webpages/About/static/css/style.css' %}"
-      type="text/css"
-    />
-  </head>
-
-  <body>
-    <!-- Start Your Code Here, Have Fun. -->
-    <section style="position: relative" id="About_Makeathon">
-      <header>
-        <div class="glitch-wrapper">
-          <div class="glitch" data-text="About Makeathon">About Makeathon</div>
-        </div>
-      </header>
-      <div id="left-content">
-        <div class="list-item">
-          <img
-            src="{% static 'webpages/About/static/images/registration-icon.svg' %}"
-            alt=""
-            srcset=""
-          />
-          <p>
-            1000 +
-            <br />
-            Registrations
-          </p>
-        </div>
-        <div class="list-item">
-          <img
-            src="{% static 'webpages/About_MLSC/static/images/terminal-icon.svg' %}"
-            alt=""
-            srcset=""
-          />
-          <p>
-            Million lines of
-            <br />
-            code written
-          </p>
-        </div>
-      </div>
-      <div class="blurred-box">
-        <div class="content">
-          <p>
-            <strong>
-              Makeathon 3077- the paradigmatic Hackathon of Thapar Institute of
-              Engineering and Technology,is one of MLSC's superlative flagship
-              events. A 36 hour event for students to challenge their technical
-              boundaries by learning the latest technologies, procuring
-              solutions, and developing fun projects. The event intends to bring
-              together astute and industrious students from various colleges for
-              a ravishing technical journey consisting of pre-event workshops
-              and a Bootcamp.
-            </strong>
-          </p>
-        </div>
-      </div>
-      <div class="box"></div>
-    </section>
-
-    <!-- Bootstrap 5 Js -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Custom Js -->
-    <script src="{% static 'webpages/About/static/js/index.js' %}"></script>
-  </body>
-</html>
+			<div class="info">
+				<i class="bx bx-terminal"></i>
+				<p>Million lines of code written</p>
+			</div>
+		</div>
+		<div class="about-content">
+			<div data-aos="fade-right" class="glassbox-with-shadow">
+				<div class="colorizer-div"></div>
+				<span>
+					<strong>Makeathon 3077</strong>- the paradigmatic Hackathon
+					of Thapar Institute of Engineering and Technology,is one of
+					MLSC's superlative flagship events. A
+					<strong>36 Hours</strong> event for students to challenge
+					their technical boundaries by learning the latest
+					technologies, procuring solutions, and developing fun
+					projects. The event intends to bring together astute and
+					industrious students from various colleges for a ravishing
+					technical journey consisting of pre-event workshops and a
+					Bootcamp.
+				</span>
+			</div>
+		</div>
+	</div>
+</section>
