@@ -100,7 +100,7 @@
   margin: 262% 0;
 }
 #Home_Makeathon .mysidenav ul li:nth-child(3)::after {
-  content: "Sponsors";
+  content: "Speakers";
   line-height: 2.9rem;
   margin: 521% 0;
 }
@@ -115,7 +115,7 @@
   margin: 1039% 0;
 }
 #Home_Makeathon .mysidenav ul li:nth-child(6)::after {
-  content: "Our Team";
+  content: "Sponsors";
   line-height: 2.9rem;
   margin: 1301% 0;
 }
