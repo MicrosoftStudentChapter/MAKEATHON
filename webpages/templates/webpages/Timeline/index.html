@@ -1,101 +1,148 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Meta -->
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- Title -->
-		<title>Timeline Makeathon</title>
+    <!-- Title -->
+    <title>Timeline Makeathon</title>
 
-		<!-- Css -->
-		<link rel="stylesheet" href="{% static 'webpages/Timeline/static/css/style.css' %}" />
-		<script
-		src="https://code.jquery.com/jquery-3.5.1.min.js"
-		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-		crossorigin="anonymous"></script>
-	</head>
-	<body onscroll="scrollEvents()">
-		<section id="timeline">
-			<div id="days">
-				<h2><button id="day-1">TIMELINE</button></h2>
-				
-			</div>
+    <!-- Css -->
+    <link
+      rel="stylesheet"
+      href="{% static 'webpages/Timeline/static/css/style.css' %}"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body onscroll="scrollEvents()">
+    <section id="timeline">
+      <div id="days">
+        <h2><button id="day-1">TIMELINE</button></h2>
+      </div>
 
-			<div id="events">
-				<div id="day-1-events"><br>
+      <div id="events">
+        <div id="day-1-events">
+          <br />
 
+          <!---------------------------------  DAY 1 EVENTS AND DAY 1 | 17:00    -------------------------------------->
 
-					<!---------------------------------  DAY 1 EVENTS AND DESCRIPTION    -------------------------------------->
+          <!------------------------------- PUT THE REAL EVENTS IN JS FILE ALSO    -------------------------------------->
 
+          <p>
+            <button onclick="d1e1()">
+              <a href="#" class="open-modal" data-modal="#modal1"
+                >Inauguration Ceremony</a
+              >
+            </button>
+          </p>
+          <h2><p>DAY 1 | 17:00</p></h2>
+          <br />
+          <p>
+            <button onclick="d1e2()">
+              <a href="#" class="open-modal" data-modal="#modal1"
+                >Hack Begins</a
+              >
+            </button>
+          </p>
+          <h2><p>DAY 1 | 20:00</p></h2>
+          <br />
+          <p>
+            <button onclick="d1e3()">
+              <a href="#" class="open-modal" data-modal="#modal1"
+                >Checkpoint 1</a
+              >
+            </button>
+          </p>
+          <h2><p>DAY 2 | 00:30</p></h2>
+          <br />
+          <p>
+            <button onclick="d1e4()">
+              <a href="#" class="open-modal" data-modal="#modal1"
+                >Checkpoint 2</a
+              >
+            </button>
+          </p>
+          <h2><p>DAY 2 | 08:30</p></h2>
+          <br />
+          <p>
+            <button onclick="d1e5()">
+              <a href="#" class="open-modal" data-modal="#modal1"
+                >Checkpoint 3</a
+              >
+            </button>
+          </p>
+          <h2><p>DAY 2 | 16:30</p></h2>
+          <br />
+          <p>
+            <button onclick="d1e6()">
+              <a href="#" class="open-modal" data-modal="#modal1"
+                >Gaming Activity</a
+              >
+            </button>
+          </p>
+          <h2><p>DAY 2 | 22:00</p></h2>
+          <br />
+          <p>
+            <button onclick="d1e7()">
+              <a href="#" class="open-modal" data-modal="#modal1"
+                >Checkpoint 4</a
+              >
+            </button>
+          </p>
+          <h2><p>DAY 3 | 00:00</p></h2>
+          <br />
 
-					<!------------------------------- PUT THE REAL EVENTS IN JS FILE ALSO    -------------------------------------->
+          <p>
+            <button onclick="d1e8()">
+              <a href="#" class="open-modal" data-modal="#modal1">Hack Ends</a>
+            </button>
+          </p>
+          <h2><p>DAY 3 | 08:00</p></h2>
+          <br />
+          <p>
+            <button onclick="d1e9()">
+              <a href="#" class="open-modal" data-modal="#modal1"
+                >Pitching Starts</a
+              >
+            </button>
+          </p>
+          <h2><p>DAY 3 | 10:00</p></h2>
+          <br />
+          <p>
+            <button onclick="d1e10()">
+              <a href="#" class="open-modal" data-modal="#modal1"
+                >Prize Distribution Ceremony</a
+              >
+            </button>
+          </p>
+          <h2><p>DAY 3 | 12:30</p></h2>
+          <br />
+          <br /><br /><br /><br />
+        </div>
+      </div>
 
-					<p><button onclick="d1e1()"><a href="#" class="open-modal" data-modal="#modal1">Event 1</a></button></p>
-					<h2><p>Description</p></h2><br>
-					<p><button onclick="d1e2()"><a href="#" class="open-modal" data-modal="#modal1">Event 2</a></button></p>
-					<h2><p>Description</p></h2><br>
-					<p><button onclick="d1e3()"><a href="#" class="open-modal" data-modal="#modal1">Event 3</a></button></p>
-					<h2><p>Description</p></h2><br>
-					<p><button onclick="d1e4()"><a href="#" class="open-modal" data-modal="#modal1">Event 4</a></button></p>
-					<h2><p>Description</p></h2><br>
-					<p><button onclick="d1e5()"><a href="#" class="open-modal" data-modal="#modal1">Event 5</a></button></p>
-					<h2><p>Description</p></h2><br>
-					<p><button onclick="d1e6()"><a href="#" class="open-modal" data-modal="#modal1">Event 6</a></button></p>
-					<h2><p>Description</p></h2><br>
-					<p><button onclick="d1e7()"><a href="#" class="open-modal" data-modal="#modal1">Event 7</a></button></p>
-					<h2><p>Description</p></h2><br>
-					
-					<p><button onclick="d1e8()"><a href="#" class="open-modal" data-modal="#modal1">Event 8</a></button></p>
-					<h2><p>Description</p></h2><br>
-					<p><button onclick="d1e9()"><a href="#" class="open-modal" data-modal="#modal1">Event 9</a></button></p>
-					<h2><p>Description</p></h2><br>
-					<p><button onclick="d1e10()"><a href="#" class="open-modal" data-modal="#modal1">Event 10</a></button></p>
-					<h2><p>Description</p></h2><br>
-					<br><br><br><br>
-					
-				</div>
-				<!-- <div id="day-2-events" class="hidden"><br>
+      <div class="modal" id="modal1">
+        <div class="close_button_modal">
+          <a class="btn_2 close-modal" data-modal="#modal1" href="#"
+            >&#10005;</a
+          >
+        </div>
+        <div class="content">
+          <h1 class="title" id="title">This is a modal</h1>
+          <br />
+          <p class="description" id="description">
+            Here is some text and stuff. cool cool
+          </p>
+        </div>
+      </div>
 
-<!---------------------------------------------------- DAY 2 EVENTS AND DESCRIPTION ---------------------------------------------->
-
-<!-------------------------------------------------- PUT THE REAL EVENTS IN JS FILE ALSO    -------------------------------------->
-
-					<!-- <p><button onclick="d2e1()"><a href="#" class="open-modal" data-modal="#modal1">Day-2  Event 1</a></button></p>
-					<p><button onclick="d2e1()"><a href="#" class="open-modal" data-modal="#modal1">Day-2  Description 1</a></button></p><br>
-					<p><button onclick="d2e2()"><a href="#" class="open-modal" data-modal="#modal1">Day-2  Event 2</a></button></p>
-					<p><button onclick="d2e2()"><a href="#" class="open-modal" data-modal="#modal1">Day-2  Description 2</a></button></p><br>
-					<p><button onclick="d2e3()"><a href="#" class="open-modal" data-modal="#modal1">Day-2  Event 3</a></button></p>
-					<p><button onclick="d2e3()"><a href="#" class="open-modal" data-modal="#modal1">Day-2  Description 3</a></button></p><br>
-					<p><button onclick="d2e4()"><a href="#" class="open-modal" data-modal="#modal1">Day-2  Event 4</a></button></p>
-					<p><button onclick="d2e4()"><a href="#" class="open-modal" data-modal="#modal1">Day-2  Description 4</a></button></p><br>
-					<p><button onclick="d2e5()"><a href="#" class="open-modal" data-modal="#modal1">Day-2  Event 5</a></button></p>
-					<p><button onclick="d2e5()"><a href="#" class="open-modal" data-modal="#modal1">Day-2  Description 5</a></button></p><br>
-					<p><button onclick="d2e6()"><a href="#" class="open-modal" data-modal="#modal1">Day-2  Event 6</a></button></p>
-					<p><button onclick="d2e6()"><a href="#" class="open-modal" data-modal="#modal1">Day-2  Description 6</a></button></p><br>
-					<p><button onclick="d2e7()"><a href="#" class="open-modal" data-modal="#modal1">Day-2  Event 7</a></button></p>
-					<p><button onclick="d2e7()"><a href="#" class="open-modal" data-modal="#modal1">Day-2  Description 7</a></button></p><br>
-					<br><br>
-				</div>
-			</div> -->
-			
-
-			<div class='modal' id='modal1'>
-				<div class="close_button_modal">
-					<a class='btn_2 close-modal' data-modal="#modal1" href="#">&#10005;</a>
-				   </div>
-				<div class='content'>
-					<h1 class='title' id="title">This is a modal</h1><br>
-					<p class="description" id="description">
-							Here is some text and stuff. cool cool	
-					</p>
-					
-				</div>	
-			</div>	
-
-			<script src="{% static 'webpages/Timeline/static/js/index.js' %}"></script>
-{#			<script src="{% static 'webpages/Timeline/static/js/index2.js' %}"></script>#}
-		</section>
-	</body>
+      <script src="{% static 'webpages/Timeline/static/js/index.js' %}"></script>
+    </section>
+  </body>
 </html>

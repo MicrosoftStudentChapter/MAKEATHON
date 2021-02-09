@@ -3,16 +3,16 @@
 // ------------------------- HERE ADD DAY 1 EVENTS ---------------------------------------------
 
 let day1events = [
-  "EVENT 1",
-  "EVENT 2",
-  "EVENT 3",
-  "EVENT 4",
-  "EVENT 5",
-  "EVENT 6",
-  "EVENT 7",
-  "EVENT 8",
-  "EVENT 9",
-  "EVENT 10",
+  "Inauguration Ceremony",
+  "Hack Begins",
+  "Checkpoint 1",
+  "Checkpoint 2",
+  "Checkpoint 3",
+  "Gaming Activity",
+  "Checkpoint 4",
+  "Hack Ends",
+  "Pitching Starts",
+  "Prize Distribution Ceremony",
 ];
 
 //  -----------------------------------DAY 1 EVENT DESCRIPTION ----------------------------------
@@ -20,16 +20,16 @@ let day1events = [
 // -------------------------------- HERE ADD DAY 1 EVENTS DESCRIPTION ---------------------------------------------
 
 let day1description = [
-  "DESCRIPTION 1",
-  "DESCRIPTION 2",
-  "DESCRIPTION 3",
-  "DESCRIPTION 4",
-  "DESCRIPTION 5",
-  "DESCRIPTION 6",
-  "DESCRIPTION 7",
-  "DESCRIPTION 8",
-  "DESCRIPTION 9",
-  "DESCRIPTION 10",
+  "DAY 1 | 17:00",
+  "DAY 1 | 20:00",
+  "DAY 2 | 00:30",
+  "DAY 2 | 08:30",
+  "DAY 2 | 16:30",
+  "DAY 2 | 22:00",
+  "DAY 3 | 00:00",
+  "DAY 3 | 08:00",
+  "DAY 3 | 10:00",
+  "DAY 3 | 12:30",
 ];
 
 function scrollEvents() {
@@ -102,52 +102,62 @@ $("#timeline .close-modal").on("click", function (e) {
 
 function d1e1() {
   document.querySelector("#timeline #title").innerHTML = day1events[0];
-  document.querySelector("#timeline #description").innerHTML = day1description[0];
+  document.querySelector("#timeline #description").innerHTML =
+    day1description[0];
 }
 
 function d1e2() {
   document.querySelector("#timeline #title").innerHTML = day1events[1];
-  document.querySelector("#timeline #description").innerHTML = day1description[1];
+  document.querySelector("#timeline #description").innerHTML =
+    day1description[1];
 }
 
 function d1e3() {
   document.querySelector("#timeline #title").innerHTML = day1events[2];
-  document.querySelector("#timeline #description").innerHTML = day1description[2];
+  document.querySelector("#timeline #description").innerHTML =
+    day1description[2];
 }
 
 function d1e4() {
   document.querySelector("#timeline #title").innerHTML = day1events[3];
-  document.querySelector("#timeline #description").innerHTML = day1description[3];
+  document.querySelector("#timeline #description").innerHTML =
+    day1description[3];
 }
 
 function d1e5() {
   document.querySelector("#timeline #title").innerHTML = day1events[4];
-  document.querySelector("#timeline #description").innerHTML = day1description[4];
+  document.querySelector("#timeline #description").innerHTML =
+    day1description[4];
 }
 
 function d1e6() {
   document.querySelector("#timeline #title").innerHTML = day1events[5];
-  document.querySelector("#timeline #description").innerHTML = day1description[5];
+  document.querySelector("#timeline #description").innerHTML =
+    day1description[5];
 }
 
 function d1e7() {
   document.querySelector("#timeline #title").innerHTML = day1events[6];
-  document.querySelector("#timeline #description").innerHTML = day1description[6];
+  document.querySelector("#timeline #description").innerHTML =
+    day1description[6];
 }
 
 function d1e8() {
   document.querySelector("#timeline #title").innerHTML = day1events[7];
-  document.querySelector("#timeline #description").innerHTML = day1description[7];
+  document.querySelector("#timeline #description").innerHTML =
+    day1description[7];
 }
 
 function d1e9() {
   document.querySelector("#timeline #title").innerHTML = day1events[8];
-  document.querySelector("#timeline #description").innerHTML = day1description[8];
+  document.querySelector("#timeline #description").innerHTML =
+    day1description[8];
 }
 
 function d1e10() {
   document.querySelector("#timeline #title").innerHTML = day1events[9];
-  document.querySelector("#timeline #description").innerHTML = day1description[9];
+  document.querySelector("#timeline #description").innerHTML =
+    day1description[9];
 }
 
 // //    ------------------------- DAY 2 EVENTS --------------------
