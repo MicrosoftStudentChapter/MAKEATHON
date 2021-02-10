@@ -530,13 +530,14 @@
                 <button id="btnCloseForm" class="close-button">X</button>
                 <h2>Contact Us</h2>
                 <p>For more information. Please complete this form.</p>
-                <form action="">
+                <form action="mailto:msctiet@thapar.edu">
                     <div class="form-group">
                         <label for="">Name*</label>
                         <input
                                 placeholder="Your Name"
                                 type="text"
                                 class="form-control"
+                                name="Name"
                                 required
                         />
                     </div>
@@ -546,6 +547,7 @@
                                 placeholder="E-mail "
                                 class="form-control"
                                 type="email"
+                                name="Email"
                                 required
                         />
                     </div>
@@ -555,6 +557,7 @@
                                 placeholder="Mobile-Number"
                                 class="form-control"
                                 type="number"
+                                name="Number"
                         />
                     </div>
                     <div class="form-group">
@@ -562,7 +565,7 @@
                         <textarea
                                 placeholder="Your query (max 1000 characters)"
                                 class="form-control"
-                                name=""
+                                name="Query"
                                 id=""
                                 cols="30"
                                 rows="5"

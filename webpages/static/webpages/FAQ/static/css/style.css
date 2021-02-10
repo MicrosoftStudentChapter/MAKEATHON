@@ -180,7 +180,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  border: solid 0.0625rem #fff;
+  border: none;
 }
 #FAQ_Makeathon .form-popup-bg:before {
   content: "";
