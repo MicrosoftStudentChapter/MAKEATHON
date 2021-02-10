@@ -9,6 +9,8 @@
   overflow-x: hidden;
   background-color: #d9afd9;
   /*background-image: linear-gradient(135deg, #dfa5df, #97d9e1);*/
+  background: url("../images/bg1.jpg") center;
+  background-size: cover;
   position: relative;
 }
 
@@ -88,7 +90,7 @@
 }
 
 #timeline .btn_2 {
-  padding: 10px 10px;
+  padding: 5px;
   display: inline-block;
   background: #ef233c;
   color: white;
@@ -97,8 +99,8 @@
   font-weight: 700;
 
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0;
+  right: 0;
 }
 
 #timeline .btn:hover {
@@ -147,6 +149,10 @@
   align-items: center;
 }
 
+#timeline #modal1 .content {
+    text-align: start;
+}
+
 #timeline #modal1 .content p#description.description {
     text-align: start;
 }
@@ -155,6 +161,7 @@
 	#timeline .btn_2 {
 		padding: 2px;
 		font-size: 0.8rem;
+        z-index: 200;
 	}
 	#timeline .overlay #modal1 .content {
 		margin: 20px;
@@ -204,7 +211,7 @@
 
 @keyframes color-change-to-black {
   to {
-    color: black;
+    color: #aa0044;
   }
 }
 @keyframes color-change-to-white {
@@ -231,4 +238,3 @@
     font-size: 200%;
   }
 }
-
