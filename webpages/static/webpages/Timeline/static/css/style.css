@@ -202,7 +202,8 @@
     float: right;
     width: 50%;
     height: 100vh;
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: auto;
   }
 }
 
@@ -230,5 +231,3 @@
     font-size: 200%;
   }
 }
-
-/*TODO: Change Colors*/
