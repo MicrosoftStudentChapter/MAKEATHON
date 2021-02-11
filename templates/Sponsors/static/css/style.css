@@ -196,16 +196,16 @@ body {
 .sponsor-start-buttons-1 {
   position: relative;
   right: -30px;
-  z-index: 50;
+  z-index: 3;
 }
 .sponsor-start-buttons-2 {
-  z-index: 99;
+  z-index: 4;
 }
 
 .sponsor-start-buttons-3 {
   position: relative;
   left: -30px;
-  z-index: 50;
+  z-index: 3;
 }
 
 .drop-shadow-1 {
@@ -230,6 +230,7 @@ body {
 .sponsor-start button:focus {
   outline: none;
 }
+
 .return {
   padding: 2.5%;
   padding-right: 3.3%;
@@ -376,6 +377,11 @@ body {
 }
 
 @media all and (max-width: 400px) {
+
+  .sponsor-start {
+    flex-direction: column;
+  }
+
   .sponsor-start-buttons {
     font-size: 15px;
     flex: 0 0 40%;
