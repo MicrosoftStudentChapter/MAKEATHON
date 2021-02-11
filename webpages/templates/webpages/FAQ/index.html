@@ -499,6 +499,7 @@
                 <h2>Contact Us</h2>
                 <p>For more information. Please complete this form.</p>
                 <form action="mailto:msc2k20@gmail.com">
+                    {% csrf_token %}
                     <div class="form-group">
                         <label for="">Name*</label>
                         <input
