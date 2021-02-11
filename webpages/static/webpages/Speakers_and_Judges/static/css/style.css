@@ -528,7 +528,6 @@
 
     #speakers_and_judges .text1 {
         position: relative;
-        top: 50px;
     }
 
     #speakers_and_judges .info-page-img {
@@ -744,7 +743,6 @@
     }
 
     #speakers_and_judges .image {
-        top: 14%;
         left: 19%;
     }
 }
