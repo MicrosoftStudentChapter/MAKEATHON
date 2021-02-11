@@ -37,7 +37,7 @@ function scrollEvents() {
   let eventsDiv = document.querySelector("#timeline #events");
 
   eventsDiv.scrollTop =
-    (1.5 * scrollFromTop) %
+    (1.2 * scrollFromTop) %
     (eventsDiv.scrollHeight - eventsDiv.clientHeight + 1);
 }
 

@@ -1,8 +1,8 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
-	<head style="scroll-behavior: smooth">
+<html lang="en" style="scroll-behavior: smooth">
+	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link
@@ -42,6 +42,11 @@
 				width: 100%;
 				overflow-x: hidden;
 			}
+
+            body > section {
+                box-shadow: #000000a9 inset 0 20px 100px, #000000a9 inset 0 -20px 100px;
+            }
+
 		</style>
 
 		<!-- Animate on Scroll -->
@@ -61,9 +66,12 @@
 
 		{% include "webpages/Timeline/index.html" %}
 		{% include "webpages/Tracks/index.html" %}
+
 		{% include "webpages/Speakers_and_Judges/index.html" %}
+
+        {% include "webpages/Sponsors/index.html" %}
+
 		{% include "webpages/FAQ/index.html" %}
-		{% include "webpages/Sponsors/index.html" %}
 
 		<!-- Animate on Scroll -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
