@@ -99,3 +99,12 @@ document.onkeypress = (ev) => {
 		muteButton.onclick();
 	}
 };
+
+// Button Effect jquery
+$("#nav-items").find("a").click(function(e) {
+    e.preventDefault();
+    let section = $(this).attr("href");
+    $("html, body").animate({
+        scrollTop: $(section).offset().top
+    });
+});
