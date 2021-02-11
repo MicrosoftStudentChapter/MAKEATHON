@@ -1,120 +1,114 @@
 {% load static %}
 
 <head>
-    <link rel="stylesheet" href="{% static 'webpages/home/css/style.css' %}"/>
-    <link
-            href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-            rel="stylesheet"
-    />
+  <link rel="stylesheet" href="{% static 'webpages/home/css/style.css' %}" />
+  <link
+    href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    rel="stylesheet"
+  />
 </head>
 
 <section id="home">
-    <!-- Video Background -->
-    <video autoplay muted loop id="home-bg-video" preload="auto">
-        <source
-                src="{% static 'webpages/home/images/home-bg-video.mp4' %}"
-                type="video/mp4"
-        />
-    </video>
-    <button class="mute-button"><i class='bx bx-volume-mute'></i></button>
+  <!-- Video Background -->
+  <video autoplay muted loop id="home-bg-video" preload="auto">
+    <source
+      src="{% static 'webpages/home/images/home-bg-video.mp4' %}"
+      type="video/mp4"
+    />
+  </video>
+  <button class="mute-button"><i class="bx bx-volume-mute"></i></button>
 
-    <!-- Navbar -->
-    <header>
-        <button
-                id="navbar-toggler"
-                aria-label="Navbar Toggler"
-                onclick="toggleNavbar()"
-        >
-            <div class="one"></div>
-            <div class="two"></div>
-            <div class="three"></div>
-        </button>
+  <!-- Navbar -->
+  <header>
+    <button
+      id="navbar-toggler"
+      aria-label="Navbar Toggler"
+      onclick="toggleNavbar()"
+    >
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+    </button>
 
-        <nav>
-            <div id="nav-items">
-                <ul style="list-style: none; padding-left: 0">
-                    <li>
-                        <a href="#about"
-                        ><i class="bx bx-info-circle"></i
-                        ><span>About</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#timeline"
-                        ><i class="bx bx-calendar-check"></i
-                        ><span>Schedule</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#speakers_and_judges"
-                        ><i class="bx bx-microphone"></i
-                        ><span>Speakers</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#sponsors"
-                        ><i class="bx bx-money"></i
-                        ><span>Sponsors</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#FAQ_Makeathon"
-                        ><i class="bx bx-message"></i
-                        ><span>FAQs</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href=""
-                        ><i class="bx bx-trophy"></i
-                        ><span>Prizes</span></a
-                        >
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <div class="center">
-        <!-- LOGO -->
-        <h1 title="Makeathon Logo">
-            <img
-                    src="{% static 'webpages/home/images/makeathon_logo.png' %}"
-                    alt="Makeathon Logo"
-                    class="logo"
-            />
-        </h1>
-
-        <!-- Timer -->
-        <div class="horizontal-center">
-            <div
-                    style="
-							margin: auto;
-							width: max-content;
-							white-space: nowrap;
-						"
+    <nav>
+      <div id="nav-items">
+        <ul style="list-style: none; padding-left: 0">
+          <li>
+            <a href="#about"
+              ><i class="bx bx-info-circle"></i><span>About</span></a
             >
-                <div id="timer"></div>
-                <div style="text-align: right">
-                    <img
-                            src="{% static 'webpages/home/images/time_left.png' %}"
-                            class="time-left"
-                            alt="Time Left"
-                    />
-                </div>
-            </div>
-        </div>
+          </li>
+          <li>
+            <a href="#timeline"
+              ><i class="bx bx-calendar-check"></i><span>Schedule</span></a
+            >
+          </li>
+          <li>
+            <a href="#speakers_and_judges"
+              ><i class="bx bx-microphone"></i><span>Speakers</span></a
+            >
+          </li>
+          <li>
+            <a href="#sponsors"
+              ><i class="bx bx-money"></i><span>Sponsors</span></a
+            >
+          </li>
+          <li>
+            <a href="#FAQ_Makeathon"
+              ><i class="bx bx-message"></i><span>FAQs</span></a
+            >
+          </li>
+          <li>
+            <a href=""><i class="bx bx-trophy"></i><span>Prizes</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-        <!-- Register Devfolio Button -->
-        <div class="horizontal-center">
-            <a href="https://makeathon3077.devfolio.co/"
+  <div class="center">
+    <!-- LOGO -->
+    <h1 title="Makeathon Logo">
+      <img
+        src="{% static 'webpages/home/images/makeathon_logo.png' %}"
+        alt="Makeathon Logo"
+        class="logo"
+      />
+    </h1>
+
+    <!-- Timer -->
+    <div class="horizontal-center">
+      <div style="margin: auto; width: max-content; white-space: nowrap">
+        <div id="timer"></div>
+        <div style="text-align: right">
+          <img
+            src="{% static 'webpages/home/images/time_left.png' %}"
+            class="time-left"
+            alt="Time Left"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Register Devfolio Button -->
+    <div class="horizontal-center">
+      <!-- <a href="https://makeathon3077.devfolio.co/"
             ><img
                     src="{% static 'webpages/home/images/devfolio.png' %}"
                     alt="Register With Devfolio"
                     class="devfolio-register"
-            /></a>
-        </div>
+            /></a> -->
+      <br />
+      <div
+        class="apply-button"
+        data-hackathon-slug="makeathon3077"
+        data-button-theme="light"
+        style="height: 44px; width: 312px"
+      ></div>
     </div>
+  </div>
 
-    <!-- Js -->
-    <script src="{% static 'webpages/home/js/index.js' %}"></script>
+  <!-- Js -->
+  <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+  <script src="{% static 'webpages/home/js/index.js' %}"></script>
 </section>
