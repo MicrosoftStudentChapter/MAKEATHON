@@ -56,7 +56,7 @@
 		  href="{% static 'webpages/Tracks/static/css/style.css' %}"
 		  type="text/css"
 		/>
-		
+
 		<!-- Speakers and Judges -->
 		<link rel="stylesheet" href="{% static 'webpages/Speakers_and_Judges/static/css/style.css' %}" type="text/css"/>
 		<link
@@ -64,7 +64,7 @@
 				href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 		/>
 
-		<!-- Sponsors --> 
+		<!-- Sponsors -->
 		<link
 				rel="stylesheet"
 				href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -91,6 +91,14 @@
 		/>
 {#		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> #}
 
+        <!-- WidgetBot -->
+        <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+            new Crate ({
+                server: '720322067261554728', // MLSC Open Source Community
+                channel: '756424683301371905' // #about
+            });
+        </script>
+
 	</head>
     <body onscroll="scrollEvents()" >
 		{% include "webpages/Home/index.html" %}
@@ -100,12 +108,12 @@
 			{% include "webpages/About/index.html" %}
 		</section>
 
-		{% include "webpages/Timeline/index.html" %} 
-		{% include "webpages/Tracks/index.html" %} 
+		{% include "webpages/Timeline/index.html" %}
+		{% include "webpages/Tracks/index.html" %}
 
-		{% include "webpages/Speakers_and_Judges/index.html" %} 
+		{% include "webpages/Speakers_and_Judges/index.html" %}
 
-		{% include "webpages/Sponsors/index.html" %} 
+		{% include "webpages/Sponsors/index.html" %}
 
 		{% include "webpages/FAQ/index.html" %}
 
