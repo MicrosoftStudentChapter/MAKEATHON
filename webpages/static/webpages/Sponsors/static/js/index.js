@@ -12,8 +12,18 @@ function ShowAssociateHideOthers() {
   document.querySelector(".sponsors").style.display = "none";
   document.querySelector(".associate_sponsors").style.display = "block";
 }
+function ShowOutreachHideOthers() {
+  document.querySelector(".sponsors").style.display = "none";
+  document.querySelector(".outreach_sponsors").style.display = "block";
+}
+function ShowInternshipHideOthers() {
+  document.querySelector(".sponsors").style.display = "none";
+  document.querySelector(".internship_sponsors").style.display = "block";
+}
 function Return() {
   document.querySelector(".associate_sponsors").style.display = "none";
+  document.querySelector(".outreach_sponsors").style.display = "none";
+  document.querySelector(".internship_sponsors").style.display = "none";
   document.querySelector(".power_sponsors").style.display = "none";
   document.querySelector(".title_sponsors").style.display = "none";
   document.querySelector(".sponsors").style.display = "block";
@@ -94,3 +104,5 @@ function createCarousal(sponsorName) {
 createCarousal("title");
 createCarousal("power");
 createCarousal("associate");
+createCarousal("internship");
+createCarousal("outreach");

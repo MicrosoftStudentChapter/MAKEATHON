@@ -12,7 +12,7 @@
                 <button
                         class="sponsor-start-buttons sponsor-start-buttons-0"
                         style="position: relative; right: -60px"
-                        onclick=""
+                        onclick="ShowOutreachHideOthers()"
                 >
                     Outreach
                 </button>
@@ -36,7 +36,7 @@
                 </button>
                 <button
                         class="sponsor-start-buttons sponsor-start-buttons-4"
-                        onclick=""
+                        onclick="ShowInternshipHideOthers()"
                 >
                     Internship
                 </button>
@@ -393,9 +393,126 @@
         </div>
     </div>
 
+
+    <!--*******Outreach SPONSORS********-->
+
+    <div class="outreach_sponsors" style="display: none">
+        <div class="sponsback-1">
+            <header class="nm">
+                <h1 class="heading-1">Outreach Sponsors</h1>
+            </header>
+
+            <button
+                    class="return"
+                    onclick="Return()"
+                    style="background-image: url({% static 'webpages/Sponsors/static/images/Vector.png' %});"
+            ></button>
+
+            <div class="items items_outreach">
+                <div class="item item_outreach next">
+                    <a href="#" target="_blank"
+                    ><img
+                            src="{% static 'webpages/Sponsors/static/images/codingninja.png' %}"
+                    /></a>
+                </div>
+                <div class="item item_outreach current">
+                    <a href="https://devfolio.co/" target="_blank"
+                    ><img
+                            src="{% static 'webpages/Sponsors/static/images/devfolio.png' %}"
+                    /></a>
+                </div>
+                <div class="item item_outreach">
+                    <a href="#" target="_blank"
+                    ><img
+                            src="{% static 'webpages/Sponsors/static/images/Internship/merge.png' %}"
+                    /></a>
+                </div>
+                <div class="item item_outreach">
+                    <a href="#" target="_blank"
+                    ><img
+                            src="{% static 'webpages/Sponsors/static/images/Internship/workshopXR.png' %}"
+                    /></a>
+                </div>
+
+                <div class="button-container">
+                    <div
+                            class="button button_outreach"
+                            style="padding-right: 13px; padding-left: 10px"
+                    >
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div
+                            class="button button_outreach"
+                            style="padding-left: 13px; padding-right: 10px"
+                    >
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--*******Internship SPONSORS********-->
+
+    <div class="internship_sponsors" style="display: none">
+        <div class="sponsback-1">
+            <header class="nm">
+                <h1 class="heading-1">Internship Sponsors</h1>
+            </header>
+
+            <button
+                    class="return"
+                    onclick="Return()"
+                    style="background-image: url({% static 'webpages/Sponsors/static/images/Vector.png' %});"
+            ></button>
+
+            <div class="items items_internship">
+                <div class="item item_internship next">
+                    <a href="#" target="_blank"
+                    ><img
+                            src="{% static 'webpages/Sponsors/static/images/codingninja.png' %}"
+                    /></a>
+                </div>
+                <div class="item item_internship current">
+                    <a href="https://devfolio.co/" target="_blank"
+                    ><img
+                            src="{% static 'webpages/Sponsors/static/images/devfolio.png' %}"
+                    /></a>
+                </div>
+                <div class="item item_internship">
+                    <a href="#" target="_blank"
+                    ><img
+                            src="{% static 'webpages/Sponsors/static/images/Internship/merge.png' %}"
+                    /></a>
+                </div>
+                <div class="item item_internship">
+                    <a href="#" target="_blank"
+                    ><img
+                            src="{% static 'webpages/Sponsors/static/images/Internship/workshopXR.png' %}"
+                    /></a>
+                </div>
+
+                <div class="button-container">
+                    <div
+                            class="button button_internship"
+                            style="padding-right: 13px; padding-left: 10px"
+                    >
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div
+                            class="button button_internship"
+                            style="padding-left: 13px; padding-right: 10px"
+                    >
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="drop-shadow-2"></div>
 
     <!-- Custom Js -->
-    <script src="{% static 'webpages/Sponsors/static/js/index.js' %}"></script>
+    <script async defer src="{% static 'webpages/Sponsors/static/js/index.js' %}"></script>
 </section>
 
