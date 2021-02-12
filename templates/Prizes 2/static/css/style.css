@@ -1,0 +1,112 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    background: rgb(34, 2, 44);
+    background: radial-gradient(
+        circle,
+        rgba(34, 2, 44, 1) 0%,
+        rgba(44, 2, 86, 1) 100%
+    );
+    overflow: hidden;
+}
+section {
+    width: 100%;
+}
+.content {
+    display: grid;
+    grid-template-columns: 60fr 40fr;
+}
+h2 {
+    text-align: right;
+    font-family: "Anurati";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5rem;
+    background: linear-gradient(#eaab48, #ed885b, #f24282);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-right: 13%;
+}
+.trophy img {
+    text-align: center;
+}
+.trophy {
+    height: 87%;
+    text-align: center;
+}
+#tsparticles {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 24%; 
+    right: 22%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.count-particles {
+    display: none;
+    background: none;
+    position: relative;
+    left: 0;
+    width: 100px;
+    color: #230044;
+    font-size: 0.8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+.js-count-particles {
+    font-size: 1.1em;
+}
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+}
+#stats {
+    overflow: hidden;
+}
+@media (max-width: 1024px) {
+    .particle {
+        display: none;
+    }
+    .content {
+        display: block;
+    }
+    .trophy {
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+}
+
+@media (max-width: 1160px) {
+    .trophy img {
+        padding-top: 0.6rem;
+        height: 25rem;
+        text-align: center;
+    }
+
+    #tsparticles{
+        display: none;
+    }
+}
+
+@media (min-width: 760px) {
+    .trophy img {
+        padding-top: 2rem;
+        height: 80%;
+        text-align: center;
+    }
+    h1 {
+        font-size: 900%;
+    }
+}
