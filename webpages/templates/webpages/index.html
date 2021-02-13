@@ -13,7 +13,9 @@
       }
 
       body > section {
-        box-shadow: #000000a9 inset 0 20px 100px, #000000a9 inset 0 -20px 100px;
+        -webkit-box-shadow: #000000a9 inset 0 20px 100px, #000000a9 inset 0 -20px 100px;
+           -moz-box-shadow: #000000a9 inset 0 20px 100px, #000000a9 inset 0 -20px 100px;
+                box-shadow: #000000a9 inset 0 20px 100px, #000000a9 inset 0 -20px 100px;
         position: relative;
       }
 
@@ -27,11 +29,19 @@
       }
 
       body > section::after {
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #000000b9), to(transparent));
+        background: -webkit-linear-gradient(bottom, #000000b9 0 1%, transparent);
+        background: -moz-linear-gradient(bottom, #000000b9 0 1%, transparent);
+        background: -o-linear-gradient(bottom, #000000b9 0 1%, transparent);
         background: linear-gradient(to top, #000000b9 0 1%, transparent);
         bottom: 0;
       }
 
       body > section::before {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000000b9), to(transparent));
+        background: -webkit-linear-gradient(top, #000000b9 0 1%, transparent);
+        background: -moz-linear-gradient(top, #000000b9 0 1%, transparent);
+        background: -o-linear-gradient(top, #000000b9 0 1%, transparent);
         background: linear-gradient(to bottom, #000000b9 0 1%, transparent);
         top: 0;
       }
@@ -44,7 +54,7 @@
           url('{% static "webpages/fonts/Anurati-Regular.woff" %}')
             format("woff");
       }
-    </style>
+   </style>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />

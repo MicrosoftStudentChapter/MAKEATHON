@@ -5,7 +5,9 @@
 
 #Tracks_Makeathon #tracks {
   background-image: url("../images/user-people-network-circuit-board-link-connection-technology.jpg");
-  background-size: cover;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -18,24 +20,49 @@
 /* TEXT BOXES */
 
 #Tracks_Makeathon #tracks .text {
+  background: -webkit-linear-gradient(
+    0.17deg,
+    rgba(255, 255, 255, 0.2) 27.2%,
+    rgba(255, 255, 255, 0) 145.41%
+  );
+  background: -moz- oldlinear-gradient(
+    0.17deg,
+    rgba(255, 255, 255, 0.2) 27.2%,
+    rgba(255, 255, 255, 0) 145.41%
+  );
+  background: -o-linear-gradient(
+    0.17deg,
+    rgba(255, 255, 255, 0.2) 27.2%,
+    rgba(255, 255, 255, 0) 145.41%
+  );
   background: linear-gradient(
     89.83deg,
     rgba(255, 255, 255, 0.2) 27.2%,
     rgba(255, 255, 255, 0) 145.41%
   );
-  box-shadow: 0 8px 32px 0 rgba(218, 31, 224, 0.274);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(218, 31, 224, 0.274);
+     -moz-box-shadow: 0 8px 32px 0 rgba(218, 31, 224, 0.274);
+          box-shadow: 0 8px 32px 0 rgba(218, 31, 224, 0.274);
 
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
   position: absolute;
   width: 220px;
   height: 100px;
   -webkit-transform: scale(1);
-          transform: scale(1);
+          -moz-transform: scale(1);
+           -ms-transform: scale(1);
+            -o-transform: scale(1);
+       transform: scale(1);
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
+  -o-transition: -o-transform 0.4s;
+  -moz-transition: transform 0.4s, -moz-transform 0.4s;
   transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s, -moz-transform 0.4s, -o-transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
 
   color: white;
@@ -43,10 +70,22 @@
 
   display: -webkit-box;
 
+  display: -webkit-flex;
+
+  display: -moz-box;
+
+  display: -ms-flexbox;
+
   display: flex;
   -webkit-box-pack: center;
+          -webkit-justify-content: center;
+             -moz-box-pack: center;
+              -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
+              -ms-flex-align: center;
           align-items: center;
 }
 
@@ -59,5 +98,8 @@
 /* <----------scaling on hover-----------> */
 #Tracks_Makeathon #tracks .text:hover {
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+          -moz-transform: scale(1.2);
+           -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+       transform: scale(1.2);
 }

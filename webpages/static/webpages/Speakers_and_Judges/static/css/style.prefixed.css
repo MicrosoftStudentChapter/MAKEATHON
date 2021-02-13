@@ -1,7 +1,9 @@
 #speakers_and_judges {
     margin: 0;
     background: url("../images/image12.png") no-repeat center center fixed;
-    background-size: cover;
+    -moz-background-size: cover;
+      -o-background-size: cover;
+         background-size: cover;
 }
 
 #speakers_and_judges .back-img {
@@ -26,10 +28,15 @@
     font-size: 72px;
     line-height: 86px;
     background: -webkit-gradient(linear, left top, left bottom, from(#eaab48), color-stop(#ed885b), to(#f24282));
+    background: -webkit-linear-gradient(#eaab48, #ed885b, #f24282);
+    background: -moz- oldlinear-gradient(#eaab48, #ed885b, #f24282);
+    background: -o-linear-gradient(#eaab48, #ed885b, #f24282);
     background: linear-gradient(#eaab48, #ed885b, #f24282);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
+    -moz-background-clip: text;
+      -o-background-clip: text;
+         background-clip: text;
     mix-blend-mode: difference;
 }
 
@@ -42,7 +49,9 @@
     padding: 0.3%;
 
     background: rgba(196, 196, 196, 0.54);
-    border-radius: 28px;
+    -webkit-border-radius: 28px;
+       -moz-border-radius: 28px;
+            border-radius: 28px;
     font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
@@ -53,7 +62,13 @@
 
     -webkit-transform: rotate(0.05deg);
 
-            transform: rotate(0.05deg);
+            -moz-transform: rotate(0.05deg);
+
+             -ms-transform: rotate(0.05deg);
+
+              -o-transform: rotate(0.05deg);
+
+         transform: rotate(0.05deg);
 
     border: 1px;
 }
@@ -76,7 +91,9 @@
     margin-top: -8px;
 
     background: rgba(196, 196, 196, 0.54);
-    border-radius: 28px;
+    -webkit-border-radius: 28px;
+       -moz-border-radius: 28px;
+            border-radius: 28px;
     font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
@@ -380,7 +397,9 @@
 }
 
 #speakers_and_judges .box {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 60px 20px;
     width: 100%;
     max-width: 64%;
@@ -388,24 +407,36 @@
     margin-left: 28%;
     margin-top: 2%;
     background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 10px 50px 0 rgb(31 38 135 / 20%);
+    -webkit-box-shadow: 0px 10px 50px 0 rgb(31 38 135 / 20%);
+       -moz-box-shadow: 0px 10px 50px 0 rgb(31 38 135 / 20%);
+            box-shadow: 0px 10px 50px 0 rgb(31 38 135 / 20%);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(25px);
-    border-radius: 15px;
+    -webkit-border-radius: 15px;
+       -moz-border-radius: 15px;
+            border-radius: 15px;
     border: 1px solid rgb(255 255 255 / 15%);
     -webkit-animation-duration: 2s;
-            animation-duration: 2s;
+            -moz-animation-duration: 2s;
+              -o-animation-duration: 2s;
+         animation-duration: 2s;
     -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
+            -moz-animation-name: fadeIn;
+              -o-animation-name: fadeIn;
+         animation-name: fadeIn;
     -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
+            -moz-animation-iteration-count: 1;
+              -o-animation-iteration-count: 1;
+         animation-iteration-count: 1;
 }
 
 #speakers_and_judges .image {
     position: absolute;
     width: 190px;
     height: 240px;
-    border-radius: 2px;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
 }
 
 #speakers_and_judges .info-page-img {
@@ -417,16 +448,25 @@
     top: 58px;
     /*border: 2px solid #b45804;*/
 
-    border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+       -moz-border-radius: 10px;
+
+            border-radius: 10px;
 }
 
 #speakers_and_judges .texth1 {
     font-family: Anurati, sans-serif;
     font-size: 500%;
     background: -webkit-gradient(linear, left top, left bottom, from(#eaab48), color-stop(43.75%, #ed885b), to(#f24282));
+    background: -webkit-linear-gradient(top, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
+    background: -moz- oldlinear-gradient(top, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
+    background: -o-linear-gradient(top, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
     background: linear-gradient(180deg, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
     -webkit-background-clip: text;
-    background-clip: text;
+    -moz-background-clip: text;
+      -o-background-clip: text;
+         background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: left;
     margin-top: 16px;
@@ -436,9 +476,14 @@
     font-family: Anurati, sans-serif;
     font-size: 40px;
     background: -webkit-gradient(linear, left top, left bottom, from(#eaab48), color-stop(43.75%, #ed885b), to(#f24282));
+    background: -webkit-linear-gradient(top, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
+    background: -moz- oldlinear-gradient(top, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
+    background: -o-linear-gradient(top, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
     background: linear-gradient(180deg, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
     -webkit-background-clip: text;
-    background-clip: text;
+    -moz-background-clip: text;
+      -o-background-clip: text;
+         background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: left;
     margin-top: -0.1em;

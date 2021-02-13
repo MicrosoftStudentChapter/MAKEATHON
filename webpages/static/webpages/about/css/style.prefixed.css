@@ -7,7 +7,9 @@
   width: 100%;
 
   background: url("../images/about-bg.png") no-repeat center;
-  background-size: cover;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
   color: white;
 
   overflow-x: hidden;
@@ -25,8 +27,17 @@
 
   display: -webkit-box;
 
+  display: -webkit-flex;
+
+  display: -moz-box;
+
+  display: -ms-flexbox;
+
   display: flex;
   -webkit-box-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
+              -ms-flex-align: center;
           align-items: center;
 
   background: -webkit-gradient(
@@ -35,6 +46,27 @@
     from(#eaab48),
     color-stop(40.75%, #ed885b),
     to(#f24282)
+  );
+
+  background: -webkit-linear-gradient(
+    top,
+    #eaab48 0%,
+    #ed885b 40.75%,
+    #f24282 100%
+  );
+
+  background: -moz- oldlinear-gradient(
+    top,
+    #eaab48 0%,
+    #ed885b 40.75%,
+    #f24282 100%
+  );
+
+  background: -o-linear-gradient(
+    top,
+    #eaab48 0%,
+    #ed885b 40.75%,
+    #f24282 100%
   );
 
   background: linear-gradient(
@@ -46,20 +78,33 @@
 
   color: transparent;
   mix-blend-mode: difference;
-  background-clip: text;
+  -moz-background-clip: text;
+    -o-background-clip: text;
+       background-clip: text;
   -webkit-background-clip: text;
 }
 
 #about h2.makeathon-heading {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
+          -webkit-flex-direction: row-reverse;
+             -moz-box-orient: horizontal;
+             -moz-box-direction: reverse;
+              -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
 
 #about .container {
   display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  min-height: -webkit-calc(80vh - 40px);
+  min-height: -moz-calc(80vh - 40px);
   min-height: calc(80vh - 40px);
+  max-width: -webkit-calc(100% - 140px);
+  max-width: -moz-calc(100% - 140px);
   max-width: calc(100% - 140px);
 
   margin: 0 70px;
@@ -70,35 +115,64 @@
 #about .makeathon-container {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
+          -webkit-flex-direction: row-reverse;
+             -moz-box-orient: horizontal;
+             -moz-box-direction: reverse;
+              -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
 
 #about .container > div {
   display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+             -moz-box-orient: vertical;
+             -moz-box-direction: normal;
+              -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-pack: center;
+          -webkit-justify-content: center;
+             -moz-box-pack: center;
+              -ms-flex-pack: center;
           justify-content: center;
 }
 
 #about .about-info > div {
   display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: left;
+          -webkit-justify-content: left;
+             -moz-box-pack: left;
+              -ms-flex-pack: left;
           justify-content: left;
 }
 
 #about .container .about-content {
   -webkit-box-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
+              -ms-flex-align: center;
           align-items: center;
   -webkit-box-flex: 4;
+          -webkit-flex: 4;
+             -moz-box-flex: 4;
+              -ms-flex: 4;
           flex: 4;
 }
 
 #about .container .about-info {
   -webkit-box-flex: 1;
+          -webkit-flex: 1;
+             -moz-box-flex: 1;
+              -ms-flex: 1;
           flex: 1;
 }
 
@@ -106,6 +180,9 @@
   font-size: 1.9rem;
   font-family: Anurati, sans-serif;
   display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 20px 0;
   position: relative;
@@ -117,8 +194,14 @@
 
 #about .container .about-info .info p {
   display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
+              -ms-flex-align: center;
           align-items: center;
   margin-left: 10px;
 }
@@ -151,7 +234,9 @@
   background-color: #413e6bc6;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
   z-index: 2;
 }
 
@@ -173,6 +258,30 @@
     to(rgba(220, 138, 44, 1))
   );
 
+  background: -webkit-linear-gradient(
+    bottom left,
+    rgba(226, 61, 87, 1),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgba(220, 138, 44, 1)
+  );
+
+  background: -moz- oldlinear-gradient(
+    bottom left,
+    rgba(226, 61, 87, 1),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgba(220, 138, 44, 1)
+  );
+
+  background: -o-linear-gradient(
+    bottom left,
+    rgba(226, 61, 87, 1),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgba(220, 138, 44, 1)
+  );
+
   background: linear-gradient(
     to top right,
     rgba(226, 61, 87, 1),
@@ -180,7 +289,9 @@
     rgba(255, 255, 255, 0),
     rgba(220, 138, 44, 1)
   );
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
   z-index: 1;
 }
 
@@ -228,6 +339,10 @@
   #about h2.makeathon-heading {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+            -webkit-flex-direction: row;
+               -moz-box-orient: horizontal;
+               -moz-box-direction: normal;
+                -ms-flex-direction: row;
             flex-direction: row;
   }
 
@@ -235,6 +350,10 @@
   #about .makeathon-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+               -moz-box-orient: vertical;
+               -moz-box-direction: normal;
+                -ms-flex-direction: column;
             flex-direction: column;
     margin: 0 40px;
     position: relative;
@@ -242,6 +361,9 @@
 
   #about .container .about-content {
     -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+               -moz-box-align: start;
+                -ms-flex-align: start;
             align-items: flex-start;
   }
 }
@@ -255,6 +377,8 @@
   }
 
   #about .container {
+    max-width: -webkit-calc(100% - 40px);
+    max-width: -moz-calc(100% - 40px);
     max-width: calc(100% - 40px);
     margin: 0 20px;
   }
@@ -263,6 +387,10 @@
     line-height: 1.4;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+            -webkit-flex-direction: row;
+               -moz-box-orient: horizontal;
+               -moz-box-direction: normal;
+                -ms-flex-direction: row;
             flex-direction: row;
     font-size: 1.1rem;
   }

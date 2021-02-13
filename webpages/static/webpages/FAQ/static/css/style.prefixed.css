@@ -8,6 +8,21 @@
       to(rgba(17, 17, 10, 0.349))
     ),
     url("../images/image 8.png");
+  background-image: -webkit-linear-gradient(
+      rgba(7, 7, 12, 0.37),
+      rgba(17, 17, 10, 0.349)
+    ),
+    url("../images/image 8.png");
+  background-image: -moz- oldlinear-gradient(
+      rgba(7, 7, 12, 0.37),
+      rgba(17, 17, 10, 0.349)
+    ),
+    url("../images/image 8.png");
+  background-image: -o-linear-gradient(
+      rgba(7, 7, 12, 0.37),
+      rgba(17, 17, 10, 0.349)
+    ),
+    url("../images/image 8.png");
   background-image: linear-gradient(
       rgba(7, 7, 12, 0.37),
       rgba(17, 17, 10, 0.349)
@@ -15,7 +30,9 @@
     url("../images/image 8.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
   background-position: center;
   min-height: 100vh;
   width: 100vw;
@@ -50,7 +67,9 @@
   text-decoration: none;
   background-color: transparent;
   border: none;
-  border-radius: 25px;
+  -webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+          border-radius: 25px;
   outline: none;
   padding: 0px 50px;
 }
@@ -72,7 +91,9 @@
 #FAQ_Makeathon .questions {
   background-color: rgba(255, 255, 255, 0);
   border: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
 }
 
 #FAQ_Makeathon .accordion-button:not(.collapsed) {
@@ -81,7 +102,9 @@
 }
 
 #FAQ_Makeathon .accordion-item {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
   border: none;
 }
 
@@ -92,7 +115,9 @@
   background-color: rgba(255, 255, 255, 0);
   color: white;
   border: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
 }
 
 #FAQ_Makeathon .accordion-button:active {
@@ -100,7 +125,9 @@
 }
 #FAQ_Makeathon .accordion-collapse {
   border: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
 }
 
 #FAQ_Makeathon .accordion-body {
@@ -112,7 +139,9 @@
 #FAQ_Makeathon #contact {
   background-color: #f24385;
   color: white;
-  border-radius: 20px;
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
 }
 #FAQ_Makeathon #btnOpenForm {
   text-decoration: none;
@@ -123,10 +152,14 @@
 
 #FAQ_Makeathon .accordion {
   background: rgba(255, 255, 255, 0.123);
-  box-shadow: 0 0.5rem 2rem 0 rgba(31, 38, 135, 0.37);
+  -webkit-box-shadow: 0 0.5rem 2rem 0 rgba(31, 38, 135, 0.37);
+     -moz-box-shadow: 0 0.5rem 2rem 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 0.5rem 2rem 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(0.25rem);
   -webkit-backdrop-filter: blur(0.25rem);
-  border-radius: 0.75rem;
+  -webkit-border-radius: 0.75rem;
+     -moz-border-radius: 0.75rem;
+          border-radius: 0.75rem;
 }
 
 /* form */
@@ -142,12 +175,24 @@
   right: 0;
   bottom: 0;
   display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+             -moz-box-orient: vertical;
+             -moz-box-direction: normal;
+              -ms-flex-direction: column;
           flex-direction: column;
-  align-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
   -webkit-box-pack: center;
+          -webkit-justify-content: center;
+             -moz-box-pack: center;
+              -ms-flex-pack: center;
           justify-content: center;
 }
 #FAQ_Makeathon .form-popup-bg {
@@ -160,6 +205,8 @@
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -o-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
   transition: opacity 0.3s 0s, visibility 0s 0.3s;
   overflow-y: auto;
   z-index: 10000;
@@ -168,17 +215,32 @@
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -o-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
   transition: opacity 0.3s 0s, visibility 0s 0s;
 }
 #FAQ_Makeathon .form-container {
   background-color: #110e2b;
-  border-radius: 1rem;
-  box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.19),
+  -webkit-border-radius: 1rem;
+     -moz-border-radius: 1rem;
+          border-radius: 1rem;
+  -webkit-box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+     -moz-box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.19),
     0 6px 6px rgba(0, 0, 0, 0.23);
   display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+             -moz-box-orient: vertical;
+             -moz-box-direction: normal;
+              -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
   max-width: 43.75rem;
@@ -214,7 +276,9 @@
   color: white;
   padding: 0.5rem 1.25rem;
   margin: 0.75rem 0rem;
-  border-radius: 0.75rem;
+  -webkit-border-radius: 0.75rem;
+     -moz-border-radius: 0.75rem;
+          border-radius: 0.75rem;
   border: none;
 }
 #FAQ_Makeathon .dropdown {
@@ -259,7 +323,9 @@
   background-color: #f24385;
   color: white;
   outline: none;
-  border-radius: 20px;
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
   border: none;
 }
 #FAQ_Makeathon .accordion-button:focus-within {
