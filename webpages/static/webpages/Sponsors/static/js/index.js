@@ -55,7 +55,6 @@ function createCarousal(sponsorName) {
       it.classList.remove("next");
       it.classList.remove("next-to-next");
     });
-    console.log(lastPrev, nextToNext);
     slides[current].classList.add("active");
     slides[prev].classList.add("prev");
     slides[next].classList.add("next");
@@ -101,8 +100,8 @@ function createCarousal(sponsorName) {
   }, 5000);
 }
 
-createCarousal("title");
+// createCarousal("title");
 createCarousal("power");
 createCarousal("associate");
-createCarousal("internship");
+// createCarousal("internship");
 createCarousal("outreach");

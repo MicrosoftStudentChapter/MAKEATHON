@@ -172,7 +172,8 @@
   margin-top: 70px;
 }
 
-#sponsors .sponsor-start-buttons {
+#sponsors .sponsor-start-buttons ,
+#sponsors .item_less {
   background: linear-gradient(180deg, #ed885b 0%, #f24385 100%);
   border-radius: 50px;
   padding: 20px;
@@ -183,6 +184,29 @@
   font-family: sans-serif;
   width: 25%;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#sponsors .items_internship, 
+#sponsors .items_title {
+	display: flex;
+	justify-content: center;
+}
+
+#sponsors .item_less {
+	position: relative;
+	height: 80px;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	object-fit: contain;
+}
+
+
+#sponsors .item_less img {
+	width: 75%;
+	max-height: 100%;
 }
 
 #sponsors .sponsor-start-buttons-1,
@@ -259,7 +283,8 @@
 }
 
 @media all and (max-width: 1100px) {
-  #sponsors .sponsor-start-buttons {
+  #sponsors .sponsor-start-buttons,
+  #sponsors .item_less {
     font-size: 35px;
     width: 30%;
   }
@@ -281,7 +306,8 @@
 }
 
 @media all and (max-width: 950px) {
-  #sponsors .sponsor-start-buttons {
+  #sponsors .sponsor-start-buttons,
+  #sponsors .item_less {
     font-size: 30px;
     width: 30%;
   }
@@ -292,7 +318,8 @@
 }
 
 @media all and (max-width: 840px) {
-  #sponsors .sponsor-start-buttons {
+  #sponsors .sponsor-start-buttons,
+  #sponsors .item_less {
     font-size: 25px;
     width: 30%;
   }
@@ -313,7 +340,8 @@
 }
 
 @media all and (max-width: 685px) {
-  #sponsors .sponsor-start-buttons {
+  #sponsors .sponsor-start-buttons,
+  #sponsors .item_less {
     font-size: 20px;
     width: 30%;
   }
@@ -334,7 +362,8 @@
 }
 
 @media all and (max-width: 590px) {
-  #sponsors .sponsor-start-buttons {
+  #sponsors .sponsor-start-buttons,
+  #sponsors .item_less {
     font-size: 16px;
     width: 150px;
   }
@@ -377,6 +406,10 @@
   }
 }
 @media all and (max-width: 450px) {
+
+  #sponsors .item_less img {
+  	width: 80%;
+  }
   #sponsors .heading {
     font-size: 400%;
   }
@@ -441,7 +474,8 @@
     text-align: center;
     padding-right: 37%;
   }
-  #sponsors .sponsor-start-buttons {
+  #sponsors .sponsor-start-buttons, 
+  #sponsors .item_less {
     text-align: center;
   }
 }

@@ -218,6 +218,10 @@
     text-align: center;
     margin-top: 3%;
   }
+
+  #timeline #events p button {
+	  font-size: 1.6rem;
+  }
   #timeline #days {
     flex-direction: row;
     min-height: 55vh;
