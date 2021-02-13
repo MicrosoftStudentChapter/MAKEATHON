@@ -15,7 +15,27 @@
 			body > section {
 				box-shadow: #000000a9 inset 0 20px 100px,
 					#000000a9 inset 0 -20px 100px;
+				position: relative;
 			}
+
+			body > section::after, body > section::before {
+				content: '';
+				position: absolute;
+				height: 20vh;
+				width: 100%;
+				left: 0;
+			}
+
+			body > section::after {
+				background: linear-gradient(to top, #000000b9 0 1%, transparent);
+				bottom: 0;
+			}
+
+			body > section::before {
+				background: linear-gradient(to bottom, #000000b9 0 1%, transparent);
+				top: 0;
+			}
+
 			@font-face {
 				font-family: 'Anurati';
 				font-style: normal;
