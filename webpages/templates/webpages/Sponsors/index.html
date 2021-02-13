@@ -1,465 +1,464 @@
 {% load static %}
 
 <section id="sponsors" style="position: relative; min-height: 100vh">
-    <!-- <div class="drop-shadow-1"></div> -->
-    <div class="sponsors">
-        <div class="sponsback">
-            <header class="nm mt-15">
-                <h1 class="heading">Sponsors</h1>
-            </header>
+  <!-- <div class="drop-shadow-1"></div> -->
+  <div class="sponsors">
+    <div class="sponsback">
+      <header class="nm mt-15">
+        <h1 class="heading">Sponsors</h1>
+      </header>
 
-            <div class="sponsor-start">
-                <button
-                        class="sponsor-start-buttons sponsor-start-buttons-0"
-                        style="position: relative; right: -60px"
-                        onclick="ShowOutreachHideOthers()"
-                >
-                    Outreach
-                </button>
-                <button
-                        class="sponsor-start-buttons sponsor-start-buttons-1"
-                        onclick="ShowAssociateHideOthers()"
-                >
-                    Associate
-                </button>
-                <button
-                        class="sponsor-start-buttons sponsor-start-buttons-2"
-                        onclick="ShowTitleHideOthers()"
-                >
-                    Title
-                </button>
-                <button
-                        class="sponsor-start-buttons sponsor-start-buttons-3"
-                        onclick="ShowPowerHideOthers()"
-                >
-                    Power
-                </button>
-                <button
-                        class="sponsor-start-buttons sponsor-start-buttons-4"
-                        onclick="ShowInternshipHideOthers()"
-                >
-                    Internship
-                </button>
-            </div>
-        </div>
+      <div class="sponsor-start">
+        <button
+          class="sponsor-start-buttons sponsor-start-buttons-0"
+          style="position: relative; right: -60px"
+          onclick="ShowOutreachHideOthers()"
+        >
+          Outreach
+        </button>
+        <button
+          class="sponsor-start-buttons sponsor-start-buttons-1"
+          onclick="ShowAssociateHideOthers()"
+        >
+          Associate
+        </button>
+        <button
+          class="sponsor-start-buttons sponsor-start-buttons-2"
+          onclick="ShowTitleHideOthers()"
+        >
+          Title
+        </button>
+        <button
+          class="sponsor-start-buttons sponsor-start-buttons-3"
+          onclick="ShowPowerHideOthers()"
+        >
+          Power
+        </button>
+        <button
+          class="sponsor-start-buttons sponsor-start-buttons-4"
+          onclick="ShowInternshipHideOthers()"
+        >
+          Internship
+        </button>
+      </div>
     </div>
+  </div>
 
-    <!--***********TITLE SPONSORS*************-->
+  <!--***********TITLE SPONSORS*************-->
 
-    <!--You can add other sponsors by just copying the div with class "item" and adding it below the others inside the div (class= "items"). This will automatically add another image to the carousel  -->
+  <!--You can add other sponsors by just copying the div with class "item" and adding it below the others inside the div (class= "items"). This will automatically add another image to the carousel  -->
 
-    <div class="title_sponsors" style="display: none">
-        <div class="sponsback-1">
-            <header class="nm">
-                <h1 class="heading-1">Title Sponsors</h1>
-            </header>
+  <div class="title_sponsors" style="display: none">
+    <div class="sponsback-1">
+      <header class="nm">
+        <h1 class="heading-1">Title Sponsors</h1>
+      </header>
 
-            <button
-                    class="return"
-                    onclick="Return()"
-                    style="background-image: url({% static 'webpages/Sponsors/static/images/Vector.png' %});"
-            ></button>
+      <button
+        class="return"
+        onclick="Return()"
+        style="
+          background-image: url({%static'webpages/Sponsors/static/images/Vector.png'%});
+        "
+      ></button>
 
-            <div class="items items_title">
-                <div class="item_less item_title">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/codingninja.png' %}"
-                    /></a>
-                </div>
-                <div class="item_less item_title current">
-                    <a href="https://devfolio.co/" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/devfolio.png' %}"
-                    /></a>
-                </div>
-                <!-- <div class="item item_title">
-                    <a href="#" target="_blank"
-                    ><img src="{% static 'webpages/Sponsors/static/images/matic.png' %}"
-                    /></a>
-                </div>
-                <div class="item item_title">
-                    <a href="#" target="_blank"
-                    ><img src="{% static 'webpages/Sponsors/static/images/tezos.png' %}"
-                    /></a>
-                </div>
-                <div class="item item_title">
-                    <a href="#" target="_blank"
-                    ><img src="{% static 'webpages/Sponsors/static/images/sashido.png' %}"
-                    /></a>
-                </div>
-                <div class="item item_title prev">
-                    <a href="#" target="_blank"
-                    ><img src="{% static 'webpages/Sponsors/static/images/taskade.png' %}"
-                    /></a>
-                </div> -->
-                </div>
-            </div>
+      <div class="items items_title">
+        <div class="item_less item_title">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/codingninja.png' %}"
+          /></a>
         </div>
-    </div>
-
-    <!--**********POWER SPONSORS*************-->
-
-    <!--You can add other sponsors by just copying the div with class "item" and adding it below the others inside the div (class= "items"). This will automatically add another image to the carousel  -->
-
-    <div class="power_sponsors" style="display: none">
-        <div class="sponsback-1">
-            <header class="nm">
-                <h1 class="heading-1">Power Sponsors</h1>
-            </header>
-
-            <button
-                    class="return"
-                    onclick="Return()"
-                    style="
-                            background-image: url({% static 'webpages/Sponsors/static/images/Vector.png' %});
-                            "
-            ></button>
-
-            <div class="items items_power">
-                <div class="item item_power current">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/power/matic.png' %}"
-                    /></a>
-                </div>
-
-                <div class="item item_power next">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/power/tezos.png' %}"
-                    /></a>
-                </div>
-
-                <div class="item item_power">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/power/portis.png' %}"
-                    /></a>
-                </div>
-
-                <div class="item item_power">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/power/github.jpg' %}"
-                    /></a>
-                </div>
-
-                <div class="item item_power">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/power/digitalocean.png' %}"
-                    /></a>
-                </div>
-
-                <div class="item item_power">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/power/codechef.jpeg' %}"
-                    /></a>
-                </div>
-
-                <div class="item item_power">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/power/sashido.png' %}"
-                    /></a>
-                </div>
-
-                <div class="item item_power">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/power/1password.png' %}"
-                    /></a>
-                </div>
-
-                <div class="item item_power">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/power/replit.png' %}"
-                    /></a>
-                </div>
-
-                <div class="item item_power">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/power/voiceflow.jpeg' %}"
-                    /></a>
-                </div>
-
-                <div class="item item_power">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/power/echoar.png' %}"
-                    /></a>
-                </div>
-
-                <div class="item item_power">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/power/killunga.png' %}"
-                    /></a>
-                </div>
-
-                <div class="item item_power">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/power/clerky.png' %}"
-                    /></a>
-                </div>
-
-                <div class="item item_power">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/power/mentorbox.png' %}"
-                    /></a>
-                </div>
-
-                <div class="item item_power">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/power/jetbrains.jpeg' %}"
-                    /></a>
-                </div>
-
-                <div class="button-container">
-                    <div
-                            class="button button_power"
-                            style="padding-right: 13px; padding-left: 10px"
-                    >
-                        <i class="fas fa-angle-left"></i>
-                    </div>
-                    <div
-                            class="button button_power"
-                            style="padding-left: 13px; padding-right: 10px"
-                    >
-                        <i class="fas fa-angle-right"></i>
-                    </div>
-                </div>
-            </div>
+        <div class="item_less item_title current">
+          <a href="https://devfolio.co/" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/devfolio.png' %}"
+          /></a>
         </div>
+      </div>
     </div>
+  </div>
 
-    <!--*******ASSOCIATE SPONSORS********-->
+  <!--**********POWER SPONSORS*************-->
 
-    <!--You can add other sponsors by just copying the div with class "item" and adding it below the others inside the div (class= "items"). This will automatically add another image to the carousel  -->
+  <!--You can add other sponsors by just copying the div with class "item" and adding it below the others inside the div (class= "items"). This will automatically add another image to the carousel  -->
 
-    <div class="associate_sponsors" style="display: none">
-        <div class="sponsback-1">
-            <header class="nm">
-                <h1 class="heading-1">Associate Sponsors</h1>
-            </header>
+  <div class="power_sponsors" style="display: none">
+    <div class="sponsback-1">
+      <header class="nm">
+        <h1 class="heading-1">Power Sponsors</h1>
+      </header>
 
-            <button
-                    class="return"
-                    onclick="Return()"
-                    style="
-                            background-image: url({% static 'webpages/Sponsors/static/images/Vector.png' %});
-                            "
-            ></button>
+      <button
+        class="return"
+        onclick="Return()"
+        style="
+          background-image: url({%static'webpages/Sponsors/static/images/Vector.png'%});
+        "
+      ></button>
 
-            <div class="items items_associate">
-                <div class="item item_associate">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/associate/wolfram.png' %}"
-                    /></a>
-                </div>
-                <div class="item item_associate current">
-                    <a href="https://devfolio.co/" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/associate/Coding_blocks.png' %}"
-                    /></a>
-                </div>
-                <div class="item item_associate">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/associate/gfg.png' %}"
-                    /></a>
-                </div>
-                <div class="item item_associate">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/associate/givemycertificate.jpeg' %}"
-                    /></a>
-                </div>
-                <div class="item item_associate">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/associate/egghead.png' %}"
-                    /></a>
-                </div>
-                <div class="item item_associate">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/associate/packt.png' %}"
-                    /></a>
-                </div>
-                <div class="item item_associate">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/associate/balsamiq.png' %}"
-                    /></a>
-                </div>
-                <div class="item item_associate">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/associate/taskade.png' %}"
-                    /></a>
-                </div>
-                <div class="item item_associate">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/associate/testmailapp.jpeg' %}"
-                    /></a>
-                </div>
-                <div class="item item_associate">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/associate/xyz.png' %}"
-                    /></a>
-                </div>
-                <div class="item item_associate">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/associate/elastic.png' %}"
-                    /></a>
-                </div>
-                <div class="item item_associate">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/associate/hoverrobotix.png' %}"
-                    /></a>
-                </div>
-                <div class="item item_associate">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/associate/streamyard.png' %}"
-                    /></a>
-                </div>
-                <div class="item item_associate">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/associate/iba.png' %}"
-                    /></a>
-                </div>
-                <div class="item item_associate">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/associate/interviewcake.png' %}"
-                    /></a>
-                </div>
-                <div class="button-container">
-                    <div
-                            class="button button_associate"
-                            style="padding-right: 13px; padding-left: 10px"
-                    >
-                        <i class="fas fa-angle-left"></i>
-                    </div>
-                    <div
-                            class="button button_associate"
-                            style="padding-left: 13px; padding-right: 10px"
-                    >
-                        <i class="fas fa-angle-right"></i>
-                    </div>
-                </div>
-            </div>
+      <div class="items items_power">
+        <div class="item item_power current">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/power/matic.png' %}"
+          /></a>
         </div>
-    </div>
 
-
-    <!--*******Outreach SPONSORS********-->
-
-    <div class="outreach_sponsors" style="display: none">
-        <div class="sponsback-1">
-            <header class="nm">
-                <h1 class="heading-1">Outreach Sponsors</h1>
-            </header>
-
-            <button
-                    class="return"
-                    onclick="Return()"
-                    style="background-image: url({% static 'webpages/Sponsors/static/images/Vector.png' %});"
-            ></button>
-
-            <div class="items items_outreach">
-                <div class="item item_outreach next">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/codingninja.png' %}"
-                    /></a>
-                </div>
-                <div class="item item_outreach current">
-                    <a href="https://devfolio.co/" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/devfolio.png' %}"
-                    /></a>
-                </div>
-                <div class="item item_outreach">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/Internship/merge.png' %}"
-                    /></a>
-                </div>
-                <div class="item item_outreach">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/Internship/workshopXR.png' %}"
-                    /></a>
-                </div>
-
-                <div class="button-container">
-                    <div
-                            class="button button_outreach"
-                            style="padding-right: 13px; padding-left: 10px"
-                    >
-                        <i class="fas fa-angle-left"></i>
-                    </div>
-                    <div
-                            class="button button_outreach"
-                            style="padding-left: 13px; padding-right: 10px"
-                    >
-                        <i class="fas fa-angle-right"></i>
-                    </div>
-                </div>
-            </div>
+        <div class="item item_power next">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/power/tezos.png' %}"
+          /></a>
         </div>
-    </div>
 
-    <!--*******Internship SPONSORS********-->
-
-    <div class="internship_sponsors" style="display: none">
-        <div class="sponsback-1">
-            <header class="nm">
-                <h1 class="heading-1">Internship Sponsors</h1>
-            </header>
-
-            <button
-                    class="return"
-                    onclick="Return()"
-                    style="background-image: url({% static 'webpages/Sponsors/static/images/Vector.png' %});"
-            ></button>
-
-            <div class="items items_internship">
-               <div class="item_less">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/Internship/merge.png' %}"
-                    /></a>
-                </div>
-                <div class="item_less">
-                    <a href="#" target="_blank"
-                    ><img
-                            src="{% static 'webpages/Sponsors/static/images/Internship/workshopXR.png' %}"
-                    /></a>
-                </div>
-            </div>
+        <div class="item item_power">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/power/portis.png' %}"
+          /></a>
         </div>
+
+        <div class="item item_power">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/power/github.jpg' %}"
+          /></a>
+        </div>
+
+        <div class="item item_power">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/power/digitalocean.png' %}"
+          /></a>
+        </div>
+
+        <div class="item item_power">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/power/codechef.jpeg' %}"
+          /></a>
+        </div>
+
+        <div class="item item_power">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/power/sashido.png' %}"
+          /></a>
+        </div>
+
+        <div class="item item_power">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/power/1password.png' %}"
+          /></a>
+        </div>
+
+        <div class="item item_power">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/power/replit.png' %}"
+          /></a>
+        </div>
+
+        <div class="item item_power">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/power/voiceflow.jpeg' %}"
+          /></a>
+        </div>
+
+        <div class="item item_power">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/power/echoar.png' %}"
+          /></a>
+        </div>
+
+        <div class="item item_power">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/power/killunga.png' %}"
+          /></a>
+        </div>
+
+        <div class="item item_power">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/power/clerky.png' %}"
+          /></a>
+        </div>
+
+        <div class="item item_power">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/power/mentorbox.png' %}"
+          /></a>
+        </div>
+
+        <div class="item item_power">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/power/jetbrains.jpeg' %}"
+          /></a>
+        </div>
+
+        <div class="button-container">
+          <div
+            class="button button_power"
+            style="padding-right: 13px; padding-left: 10px"
+          >
+            <i class="fas fa-angle-left"></i>
+          </div>
+          <div
+            class="button button_power"
+            style="padding-left: 13px; padding-right: 10px"
+          >
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- <div class="drop-shadow-2"></div> -->
+  <!--*******ASSOCIATE SPONSORS********-->
 
-    <!-- Custom Js -->
-    <script async defer src="{% static 'webpages/Sponsors/static/js/index.js' %}"></script>
+  <!--You can add other sponsors by just copying the div with class "item" and adding it below the others inside the div (class= "items"). This will automatically add another image to the carousel  -->
+
+  <div class="associate_sponsors" style="display: none">
+    <div class="sponsback-1">
+      <header class="nm">
+        <h1 class="heading-1">Associate Sponsors</h1>
+      </header>
+
+      <button
+        class="return"
+        onclick="Return()"
+        style="
+          background-image: url({%static'webpages/Sponsors/static/images/Vector.png'%});
+        "
+      ></button>
+
+      <div class="items items_associate">
+        <div class="item item_associate">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/associate/wolfram.png' %}"
+          /></a>
+        </div>
+        <div class="item item_associate current">
+          <a href="https://devfolio.co/" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/associate/Coding_blocks.png' %}"
+          /></a>
+        </div>
+        <div class="item item_associate">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/associate/gfg.png' %}"
+          /></a>
+        </div>
+        <div class="item item_associate">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/associate/givemycertificate.jpeg' %}"
+          /></a>
+        </div>
+        <div class="item item_associate">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/associate/egghead.png' %}"
+          /></a>
+        </div>
+        <div class="item item_associate">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/associate/packt.png' %}"
+          /></a>
+        </div>
+        <div class="item item_associate">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/associate/balsamiq.png' %}"
+          /></a>
+        </div>
+        <div class="item item_associate">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/associate/taskade.png' %}"
+          /></a>
+        </div>
+        <div class="item item_associate">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/associate/testmailapp.jpeg' %}"
+          /></a>
+        </div>
+        <div class="item item_associate">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/associate/xyz.png' %}"
+          /></a>
+        </div>
+        <div class="item item_associate">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/associate/elastic.png' %}"
+          /></a>
+        </div>
+        <div class="item item_associate">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/associate/hoverrobotix.png' %}"
+          /></a>
+        </div>
+        <div class="item item_associate">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/associate/streamyard.png' %}"
+          /></a>
+        </div>
+        <div class="item item_associate">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/associate/iba.png' %}"
+          /></a>
+        </div>
+        <div class="item item_associate">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/associate/interviewcake.png' %}"
+          /></a>
+        </div>
+        <div class="button-container">
+          <div
+            class="button button_associate"
+            style="padding-right: 13px; padding-left: 10px"
+          >
+            <i class="fas fa-angle-left"></i>
+          </div>
+          <div
+            class="button button_associate"
+            style="padding-left: 13px; padding-right: 10px"
+          >
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--*******Outreach SPONSORS********-->
+
+  <div class="outreach_sponsors" style="display: none">
+    <div class="sponsback-1">
+      <header class="nm">
+        <h1 class="heading-1">Outreach Sponsors</h1>
+      </header>
+
+      <button
+        class="return"
+        onclick="Return()"
+        style="
+          background-image: url({%static'webpages/Sponsors/static/images/Vector.png'%});
+        "
+      ></button>
+
+      <div class="items items_outreach">
+        <div class="item item_outreach next">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/outreach/edtimes.png' %}"
+          /></a>
+        </div>
+        <div class="item item_outreach current">
+          <a href="https://devfolio.co/" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/outreach/flutter_valsad.jpg' %}"
+          /></a>
+        </div>
+        <div class="item item_outreach">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/outreach/hackathons_international.png' %}"
+          /></a>
+        </div>
+        <div class="item item_outreach">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/outreach/noticebard.png' %}"
+          /></a>
+        </div>
+        <div class="item item_outreach">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/outreach/sakonsa.jpg' %}"
+          /></a>
+        </div>
+        <div class="item item_outreach">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/outreach/tfug_chd.png' %}"
+          /></a>
+        </div>
+
+        <div class="button-container">
+          <div
+            class="button button_outreach"
+            style="padding-right: 13px; padding-left: 10px"
+          >
+            <i class="fas fa-angle-left"></i>
+          </div>
+          <div
+            class="button button_outreach"
+            style="padding-left: 13px; padding-right: 10px"
+          >
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--*******Internship SPONSORS********-->
+
+  <div class="internship_sponsors" style="display: none">
+    <div class="sponsback-1">
+      <header class="nm">
+        <h1 class="heading-1">Internship Sponsors</h1>
+      </header>
+
+      <button
+        class="return"
+        onclick="Return()"
+        style="
+          background-image: url({%static'webpages/Sponsors/static/images/Vector.png'%});
+        "
+      ></button>
+
+      <div class="items items_internship">
+        <div class="item_less">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/Internship/merge.png' %}"
+          /></a>
+        </div>
+        <div class="item_less">
+          <a href="#" target="_blank"
+            ><img
+              src="{% static 'webpages/Sponsors/static/images/Internship/workshopXR.png' %}"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="drop-shadow-2"></div> -->
+
+  <!-- Custom Js -->
+  <script
+    async
+    defer
+    src="{% static 'webpages/Sponsors/static/js/index.js' %}"
+  ></script>
 </section>
-

@@ -39,7 +39,7 @@
 
   filter: drop-shadow(2px 2px #333);
 }
-
+#sponsors .items,
 #sponsors .s {
   position: relative;
   margin-top: 150px;
@@ -172,7 +172,7 @@
   margin-top: 70px;
 }
 
-#sponsors .sponsor-start-buttons ,
+#sponsors .sponsor-start-buttons,
 #sponsors .item_less {
   background: linear-gradient(180deg, #ed885b 0%, #f24385 100%);
   border-radius: 50px;
@@ -186,27 +186,26 @@
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#sponsors .items_internship, 
+#sponsors .items_internship,
 #sponsors .items_title {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #sponsors .item_less {
-	position: relative;
-	height: 80px;
-	margin: 10px;
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	align-items: center;
-	object-fit: contain;
+  position: relative;
+  height: 80px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  object-fit: contain;
 }
 
-
 #sponsors .item_less img {
-	width: 75%;
-	max-height: 100%;
+  width: 75%;
+  max-height: 100%;
 }
 
 #sponsors .sponsor-start-buttons-1,
@@ -406,9 +405,8 @@
   }
 }
 @media all and (max-width: 450px) {
-
   #sponsors .item_less img {
-  	width: 80%;
+    width: 80%;
   }
   #sponsors .heading {
     font-size: 400%;
@@ -420,13 +418,11 @@
 }
 
 @media all and (max-width: 400px) {
-
   .sponsor-start {
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
-
 
   #sponsors .sponsor-start-buttons-4,
   #sponsors .sponsor-start-buttons-3,
@@ -474,7 +470,7 @@
     text-align: center;
     padding-right: 37%;
   }
-  #sponsors .sponsor-start-buttons, 
+  #sponsors .sponsor-start-buttons,
   #sponsors .item_less {
     text-align: center;
   }
