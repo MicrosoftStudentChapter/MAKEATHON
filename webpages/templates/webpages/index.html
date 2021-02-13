@@ -61,6 +61,9 @@
 
     <!-- Corresponding To WebPages -->
 
+    <!-- Loader -->
+    <link rel="stylesheet" href="{% static 'webpages/loader/style.css' %}" />
+
     <!-- Home -->
     <link rel="stylesheet" href="{% static 'webpages/home/css/style.css' %}" />
     <link
@@ -121,8 +124,8 @@
       href="{% static 'webpages/FAQ/static/css/style.css' %}"
       type="text/css"
     />
-    
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Prizes -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.10.3/dist/tsparticles.min.js"></script>
@@ -138,19 +141,28 @@
     </script>
   </head>
   <body onscroll="scrollEvents()">
+    <div class="pre-wrapper" style="position: fixed">
+      <div class="preloader">
+        <div class="loader__bar" style="background: #fba04b"></div>
+        <div class="loader__bar" style="background: #e34791"></div>
+        <div class="loader__bar" style="background: #a3416d"></div>
+        <div class="loader__bar" style="background: #77025a"></div>
+        <div class="loader__bar" style="background: #390049"></div>
+        <div class="loader__ball" style="background: #fff"></div>
+      </div>
+    </div>
+    <script src="{% static 'webpages/loader/index.js' %}"></script>
     {% include "webpages/Home/index.html" %}
 
     <section id="about">
-      {% include "webpages/About_MLSC/index.html" %} 
-	  {% include "webpages/About/index.html" %}
+      {% include "webpages/About_MLSC/index.html" %} {% include
+      "webpages/About/index.html" %}
     </section>
 
-    {% include "webpages/Timeline/index.html" %}
-	{% include "webpages/Tracks/index.html" %}
-	{% include "webpages/Prizes/alternate.html" %}
-	{% include "webpages/Speakers_and_Judges/alternate.html" %} 
-	{% include "webpages/Sponsors/index.html" %} 
-	{% include "webpages/FAQ/index.html" %}
+    {% include "webpages/Timeline/index.html" %} {% include
+    "webpages/Tracks/index.html" %} {% include "webpages/Prizes/alternate.html"
+    %} {% include "webpages/Speakers_and_Judges/alternate.html" %} {% include
+    "webpages/Sponsors/index.html" %} {% include "webpages/FAQ/index.html" %}
 
     <!-- <!-1- Animate on Scroll -1-> -->
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
