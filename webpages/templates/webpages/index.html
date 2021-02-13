@@ -58,10 +58,10 @@
 	
 
 		<!-- Animate on Scroll -->
-		<link
-			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-			rel="stylesheet"
-		/>
+		<!-- <link -->
+		<!-- 	href="https://unpkg.com/aos@2.3.1/dist/aos.css" -->
+		<!-- 	rel="stylesheet" -->
+		<!-- /> -->
 
 		<!-- Corresponding To WebPages -->
 
@@ -130,6 +130,11 @@
 		/>
 {#		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> #}
 
+		<!-- Prizes -->
+		<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.10.3/dist/tsparticles.min.js"></script>
+		<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+		<link rel="stylesheet" href="{% static 'webpages/Prizes/static/css/style.css' %}" type="text/css" />
+
         <!-- WidgetBot -->
         <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
             new Crate ({
@@ -156,13 +161,17 @@
 
 		{% include "webpages/FAQ/index.html" %}
 
-		<!-- Animate on Scroll -->
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script>
-			AOS.init({
-				easing: "ease-in-out",
-				duration: 400,
-			});
-		</script>
+		{% include "webpages/Prizes/index.html" %}
+
+		<!-- <!-1- Animate on Scroll -1-> -->
+		<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+		<!-- <script> -->
+		<!-- 	AOS.init({ -->
+		<!-- 		easing: "ease-in-out", -->
+		<!-- 		duration: 400, -->
+		<!-- 	}); -->
+		<!-- </script> -->
+
 	</body>
 </html>
+
