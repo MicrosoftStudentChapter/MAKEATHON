@@ -100,8 +100,8 @@ function createCarousal(sponsorName) {
   }, 5000);
 }
 
-createCarousal("title");
+// createCarousal("title");
 createCarousal("power");
 createCarousal("associate");
-createCarousal("internship");
+// createCarousal("internship");
 createCarousal("outreach");

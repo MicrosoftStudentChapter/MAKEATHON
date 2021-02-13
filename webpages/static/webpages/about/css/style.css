@@ -12,6 +12,7 @@
 }
 
 #about h2.heading,
+#speakers_and_judges h2.heading,
 #prizes h2.heading {
   font-family: "Anurati", sans-serif;
   font-size: 4.7rem;
@@ -161,6 +162,7 @@
   }
 
   #about h2.heading,
+  #speakers_and_judges h2.heading,
   #prizes h2.heading {
     font-size: 3.8rem;
   }
@@ -176,6 +178,7 @@
 
 @media (max-width: 760px) {
   #about h2.heading,
+  #speakers_and_judges h2.heading,
   #prizes h2.heading {
     font-size: 2.8rem;
     margin: 0 40px;
