@@ -2,176 +2,162 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Makeathon3077 | MLSC</title>
-		<style>
-			body {
-				width: 100%;
-				overflow-x: hidden;
-			}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Makeathon3077 | MLSC</title>
+    <style>
+      body {
+        width: 100%;
+        overflow-x: hidden;
+      }
 
-			body > section {
-				box-shadow: #000000a9 inset 0 20px 100px,
-					#000000a9 inset 0 -20px 100px;
-				position: relative;
-			}
+      body > section {
+        box-shadow: #000000a9 inset 0 20px 100px, #000000a9 inset 0 -20px 100px;
+        position: relative;
+      }
 
-			body > section::after, body > section::before {
-				content: '';
-				position: absolute;
-				height: 20vh;
-				width: 100%;
-				left: 0;
-			}
+      body > section::after,
+      body > section::before {
+        content: "";
+        position: absolute;
+        height: 20vh;
+        width: 100%;
+        left: 0;
+      }
 
-			body > section::after {
-				background: linear-gradient(to top, #000000b9 0 1%, transparent);
-				bottom: 0;
-			}
+      body > section::after {
+        background: linear-gradient(to top, #000000b9 0 1%, transparent);
+        bottom: 0;
+      }
 
-			body > section::before {
-				background: linear-gradient(to bottom, #000000b9 0 1%, transparent);
-				top: 0;
-			}
+      body > section::before {
+        background: linear-gradient(to bottom, #000000b9 0 1%, transparent);
+        top: 0;
+      }
 
-			@font-face {
-				font-family: 'Anurati';
-				font-style: normal;
-				font-weight: 400;
-				src: local('Anurati'), url('{% static "webpages/fonts/Anurati-Regular.woff" %}') format('woff');
-			}
+      @font-face {
+        font-family: "Anurati";
+        font-style: normal;
+        font-weight: 400;
+        src: local("Anurati"),
+          url('{% static "webpages/fonts/Anurati-Regular.woff" %}')
+            format("woff");
+      }
+    </style>
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
-		</style>
+    <!-- Animate on Scroll -->
+    <!-- <link -->
+    <!-- 	href="https://unpkg.com/aos@2.3.1/dist/aos.css" -->
+    <!-- 	rel="stylesheet" -->
+    <!-- /> -->
 
-		<!-- Fonts -->
-		<link
-			rel="preconnect"
-			href="https://fonts.gstatic.com"
-		>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&family=Ubuntu:wght@700&display=swap" 
-			rel="stylesheet"
-		>
-	
+    <!-- Corresponding To WebPages -->
 
-		<!-- Animate on Scroll -->
-		<!-- <link -->
-		<!-- 	href="https://unpkg.com/aos@2.3.1/dist/aos.css" -->
-		<!-- 	rel="stylesheet" -->
-		<!-- /> -->
+    <!-- Home -->
+    <link rel="stylesheet" href="{% static 'webpages/home/css/style.css' %}" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-		<!-- Corresponding To WebPages -->
+    <!-- About Pages -->
+    <link rel="stylesheet" href="{% static 'webpages/about/css/style.css' %}" />
 
-		<!-- Home -->
-		<link
-			rel="stylesheet"
-			href="{% static 'webpages/home/css/style.css' %}"
-		/>
-		<link
-			href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-			rel="stylesheet"
-		/>
+    <!-- Timeline -->
+    <link
+      rel="stylesheet"
+      href="{% static 'webpages/Timeline/static/css/style.css' %}"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
 
-		<!-- About Pages -->
-		<link rel="stylesheet" href="{% static 'webpages/about/css/style.css' %}" />
+    <!-- Timeline -->
+    <link
+      rel="stylesheet"
+      href="{% static 'webpages/Tracks/static/css/style.css' %}"
+      type="text/css"
+    />
 
-		<!-- Timeline -->
-		<link
-		  rel="stylesheet"
-		  href="{% static 'webpages/Timeline/static/css/style.css' %}"
-		/>
-		<script
-		  src="https://code.jquery.com/jquery-3.5.1.min.js"
-		  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-		  crossorigin="anonymous"
-		></script>
-
-		<!-- Timeline -->
-		<link
-		  rel="stylesheet"
-		  href="{% static 'webpages/Tracks/static/css/style.css' %}"
-		  type="text/css"
-		/>
-
-		<!-- Speakers and Judges -->
-		<link rel="stylesheet" href="{% static 'webpages/Speakers_and_Judges/static/css/style.css' %}" type="text/css"/>
+    <!-- Speakers and Judges -->
+    <!-- <link rel="stylesheet" href="{% static 'webpages/Speakers_and_Judges/static/css/style.css' %}" type="text/css"/>
 		<link
 				rel="stylesheet"
 				href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-		/>
+		/> -->
 
-		<!-- Sponsors -->
-		<link
-				rel="stylesheet"
-				href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-				integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-				crossorigin="anonymous"
-		/>
-		<link
-				rel="stylesheet"
-				href="{% static 'webpages/Sponsors/static/css/style.css' %}"
-				type="text/css"
-		/>
+    <!-- Sponsors -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'webpages/Sponsors/static/css/style.css' %}"
+      type="text/css"
+    />
 
-		<!-- FAQ -->
-		<link
-				href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-				rel="stylesheet"
-				integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-				crossorigin="anonymous"
-		/>
-		<link
-				rel="stylesheet"
-				href="{% static 'webpages/FAQ/static/css/style.css' %}"
-				type="text/css"
-		/>
-{#		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> #}
+    <!-- FAQ -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'webpages/FAQ/static/css/style.css' %}"
+      type="text/css"
+    />
+    {#
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    #}
 
-		<!-- Prizes -->
-		<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.10.3/dist/tsparticles.min.js"></script>
+    <!-- Prizes -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.10.3/dist/tsparticles.min.js"></script>
 		<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-		<link rel="stylesheet" href="{% static 'webpages/Prizes/static/css/style.css' %}" type="text/css" />
+		<link rel="stylesheet" href="{% static 'webpages/Prizes/static/css/style.css' %}" type="text/css" /> -->
 
-        <!-- WidgetBot -->
-        <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-            new Crate ({
-                server: '720322067261554728', // MLSC Open Source Community
-                channel: '756424683301371905' // #about
-            });
-        </script>
+    <!-- WidgetBot -->
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+      new Crate ({
+          server: '720322067261554728', // MLSC Open Source Community
+          channel: '756424683301371905' // #about
+      });
+    </script>
+  </head>
+  <body onscroll="scrollEvents()">
+    {% include "webpages/Home/index.html" %}
 
-	</head>
-    <body onscroll="scrollEvents()" >
-		{% include "webpages/Home/index.html" %}
+    <section id="about">
+      {% include "webpages/About_MLSC/index.html" %} {% include
+      "webpages/About/index.html" %}
+    </section>
 
-		<section id="about">
-			{% include "webpages/About_MLSC/index.html" %}
-			{% include "webpages/About/index.html" %}
-		</section>
+    {% include "webpages/Timeline/index.html" %} {% include
+    "webpages/Tracks/index.html" %} {% include "webpages/Prizes/alternate.html"
+    %} {% include "webpages/Speakers_and_Judges/alternate.html" %} {% include
+    "webpages/Sponsors/index.html" %} {% include "webpages/FAQ/index.html" %}
 
-		{% include "webpages/Timeline/index.html" %}
-		{% include "webpages/Tracks/index.html" %}
-
-		{% include "webpages/Speakers_and_Judges/index.html" %}
-
-		{% include "webpages/Sponsors/index.html" %}
-
-		{% include "webpages/FAQ/index.html" %}
-
-		{% include "webpages/Prizes/index.html" %}
-
-		<!-- <!-1- Animate on Scroll -1-> -->
-		<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-		<!-- <script> -->
-		<!-- 	AOS.init({ -->
-		<!-- 		easing: "ease-in-out", -->
-		<!-- 		duration: 400, -->
-		<!-- 	}); -->
-		<!-- </script> -->
-
-	</body>
+    <!-- <!-1- Animate on Scroll -1-> -->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <!-- <script> -->
+    <!-- 	AOS.init({ -->
+    <!-- 		easing: "ease-in-out", -->
+    <!-- 		duration: 400, -->
+    <!-- 	}); -->
+    <!-- </script> -->
+  </body>
 </html>
-
