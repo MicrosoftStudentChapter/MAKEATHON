@@ -172,7 +172,8 @@
   margin-top: 70px;
 }
 
-#sponsors .sponsor-start-buttons {
+#sponsors .sponsor-start-buttons ,
+#sponsors .item_less {
   background: linear-gradient(180deg, #ed885b 0%, #f24385 100%);
   border-radius: 50px;
   padding: 20px;
@@ -183,6 +184,28 @@
   font-family: sans-serif;
   width: 25%;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#sponsors .items_internship, 
+#sponsors .items_title {
+	display: flex;
+	justify-content: center;
+}
+
+#sponsors .item_less {
+	position: relative;
+	height: 80px;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	object-fit: contain;
+}
+
+
+#sponsors .item_less img {
+	width: 75%;
 }
 
 #sponsors .sponsor-start-buttons-1,
