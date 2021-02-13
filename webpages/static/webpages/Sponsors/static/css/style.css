@@ -206,6 +206,7 @@
 
 #sponsors .item_less img {
 	width: 75%;
+	max-height: 100%;
 }
 
 #sponsors .sponsor-start-buttons-1,
@@ -282,7 +283,8 @@
 }
 
 @media all and (max-width: 1100px) {
-  #sponsors .sponsor-start-buttons {
+  #sponsors .sponsor-start-buttons,
+  #sponsors .item_less {
     font-size: 35px;
     width: 30%;
   }
@@ -304,7 +306,8 @@
 }
 
 @media all and (max-width: 950px) {
-  #sponsors .sponsor-start-buttons {
+  #sponsors .sponsor-start-buttons,
+  #sponsors .item_less {
     font-size: 30px;
     width: 30%;
   }
@@ -315,7 +318,8 @@
 }
 
 @media all and (max-width: 840px) {
-  #sponsors .sponsor-start-buttons {
+  #sponsors .sponsor-start-buttons,
+  #sponsors .item_less {
     font-size: 25px;
     width: 30%;
   }
@@ -336,7 +340,8 @@
 }
 
 @media all and (max-width: 685px) {
-  #sponsors .sponsor-start-buttons {
+  #sponsors .sponsor-start-buttons,
+  #sponsors .item_less {
     font-size: 20px;
     width: 30%;
   }
@@ -357,7 +362,8 @@
 }
 
 @media all and (max-width: 590px) {
-  #sponsors .sponsor-start-buttons {
+  #sponsors .sponsor-start-buttons,
+  #sponsors .item_less {
     font-size: 16px;
     width: 150px;
   }
@@ -400,6 +406,10 @@
   }
 }
 @media all and (max-width: 450px) {
+
+  #sponsors .item_less img {
+  	width: 80%;
+  }
   #sponsors .heading {
     font-size: 400%;
   }
@@ -464,7 +474,8 @@
     text-align: center;
     padding-right: 37%;
   }
-  #sponsors .sponsor-start-buttons {
+  #sponsors .sponsor-start-buttons, 
+  #sponsors .item_less {
     text-align: center;
   }
 }
