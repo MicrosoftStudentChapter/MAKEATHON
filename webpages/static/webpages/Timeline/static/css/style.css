@@ -235,3 +235,18 @@
     font-size: 200%;
   }
 }
+
+
+@media only screen and (min-width: 360px) {
+  #timeline #events p button{
+    font-size: 23px;
+    margin-left: 3rem;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  #timeline #events h2 p{
+    font-size: 21px;
+    margin-left: 3rem;
+  }
+}
