@@ -25,6 +25,7 @@
     font-weight: normal;
     font-size: 72px;
     line-height: 86px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#eaab48), color-stop(#ed885b), to(#f24282));
     background: linear-gradient(#eaab48, #ed885b, #f24282);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -50,7 +51,9 @@
 
     color: #ffffff;
 
-    transform: rotate(0.05deg);
+    -webkit-transform: rotate(0.05deg);
+
+            transform: rotate(0.05deg);
 
     border: 1px;
 }
@@ -390,9 +393,12 @@
     -webkit-backdrop-filter: blur(25px);
     border-radius: 15px;
     border: 1px solid rgb(255 255 255 / 15%);
-    animation-duration: 2s;
-    animation-name: fadeIn;
-    animation-iteration-count: 1;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
 }
 
 #speakers_and_judges .image {
@@ -417,6 +423,7 @@
 #speakers_and_judges .texth1 {
     font-family: Anurati, sans-serif;
     font-size: 500%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#eaab48), color-stop(43.75%, #ed885b), to(#f24282));
     background: linear-gradient(180deg, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -428,6 +435,7 @@
 #speakers_and_judges .texth3 {
     font-family: Anurati, sans-serif;
     font-size: 40px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#eaab48), color-stop(43.75%, #ed885b), to(#f24282));
     background: linear-gradient(180deg, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
     -webkit-background-clip: text;
     background-clip: text;

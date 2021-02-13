@@ -22,14 +22,14 @@
 
 #timeline #days {
   min-height: 100vh;
-  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  justify-content: space-around;
 }
 
 #timeline #days h2:first-child {
@@ -69,7 +69,8 @@
 }
 
 #timeline #events p button:hover {
-  animation: color-change-to-white 0.3s forwards;
+  -webkit-animation: color-change-to-white 0.3s forwards;
+          animation: color-change-to-white 0.3s forwards;
 }
 
 #timeline .hidden {
@@ -82,6 +83,7 @@
   background: #ef233c;
   color: white;
   text-decoration: none;
+  -webkit-transition: 0.35s ease-in-out;
   transition: 0.35s ease-in-out;
   font-weight: 700;
 }
@@ -96,6 +98,7 @@
   background: #ef233c;
   color: white;
   text-decoration: none;
+  -webkit-transition: 0.35s ease-in-out;
   transition: 0.35s ease-in-out;
   font-weight: 700;
 
@@ -111,14 +114,15 @@
 #timeline .overlay {
   width: 100%;
   min-height: 100vh;
-  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -126,6 +130,7 @@
   background: rgba(0, 0, 0, 0.75);
   opacity: 0;
   pointer-events: none;
+  -webkit-transition: 0.35s ease-in-out;
   transition: 0.35s ease-in-out;
   max-height: 100vh;
   overflow-y: auto;
@@ -146,17 +151,18 @@
   opacity: 0;
   border-radius: 30px 0 30px 0;
   pointer-events: none;
+  -webkit-transition: 0.35s ease-in-out;
   transition: 0.35s ease-in-out;
   max-height: 100vh;
   overflow-y: auto;
 
   position: relative;
-  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
 
-  -ms-flex-align: center;
+  -webkit-box-align: center;
 
-      align-items: center;
+          align-items: center;
 }
 
 #timeline #modal1 .content {
@@ -193,6 +199,7 @@
 #timeline .overlay #modal1 .content {
   position: relative;
   opacity: 0;
+  -webkit-transition: 0.35s ease-in-out;
   transition: 0.35s ease-in-out;
   margin: 10px;
 }
@@ -203,7 +210,8 @@
 }
 
 #timeline a:hover {
-  animation: color-change-to-white 0.3s forwards;
+  -webkit-animation: color-change-to-white 0.3s forwards;
+          animation: color-change-to-white 0.3s forwards;
 }
 
 @media (min-width: 600px) {
@@ -217,6 +225,12 @@
     height: 100vh;
     overflow-y: scroll;
     overflow-x: auto;
+  }
+}
+
+@-webkit-keyframes color-change-to-white {
+  to {
+    color: #f24385;
   }
 }
 
@@ -236,8 +250,9 @@
 	  font-size: 1.6rem;
   }
   #timeline #days {
-    -ms-flex-direction: row;
-        flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
     min-height: 55vh;
   }
 }

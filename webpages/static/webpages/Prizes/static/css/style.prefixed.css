@@ -29,6 +29,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 5rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#eaab48), color-stop(#ed885b), to(#f24282));
     background: linear-gradient(#eaab48, #ed885b, #f24282);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;

@@ -31,19 +31,23 @@
   position: absolute;
   width: 220px;
   height: 100px;
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
 
   color: white;
   font-size: 2rem;
 
-  display: -ms-flexbox;
+  display: -webkit-box;
 
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
 }
 
 @media (min-width: 300px) {
@@ -54,5 +58,6 @@
 
 /* <----------scaling on hover-----------> */
 #Tracks_Makeathon #tracks .text:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
