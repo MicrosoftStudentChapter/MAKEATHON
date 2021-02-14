@@ -102,6 +102,10 @@
 
 	<script type="text/javascript">
 		function toggleRuleBook() {
+
+			let body = document.querySelector('body');
+			body.style.overflowY = body.style.overflowY !== 'hidden' ? 'hidden' : 'scroll';
+
 			document.querySelector('#rule-book').classList.toggle('show');
 		}
 	</script>
