@@ -2,8 +2,8 @@
     margin: 0;
     background: url("../images/image12.png") no-repeat center center fixed;
     -moz-background-size: cover;
-      -o-background-size: cover;
-         background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #speakers_and_judges .back-img {
@@ -62,13 +62,13 @@
 
     -webkit-transform: rotate(0.05deg);
 
-            -moz-transform: rotate(0.05deg);
+       -moz-transform: rotate(0.05deg);
 
-             -ms-transform: rotate(0.05deg);
+        -ms-transform: rotate(0.05deg);
 
-              -o-transform: rotate(0.05deg);
+         -o-transform: rotate(0.05deg);
 
-         transform: rotate(0.05deg);
+            transform: rotate(0.05deg);
 
     border: 1px;
 }
@@ -398,8 +398,8 @@
 
 #speakers_and_judges .box {
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
     padding: 60px 20px;
     width: 100%;
     max-width: 64%;
@@ -408,8 +408,8 @@
     margin-top: 2%;
     background: rgba(255, 255, 255, 0.1);
     -webkit-box-shadow: 0px 10px 50px 0 rgb(31 38 135 / 20%);
-       -moz-box-shadow: 0px 10px 50px 0 rgb(31 38 135 / 20%);
-            box-shadow: 0px 10px 50px 0 rgb(31 38 135 / 20%);
+    -moz-box-shadow: 0px 10px 50px 0 rgb(31 38 135 / 20%);
+         box-shadow: 0px 10px 50px 0 rgb(31 38 135 / 20%);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(25px);
     -webkit-border-radius: 15px;
@@ -417,17 +417,17 @@
             border-radius: 15px;
     border: 1px solid rgb(255 255 255 / 15%);
     -webkit-animation-duration: 2s;
-            -moz-animation-duration: 2s;
-              -o-animation-duration: 2s;
-         animation-duration: 2s;
+       -moz-animation-duration: 2s;
+         -o-animation-duration: 2s;
+            animation-duration: 2s;
     -webkit-animation-name: fadeIn;
-            -moz-animation-name: fadeIn;
-              -o-animation-name: fadeIn;
-         animation-name: fadeIn;
+       -moz-animation-name: fadeIn;
+         -o-animation-name: fadeIn;
+            animation-name: fadeIn;
     -webkit-animation-iteration-count: 1;
-            -moz-animation-iteration-count: 1;
-              -o-animation-iteration-count: 1;
-         animation-iteration-count: 1;
+       -moz-animation-iteration-count: 1;
+         -o-animation-iteration-count: 1;
+            animation-iteration-count: 1;
 }
 
 #speakers_and_judges .image {
@@ -458,10 +458,18 @@
 #speakers_and_judges .texth1 {
     font-family: Anurati, sans-serif;
     font-size: 500%;
+    background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(#eaab48),
+            color-stop(43.75%, #ed885b),
+            to(#f24282)
+    );
+    background: -o-linear-gradient(top, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
     background: -webkit-gradient(linear, left top, left bottom, from(#eaab48), color-stop(43.75%, #ed885b), to(#f24282));
     background: -webkit-linear-gradient(top, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
     background: -moz- oldlinear-gradient(top, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
-    background: -o-linear-gradient(top, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
     background: linear-gradient(180deg, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -475,10 +483,18 @@
 #speakers_and_judges .texth3 {
     font-family: Anurati, sans-serif;
     font-size: 40px;
+    background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(#eaab48),
+            color-stop(43.75%, #ed885b),
+            to(#f24282)
+    );
+    background: -o-linear-gradient(top, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
     background: -webkit-gradient(linear, left top, left bottom, from(#eaab48), color-stop(43.75%, #ed885b), to(#f24282));
     background: -webkit-linear-gradient(top, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
     background: -moz- oldlinear-gradient(top, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
-    background: -o-linear-gradient(top, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
     background: linear-gradient(180deg, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
