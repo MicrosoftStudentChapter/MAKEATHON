@@ -16,6 +16,10 @@
   position: relative;
 }
 
+#timeline::after, #timeline::before {
+	z-index: -1;
+}
+
 #timeline button {
   background: none;
   border: none;
@@ -31,15 +35,15 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          -webkit-flex-direction: column;
-             -moz-box-orient: vertical;
-             -moz-box-direction: normal;
-              -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
-          -webkit-align-items: center;
-             -moz-box-align: center;
-              -ms-flex-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
           align-items: center;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
@@ -69,6 +73,7 @@
   height: 100vh;
   padding-top: 5%;
   padding-bottom: 5%;
+  z-index: 1;
 }
 
 #timeline #events p {
@@ -84,9 +89,9 @@
 
 #timeline #events p button:hover {
   -webkit-animation: color-change-to-white 0.3s forwards;
-          -moz-animation: color-change-to-white 0.3s forwards;
-            -o-animation: color-change-to-white 0.3s forwards;
-       animation: color-change-to-white 0.3s forwards;
+     -moz-animation: color-change-to-white 0.3s forwards;
+       -o-animation: color-change-to-white 0.3s forwards;
+          animation: color-change-to-white 0.3s forwards;
 }
 
 #timeline .hidden {
@@ -140,21 +145,21 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-          -webkit-justify-content: center;
-             -moz-box-pack: center;
-              -ms-flex-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
-          -webkit-align-items: center;
-             -moz-box-align: center;
-              -ms-flex-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
           align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          -webkit-flex-direction: column;
-             -moz-box-orient: vertical;
-             -moz-box-direction: normal;
-              -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
           flex-direction: column;
   position: fixed;
   top: 0;
@@ -206,11 +211,11 @@
 
   -webkit-box-align: center;
 
-          -webkit-align-items: center;
+  -webkit-align-items: center;
 
-             -moz-box-align: center;
+     -moz-box-align: center;
 
-              -ms-flex-align: center;
+      -ms-flex-align: center;
 
           align-items: center;
 }
@@ -263,9 +268,9 @@
 
 #timeline a:hover {
   -webkit-animation: color-change-to-white 0.3s forwards;
-          -moz-animation: color-change-to-white 0.3s forwards;
-            -o-animation: color-change-to-white 0.3s forwards;
-       animation: color-change-to-white 0.3s forwards;
+     -moz-animation: color-change-to-white 0.3s forwards;
+       -o-animation: color-change-to-white 0.3s forwards;
+          animation: color-change-to-white 0.3s forwards;
 }
 
 @media (min-width: 600px) {
@@ -318,10 +323,10 @@
   #timeline #days {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-            -webkit-flex-direction: row;
-               -moz-box-orient: horizontal;
-               -moz-box-direction: normal;
-                -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
             flex-direction: row;
     min-height: 55vh;
   }
