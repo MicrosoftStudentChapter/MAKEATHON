@@ -6,6 +6,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Makeathon3077 | MLSC</title>
+
+    <!-- Loader -->
+    <link rel="stylesheet" href="{% static 'webpages/loader/style.prefixed.css' %}" />
+
+
     <style>
       body {
         width: 100%;
@@ -73,9 +78,6 @@
     <!-- /> -->
 
     <!-- Corresponding To WebPages -->
-
-    <!-- Loader -->
-    <link rel="stylesheet" href="{% static 'webpages/loader/style.prefixed.css' %}" />
 
     <!-- Home -->
     <link rel="stylesheet" href="{% static 'webpages/home/css/style.prefixed.css' %}" />
@@ -154,17 +156,12 @@
     </script>
   </head>
   <body onscroll="scrollEvents()">
-    <div class="pre-wrapper" style="position: fixed">
-      <div class="preloader">
-        <div class="loader__bar" style="background: #fba04b"></div>
-        <div class="loader__bar" style="background: #e34791"></div>
-        <div class="loader__bar" style="background: #a3416d"></div>
-        <div class="loader__bar" style="background: #77025a"></div>
-        <div class="loader__bar" style="background: #390049"></div>
-        <div class="loader__ball" style="background: #fff"></div>
-      </div>
-    </div>
+
+	<div id="pre-wrapper">
+		<img src="{% static 'webpages/loader/image.svg' %}" alt="Pre Loader" srcset="">
+	</div>
     <script src="{% static 'webpages/loader/index.js' %}"></script>
+
     {% include "webpages/Home/index.html" %}
 
     <section id="about">
