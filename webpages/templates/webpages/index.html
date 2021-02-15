@@ -67,9 +67,10 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&family=Ubuntu:wght@700&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&family=Ubuntu:wght@700&family=Black+Ops+One&display=swap"
       rel="stylesheet"
     />
+
 
     <!-- Animate on Scroll -->
     <!-- <link -->
@@ -183,5 +184,14 @@
     <!-- 		duration: 400, -->
     <!-- 	}); -->
     <!-- </script> -->
+
+	<script>
+		if (safari) {
+			document.querySelectorAll('.heading').forEach(element => {
+				element.style.fontFamily = '"Black Ops One", Anurati, sans-serif';
+			});
+		}
+
+	</script>
   </body>
 </html>
