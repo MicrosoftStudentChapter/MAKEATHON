@@ -53,6 +53,7 @@ $(document).ready(function ($) {
     event.preventDefault();
 
     $(".form-popup-bg").addClass("is-visible");
+    toggleBodyScrollBar();
   });
 
   //close popup when clicking x or off popup
@@ -63,6 +64,7 @@ $(document).ready(function ($) {
     ) {
       event.preventDefault();
       $(this).removeClass("is-visible");
+	  toggleBodyScrollBar();
     }
   });
 });

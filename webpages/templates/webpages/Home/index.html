@@ -102,11 +102,13 @@
 
 	<script type="text/javascript">
 		function toggleRuleBook() {
+			toggleBodyScrollBar();
+			document.querySelector('#rule-book').classList.toggle('show');
+		}
 
+		function toggleBodyScrollBar () {
 			let body = document.querySelector('body');
 			body.style.overflowY = body.style.overflowY !== 'hidden' ? 'hidden' : 'scroll';
-
-			document.querySelector('#rule-book').classList.toggle('show');
 		}
 	</script>
   <div class="center">
