@@ -178,6 +178,7 @@
 #timeline .overlay.open {
   opacity: 1;
   pointer-events: inherit;
+  z-index: 1000;
 }
 #timeline .overlay #modal1 {
   background: white;
