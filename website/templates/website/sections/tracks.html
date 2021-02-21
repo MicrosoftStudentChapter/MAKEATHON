@@ -1,0 +1,46 @@
+{% load static %}
+
+<head>
+	<link rel="stylesheet" href="{% static 'website/tracks/css/style.css' %}">
+</head>
+
+<section id="tracks">
+	<img src="{% static 'website/tracks/images/tracks-bg-upper-desktop.png' %}" alt="Tracks Path" class="tracks-path">	
+	<div id="glassbox-track-1" class="glassbox-track">Coming</div>
+	<div id="glassbox-track-2" class="glassbox-track">Soon</div>
+	<div id="glassbox-track-3" class="glassbox-track">Coming</div>
+	<div id="glassbox-track-4" class="glassbox-track">Soon</div>
+
+
+	<script>
+		if (window.innerWidth < 600) {
+			document.querySelector("#tracks img.tracks-path").src = "{% static 'website/tracks/images/tracks-bg-upper-mobile.png' %}";
+		} else {
+			document.querySelector("#tracks img.tracks-path").src = "{% static 'website/tracks/images/tracks-bg-upper-desktop.png' %}";
+		}
+
+		setPositionForDesktop();
+
+		function setPositionForDesktop(){
+			for (i = 1; i <= 4; i++) {
+				let glassBox = document.querySelector(`#tracks #glassbox-track-${i}`);
+				glassBox.style.top = (getViewHeight(12.5)*(2*i - 1) - 50) + "px";
+
+				if(i % 2 == 0) {
+					glassBox.style.right = getViewWidth(20) + "px";
+				} else {
+					glassBox.style.left = getViewWidth(20) + "px";
+				}
+			}
+		}
+
+		function getViewHeight(y){
+			return y * window.innerHeight / 100;
+		} 
+
+		function getViewWidth(x){
+			return x * window.innerWidth / 100;
+		} 
+	</script>
+</section>
+
