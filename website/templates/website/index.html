@@ -33,6 +33,20 @@
 		</style>
 		<link rel="stylesheet" href="{% static 'website/loader/style.css' %}">
 
+		<!-- Fonts -->
+		<style>
+			@font-face {
+				font-family: "Anurati";
+				font-style: normal;
+				font-weight: 400, 500, 600, 700, 800, 900, bold;
+				src: local("Anurati"),
+				url('{% static "fonts/Anurati-Regular.woff" %}')
+					format("woff"),
+				url('{% static "fonts/Anurati-Regular 400.otf" %}')
+					format("opentype");
+			}
+		</style>
+
 		<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
 			new Crate ({
 				server: '720322067261554728', // MLSC Open Source Community
