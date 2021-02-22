@@ -7,7 +7,11 @@ $("#nav-items")
 	.click(function (e) {
 		e.preventDefault();
 		let section = $(this).attr("href");
-		$("html, body").animate({ scrollTop: $(section).offset().top });
+		if (section[0] == '#') {
+			$("html, body").animate({ scrollTop: $(section).offset().top });
+		} else {
+			window.open(this.href, '__blank')
+		}
 	});
 
 /******************************************************************
@@ -112,3 +116,11 @@ document.onkeypress = (ev) => {
 		muteButton.onclick();
 	}
 };
+
+/******************************************************************
+ * Rule Book
+ *******************************************************************/
+function openRuleBook() {
+	document.querySelector('#rule-book').classList.add('show-rule-book')
+}
+
