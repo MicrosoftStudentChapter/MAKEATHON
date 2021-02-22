@@ -110,6 +110,7 @@ button {
 }
 
 #timeline + .event-modal .close-button {
+	z-index: 1;
 	padding: 10px;
 	color: white;
 	background-color: red;

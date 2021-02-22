@@ -49,8 +49,14 @@
 	font-size: 2rem;
 	font-family: sans-serif;
 	text-shadow: 1px 1px 2px black;
+	cursor: pointer;
 }
 
 #tracks .glassbox-track:hover {
 	transform: scale(1.2);
 }
+
+#tracks .glassbox-track p {
+	display: none;
+}
+

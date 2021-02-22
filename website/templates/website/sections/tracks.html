@@ -6,10 +6,26 @@
 
 <section id="tracks">
 	<img src="{% static 'website/tracks/images/tracks-bg-upper-desktop.png' %}" alt="Tracks Path" class="tracks-path">	
-	<div id="glassbox-track-1" class="glassbox-track">Coming</div>
-	<div id="glassbox-track-2" class="glassbox-track">Soon</div>
-	<div id="glassbox-track-3" class="glassbox-track">Coming</div>
-	<div id="glassbox-track-4" class="glassbox-track">Soon</div>
+	<div id="glassbox-track-1" class="glassbox-track">
+		<h3>Coming</h3>
+		<p class="problem-info-1"></p>
+		<p class="problem-info-2"></p>
+	</div>
+	<div id="glassbox-track-2" class="glassbox-track">
+		<h3>Soon</h3>
+		<p class="problem-info-1"></p>
+		<p class="problem-info-2"></p>
+	</div>
+	<div id="glassbox-track-3" class="glassbox-track">
+		<h3>Coming</h3>
+		<p class="problem-info-1"></p>
+		<p class="problem-info-2"></p>
+	</div>
+	<div id="glassbox-track-4" class="glassbox-track">
+		<h3>Soon</h3>
+		<p class="problem-info-1"></p>
+		<p class="problem-info-2"></p>
+	</div>
 
 
 	<script>
@@ -41,6 +57,16 @@
 		function getViewWidth(x){
 			return x * window.innerWidth / 100;
 		} 
+		
+		// Using Modal with Timeline
+		$('#tracks .glassbox-track').click( function () {
+			let modal = document.querySelector('#timeline + .event-modal')
+			console.log(this);
+			modal.querySelector('h3.event-info').innerHTML = $(this).children('h3').html();
+			modal.querySelector('p.event-date').innerHTML = $(this).children('.problem-info-1').html();
+			modal.querySelector('p.event-details').innerHTML = $(this).children('.problem-info-2').html();
+			modal.classList.add('show');
+		});
 	</script>
 </section>
 
