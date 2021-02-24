@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "webpages",
     "website",
+    "getyourbadge",
 ]
 
 MIDDLEWARE = [
