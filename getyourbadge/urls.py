@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import index
+from .views import badge
 
 urlpatterns = [
-    path("", index, name="index"),
+    path("", badge, name="badge"),
 ]
