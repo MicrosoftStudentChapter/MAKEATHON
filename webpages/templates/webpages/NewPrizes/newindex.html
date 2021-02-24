@@ -1,58 +1,18 @@
 <!doctype html>
 <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no">
 <script src="../components/web-animations-js/web-animations.min.js"></script>
+<script src="../components/web-animations-js/web-animations.min.js"></script>
 <style>
   body {
     background-color: #300038;
     overflow: hidden;
   }
 
-  .starfield {
-    background-color: #300038;
-  }
-
-  .star0 {
-    height: 1px;
-    width: 1px;
-    opacity: 1;
-    position: absolute;
-  }
-
-  .star1 {
-    height: 2px;
-    width: 2px;
-    border-radius: 50%;
-    opacity: 1;
-    position: absolute;
-  }
-
-  .star2 {
-    height: 3px;
-    width: 3px;
-    border-radius: 50%;
-    opacity: 1;
-    position: absolute;
-  }
-
-  .star3 {
-    height: 4px;
-    width: 4px;
-    border-radius: 50%;
-    opacity: 1;
-    position: absolute;
-  }
-
-  .star4 {
-    height: 4px;
-    width: 4px;
-    border-radius: 50%;
-    opacity: 1;
-    position: absolute;
-  }
-  .container {
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-gap: 50px;
+  .containercard {
+  width: 18vw;
+  margin-bottom: -16vw;
+  margin-left: 40vw;
+  margin-top: 18vh;
   justify-content: center;
   align-items: center;
   font-family: 'Baloo Paaji 2', cursive;
@@ -88,49 +48,78 @@
   grid-gap: 20px;
   font-size: 1.2em;
 }
+#perspective {
+  margin-left: calc((100vw - 50vmin) / 2);
+  margin-top: calc((100vh - 50vmin) / 4);
+  width: 60vmin;
+  height: 50vmin;
+  perspective: 60vmin;
+}
+
+#container {
+  width: 50vmin;
+  height: 50vmin;
+  line-height: 0;
+  transform-style: preserve-3d;
+}
+
+.box {
+  display: inline-block;
+  background: black;
+}
 
 </style>
-<div id="universe">
-  <div class="container">
+      
+<div class="containercard">
     <div class="card">
       <img src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no" alt="Person" class="card__image">
       <p class="card__name">Prize 1</p>
     </div>
-    <div class="card">
-      <img src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no" alt="Person" class="card__image">
-      <p class="card__name">Prize 2</p>
-    </div>
   </div>
-</div>
+    <div id="perspective">
+        <div id="container"></div>
+      </div>
 <script>
-  var layerCount = 6;
-  var starCount = 150;
-  var universe = document.getElementById('universe');
-  var w = window;
-  var d = document;
-  var e = d.documentElement;
-  var g = d.getElementsByTagName('body')[0];
-  var width = w.innerWidth || e.clientWidth || g.clientWidth;
-  var height = w.innerHeight|| e.clientHeight|| g.clientHeight;
-  for (var l = 0; l < layerCount; ++l) {
-    var layer = document.createElement('div');
-    layer.setAttribute('id', 'layer' + l);
-    layer.setAttribute('class', 'starfield');
-    universe.appendChild(layer);
-    for (var i = 0; i < starCount; ++i) {
-      var xpos = Math.round(Math.random() * width);
-      var ypos = Math.round(Math.random() * height);
-      for (var s = 0; s < 2; ++s) {
-        var star = document.createElement('div');
-        star.setAttribute('class', 'star' + l);
-        star.style.webkitTransform = 'translate(' + (xpos + s * width) + 'px, ' + ypos + 'px)';
-        star.style.transform = 'translate(' + (xpos + s * width) + 'px, ' + ypos + 'px)';
-        star.style.backgroundColor = 'white';//rgb(' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ')';
-        layer.appendChild(star);
+    container.animate({
+      transform: [
+        'rotateX(70deg) rotateZ(0deg)',
+        'rotateX(70deg) rotateZ(360deg)',
+      ],
+    }, {
+      duration: 20000,
+      iterations: Infinity,
+    });
+    
+    var sideCount = 20;
+    var adjustment = (sideCount % 2) * 0.5;
+    var min = -sideCount / 2 + adjustment;
+    var max = sideCount / 2 + adjustment;
+    
+    for (var y = min; y < max; y++) {
+      for (var x = min; x < max; x++) {
+        var box = createBox();
+        box.animate({
+          transform: [
+            'translateZ(0px)',
+            'translateZ(40px)',
+          ],
+          opacity: [1, 0],
+        }, {
+          delay: (x*x + y*y) * 20,
+          duration: 2000,
+          iterations: Infinity,
+          direction: 'alternate',
+          easing: 'ease-in',
+        });
       }
     }
-    layer.animate([{transform: 'translate3d(0, 0, 0)'},
-                   {transform: 'translate3d(-' + width + 'px, 0, 0)'}],
-                  {duration: Math.pow(2, layerCount - l) * 1000, iterations: Infinity});
-  }
-</script>
+    
+    function createBox() {
+      var box = document.createElement('div');
+      box.className = 'box';
+      box.style.width = (100 / sideCount) + '%';
+      box.style.height = (100 / sideCount) + '%';
+      container.appendChild(box);
+      return box;
+    }
+    </script>
