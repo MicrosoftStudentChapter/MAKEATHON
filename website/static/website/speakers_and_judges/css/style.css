@@ -1,0 +1,91 @@
+#speakers_and_judges {
+	background: url('../images/speakers-and-judges-bg.png') center no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	width: 100%;
+	height: max-content;
+
+	display: flex;
+	flex-wrap: wrap;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+
+#speakers_and_judges .selector {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#speakers_and_judges .selector button {
+	margin: 10px;
+	padding: 10px;
+	
+	background-color: #ffffff50;
+	border-radius: 30px;
+	color: #fff;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+#speakers_and_judges .selector button:hover {
+	background-color: #ffffff90;
+}
+
+#speakers_and_judges .speakers-judges-container {
+	flex: 5;
+}
+
+#speakers_and_judges .speakers-judges-container .heading {
+	justify-content: center;
+}
+
+#speakers_and_judges .speakers-container,
+#speakers_and_judges .judges-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	align-items: center;
+}
+
+#speakers_and_judges .speaker, 
+#speakers_and_judges .judge {
+	border-radius: 20px;
+	margin: 10px;
+	flex: 0 0 25%;
+	flex-wrap: wrap;
+	text-align: center;
+	position: relative;
+}
+
+#speakers_and_judges .social-icons {
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#speakers_and_judges .social-icons a {
+	margin: 2px;
+	font-size: 30px;
+	color: white;
+}
+
+#speakers_and_judges .social-icons a:hover,
+#speakers_and_judges .social-icons a:active {
+	color: #ffffff99;
+}
+
+
+#speakers_and_judges .judge .info,
+#speakers_and_judges .judge .date,
+#speakers_and_judges .speaker .info,
+#speakers_and_judges .speaker .date {
+	display: none;
+}
+

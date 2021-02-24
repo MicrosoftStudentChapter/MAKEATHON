@@ -1,4 +1,79 @@
+{% load static %}
+
+<head>
+	<link rel="stylesheet" href="{% static 'website/speakers_and_judges/css/style.css' %}">
+</head>
+
 <section id="speakers_and_judges">
-	<h2 style="justify-content: center;" data-aos="fade-up" class="heading">Speakers And Judges</h2>
-	<p class="info-message" data-aos="fade-up">To Be Announced Soon</p>
+	<div class="selector">
+		<button onclick="showCorrespondingSpeakersOrJudges(this)" data-show=".speakers">Speakers</button>
+		<button onclick="showCorrespondingSpeakersOrJudges(this)" data-show=".judges">Judges</button>
+	</div>
+
+	<div class="speakers-judges-container">
+		<div class="speakers">
+			<h2 class="heading">Speakers</h2>
+			<div class="speakers-container">
+				<div class="speaker">
+					<img src="{% static 'website/speakers_and_judges/images/speakers/aman-dhattarwal.png' %}" alt="" width="200px" height="250px">
+					<br />
+					<p class="social-icons">
+						<a href=""><i class='bx bxl-github'></i></a>
+						<a href=""><i class='bx bxl-instagram' ></i></a>
+						<a href=""><i class='bx bxl-linkedin-square' ></i></a>
+					</p>
+					<p class="name">Aman Dhattarwal</p>
+					<p class="date">Aman Dhattarwal</p>
+					<p class="info">Aman Dhattarwal</p>
+				</div>
+
+				<div class="speaker">
+					<img src="{% static 'website/speakers_and_judges/images/speakers/aman-dhattarwal.png' %}" alt="" width="200px" height="250px">
+					<br />
+					<p class="social-icons">
+						<a href=""><i class='bx bxl-github'></i></a>
+						<a href=""><i class='bx bxl-instagram' ></i></a>
+						<a href=""><i class='bx bxl-linkedin-square' ></i></a>
+					</p>
+					<p class="name">Aman Dhattarwal</p>
+					<p class="date">Aman Dhattarwal</p>
+					<p class="info">Aman Dhattarwal</p>
+				</div>
+			</div>
+		</div>
+		
+
+		<div class="judges" style="display: none;">
+			<h2 class="heading">Judges</h2>
+			<div class="judges-container">
+				<div class="judge">
+					<img src="{% static 'website/speakers_and_judges/images/speakers/aman-dhattarwal.png' %}" alt="" width="200px" height="250px">
+					<br />
+					<p class="social-icons">
+						<a href=""><i class='bx bxl-github'></i></a>
+						<a href=""><i class='bx bxl-instagram' ></i></a>
+						<a href=""><i class='bx bxl-linkedin-square' ></i></a>
+					</p>
+					<p class="name">Aman Dhattarwal</p>
+					<p class="date">Aman Dhattarwal</p>
+					<p class="info">Aman Dhattarwal</p>
+				</div>
+
+				<div class="judge">
+					<img src="{% static 'website/speakers_and_judges/images/speakers/aman-dhattarwal.png' %}" alt="" width="200px" height="250px">
+					<br />
+					<p class="social-icons">
+						<a href=""><i class='bx bxl-github'></i></a>
+						<a href=""><i class='bx bxl-instagram' ></i></a>
+						<a href=""><i class='bx bxl-linkedin-square' ></i></a>
+					</p>
+					<p class="name">Aman Dhattarwal</p>
+					<p class="date">Aman Dhattarwal</p>
+					<p class="info">Aman Dhattarwal</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="{% static 'website/speakers_and_judges/js/index.js' %}"></script>
 </section>
