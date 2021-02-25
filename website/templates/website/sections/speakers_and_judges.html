@@ -14,7 +14,8 @@
 		<div class="speakers">
 			<h2 class="heading">Speakers</h2>
 			<div class="speakers-container">
-				<div class="speaker">
+				<!-- Copy This -->
+				<button onclick="showCorrespondingSpeakerOrJudge(this)" class="speaker">
 					<img src="{% static 'website/speakers_and_judges/images/speakers/aman-dhattarwal.png' %}" alt="" width="200px" height="250px">
 					<br />
 					<p class="social-icons">
@@ -23,22 +24,11 @@
 						<a href=""><i class='bx bxl-linkedin-square' ></i></a>
 					</p>
 					<p class="name">Aman Dhattarwal</p>
-					<p class="date">Aman Dhattarwal</p>
+					<p class="date">Speaker</p>
 					<p class="info">Aman Dhattarwal</p>
-				</div>
+				</button>
 
-				<div class="speaker">
-					<img src="{% static 'website/speakers_and_judges/images/speakers/aman-dhattarwal.png' %}" alt="" width="200px" height="250px">
-					<br />
-					<p class="social-icons">
-						<a href=""><i class='bx bxl-github'></i></a>
-						<a href=""><i class='bx bxl-instagram' ></i></a>
-						<a href=""><i class='bx bxl-linkedin-square' ></i></a>
-					</p>
-					<p class="name">Aman Dhattarwal</p>
-					<p class="date">Aman Dhattarwal</p>
-					<p class="info">Aman Dhattarwal</p>
-				</div>
+				<!-- Add More Here -->
 			</div>
 		</div>
 		
@@ -46,7 +36,8 @@
 		<div class="judges" style="display: none;">
 			<h2 class="heading">Judges</h2>
 			<div class="judges-container">
-				<div class="judge">
+				<!-- Copy This -->
+				<button onclick="showCorrespondingSpeakerOrJudge(this)" class="judge">
 					<img src="{% static 'website/speakers_and_judges/images/speakers/aman-dhattarwal.png' %}" alt="" width="200px" height="250px">
 					<br />
 					<p class="social-icons">
@@ -57,22 +48,21 @@
 					<p class="name">Aman Dhattarwal</p>
 					<p class="date">Aman Dhattarwal</p>
 					<p class="info">Aman Dhattarwal</p>
-				</div>
+				</button>
 
-				<div class="judge">
-					<img src="{% static 'website/speakers_and_judges/images/speakers/aman-dhattarwal.png' %}" alt="" width="200px" height="250px">
-					<br />
-					<p class="social-icons">
-						<a href=""><i class='bx bxl-github'></i></a>
-						<a href=""><i class='bx bxl-instagram' ></i></a>
-						<a href=""><i class='bx bxl-linkedin-square' ></i></a>
-					</p>
-					<p class="name">Aman Dhattarwal</p>
-					<p class="date">Aman Dhattarwal</p>
-					<p class="info">Aman Dhattarwal</p>
-				</div>
+				<!-- Add More Here -->
 			</div>
 		</div>
+
+		<div class="speaker-or-judge-info" style="display: none;">
+			<div class="person-info">
+				<h2 class="heading name">Aman Dhattarwal</h2>
+				<img src="{% static 'website/speakers_and_judges/images/speakers/aman-dhattarwal.png' %}" alt="" width="200px" height="250px">
+			</div>
+			<p class="info-1">At This Time</p>
+			<p class="info-2">Chaliye Shuru Karte hain</p>
+		</div>
+
 	</div>
 
 	<script src="{% static 'website/speakers_and_judges/js/index.js' %}"></script>
