@@ -55,7 +55,9 @@
 
   .card__name {
     margin-top: 15px;
-    font-size: 1.5em;
+    font-size: 1.8em;
+    letter-spacing: 0.1rem;
+    z-index: 1;
   }
 
   .card__image {
@@ -103,14 +105,14 @@
     }
   }
 </style>
-<div id="universe">
+<div id="universe"></div>
   <div class="row">
     <div class="column">
       <div class="card">
         <div>
           <img
-            src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no"
-            alt="Person"
+            src="https://th.bing.com/th/id/OIP.81WJyjZherkqDJlDE_WDugHaGR?pid=ImgDet&rs=1"
+            alt="Prize"
             class="card__image"
           />
           <p class="card__name">Prize 1</p>
@@ -121,19 +123,19 @@
       <div class="card">
         <div>
           <img
-            src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no"
-            alt="Person"
+            src="https://th.bing.com/th/id/OIP.81WJyjZherkqDJlDE_WDugHaGR?pid=ImgDet&rs=1"
+            alt="Prize"
             class="card__image"
           />
-          <p class="card__name">Prize 1</p>
+          <p class="card__name">Prize 2</p>
         </div>
       </div>
     </div>
   </div>
-</div>
+
 <script>
-  var layerCount = 6;
-  var starCount = 150;
+  var layerCount = 7;
+  var starCount = 100;
   var universe = document.getElementById("universe");
   var w = window;
   var d = document;
