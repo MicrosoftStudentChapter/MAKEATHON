@@ -2,7 +2,7 @@
  * Timer
  *******************************************************************/
 
-const countDownDate = new Date("Feb 25, 2021 17:00:00").getTime();
+const countDownDate = new Date("Mar 5, 2021 17:00:00").getTime();
 
 updateTimer();
 

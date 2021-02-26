@@ -14,6 +14,10 @@
   position: relative;
 }
 
+#timeline::after, #timeline::before {
+	z-index: -1;
+}
+
 #timeline button {
   background: none;
   border: none;
@@ -51,6 +55,7 @@
   height: 100vh;
   padding-top: 5%;
   padding-bottom: 5%;
+  z-index: 1;
 }
 
 #timeline #events p {
@@ -125,6 +130,7 @@
 #timeline .overlay.open {
   opacity: 1;
   pointer-events: inherit;
+  z-index: 1000;
 }
 #timeline .overlay #modal1 {
   background: white;

@@ -136,6 +136,7 @@ templates/makeTemplate.sh
 # IDE Specific settings
 .idea/
 .vscode/
+.vim/
 
 # Mac OS Specific
 .DS_Store

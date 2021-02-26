@@ -1,0 +1,84 @@
+{% load static %}
+
+<head>
+	<link rel="stylesheet" href="{% static 'website/timeline/css/style.css' %}">
+</head>
+
+<section id="timeline">
+	<div class="left-container">
+		<h2>TIMELINE</h2>
+	</div>
+	<div class="right-container">
+		<div class="event">
+			<p><button class="event-info" onclick="showModal(this)">Inaugration Ceremony</button></p>
+			<p class="event-date">DAY 1 | 17:00</p>
+			<p class="event-detail"></p>
+		</div>
+
+		<div class="event">
+			<p><button class="event-info" onclick="showModal(this)">Hack Begins</button></p>
+			<p class="event-date">DAY 1 | 20:00</p>
+			<p class="event-detail"></p>
+		</div>
+
+		<div class="event">
+			<p><button class="event-info" onclick="showModal(this)">Checkpoint 1</button></p>
+			<p class="event-date">DAY 2 | 00:30</p>
+			<p class="event-detail"></p>
+		</div>
+
+		<div class="event">
+			<p><button class="event-info" onclick="showModal(this)">Checkpoint 2</button></p>
+			<p class="event-date">DAY 2 | 08:30</p>
+			<p class="event-detail"></p>
+		</div>
+
+		<div class="event">
+			<p><button class="event-info" onclick="showModal(this)">Checkpoint 3</button></p>
+			<p class="event-date">DAY 2 | 06:30</p>
+			<p class="event-detail"></p>
+		</div>
+
+		<div class="event">
+			<p><button class="event-info" onclick="showModal(this)">Gaming Activity</button></p>
+			<p class="event-date">Day 2 | 22:00</p>
+			<p class="event-detail"></p>
+		</div>
+
+		<div class="event">
+			<p><button class="event-info" onclick="showModal(this)">Checkpoint 4</button></p>
+			<p class="event-date">Day 3 | 00:00</p>
+			<p class="event-detail"></p>
+		</div>
+
+		<div class="event">
+			<p><button class="event-info" onclick="showModal(this)">Hack Ends</button></p>
+			<p class="event-date">8:00</p>
+			<p class="event-detail"></p>
+		</div>
+
+		<div class="event">
+			<p><button class="event-info" onclick="showModal(this)">Pitching Starts</button></p>
+			<p class="event-date">Day 3 | 10:00</p>
+			<p class="event-detail"></p>
+		</div>
+
+		<div class="event">
+			<p><button class="event-info" onclick="showModal(this)">Prize Distribution</button></p>
+			<p class="event-date">Day 3 | 12:30</p>
+			<p class="event-detail"></p>
+		</div>
+	</div>
+</section>
+
+<div class="event-modal">
+	<div>
+		<button class="close-button" onclick="closeModal()">X</button>
+
+		<h3 class="event-info">Event Info</h3>
+		<p class="event-date">Event Date</p>
+		<p class="event-details">Event Details</p>
+	</div>
+</div>
+
+<script src="{% static 'website/timeline/js/index.js' %}"></script>

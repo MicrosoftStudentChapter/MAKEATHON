@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+	<head>
+		<!-- Meta Tags -->
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="description" content="Makeathon 3077- the paradigmatic Hackathon of Thapar Institute of Engineering and Technology,is one of MLSC's superlative flagship events. A 36 Hours event for students to challenge their technical boundaries by learning the latest technologies, procuring solutions, and developing fun projects. The event intends to bring together astute and industrious students from various colleges for a ravishing technical journey consisting of pre-event workshops and a Bootcamp.">
+		<meta name="keywords" content="Makeathon, Hackathon, Devfolio, Makeathon3077, CyberPunk, Devfolio">
+
+		<!-- Title -->
+		<title>Makeathon 3077</title>
+
+		<!-- General -->
+
+		<!-- Favicon -->
+		<link rel="icon" href="{% static 'mlsc_shield_new.png' %}" type="image/x-icon">
+
+		<!-- Animate on Scroll -->
+		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet"
+		/>
+		
+		<style>
+			body > section {
+				box-shadow: #000000c9 inset 0 70px 100px, #000000d9 inset 0 -70px 100px;
+			}
+		</style>
+		<link rel="stylesheet" href="{% static 'website/loader/style.css' %}">
+
+		<!-- Fonts -->
+		<style>
+			@font-face {
+				font-family: "Anurati";
+				font-style: normal;
+				font-weight: 400, 500, 600, 700, 800, 900, bold;
+				src: local("Anurati"),
+				url('{% static "fonts/Anurati-Regular.woff" %}')
+					format("woff"),
+				url('{% static "fonts/Anurati-Regular 400.otf" %}')
+					format("opentype");
+			}
+		</style>
+
+		<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+			new Crate ({
+				server: '720322067261554728', // MLSC Open Source Community
+				channel: '763722626824667167' // #community-announcements
+			});
+		</script>
+	</head>
+	<body onscroll="scrollTimeline()" onresize="setPositionForDesktop()" style="width: 100%; overflow-x: hidden;">
+
+		<div id="pre-wrapper">
+			<img src="{% static 'website/loader/loader.svg' %}" alt="Pre Loader" srcset="">
+		</div>
+		<script src="{% static 'website/loader/index.js' %}"></script>
+
+
+		<!-- Home -->
+		{% include 'website/sections/makeathon_home.html' %}
+
+		<section id="about">
+			<!-- About MLSC -->
+			{% include 'website/sections/about_mlsc.html' %}
+
+			<!-- About Makeathon -->
+			{% include 'website/sections/about_makeathon.html' %}
+		</section>
+
+		<!-- Schedule / Timeline -->
+		{% include 'website/sections/timeline.html' %}
+
+		<!-- Tracks-->
+		{% include 'website/sections/tracks.html' %}
+
+		<!-- Speakers -->
+		{% include 'website/sections/speakers_and_judges.html' %}
+
+		<!-- Prizes -->
+		{% include 'website/sections/prizes.html' %}
+
+		<!-- Sponsors -->
+		{% include 'website/sections/sponsors.html' %}
+
+		<!-- Sponsors -->
+		{% include 'website/sections/faq.html' %}
+
+		<!-- Safari Specific Font Problem -->
+		<script>
+			function doSafariThings() {
+				let safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+				if (safari) {
+					document.querySelectorAll('.heading').forEach(element => {
+						element.style.color = '#ffcc66';
+					});
+				}
+			}
+
+			doSafariThings();
+		</script>
+
+		<!-- Animate on Scroll -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				easing: "ease-in-out",
+				duration: 300,
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "makeathon3077"
+version = "0.1.0"
+description = "Makeathon 3077- the paradigmatic Hackathon of Thapar Institute of Engineering and Technology,is one of MLSC's superlative flagship events. A 36 hour event for students to challenge their technical boundaries by learning the latest technologies, procuring solutions, and developing fun projects. The event intends to bring together astute and industrious students from various colleges for a ravishing technical journey consisting of pre-event workshops and a Bootcamp."
+authors = ["MLSC"]
+license = "GNU"
+
+[tool.poetry.dependencies]
+python = "^3.8.6"
+Django = "^3.1.7"
+django-environ = "^0.4.5"
+pre-commit = "^2.10.1"
+gunicorn = "^20.0.4"
+dj-database-url = "^0.5.0"
+psycopg2-binary = "^2.8.6"
+whitenoise = "^5.2.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

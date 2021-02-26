@@ -6,6 +6,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Makeathon3077 | MLSC</title>
+
+    <!-- Loader -->
+    <link rel="stylesheet" href="{% static 'webpages/loader/style.prefixed.css' %}" />
+
+
     <style>
       body {
         width: 100%;
@@ -13,45 +18,63 @@
       }
 
       body > section {
-        box-shadow: #000000a9 inset 0 20px 100px, #000000a9 inset 0 -20px 100px;
+        -webkit-box-shadow: #000000f9 inset 0 100px 100px, #000000f9 inset 0 -100px 100px;
+           -moz-box-shadow: #000000f9 inset 0 100px 100px, #000000f9 inset 0 -100px 100px;
+                box-shadow: #000000f9 inset 0 100px 100px, #000000f9 inset 0 -100px 100px;
         position: relative;
       }
+
+	  /*
 
       body > section::after,
       body > section::before {
         content: "";
         position: absolute;
-        height: 20vh;
+        height: 10vh;
         width: 100%;
         left: 0;
+		z-index: 0;
       }
 
+
       body > section::after {
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #000000b9), to(transparent));
+        background: -webkit-linear-gradient(bottom, #000000b9 0 1%, transparent);
+        background: -moz-linear-gradient(bottom, #000000b9 0 1%, transparent);
+        background: -o-linear-gradient(bottom, #000000b9 0 1%, transparent);
         background: linear-gradient(to top, #000000b9 0 1%, transparent);
         bottom: 0;
       }
 
       body > section::before {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000000b9), to(transparent));
+        background: -webkit-linear-gradient(top, #000000b9 0 1%, transparent);
+        background: -moz-linear-gradient(top, #000000b9 0 1%, transparent);
+        background: -o-linear-gradient(top, #000000b9 0 1%, transparent);
         background: linear-gradient(to bottom, #000000b9 0 1%, transparent);
         top: 0;
       }
+	  */
 
       @font-face {
         font-family: "Anurati";
         font-style: normal;
         font-weight: 400;
         src: local("Anurati"),
-          url('{% static "webpages/fonts/Anurati-Regular.woff" %}')
+		url('{% static "webpages/fonts/Anurati-Regular 400.otf" %}')
+			format("opentype"),
+        url('{% static "webpages/fonts/Anurati-Regular.woff" %}')
             format("woff");
       }
-    </style>
+   </style>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&family=Ubuntu:wght@700&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&family=Ubuntu:wght@700&family=Black+Ops+One&display=swap"
       rel="stylesheet"
     />
+
 
     <!-- Animate on Scroll -->
     <!-- <link -->
@@ -61,23 +84,20 @@
 
     <!-- Corresponding To WebPages -->
 
-    <!-- Loader -->
-    <link rel="stylesheet" href="{% static 'webpages/loader/style.css' %}" />
-
     <!-- Home -->
-    <link rel="stylesheet" href="{% static 'webpages/home/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'webpages/home/css/style.prefixed.css' %}" />
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
 
     <!-- About Pages -->
-    <link rel="stylesheet" href="{% static 'webpages/about/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'webpages/about/css/style.prefixed.css' %}" />
 
     <!-- Timeline -->
     <link
       rel="stylesheet"
-      href="{% static 'webpages/Timeline/static/css/style.css' %}"
+      href="{% static 'webpages/Timeline/static/css/style.prefixed.css' %}"
     />
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -88,12 +108,12 @@
     <!-- Timeline -->
     <link
       rel="stylesheet"
-      href="{% static 'webpages/Tracks/static/css/style.css' %}"
+      href="{% static 'webpages/Tracks/static/css/style.prefixed.css' %}"
       type="text/css"
     />
 
     <!-- Speakers and Judges -->
-    <!-- <link rel="stylesheet" href="{% static 'webpages/Speakers_and_Judges/static/css/style.css' %}" type="text/css"/>
+    <!-- <link rel="stylesheet" href="{% static 'webpages/Speakers_and_Judges/static/css/style.prefixed.css' %}" type="text/css"/>
 		<link
 				rel="stylesheet"
 				href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -108,7 +128,7 @@
     />
     <link
       rel="stylesheet"
-      href="{% static 'webpages/Sponsors/static/css/style.css' %}"
+      href="{% static 'webpages/Sponsors/static/css/style.prefixed.css' %}"
       type="text/css"
     />
 
@@ -121,7 +141,7 @@
     />
     <link
       rel="stylesheet"
-      href="{% static 'webpages/FAQ/static/css/style.css' %}"
+      href="{% static 'webpages/FAQ/static/css/style.prefixed.css' %}"
       type="text/css"
     />
 
@@ -130,28 +150,23 @@
     <!-- Prizes -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.10.3/dist/tsparticles.min.js"></script>
 		<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-		<link rel="stylesheet" href="{% static 'webpages/Prizes/static/css/style.css' %}" type="text/css" /> -->
+		<link rel="stylesheet" href="{% static 'webpages/Prizes/static/css/style.prefixed.css' %}" type="text/css" /> -->
 
     <!-- WidgetBot -->
     <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
       new Crate ({
           server: '720322067261554728', // MLSC Open Source Community
-          channel: '756424683301371905' // #about
+          channel: '763722626824667167' // #community-announcements
       });
     </script>
   </head>
   <body onscroll="scrollEvents()">
-    <div class="pre-wrapper" style="position: fixed">
-      <div class="preloader">
-        <div class="loader__bar" style="background: #fba04b"></div>
-        <div class="loader__bar" style="background: #e34791"></div>
-        <div class="loader__bar" style="background: #a3416d"></div>
-        <div class="loader__bar" style="background: #77025a"></div>
-        <div class="loader__bar" style="background: #390049"></div>
-        <div class="loader__ball" style="background: #fff"></div>
-      </div>
-    </div>
+
+	<div id="pre-wrapper">
+		<img src="{% static 'webpages/loader/image.svg' %}" alt="Pre Loader" srcset="">
+	</div>
     <script src="{% static 'webpages/loader/index.js' %}"></script>
+
     {% include "webpages/Home/index.html" %}
 
     <section id="about">
@@ -173,5 +188,14 @@
     <!-- 		duration: 400, -->
     <!-- 	}); -->
     <!-- </script> -->
+
+	<script>
+		if (safari) {
+			document.querySelectorAll('.heading').forEach(element => {
+				element.style.color = '#ffcc66';
+			});
+		}
+
+	</script>
   </body>
 </html>

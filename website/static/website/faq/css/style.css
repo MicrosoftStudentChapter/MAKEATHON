@@ -1,0 +1,144 @@
+#faq {
+	min-height: 100vh;
+	height: max-content;
+	width: 100%;
+
+	position: relative;
+	background: url(../images/faq-bg.png) center no-repeat;
+	background-size: cover;
+
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+#faq .black-bg-cover {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #0000008e;
+}
+
+#faq .faq-heading {
+	color: rgba(255, 255, 255, 0.35);
+	font-size: 6rem;
+	text-align: center;
+	padding: 10px;
+	z-index: 1;
+}
+
+#faq .faq-container {
+	flex: 1;
+	display: flex;
+	padding: 20px;
+	width: calc(100% - 40px);
+	z-index: 1;
+}
+
+#faq .faq-questions,
+#faq .faq-categories {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#faq .faq-questions {
+	flex: 5;
+	position: relative;
+}
+
+#faq .faq-category-button {
+	margin: 10px;
+	color: #b1b1b1;
+	padding: 10px 40px;
+	border-radius: 15px;
+	width: max-content;
+
+	font-size: 1.2rem;
+	font-family: sans-serif;
+}
+
+#faq .faq-category-button.current {
+	background-color: #38394b;
+	color: white;
+}
+
+#faq .faq-category-button:hover {
+	background-color: #38394b;
+	color: white;
+}
+
+#faq .category {
+	display: none;
+	width: 80%;
+}
+
+#faq .accordion {
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#faq .accordion i {
+	padding: 0 5px;
+	display: flex;
+	align-items: center;
+}
+
+#faq .accordion:hover {
+	background-color: #ffffff20;
+}
+
+#faq hr {
+	color: #cccccc80;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+#faq .panel {
+  padding: 0 18px;
+  color: #cccccc;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+#faq .panel p {
+	padding: 10px 0;
+}
+
+#faq .accordion i {
+	transition: transform 0.2s ease-out;
+}
+
+#faq .accordion.active i {
+	transform: rotateZ(45deg);
+}
+
+@media (max-width: 550px) {
+	#faq .faq-heading {
+		font-size: 4rem;	
+	}
+
+	#faq .faq-container {
+		flex-direction: column;
+	}
+
+	#faq .faq-categories {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+

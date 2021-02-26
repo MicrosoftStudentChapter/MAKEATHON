@@ -1,0 +1,876 @@
+#speakers_and_judges {
+    margin: 0;
+    background: url("../images/image12.png") no-repeat center center fixed;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#speakers_and_judges .back-img {
+    position: absolute;
+    top: 0px;
+    z-index: -6;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#speakers_and_judges .header {
+    position: absolute;
+    /*height: 15%;
+    left: 50%;
+    top: 7.78px;*/
+    top: 0.05em;
+    text-align: center;
+    font-family: Anurati, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 86px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#eaab48), color-stop(#ed885b), to(#f24282));
+    background: -webkit-linear-gradient(#eaab48, #ed885b, #f24282);
+    background: -moz- oldlinear-gradient(#eaab48, #ed885b, #f24282);
+    background: -o-linear-gradient(#eaab48, #ed885b, #f24282);
+    background: linear-gradient(#eaab48, #ed885b, #f24282);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+      -o-background-clip: text;
+         background-clip: text;
+    mix-blend-mode: difference;
+}
+
+#speakers_and_judges .button {
+    position: relative;
+    width: 13%;
+    height: 9%;
+    left: 74px;
+    top: 189px;
+    padding: 0.3%;
+
+    background: rgba(196, 196, 196, 0.54);
+    -webkit-border-radius: 28px;
+       -moz-border-radius: 28px;
+            border-radius: 28px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+
+    color: #ffffff;
+
+    -webkit-transform: rotate(0.05deg);
+
+       -moz-transform: rotate(0.05deg);
+
+        -ms-transform: rotate(0.05deg);
+
+         -o-transform: rotate(0.05deg);
+
+            transform: rotate(0.05deg);
+
+    border: 1px;
+}
+
+#speakers_and_judges .button:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+#speakers_and_judges .button:focus {
+    outline: none;
+}
+
+#speakers_and_judges .button2 {
+    position: absolute;
+    width: 13%;
+    height: 40px;
+    left: 74.04px;
+    top: 252px;
+    margin-top: -8px;
+
+    background: rgba(196, 196, 196, 0.54);
+    -webkit-border-radius: 28px;
+       -moz-border-radius: 28px;
+            border-radius: 28px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+
+    color: #ffffff;
+
+    border: 1px;
+}
+
+#speakers_and_judges .button2:focus {
+    outline: none;
+}
+
+#speakers_and_judges .button2:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+#speakers_and_judges .wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    margin: 9% 7% 0 0;
+
+    margin-left: 39%;
+}
+
+#speakers_and_judges .person {
+    /* border: 1px solid #333333; */
+    position: relative;
+    padding-right: 1px;
+    margin-left: 0px;
+}
+
+#speakers_and_judges .imgperson {
+    /* border: 1px solid #333333; */
+    width: 150.76px;
+    height: 180.41px;
+}
+
+#speakers_and_judges .title {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13.5px;
+    line-height: 20px;
+    padding-bottom: 20px;
+    margin-top: -10%;
+
+    color: #ffffff;
+}
+
+#speakers_and_judges .link {
+    width: 26.88px;
+    height: 21.35px;
+}
+
+#speakers_and_judges .git {
+    width: 26.24px;
+    height: 21.18px;
+}
+
+#speakers_and_judges .insta {
+    width: 26.24px;
+    height: 21.18px;
+}
+
+#speakers_and_judges .cards {
+    position: relative;
+    bottom: 39px;
+}
+
+#speakers_and_judges .icon {
+    padding: 4.3%;
+    display: inline;
+    top: 46.2%;
+    bottom: 49.35%;
+}
+
+/* -------------MEDIA QUERIES---------- */
+
+@media All and (max-width: 1200px) {
+    #speakers_and_judges .wrapper {
+        -ms-grid-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+    }
+
+    #speakers_and_judges .icon {
+        padding: 3%;
+    }
+
+    #speakers_and_judges .title {
+        padding-top: 3%;
+    }
+
+    #speakers_and_judges .button {
+        font-size: 19px;
+        width: 14%;
+    }
+
+    #speakers_and_judges .button2 {
+        font-size: 19px;
+        width: 14%;
+    }
+}
+
+@media All and (max-width: 900px) {
+    #speakers_and_judges .icon {
+        padding: 3%;
+    }
+
+    #speakers_and_judges .title {
+        padding-top: 1%;
+    }
+
+    #speakers_and_judges .button {
+        font-size: 17px;
+        width: 14%;
+    }
+
+    #speakers_and_judges .button2 {
+        font-size: 17px;
+        width: 14%;
+    }
+}
+
+@media All and (max-width: 750px) {
+    #speakers_and_judges .button {
+        font-size: 16px;
+        width: 16%;
+    }
+
+    #speakers_and_judges .button2 {
+        font-size: 16px;
+        width: 16%;
+    }
+
+    #speakers_and_judges .title {
+        padding-top: 1px;
+    }
+
+    #speakers_and_judges .header {
+        left: 25%;
+    }
+}
+
+@media All and (max-width: 600px) {
+    #speakers_and_judges .wrapper {
+        -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr;
+        margin-top: 18%;
+        margin-left: 50%;
+    }
+
+    #speakers_and_judges .icon {
+        padding: 3.4%;
+    }
+
+    #speakers_and_judges .button {
+        font-size: 15px;
+        width: 19%;
+    }
+
+    #speakers_and_judges .button2 {
+        font-size: 15px;
+        width: 19%;
+    }
+
+    #speakers_and_judges .title {
+        padding-top: 3%;
+    }
+
+    #speakers_and_judges .header {
+        left: 20%;
+    }
+}
+
+/*-------------------- PHONE---------------------------- */
+
+@media All and (max-width: 415px) {
+    #speakers_and_judges .header {
+        left: 15%;
+        font-size: 60px;
+    }
+
+    #speakers_and_judges .wrapper {
+        margin-top: 50%;
+        margin-left: 30%;
+    }
+
+    #speakers_and_judges .button {
+        font-size: 17px;
+        width: 31%;
+        left: 33%;
+        top: 110px;
+        padding: 1.4%;
+    }
+
+    #speakers_and_judges .button2 {
+        font-size: 17px;
+        width: 31%;
+        left: 33%;
+        top: 165px;
+    }
+}
+
+@media All and (max-width: 385px) {
+    #speakers_and_judges .header {
+        left: 19%;
+        font-size: 55px;
+    }
+
+    #speakers_and_judges .button {
+        font-size: 17px;
+        width: 32%;
+        left: 33%;
+        top: 100px;
+    }
+
+    #speakers_and_judges .button2 {
+        font-size: 17px;
+        width: 32%;
+        left: 33%;
+        top: 155px;
+    }
+
+    #speakers_and_judges .wrapper {
+        margin-top: 60%;
+        margin-left: 25%;
+    }
+}
+
+@media All and (max-width: 305px) {
+    #speakers_and_judges .header {
+        left: 19%;
+        font-size: 44px;
+    }
+
+    #speakers_and_judges .button {
+        font-size: 14px;
+        width: 35%;
+    }
+
+    #speakers_and_judges .button2 {
+        font-size: 14px;
+        width: 35%;
+    }
+}
+
+@media All and (max-width: 260px) {
+    #speakers_and_judges .header {
+        left: 19%;
+        font-size: 35px;
+    }
+
+    #speakers_and_judges .button {
+        font-size: 11px;
+        width: 35%;
+    }
+
+    #speakers_and_judges .button2 {
+        font-size: 11px;
+        width: 35%;
+    }
+
+    #speakers_and_judges .wrapper {
+        margin-top: 75%;
+        margin-left: 18%;
+    }
+}
+
+/* *********************************INFO BOX CSS********************************* */
+
+#speakers_and_judges .arrow {
+    text-align: right;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+
+#speakers_and_judges .arrowleft {
+    height: 42px;
+    width: 60px;
+}
+
+#speakers_and_judges .arrowright {
+    height: 42px;
+    width: 60px;
+    margin-left: 15px;
+}
+
+#speakers_and_judges .img1 {
+    position: absolute;
+    left: 0em;
+    top: 0em;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+#speakers_and_judges .box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    padding: 60px 20px;
+    width: 100%;
+    max-width: 64%;
+    height: 79vh;
+    margin-left: 28%;
+    margin-top: 2%;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 0px 10px 50px 0 rgb(31 38 135 / 20%);
+    -moz-box-shadow: 0px 10px 50px 0 rgb(31 38 135 / 20%);
+         box-shadow: 0px 10px 50px 0 rgb(31 38 135 / 20%);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(25px);
+    -webkit-border-radius: 15px;
+       -moz-border-radius: 15px;
+            border-radius: 15px;
+    border: 1px solid rgb(255 255 255 / 15%);
+    -webkit-animation-duration: 2s;
+       -moz-animation-duration: 2s;
+         -o-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-name: fadeIn;
+       -moz-animation-name: fadeIn;
+         -o-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-iteration-count: 1;
+       -moz-animation-iteration-count: 1;
+         -o-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+
+#speakers_and_judges .image {
+    position: absolute;
+    width: 190px;
+    height: 240px;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+}
+
+#speakers_and_judges .info-page-img {
+    position: absolute;
+    display: inline-block;
+    width: 192px;
+    height: 242px;
+    left: 72%;
+    top: 58px;
+    /*border: 2px solid #b45804;*/
+
+    -webkit-border-radius: 10px;
+
+       -moz-border-radius: 10px;
+
+            border-radius: 10px;
+}
+
+#speakers_and_judges .texth1 {
+    font-family: Anurati, sans-serif;
+    font-size: 500%;
+    background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(#eaab48),
+            color-stop(43.75%, #ed885b),
+            to(#f24282)
+    );
+    background: -o-linear-gradient(top, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#eaab48), color-stop(43.75%, #ed885b), to(#f24282));
+    background: -webkit-linear-gradient(top, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
+    background: -moz- oldlinear-gradient(top, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
+    background: linear-gradient(180deg, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+      -o-background-clip: text;
+         background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    margin-top: 16px;
+}
+
+#speakers_and_judges .texth3 {
+    font-family: Anurati, sans-serif;
+    font-size: 40px;
+    background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(#eaab48),
+            color-stop(43.75%, #ed885b),
+            to(#f24282)
+    );
+    background: -o-linear-gradient(top, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#eaab48), color-stop(43.75%, #ed885b), to(#f24282));
+    background: -webkit-linear-gradient(top, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
+    background: -moz- oldlinear-gradient(top, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
+    background: linear-gradient(180deg, #eaab48 0%, #ed885b 43.75%, #f24282 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+      -o-background-clip: text;
+         background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    margin-top: -0.1em;
+}
+
+#speakers_and_judges .texth5 {
+    font-size: 24px;
+    font-family: Ubuntu, sans-serif;
+    text-align: left;
+    margin-top: 10px;
+    color: white;
+}
+
+#speakers_and_judges p {
+    font-size: 24px;
+    font-family: Roboto, sans-serif;
+    color: white;
+    text-align: left;
+    margin-top: 0em;
+}
+
+
+#speakers_and_judges #info-heading-1 {
+    width: 60%;
+}
+
+
+@media ALL and (max-width: 1300px) {
+    #speakers_and_judges .box {
+
+        margin-left: 30%;
+    }
+
+    #speakers_and_judges .info-page-img {
+        left: 60%;
+    }
+
+    #speakers_and_judges .safari-specific img {
+        position: absolute;
+        top: 70%;
+        right: 20%;
+
+    }
+
+}
+
+@media ALL and (max-width: 1100px) {
+    #speakers_and_judges .info-page-img {
+        left: 30%;
+        top: -1em;
+    }
+
+    #speakers_and_judges .box {
+        height: 85%;
+        margin-left: 30%;
+    }
+
+    #speakers_and_judges .textinf {
+        margin-bottom: -50px;
+    }
+
+    #speakers_and_judges .safari-specific img {
+        position: absolute;
+        top: -12%;
+        left: 70%;
+
+    }
+
+    #speakers_and_judges #info-heading-1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #speakers_and_judges .text1 {
+        position: relative;
+    }
+
+    #speakers_and_judges .info-page-img {
+        position: relative;
+    }
+}
+
+@media ALL and (max-width: 960px) {
+    #speakers_and_judges .info-page-img {
+        top: -1em;
+    }
+
+    #speakers_and_judges .box {
+        height: 85%;
+        margin-left: 30%;
+    }
+
+    #speakers_and_judges .textinf {
+        margin-bottom: -50px;
+    }
+
+    #speakers_and_judges .safari-specific img {
+        left: 10%;
+    }
+}
+
+@media ALL and (max-width: 700px) {
+    #speakers_and_judges .info-page-img {
+        top: -8em;
+    }
+
+    #speakers_and_judges .box {
+        margin-top: 40%;
+        margin-left: 20%;
+        max-width: 75%;
+        padding-top: 30%;
+    }
+
+    #speakers_and_judges .text1 {
+        font-size: 85%;
+        top: -9em;
+    }
+
+    #speakers_and_judges .texth1 {
+        font-size: 400%;
+    }
+
+    #speakers_and_judges .arrow {
+        margin-top: 10%;
+        text-align: center;
+        margin-right: 0%;
+    }
+
+    #speakers_and_judges .safari-specific img {
+        position: absolute;
+
+        left: 0.000003%;
+    }
+}
+
+@media ALL and (max-width: 515px) {
+    #speakers_and_judges .info-page-img {
+        top: -6em;
+        left: 20%;
+    }
+}
+
+@media ALL and (max-width: 415px) {
+    #speakers_and_judges .texth1 {
+        font-size: 400%;
+    }
+
+    #speakers_and_judges .info-page-img {
+        left: 15%;
+        top: 0;
+    }
+
+    #speakers_and_judges .box {
+        margin-top: 45%;
+        margin-left: 11%;
+        max-width: 82%;
+    }
+
+    #speakers_and_judges .text1 {
+        font-size: 70%;
+        top: 0;
+    }
+
+    #speakers_and_judges .arrow {
+        margin-top: -1%;
+        text-align: center;
+        margin-right: 5%;
+    }
+
+    #speakers_and_judges .arrowleft {
+        height: 34px;
+        width: 48px;
+    }
+
+    #speakers_and_judges .arrowright {
+        height: 34px;
+        width: 48px;
+    }
+
+    #speakers_and_judges .safari-specific img {
+        left: 0%;
+        top: 30%;
+    }
+}
+
+@media All and (max-width: 330px) {
+    #speakers_and_judges .info-page-img {
+        left: 2%;
+        top: 1px;
+    }
+
+    #speakers_and_judges .text1 {
+        top: 1px;
+        font-size: 60%;
+    }
+
+    #speakers_and_judges .texth3 {
+        font-size: 30px;;
+    }
+
+    #speakers_and_judges .safari-specific img {
+        left: 0.4%;
+    }
+}
+
+
+#speakers_and_judges .safari-specific {
+    top: 195px;
+    right: -20%;
+}
+
+@media ALL and (max-width: 315px ) {
+    #speakers_and_judges .safari-specific {
+        top: 8.4% !important;
+        left: -1%;
+    }
+
+    #speakers_and_judges .info-page-img {
+        border: none;
+    }
+}
+
+
+@media screen and (min-width: 700px) and (max-width: 740px) {
+    #speakers_and_judges .safari-specific {
+        top: 19.15%;
+    }
+}
+
+@media screen and (min-width: 315px) and (max-width: 400px) {
+    #speakers_and_judges .safari-specific {
+        top: 10%;
+        right: 11.5%;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 415px) {
+    #speakers_and_judges .safari-specific {
+        top: 4%;
+        left: -1%;
+
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 575px) {
+    #speakers_and_judges .safari-specific {
+        top: 4%;
+        left: -7%;
+    }
+}
+
+@media screen and (min-width: 578px) and (max-width: 700px) {
+    #speakers_and_judges .safari-specific {
+        top: 10%;
+        left: 1%;
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 900px) {
+    #speakers_and_judges .safari-specific {
+        top: 35%;
+        left: 74%;
+
+    }
+}
+
+
+@media screen and (min-width: 740px) and (max-width: 850px) {
+    #speakers_and_judges .safari-specific {
+        top: 19%;
+        left: -2%;
+
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1000px) {
+    #speakers_and_judges .safari-specific {
+        top: 35%;
+        left: 9%;
+
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1180px) {
+    #speakers_and_judges .safari-specific {
+        top: 59%;
+        left: 72%;
+    }
+
+    #speakers_and_judges .image {
+        left: 19%;
+    }
+}
+
+@media screen and (min-width: 1181px) and (max-width: 1300px) {
+    #speakers_and_judges .safari-specific {
+        top: 59%;
+        left: 72%;
+    }
+
+    #speakers_and_judges .image {
+        top: 14%;
+        left: 19%;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+    #speakers_and_judges .safari-specific {
+        top: 20%;
+        left: 29%;
+    }
+}
+
+/*
+@-moz-document url-prefix() {
+  #speakers_and_judges .info-page-img {
+    position: absolute;
+    top: 195px;
+  }
+*/
+@media ALL and (min-width: 1100px) {
+    #speakers_and_judges .info-page-img {
+        position: absolute;
+        left: 72%;
+        top: 20%;
+    }
+}
+
+/*
+  @media ALL and (max-width: 960px) {
+    #speakers_and_judges .info-page-img {
+      position: absolute;
+      left: 40%;
+      top: 20%;
+    }
+  }
+  @media ALL and (max-width: 800px) {
+    #speakers_and_judges .info-page-img {
+      top: 19%;
+      left: 40%;
+    }
+  }
+  @media ALL and (max-width: 700px) {
+    #speakers_and_judges .info-page-img {
+      top: 68%;
+      left: 15%;
+    }
+  }
+  @media ALL and (max-width: 635px) {
+    #speakers_and_judges .info-page-img {
+      top: 60%;
+      left: 15%;
+    }
+  }
+  @media ALL and (max-width: 500px) {
+    #speakers_and_judges .info-page-img {
+      top: 55%;
+      left: 15%;
+    }
+  }
+  @media ALL and (max-width: 415px) {
+    #speakers_and_judges .info-page-img {
+      top: 45%;
+      left: 15%;
+    }
+  }
+  @media ALL and (max-width: 350px) {
+    #speakers_and_judges .info-page-img {
+      top: 40%;
+      align: center;
+    }
+  }
+}
+*/
