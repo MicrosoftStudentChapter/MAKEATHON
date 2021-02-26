@@ -37,6 +37,7 @@
 
 #speakers_and_judges .speakers-judges-container {
 	flex: 5;
+	padding-bottom: 30px;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -88,12 +89,19 @@
 	color: #ffffff99;
 }
 
-
+#speakers_and_judges .speaker img{
+	background-color: #000000;
+	border-radius: 30px;
+}
 #speakers_and_judges .judge .info,
 #speakers_and_judges .judge .date,
 #speakers_and_judges .speaker .info,
 #speakers_and_judges .speaker .date {
 	display: none;
+}
+
+#speakers_and_judges .speaker .name{
+	font-size: 1.2rem;
 }
 
 #speakers_and_judges .speaker-or-judge-info {
