@@ -33,7 +33,7 @@
 	position: absolute;
 	top: 0;
 
-	background: linear-gradient( 89.83deg, rgba(255, 255, 255, 0.2) 27.2%, rgba(255, 255, 255, 0) 145.41% );
+	background: linear-gradient( 89.83deg, rgba(151, 87, 87, 0.8) 27.2%, rgba(255, 255, 255, 0.7) 145.41% );
 	border-radius: 10px;
 	box-shadow: 0 8px 32px 0 rgba(218, 31, 224, 0.274);
 
@@ -46,7 +46,7 @@
 	justify-content: center;
 
 	color: white;
-	font-size: 2rem;
+	font-size: 1.6rem;
 	font-family: sans-serif;
 	text-shadow: 1px 1px 2px black;
 	cursor: pointer;
