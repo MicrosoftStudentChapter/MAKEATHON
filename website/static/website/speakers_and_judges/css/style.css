@@ -116,6 +116,10 @@
 	border-radius: 30px;
 }
 
+#speakers_and_judges .speaker-or-judge-info .person-info img {
+	border-radius: 30px;
+}
+
 #speakers_and_judges .speaker-or-judge-info .person-info {
 	display: flex;
 	margin: 10px 3%;
