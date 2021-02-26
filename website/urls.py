@@ -4,6 +4,5 @@ from django.conf import settings
 
 urlpatterns = []
 
-if settings.DEBUG:
-    urlpatterns += [path('', index, name='index-testing')]
+urlpatterns += [path('', index, name='index-testing')]
 
