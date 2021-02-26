@@ -2,6 +2,13 @@ function showCorrespondingSpeakersOrJudges (button) {
 	document.querySelectorAll('#speakers_and_judges .speakers-judges-container > div').forEach(element => {
 		element.style.display = "none";
 	});
+
+	document.querySelectorAll('#speakers_and_judges .selector > button').forEach(element => {
+		element.style.backgroundColor = '#ffffff50'
+	});
+
+	button.style.backgroundColor = '#ffffff90'
+
 	document.querySelector(`#speakers_and_judges ${button.getAttribute('data-show')}`).style.display = "block";
 }
 
