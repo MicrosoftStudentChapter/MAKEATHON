@@ -79,6 +79,7 @@
 }
 
 #speakers_and_judges .social-icons a {
+	filter: drop-shadow(2px 2px black);
 	margin: 2px;
 	font-size: 1.6rem;
 	color: white;
