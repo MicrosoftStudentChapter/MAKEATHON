@@ -79,6 +79,7 @@
 }
 
 #speakers_and_judges .social-icons a {
+	filter: drop-shadow(2px 2px black);
 	margin: 2px;
 	font-size: 1.6rem;
 	color: white;
@@ -113,6 +114,10 @@
 	width: 80%;
 
 	border: 2px solid orange;
+	border-radius: 30px;
+}
+
+#speakers_and_judges .speaker-or-judge-info .person-info img {
 	border-radius: 30px;
 }
 

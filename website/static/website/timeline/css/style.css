@@ -102,6 +102,8 @@ button {
 	border-top-left-radius: 20px;
 	border-bottom-right-radius: 20px;
 	position: relative;
+	max-height: 90vh;
+	overflow-y: auto;
 }
 
 #timeline + .event-modal .event-info {
