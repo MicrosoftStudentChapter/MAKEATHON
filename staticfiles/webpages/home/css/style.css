@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#home {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#home nav {
+    min-height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#home header button#navbar-toggler {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: none;
+}
+
+#home header button#navbar-toggler div {
+    width: 100%;
+    height: 3px;
+    background: white;
+    margin: 4px auto;
+    transition: all 0.3s;
+}
+
+#home header button#navbar-toggler.on .one {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#home header button#navbar-toggler.on .two {
+    opacity: 0;
+}
+
+#home header button#navbar-toggler.on .three {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+#home nav #nav-items {
+    display: block;
+}
+
+#home nav #nav-items a {
+    font-family: Poppins, sans-serif;
+    position: relative;
+    font-size: 1.2rem;
+    display: block;
+
+    padding: 12px;
+
+    text-decoration: none;
+}
+
+#home #home-bg-video {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+}
+
+#home button.mute-button {
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    color: white;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+#home .center {
+    min-height: calc(100vh - 40px);
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+#home .center .logo {
+    width: 75vw;
+}
+
+#home #timer .timer-digit {
+    position: relative;
+    font-size: 4rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    color: #ff5abd;
+    text-shadow: 1px 1px 4px black;
+
+    display: inline-block;
+
+    margin: 5px;
+    /*position: relative;*/
+    padding: 5px 10px;
+
+    background-color: #ffb0f740;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+
+	box-sizing: content-box;
+}
+
+#home #timer .timer-digit span {
+    position: relative;
+}
+
+#home #timer span.timer-digit span::before,
+#home #timer .timer-digit span::after {
+    content: attr(timer-digit);
+    position: absolute;
+}
+
+#home #timer span.timer-digit span::before {
+    color: #5affba;
+    top: -0.60px;
+    left: 0;
+
+    text-shadow: 0 4px 5px #edff1f;
+}
+
+#home #timer .timer-digit span::after {
+    color: white;
+    top: -0.25px;
+    left: 0;
+
+    text-shadow: 4px 0 5px #3965ff;
+}
+
+#home .center .time-left {
+    margin-top: 10px;
+}
+
+#home .center .horizontal-center {
+    text-align: center;
+}
+
+#home .center .devfolio-register {
+    width: 240px;
+    margin-top: 20px;
+}
+
+/* -------------- Media Queries ------------------- */
+
+@media (min-width: 780px) {
+    #home nav #nav-items {
+        display: block;
+    }
+
+    #home nav #nav-items ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    #home nav #nav-items li {
+        margin: 30px 15px;
+    }
+
+    #home nav #nav-items a {
+        display: inline;
+        color: #3e066a;
+        background-color: #ffccfa;
+        border-radius: 50px;
+
+        text-decoration: none;
+    }
+
+    #home nav #nav-items a span {
+        overflow: hidden;
+        display: inline-block;
+        text-align: center;
+        white-space: nowrap;
+        position: relative;
+        width: 0;
+
+        top: 8px;
+
+        /* Animation */
+        transition: width 0.2s ease-in-out;
+    }
+
+    #home nav #nav-items a span.safari-only {
+        top: 0;
+    }
+
+    #home nav #nav-items a:hover {
+        background-color: #f24385;
+        color: white;
+    }
+
+    #home nav #nav-items a:hover span {
+        width: 110px;
+    }
+
+    #home nav #nav-items a i {
+        font-size: 1.8rem;
+        position: relative;
+        top: 6px;
+    }
+
+    #home #timer .timer-digit {
+        width: 52px;
+    }
+}
+
+@media (max-width: 780px) {
+    #home header button#navbar-toggler {
+        display: block;
+        z-index: 101;
+    }
+
+    #home .show-navbar {
+        animation: show-nav 0.6s forwards;
+        z-index: 2;
+    }
+
+    #home nav {
+        /*background: #00000080;*/
+        background: #20206099;
+        width: 0;
+        overflow-x: hidden;
+    }
+
+    #home nav #nav-items li {
+        white-space: nowrap;
+    }
+
+    #home nav #nav-items a {
+        color: white;
+    }
+
+    #home nav #nav-items a i {
+        position: relative;
+        top: 2px;
+        right: 2px;
+    }
+
+    #home nav #nav-items a:hover,
+    #home nav #nav-items a:active {
+        background: #202060ff;
+    }
+
+    #home nav #nav-items a span {
+        overflow: hidden;
+        position: relative;
+        left: 2px;
+    }
+
+    #home .hide-navbar {
+        animation: hide-nav 0.6s forwards;
+    }
+
+    #home .center .devfolio-register {
+        width: 180px;
+    }
+
+    #home .center .time-left {
+        width: 140px;
+    }
+
+    #home #timer .timer-digit {
+        font-size: 2.4rem;
+        width: 26px;
+    }
+}
+
+@media (max-width: 520px) {
+    #home #timer .timer-digit {
+        font-size: 1.5rem;
+        margin: 2px;
+    }
+
+	#home .center .logo {
+		width: 85vw;
+	}
+}
+
+@media (max-width: 475px) {
+    #home .center .devfolio-register {
+        width: 140px;
+    }
+
+    #home .center .time-left {
+        width: 110px;
+    }
+
+    #home #timer .timer-digit {
+        font-size: 1.2rem;
+        width: 14px;
+    }
+}
+
+/* -------------- KeyFrames ----------------*/
+
+@keyframes show-nav {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 200px;
+    }
+}
+
+@keyframes hide-nav {
+    from {
+        width: 200px;
+    }
+
+    to {
+        width: 0;
+    }
+}
+
+/*TODO: Make it Responsive for Smart Watches too :smile:*/

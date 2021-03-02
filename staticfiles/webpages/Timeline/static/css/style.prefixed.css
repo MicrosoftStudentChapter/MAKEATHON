@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#timeline {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  /*background-color: #d9afd9;*/
+  /*background-image: linear-gradient(135deg, #dfa5df, #97d9e1);*/
+  background: url("../images/bg1.jpg") center;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  position: relative;
+}
+
+#timeline::after, #timeline::before {
+	z-index: -1;
+}
+
+#timeline button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#timeline #days {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+#timeline #days h2:first-child {
+  border-top: 3px solid white;
+}
+
+#timeline #days h2:last-child {
+  border-bottom: 3px solid white;
+}
+
+#timeline #days h2 {
+  padding: 40px;
+  margin: 10px;
+}
+
+#timeline #days h2 button {
+  font-size: 4rem;
+  color: white;
+  white-space: nowrap;
+}
+
+#timeline #events {
+  height: 100vh;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  z-index: 1;
+}
+
+#timeline #events p {
+  margin: 0;
+  text-align: start;
+  color: #ffffff90;
+}
+
+#timeline #events p button {
+  font-size: 2rem; /*-------------------------------  You can adjust size of events here ---------------------------*/
+  padding-top: 2%;
+}
+
+#timeline #events p button:hover {
+  -webkit-animation: color-change-to-white 0.3s forwards;
+     -moz-animation: color-change-to-white 0.3s forwards;
+       -o-animation: color-change-to-white 0.3s forwards;
+          animation: color-change-to-white 0.3s forwards;
+}
+
+#timeline .hidden {
+  display: none;
+}
+
+#timeline .btn {
+  padding: 20px 20px;
+  display: inline-block;
+  background: #ef233c;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  font-weight: 700;
+}
+
+#timeline .close_button#modal1 {
+  text-align: right;
+}
+
+#timeline .btn_2 {
+  padding: 5px;
+  display: inline-block;
+  background: #ef233c;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  font-weight: 700;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#timeline .btn:hover {
+  background: #dc1029;
+}
+
+#timeline .overlay {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+#timeline .overlay.open {
+  opacity: 1;
+  pointer-events: inherit;
+  z-index: 1000;
+}
+#timeline .overlay #modal1 {
+  background: white;
+  text-align: center;
+  width: 60%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 10px;
+  -webkit-box-shadow: 0 1px 10px rgba(255, 255, 255, 0.35);
+     -moz-box-shadow: 0 1px 10px rgba(255, 255, 255, 0.35);
+          box-shadow: 0 1px 10px rgba(255, 255, 255, 0.35);
+  opacity: 0;
+  -webkit-border-radius: 30px 0 30px 0;
+     -moz-border-radius: 30px 0 30px 0;
+          border-radius: 30px 0 30px 0;
+  pointer-events: none;
+  -webkit-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  max-height: 100vh;
+  overflow-y: auto;
+
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-align: center;
+
+  -webkit-align-items: center;
+
+     -moz-box-align: center;
+
+      -ms-flex-align: center;
+
+          align-items: center;
+}
+
+#timeline #modal1 .content {
+    text-align: start;
+}
+
+#timeline #modal1 .content p#description.description {
+    text-align: start;
+}
+
+@media (max-width: 350px) {
+	#timeline .btn_2 {
+		padding: 2px;
+		font-size: 0.8rem;
+        z-index: 200;
+	}
+	#timeline .overlay #modal1 .content {
+		margin: 20px;
+	}
+	#timeline .overlay #modal1 {
+		width: 80vw;
+	}
+}
+
+
+
+#timeline .overlay #modal1.open {
+  opacity: 1;
+  pointer-events: inherit;
+}
+#timeline .overlay #modal1.open .content {
+  opacity: 1;
+}
+#timeline .overlay #modal1 .content {
+  position: relative;
+  opacity: 0;
+  -webkit-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  margin: 10px;
+}
+
+#timeline a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#timeline a:hover {
+  -webkit-animation: color-change-to-white 0.3s forwards;
+     -moz-animation: color-change-to-white 0.3s forwards;
+       -o-animation: color-change-to-white 0.3s forwards;
+          animation: color-change-to-white 0.3s forwards;
+}
+
+@media (min-width: 600px) {
+  #timeline #days {
+    float: left;
+    width: 50%;
+  }
+  #timeline #events {
+    float: right;
+    width: 50%;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: auto;
+  }
+}
+
+@-webkit-keyframes color-change-to-white {
+  to {
+    color: #f24385;
+  }
+}
+
+@-moz-keyframes color-change-to-white {
+  to {
+    color: #f24385;
+  }
+}
+
+@-o-keyframes color-change-to-white {
+  to {
+    color: #f24385;
+  }
+}
+
+@keyframes color-change-to-white {
+  to {
+    color: #f24385;
+  }
+}
+
+@media all and (max-width: 599px) {
+  #timeline #events {
+    text-align: center;
+    margin-top: 3%;
+  }
+
+  #timeline #events p button {
+	  font-size: 1.6rem;
+  }
+  #timeline #days {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-height: 55vh;
+  }
+}
+@media all and (max-width: 471px) {
+  #timeline #days h2 {
+    padding: 0;
+  }
+  #timeline #days h2 button {
+    font-size: 200%;
+  }
+}
+
+
+@media only screen and (min-width: 360px) {
+  #timeline #events p button{
+    font-size: 23px;
+    margin-left: 3rem;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  #timeline #events h2 p{
+    font-size: 21px;
+    margin-left: 3rem;
+  }
+}

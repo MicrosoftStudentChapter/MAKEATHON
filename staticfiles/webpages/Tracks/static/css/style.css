@@ -1,0 +1,54 @@
+#Tracks_Makeathon {
+  margin: 0;
+  padding: 0;
+}
+
+#Tracks_Makeathon #tracks {
+  background-image: url("../images/user-people-network-circuit-board-link-connection-technology.jpg");
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* TEXT BOXES */
+
+#Tracks_Makeathon #tracks .text {
+  background: linear-gradient(
+    89.83deg,
+    rgba(255, 255, 255, 0.2) 27.2%,
+    rgba(255, 255, 255, 0) 145.41%
+  );
+  box-shadow: 0 8px 32px 0 rgba(218, 31, 224, 0.274);
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  position: absolute;
+  width: 220px;
+  height: 100px;
+  transform: scale(1);
+  transition: transform 0.4s;
+
+  color: white;
+  font-size: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 300px) {
+  #Tracks_Makeathon #tracks .text {
+    padding: 10px;
+  }
+}
+
+/* <----------scaling on hover-----------> */
+#Tracks_Makeathon #tracks .text:hover {
+  transform: scale(1.2);
+}

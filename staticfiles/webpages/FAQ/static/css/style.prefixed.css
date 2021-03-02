@@ -1,0 +1,386 @@
+#FAQ_Makeathon {
+  margin: 0px;
+  padding: 0px;
+  background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(7, 7, 12, 0.37)),
+      to(rgba(17, 17, 10, 0.349))
+    ),
+    url("../images/image 8.png");
+  background-image: -webkit-linear-gradient(
+      rgba(7, 7, 12, 0.37),
+      rgba(17, 17, 10, 0.349)
+    ),
+    url("../images/image 8.png");
+  background-image: -moz- oldlinear-gradient(
+      rgba(7, 7, 12, 0.37),
+      rgba(17, 17, 10, 0.349)
+    ),
+    url("../images/image 8.png");
+  background-image: -o-linear-gradient(
+      rgba(7, 7, 12, 0.37),
+      rgba(17, 17, 10, 0.349)
+    ),
+    url("../images/image 8.png");
+  background-image: linear-gradient(
+      rgba(7, 7, 12, 0.37),
+      rgba(17, 17, 10, 0.349)
+    ),
+    url("../images/image 8.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+#FAQ_Makeathon .couple {
+  background-color: #ffffff14;
+}
+#FAQ_Makeathon .allcontent {
+  width: 85%;
+  margin: auto;
+}
+#FAQ_Makeathon h1 {
+  color: rgba(255, 255, 255, 0.35);
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 6rem;
+  font-weight: 50rem;
+  margin: 3rem 0rem;
+}
+#FAQ_Makeathon .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.6fr 2fr;
+      grid-template-columns: 0.6fr 2fr;
+  grid-gap: 2rem;
+}
+#FAQ_Makeathon .categories button {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  -webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+          border-radius: 25px;
+  outline: none;
+  padding: 0px 50px;
+}
+#FAQ_Makeathon .categories button:hover,
+#FAQ_Makeathon :visited {
+  background-color: rgba(255, 255, 255, 0.24);
+}
+#FAQ_Makeathon .categories ul {
+  list-style-type: none;
+}
+#FAQ_Makeathon .categories li {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.3rem 0.5rem;
+  margin: 0.7rem 0rem;
+}
+
+#FAQ_Makeathon .questions {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+#FAQ_Makeathon .accordion-button:not(.collapsed) {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#FAQ_Makeathon .accordion-item {
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+#FAQ_Makeathon .accordion-button {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 30rem;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  border: none;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+#FAQ_Makeathon .accordion-button:active {
+  background-color: rgba(255, 255, 255, 0);
+}
+#FAQ_Makeathon .accordion-collapse {
+  border: none;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+#FAQ_Makeathon .accordion-body {
+  text-align: left;
+  font-size: 1.1rem;
+  color: white;
+}
+
+#FAQ_Makeathon #contact {
+  background-color: #f24385;
+  color: white;
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
+}
+#FAQ_Makeathon #btnOpenForm {
+  text-decoration: none;
+  background-color: #f24385;
+  border: none;
+  color: white;
+}
+
+#FAQ_Makeathon .accordion {
+  background: rgba(255, 255, 255, 0.123);
+  -webkit-box-shadow: 0 0.5rem 2rem 0 rgba(31, 38, 135, 0.37);
+     -moz-box-shadow: 0 0.5rem 2rem 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 0.5rem 2rem 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.25rem);
+  -webkit-backdrop-filter: blur(0.25rem);
+  -webkit-border-radius: 0.75rem;
+     -moz-border-radius: 0.75rem;
+          border-radius: 0.75rem;
+}
+
+/* form */
+
+#FAQ_Makeathon h2 {
+  color: #f24385;
+}
+
+#FAQ_Makeathon .form-popup-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#FAQ_Makeathon .form-popup-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(94, 110, 141, 0.103);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -o-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  overflow-y: auto;
+  z-index: 10000;
+}
+#FAQ_Makeathon .form-popup-bg.is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -o-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+#FAQ_Makeathon .form-container {
+  background-color: #110e2b;
+  -webkit-border-radius: 1rem;
+     -moz-border-radius: 1rem;
+          border-radius: 1rem;
+  -webkit-box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+     -moz-box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 43.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 2.5rem;
+  color: #fff;
+}
+#FAQ_Makeathon .close-button {
+  background: none;
+  color: #fff;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+}
+#FAQ_Makeathon .form-popup-bg:before {
+  content: "";
+  background-color: #fff;
+  opacity: 0.25;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#FAQ_Makeathon #submit {
+  font-size: 1.375rem;
+  background-color: #f24385;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  margin: 0.75rem 0rem;
+  -webkit-border-radius: 0.75rem;
+     -moz-border-radius: 0.75rem;
+          border-radius: 0.75rem;
+  border: none;
+}
+#FAQ_Makeathon .dropdown {
+  display: none;
+  text-align: left;
+  margin: 30px 0px;
+}
+#FAQ_Makeathon .btn,
+#FAQ_Makeathon :visited {
+  background-color: #f24385;
+  width: 200px;
+  font-size: 1.2rem;
+}
+#FAQ_Makeathon .dropdown-menu {
+  background-color: rgb(2, 1, 1);
+}
+
+#FAQ_Makeathon .dropdown-menu li a {
+  text-decoration: none;
+  color: #f24385;
+  font-size: 20px;
+  padding: 10px 0px;
+}
+#FAQ_Makeathon .dropdown-menu li {
+  text-decoration: none;
+  color: #f24385;
+  font-size: 20px;
+  padding: 10px 0px;
+  margin: 20px 0px;
+  width: 200px;
+  text-align: center;
+}
+#FAQ_Makeathon .contactmob {
+  display: -ms-grid;
+  display: grid;
+  margin-left: 5%;
+}
+#FAQ_Makeathon .contactmob button {
+  max-width: 10rem;
+  margin: 20px 0px;
+  padding: 10px 22px;
+  background-color: #f24385;
+  color: white;
+  outline: none;
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
+  border: none;
+}
+#FAQ_Makeathon .accordion-button:focus-within {
+  background-color: rgba(255, 255, 255, 0.24);
+}
+@media (max-width: 1100px) {
+  #FAQ_Makeathon .contactmob {
+    display: block;
+    margin: 0px 0px;
+  }
+  #FAQ_Makeathon .menu {
+    display: none;
+  }
+  #FAQ_Makeathon .content {
+    display: block;
+  }
+  #FAQ_Makeathon .dropdown {
+    display: block;
+  }
+}
+
+@media (max-width: 760px) {
+  #FAQ_Makeathon .accordion-button {
+    font-size: 1.2rem;
+  }
+
+  #FAQ_Makeathon .accordion-body {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 530px) {
+  #FAQ_Makeathon .accordion-button {
+    font-size: 1.1rem;
+  }
+  #FAQ_Makeathon h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1400px) {
+  #FAQ_Makeathon .categories li {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 1024px) and (min-width: 1024px) {
+  #FAQ_Makeathon h1 {
+    margin-top: 17%;
+    margin-bottom: 20%;
+  }
+}
+#FAQ_Makeathon body {
+  overflow: hidden;
+}
+@media (max-width: 1366px) and (min-width: 1366px) {
+  #FAQ_Makeathon h1 {
+    margin-top: 7%;
+    margin-bottom: 15%;
+  }
+}

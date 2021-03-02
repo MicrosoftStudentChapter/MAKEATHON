@@ -1,0 +1,138 @@
+#prizes {
+    padding: 0;
+    margin: 0;
+    background-position: center;
+    -moz-background-size: cover;
+      -o-background-size: cover;
+         background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    background: rgb(34, 2, 44);
+    background: -webkit-radial-gradient(
+        circle,
+        rgba(34, 2, 44, 1) 0%,
+        rgba(44, 2, 86, 1) 100%
+    );
+    background: -moz- oldradial-gradient(
+        circle,
+        rgba(34, 2, 44, 1) 0%,
+        rgba(44, 2, 86, 1) 100%
+    );
+    background: -o-radial-gradient(
+        circle,
+        rgba(34, 2, 44, 1) 0%,
+        rgba(44, 2, 86, 1) 100%
+    );
+    background: radial-gradient(
+        circle,
+        rgba(34, 2, 44, 1) 0%,
+        rgba(44, 2, 86, 1) 100%
+    );
+    overflow: hidden;
+
+	min-height: 100vh;
+    width: 100%;
+}
+
+#prizes .content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60fr 40fr;
+        grid-template-columns: 60fr 40fr;
+}
+#prizes h2 {
+    text-align: right;
+    font-family: "Anurati";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#eaab48), color-stop(#ed885b), to(#f24282));
+    background: -webkit-linear-gradient(#eaab48, #ed885b, #f24282);
+    background: -moz- oldlinear-gradient(#eaab48, #ed885b, #f24282);
+    background: -o-linear-gradient(#eaab48, #ed885b, #f24282);
+    background: linear-gradient(#eaab48, #ed885b, #f24282);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-right: 13%;
+}
+#prizes .trophy img {
+    text-align: center;
+}
+#prizes .trophy {
+    height: 87%;
+    text-align: center;
+}
+#prizes #tsparticles {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 24%; 
+    right: 22%;
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+      -o-background-size: cover;
+         background-size: cover;
+    background-attachment: fixed;
+}
+#prizes .count-particles {
+    display: none;
+    background: none;
+    position: relative;
+    left: 0;
+    width: 100px;
+    color: #230044;
+    font-size: 0.8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+#prizes .js-count-particles {
+    font-size: 1.1em;
+}
+#prizes #stats,
+#prizes .count-particles {
+    -webkit-user-select: none;
+}
+#prizes #stats {
+    overflow: hidden;
+}
+@media (max-width: 1024px) {
+    #prizes .particle {
+        display: none;
+    }
+    #prizes .content {
+        display: block;
+    }
+    #prizes .trophy {
+        text-align: center;
+    }
+    #prizes h2{
+        text-align: center;
+    }
+}
+
+@media (max-width: 1160px) {
+    #prizes .trophy img {
+        padding-top: 0.6rem;
+        height: 25rem;
+        text-align: center;
+    }
+
+    #prizes #tsparticles{
+        display: none;
+    }
+}
+
+@media (min-width: 760px) {
+    #prizes .trophy img {
+        padding-top: 2rem;
+        height: 80%;
+        text-align: center;
+    }
+    #prizes h1 {
+        font-size: 900%;
+    }
+}

@@ -1,0 +1,225 @@
+/* #about-mlsc, #about-makeathon { */
+#about {
+  min-height: 100vh;
+  height: max-content;
+  width: 100%;
+
+  background: url("../images/about-bg.png") no-repeat center;
+  background-size: cover;
+  color: white;
+
+  overflow-x: hidden;
+}
+
+#about h2.heading,
+#speakers_and_judges h2.heading,
+#prizes h2.heading {
+  font-family: "Anurati", sans-serif;
+  font-size: 4.7rem;
+  font-weight: 700;
+
+  margin: 0 70px;
+  min-height: 20vh;
+
+  display: flex;
+  align-items: center;
+
+  background: linear-gradient(
+    to bottom,
+    #eaab48 0%,
+    #ed885b 40.75%,
+    #f24282 100%
+  );
+
+  color: transparent;
+  mix-blend-mode: difference;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+#about h2.makeathon-heading {
+  flex-direction: row-reverse;
+}
+
+#about .container {
+  display: flex;
+  min-height: calc(80vh - 40px);
+  max-width: calc(100% - 140px);
+
+  margin: 0 70px;
+  padding: 20px 0;
+  /*justify-content: space-between;*/
+}
+
+#about .makeathon-container {
+  flex-direction: row-reverse;
+}
+
+#about .container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#about .about-info > div {
+  display: flex;
+  justify-content: left;
+}
+
+#about .container .about-content {
+  align-items: center;
+  flex: 4;
+}
+
+#about .container .about-info {
+  flex: 1;
+}
+
+#about .container .about-info .info {
+  font-size: 1.9rem;
+  font-family: Anurati, sans-serif;
+  display: flex;
+  margin: 20px 0;
+  position: relative;
+}
+
+#about .container .about-info .info i {
+  font-size: 3.8rem;
+}
+
+#about .container .about-info .info p {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+#about .container .about-content .glassbox-with-shadow {
+  padding: 20px;
+  position: relative;
+
+  font-family: Roboto, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2.5;
+
+  width: 70%;
+}
+
+#about .container .about-content .glassbox-with-shadow span {
+  z-index: 3;
+  position: relative;
+}
+
+#about .container .about-content .glassbox-with-shadow .colorizer-div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /*background-color: #ffb0f740;*/
+  background-color: #413e6bc6;
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  z-index: 2;
+}
+
+#about .container .about-content .glassbox-with-shadow::before,
+#about .container .about-content .glassbox-with-shadow::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+
+  background: linear-gradient(
+    to top right,
+    rgba(226, 61, 87, 1),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgba(220, 138, 44, 1)
+  );
+  border-radius: 10px;
+  z-index: 1;
+}
+
+#about .container .about-content .glassbox-with-shadow::after {
+  filter: blur(40px);
+}
+
+/* -------------- Media Queries ------------------- */
+
+@media (max-width: 1300px) {
+  #about .container .about-content .glassbox-with-shadow {
+    line-height: 2;
+  }
+}
+
+@media (max-width: 900px) {
+  #about .container .about-content .glassbox-with-shadow {
+    line-height: 1.8;
+  }
+
+  #about h2.heading,
+  #speakers_and_judges h2.heading,
+  #prizes h2.heading {
+    font-size: 3.8rem;
+  }
+
+  #about .container .about-info .info {
+    font-size: 1.7rem;
+  }
+
+  #about .container .about-content .glassbox-with-shadow {
+    width: 80%;
+  }
+}
+
+@media (max-width: 760px) {
+  #about h2.heading,
+  #speakers_and_judges h2.heading,
+  #prizes h2.heading {
+    font-size: 2.8rem;
+    margin: 0 40px;
+  }
+
+  #about h2.makeathon-heading {
+    flex-direction: row;
+  }
+
+  #about .container,
+  #about .makeathon-container {
+    flex-direction: column;
+    margin: 0 40px;
+    position: relative;
+  }
+
+  #about .container .about-content {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 550px) {
+  #about h2.heading,
+  #prizes h2.heading {
+    margin: 0 20px;
+    font-size: 2rem;
+    min-height: 6rem;
+  }
+
+  #about .container {
+    max-width: calc(100% - 40px);
+    margin: 0 20px;
+  }
+
+  #about .container .about-content .glassbox-with-shadow {
+    line-height: 1.4;
+    flex-direction: row;
+    font-size: 1.1rem;
+  }
+
+  #about .container .about-info .info {
+    font-size: 1.3rem;
+  }
+}
