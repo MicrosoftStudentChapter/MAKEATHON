@@ -94,6 +94,12 @@
 	background-color: #000000;
 	border-radius: 30px;
 }
+
+#speakers_and_judges .judge img{
+	background-color: #000000;
+	border-radius: 30px;
+}
+
 #speakers_and_judges .judge .info,
 #speakers_and_judges .judge .date,
 #speakers_and_judges .speaker .info,
@@ -102,6 +108,10 @@
 }
 
 #speakers_and_judges .speaker .name{
+	font-size: 1.2rem;
+}
+
+#speakers_and_judges .judge .name{
 	font-size: 1.2rem;
 }
 
