@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+button {
+	border: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+#timeline {
+	width: 100%;
+	min-height: 100vh;
+	font-family: Ubuntu, sans-serif;
+
+	background: url(../images/timeline-bg.jpg) center no-repeat;
+	background-size: cover;
+	position: relative;
+
+	display: flex;
+	color: white;
+}
+
+#timeline .left-container {
+	flex: 1;
+	display: flex;
+	
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+}
+
+#timeline .left-container h2 {
+	padding: 20px;
+	margin: 20px;
+	font-size: 4rem;
+
+	font-weight: normal;
+	padding: 4.6vw;
+	border-top: white 3px solid;
+	border-bottom: white 3px solid;
+}
+
+#timeline .right-container {
+	flex: 1;
+	height: 94vh;
+	padding: 3vh 0 3vh 20px;
+
+	overflow: auto;
+}
+
+#timeline .event {
+	margin: 40px 0;
+	transition: all 0.5s;
+}
+
+#timeline .event .event-info {
+	color: white;
+	font-size: 1.8rem;
+	text-align: start;
+	transition: color 0.2s ease-in-out;
+}
+
+#timeline .event .event-info:hover {
+	color: #f24385;
+}
+
+#timeline .event .event-date {
+	color: #ffffff90;
+	font-size: 1.5rem;
+}
+
+#timeline .event .event-detail {
+	display: none;
+}
+
+#timeline + .event-modal {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+
+	z-index: 1000;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	background-color: #000000b9;
+
+	transform: scale(0);
+	transform-origin: center;
+	transition: transform 0.3s ease-in-out;
+
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+}
+
+#timeline + .event-modal > div {
+	width: 75vw;
+	padding: 20px;
+	background-color: #fff;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	position: relative;
+	max-height: 90vh;
+	overflow-y: auto;
+}
+
+#timeline + .event-modal .event-info {
+	font-size: 1.5rem;
+	padding: 4px 0;
+}
+
+#timeline + .event-modal .close-button {
+	z-index: 1;
+	padding: 10px;
+	color: white;
+	background-color: red;
+	position: absolute;
+	font-weight: 600;
+	top: 0;
+	right: 0;
+}
+
+#timeline + .event-modal.show {
+	transform: scale(1);
+}
+
+@media screen and (max-width: 800px) {
+	#timeline {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#timeline .left-container h2 {
+		font-size: 2.5rem;
+		padding: 3.6vw;
+	}
+	
+	#timeline .event .event-info {
+		font-size: 1.4rem;
+	}
+
+	#timeline .event .event-date {
+		font-size: 1.2rem;
+	}
+}
+

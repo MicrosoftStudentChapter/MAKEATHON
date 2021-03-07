@@ -11,6 +11,8 @@ gunicorn = "*"
 dj-database-url = "*"
 psycopg2-binary = "*"
 whitenoise = "*"
+django-import-export = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 

@@ -1,0 +1,164 @@
+#speakers_and_judges {
+	background: url('../images/speakers-and-judges-bg.png') center no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	width: 100%;
+	height: max-content;
+
+	display: flex;
+	flex-wrap: wrap;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+
+#speakers_and_judges .selector {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#speakers_and_judges .selector button {
+	margin: 10px;
+	padding: 10px;
+	
+	background-color: #ffffff50;
+	border-radius: 30px;
+	color: #fff;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+#speakers_and_judges .selector button:hover {
+	background-color: #ffffff90;
+}
+
+#speakers_and_judges .speakers-judges-container {
+	flex: 5;
+	padding-bottom: 30px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#speakers_and_judges .speakers-judges-container .heading {
+	justify-content: center;
+}
+
+#speakers_and_judges .speakers-container,
+#speakers_and_judges .judges-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	align-items: center;
+}
+
+#speakers_and_judges .speaker, 
+#speakers_and_judges .judge {
+	border-radius: 20px;
+	margin: 10px;
+	flex: 0 0 25%;
+	flex-wrap: wrap;
+	text-align: center;
+	position: relative;
+	color: white;
+	font-weight: 400;
+	font-family: sans-serif;
+}
+
+#speakers_and_judges .social-icons {
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#speakers_and_judges .social-icons a {
+	filter: drop-shadow(2px 2px black);
+	margin: 2px;
+	font-size: 1.6rem;
+	color: white;
+}
+
+#speakers_and_judges .social-icons a:hover,
+#speakers_and_judges .social-icons a:active {
+	color: #ffffff99;
+}
+
+#speakers_and_judges .speaker img{
+	background-color: #000000;
+	border-radius: 30px;
+}
+#speakers_and_judges .judge .info,
+#speakers_and_judges .judge .date,
+#speakers_and_judges .speaker .info,
+#speakers_and_judges .speaker .date {
+	display: none;
+}
+
+#speakers_and_judges .speaker .name{
+	font-size: 1.2rem;
+}
+
+#speakers_and_judges .speaker-or-judge-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: linear-gradient(89.83deg, rgba(255, 255, 255, 0.3) 27.2%, rgba(255, 255, 255, 0.1) 145.41%);
+	width: 80%;
+
+	border: 2px solid orange;
+	border-radius: 30px;
+}
+
+#speakers_and_judges .speaker-or-judge-info .person-info img {
+	border-radius: 30px;
+}
+
+#speakers_and_judges .speaker-or-judge-info .person-info {
+	display: flex;
+	margin: 10px 3%;
+	margin-top: 30px;
+	align-items: center;
+	text-align: center;
+	justify-content: space-around;
+	width: 90%;
+	flex-flow: row wrap-reverse;
+}
+
+#speakers_and_judges .speaker-or-judge-info .person-info h2.name {
+	mix-blend-mode: normal;
+	margin: 0;
+	font-size: 3.5rem;
+}
+
+#speakers_and_judges .speaker-or-judge-info .info-1 {
+	font-size: 1.2rem;
+	width: 90%;
+	margin: 0 3%;
+}
+#speakers_and_judges .speaker-or-judge-info .info-2 {
+	width: 90%;
+	margin: 0 3%;
+	margin-bottom: 30px;
+}
+
+@media (max-width: 770px) {
+
+	#speakers_and_judges .speaker-or-judge-info .person-info h2.name {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 450px) {
+	#speakers_and_judges {
+		flex-direction: column;
+	}
+}
+
