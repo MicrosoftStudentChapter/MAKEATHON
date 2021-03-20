@@ -1,3 +1,588 @@
+/* ___________________________ */
+
 body {
-  margin: 0;
+    padding: 0;
+    margin: 0;
+    background: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* z-index: -1; */
+    background: rgb(34, 2, 44);
+    background: radial-gradient(
+        circle,
+        rgba(34, 2, 44, 1) 0%,
+        rgba(44, 2, 86, 1) 100%
+    );
+
 }
+
+section{
+    overflow: hidden;
+}
+
+
+/* ___________________________ */
+
+/* grid */
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.tsparticles { grid-area: 1 / 1 / 3 / 2; }
+.dead { grid-area: 1 / 2 / 3 / 3; }
+
+/* grid */
+
+/* prizes */
+
+.prize {
+    text-align: right;
+    font-family: Anurati;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 7rem;
+    background: linear-gradient(#eaab48, #ed885b, #f24282);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    position: relative;
+    right: 123%;
+    /* margin-left: -5rem; */
+}
+
+.trophy img{
+    position: relative;
+    right: 100%;
+}
+
+/* carousel */
+
+.container{
+    color: white;
+}
+
+.carousel-inner{
+    position: relative;
+    bottom: 50%;
+}
+
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+    display:block;
+}
+
+/* carousel */
+
+
+
+/* particle trophy */
+
+#tsparticles {
+    right: 40%;
+    bottom: 20%;
+    position: relative;
+    text-align: center;
+    background-position: 50% 50%;
+    width: 80rem;
+}
+
+
+/* particle trophy */
+
+/* media query */
+
+@media (max-width: 1366px) {
+
+    .tsparticles {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 1160px) {
+
+    .tsparticles {
+        display: none;
+    }
+
+    .prize{
+        /* left: 35%; */
+        right: 65%;
+    }
+
+    .trophy{
+        position: relative;
+        left: 58%;
+        /* right:65%; */
+    }
+    
+}
+
+@media (max-width: 850px) {
+
+    .tsparticles {
+        display: none;
+    }
+
+    .prize{
+        /* left: 35%; */
+        right: 55%;
+    }
+
+    .trophy{
+        position: relative;
+        left: 68%;
+        /* right:65%; */
+    }
+    
+}
+
+
+
+
+
+/* MotoG4 & Galaxy S5 */
+
+@media (width: 360px) and (height: 640px) {
+    
+    .tsparticles{
+        display: none;
+    }
+
+    .prize{
+        right: 27%;
+    }
+
+    .trophy{
+        position: relative;
+        left: 92%;
+    } 
+    
+    .trophy img{
+        height: 80vh;
+        width: 120vw;
+    }
+
+}
+
+@media (width: 640px) and (height: 360px) {
+
+    .prize{
+        right: 34%;
+    }
+    .trophy{
+        position: relative;
+        left: 88%;
+    }  
+}
+
+/* MotoG4 & Galaxy S5 */
+
+
+/* Pixel2 */
+
+@media (width: 411px) and (height: 731px) {
+    
+    .tsparticles{
+        display: none;
+    }
+
+    .prize{
+        right: 33%;
+    }
+
+    .trophy{
+        position: relative;
+        left: 91.5%;
+    }  
+
+}
+
+@media (width: 731px) and (height: 411px) {
+    
+    .tsparticles{
+        display: none;
+    }
+
+    .prize{
+        right: 45%;
+    }
+
+    .trophy{
+        position: relative;
+        left: 78%;
+    }  
+
+}
+
+/* Pixel2 */
+
+/* Pixel 2 XL */
+
+@media (width: 411px) and (height: 823px) {
+    
+    .tsparticles{
+        display: none;
+    }
+
+    .prize{
+        right: 33%;
+    }
+
+    .trophy{
+        position: relative;
+        left: 91.5%;
+    }  
+
+}
+
+@media (width: 823px) and (height: 411px) {
+    
+    .tsparticles{
+        display: none;
+    }
+
+    .prize{
+        right: 55%;
+    }
+
+    .trophy{
+        position: relative;
+        left: 67%;
+    }  
+
+}
+
+/* Pixel 2 XL */
+
+/* iPhone 5/SE */
+
+@media (width: 320px) and (height: 568px) {
+    
+    .tsparticles{
+        display: none;
+    }
+
+    .prize{
+        right: 30%;
+        font-size: 5rem;
+    }
+
+    .trophy{
+        position: relative;
+        left: 90.5%;
+    }  
+
+    .trophy img{
+        height: 76vh;
+        width: 123vw
+    }
+
+}
+
+@media (width: 568px) and (height: 320px) {
+    
+    .tsparticles{
+        display: none;
+    }
+
+    .prize{
+        right: 29%;
+    }
+
+    .trophy{
+        position: relative;
+        left: 93%;
+    }  
+
+}
+
+/* iPhone 5/SE */
+
+/* iPhone 6/7/8 */
+
+@media (width: 375px) and (height: 667px) {
+    
+    .tsparticles{
+        display: none;
+    }
+
+    .prize{
+        right: 30%;
+    }
+
+    .trophy{
+        position: relative;
+        left: 90%;
+    } 
+    
+    .trophy img{
+        height: 78vh;
+        width: 125vw;
+    }
+
+}
+
+@media (width: 667px) and (height: 375px) {
+    
+    .tsparticles{
+        display: none;
+    }
+
+    .prize{
+        right: 38%;
+    }
+
+    .trophy{
+        position: relative;
+        left: 85%;
+    }  
+
+}
+
+/* iPhone 6/7/8 */
+
+@media (width: 414px) and (height: 736px) {
+    
+    .tsparticles{
+        display: none;
+    }
+
+    .prize{
+        right: 32%;
+    }
+
+    .trophy{
+        position: relative;
+        left: 91.5%;
+    }  
+
+}
+
+@media (width: 736px) and (height: 414px) {
+    
+    .tsparticles{
+        display: none;
+    }
+
+    .prize{
+        right: 44%;
+    }
+
+    .trophy{
+        position: relative;
+        left: 78%;
+    }  
+
+}
+
+/* Iphone X */
+
+@media (width: 375px) and (height: 812px) {
+    
+    .tsparticles{
+        display: none;
+    }
+
+    .prize{
+        right: 33%;
+    }
+
+    .trophy{
+        position: relative;
+        left: 89%;
+    }  
+
+    .trophy img{
+        width: 128vw;
+    }
+
+}
+
+@media (width: 812px) and (height: 375px) {
+    
+    .tsparticles{
+        display: none;
+    }
+
+    .prize{
+        left: -55%;
+    }
+
+    .trophy{
+        position: relative;
+        left: 68%;
+    }  
+
+}
+
+/* Iphone X */
+
+/* iPad */
+
+
+@media (width: 768px) and (height: 1024px) {
+    
+    .tsparticles{
+        display: none;
+    }
+
+    .prize{
+        right: 47%;
+    }
+
+    .trophy{
+        position: relative;
+        left: 76%;
+    }  
+
+}
+
+@media (width: 1024px) and (height: 768px) {
+    
+    .tsparticles{
+        display: none;
+    }
+
+    .prize{
+        right: 78%;
+    }
+
+    .trophy{
+        position: relative;
+        left: 47%;
+    }  
+
+}
+
+/* iPad Pro */
+
+@media (width: 1024px) and (height: 1366px) {
+    
+    .tsparticles{
+        display: none;
+    }
+
+    .prize{
+        right: 85%;
+    }
+
+    .trophy{
+        position: relative;
+        left: 41%;
+    }  
+
+}
+
+@media (width: 1366px) and (height: 1024px) {
+    
+    .tsparticles{
+        display: none;
+    }
+
+    .prize{
+        right: 112%;
+    }
+
+    .trophy{
+        position: relative;
+        left: 32%;
+    }  
+
+}
+
+/* iPad Pro */
+
+
+
+/* Surface Duo */
+
+@media (width: 540px) and (height: 720px) {
+    
+    .tsparticles{
+        display: none;
+    }
+
+    .prize{
+        right: 25%;
+    }
+
+    .trophy{
+        position: relative;
+        left: 96%;
+    }  
+
+}
+
+@media (width: 720px) and (height: 540px) {
+    
+    .tsparticles{
+        display: none;
+    }
+
+    .prize{
+        right: 43%;
+    }
+
+    .trophy{
+        position: relative;
+        left: 80%;
+    }  
+
+}
+
+/* Surface Duo */
+
+
+/* Galaxy Fold */
+
+@media (width: 280px) and (height: 653px) {
+    
+    .tsparticles{
+        display: none;
+    }
+
+    .prize{
+        right: 29%;
+        font-size: 5rem;
+    }
+
+    .trophy{
+        position: relative;
+        left: 92%;
+    }  
+
+    .trophy img{
+        height: 85vh;
+        width: 120vw;
+    }
+
+}
+
+@media (width: 653px) and (height: 280px) {
+    
+    .tsparticles{
+        display: none;
+    }
+
+    .prize{
+        right: 38%;
+    }
+
+    .trophy{
+        position: relative;
+        left: 85%;
+    }  
+
+}
+
+/* Galaxy Fold */
+
+/* media query */
